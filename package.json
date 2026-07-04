@@ -1,0 +1,48 @@
+{
+  "name": "mohammadazad.com",
+  "version": "1.0.0",
+  "description": "Mohammad Azad Protfolio / resume website",
+  "author": "Mohammad Azad",
+  "private": true,
+  "main": "index.js",
+  "license": "SEE LICENSE IN license.txt",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "npm-run-all --parallel watch:scss watch:js",
+    "build": "npm run css:build && npm run js:build && npm run add:banners",
+    "css:build": "npm run css:expanded && node scripts/minify-css.js",
+    "css:expanded": "npx mkdirp assets/dist/css && npx sass assets/scss/style.scss assets/dist/css/style.css --style=expanded && npx mkdirp assets/dist/css/alfuix && npx sass assets/scss/alfuix/alfuix.scss assets/dist/css/alfuix/alfuix.css --style=expanded && npx mkdirp assets/dist/css/bootstrap && npx sass assets/scss/bootstrap/bootstrap.scss assets/dist/css/bootstrap/bootstrap.css --style=expanded && npx sass assets/scss/bootstrap/bootstrap-icons.scss assets/dist/css/bootstrap/bootstrap-icons.css --style=expanded",
+    "js:build": "node scripts/build-js.js",
+    "clean:orphans": "node scripts/clean-orphans.js",
+    "add:banners": "node scripts/build-banner.js"
+  },
+  "keywords": [
+    "Bootstrap",
+    "CV",
+    "professional",
+    "portfolio",
+    "Resume"
+  ],
+  "dependencies": {
+    "alfuix": "^1.0.10",
+    "animate.css": "^4.1.1",
+    "autoprefixer": "^10.3.7",
+    "bootstrap": "^5.3.5",
+    "bootstrap-icons": "^1.11.0",
+    "countup.js": "^2.8.0",
+    "fslightbox": "^3.5.1",
+    "jquery": "^3.7.1",
+    "openssl": "^2.0.0",
+    "postcss-cli": "^9.0.1",
+    "slick-carousel": "^1.8.1",
+    "waypoints": "^4.0.1"
+  },
+  "devDependencies": {
+    "concat-cli": "^4.0.0",
+    "copyfiles": "^2.4.1",
+    "mkdirp": "^3.0.1",
+    "rimraf": "^6.0.1",
+    "sass": "^1.87.0",
+    "terser": "^5.44.0"
+  }
+}

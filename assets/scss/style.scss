@@ -1,0 +1,19 @@
+/* alfuix & bootstrap variables*/
+@use 'varibles' as *;
+
+/* Global styles */
+@use 'global';
+
+/* pages */
+@use 'pages/common';
+
+/* plugins */
+@use 'plugins/slick-carousel';
+@use 'plugins/sweets-alert2';
+
+
+/* developer overrides */
+@use 'custom';
+
+
+
