@@ -826,419 +826,419 @@
 }
 
 /* ===== Border Radius RTL & LTR ===== */
-html[dir=ltr] .al-rounded-start-0 {
+html:not([dir]) .al-rounded-start-0, html[dir=""] .al-rounded-start-0, html[dir=ltr] .al-rounded-start-0 {
   border-top-left-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
 }
 
-html[dir=ltr] .al-rounded-start-top-0 {
+html:not([dir]) .al-rounded-start-top-0, html[dir=""] .al-rounded-start-top-0, html[dir=ltr] .al-rounded-start-top-0 {
   border-top-left-radius: 0px !important;
 }
 
-html[dir=ltr] .al-rounded-start-bottom-0 {
+html:not([dir]) .al-rounded-start-bottom-0, html[dir=""] .al-rounded-start-bottom-0, html[dir=ltr] .al-rounded-start-bottom-0 {
   border-bottom-left-radius: 0px !important;
 }
 
-html[dir=ltr] .al-rounded-end-0 {
+html:not([dir]) .al-rounded-end-0, html[dir=""] .al-rounded-end-0, html[dir=ltr] .al-rounded-end-0 {
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
 }
 
-html[dir=ltr] .al-rounded-end-top-0 {
+html:not([dir]) .al-rounded-end-top-0, html[dir=""] .al-rounded-end-top-0, html[dir=ltr] .al-rounded-end-top-0 {
   border-top-right-radius: 0px !important;
 }
 
-html[dir=ltr] .al-rounded-end-bottom-0 {
+html:not([dir]) .al-rounded-end-bottom-0, html[dir=""] .al-rounded-end-bottom-0, html[dir=ltr] .al-rounded-end-bottom-0 {
   border-bottom-right-radius: 0px !important;
 }
 
-html[dir=ltr] .al-rounded-start-2 {
+html:not([dir]) .al-rounded-start-2, html[dir=""] .al-rounded-start-2, html[dir=ltr] .al-rounded-start-2 {
   border-top-left-radius: 2px !important;
   border-bottom-left-radius: 2px !important;
 }
 
-html[dir=ltr] .al-rounded-start-top-2 {
+html:not([dir]) .al-rounded-start-top-2, html[dir=""] .al-rounded-start-top-2, html[dir=ltr] .al-rounded-start-top-2 {
   border-top-left-radius: 2px !important;
 }
 
-html[dir=ltr] .al-rounded-start-bottom-2 {
+html:not([dir]) .al-rounded-start-bottom-2, html[dir=""] .al-rounded-start-bottom-2, html[dir=ltr] .al-rounded-start-bottom-2 {
   border-bottom-left-radius: 2px !important;
 }
 
-html[dir=ltr] .al-rounded-end-2 {
+html:not([dir]) .al-rounded-end-2, html[dir=""] .al-rounded-end-2, html[dir=ltr] .al-rounded-end-2 {
   border-top-right-radius: 2px !important;
   border-bottom-right-radius: 2px !important;
 }
 
-html[dir=ltr] .al-rounded-end-top-2 {
+html:not([dir]) .al-rounded-end-top-2, html[dir=""] .al-rounded-end-top-2, html[dir=ltr] .al-rounded-end-top-2 {
   border-top-right-radius: 2px !important;
 }
 
-html[dir=ltr] .al-rounded-end-bottom-2 {
+html:not([dir]) .al-rounded-end-bottom-2, html[dir=""] .al-rounded-end-bottom-2, html[dir=ltr] .al-rounded-end-bottom-2 {
   border-bottom-right-radius: 2px !important;
 }
 
-html[dir=ltr] .al-rounded-start-3 {
+html:not([dir]) .al-rounded-start-3, html[dir=""] .al-rounded-start-3, html[dir=ltr] .al-rounded-start-3 {
   border-top-left-radius: 3px !important;
   border-bottom-left-radius: 3px !important;
 }
 
-html[dir=ltr] .al-rounded-start-top-3 {
+html:not([dir]) .al-rounded-start-top-3, html[dir=""] .al-rounded-start-top-3, html[dir=ltr] .al-rounded-start-top-3 {
   border-top-left-radius: 3px !important;
 }
 
-html[dir=ltr] .al-rounded-start-bottom-3 {
+html:not([dir]) .al-rounded-start-bottom-3, html[dir=""] .al-rounded-start-bottom-3, html[dir=ltr] .al-rounded-start-bottom-3 {
   border-bottom-left-radius: 3px !important;
 }
 
-html[dir=ltr] .al-rounded-end-3 {
+html:not([dir]) .al-rounded-end-3, html[dir=""] .al-rounded-end-3, html[dir=ltr] .al-rounded-end-3 {
   border-top-right-radius: 3px !important;
   border-bottom-right-radius: 3px !important;
 }
 
-html[dir=ltr] .al-rounded-end-top-3 {
+html:not([dir]) .al-rounded-end-top-3, html[dir=""] .al-rounded-end-top-3, html[dir=ltr] .al-rounded-end-top-3 {
   border-top-right-radius: 3px !important;
 }
 
-html[dir=ltr] .al-rounded-end-bottom-3 {
+html:not([dir]) .al-rounded-end-bottom-3, html[dir=""] .al-rounded-end-bottom-3, html[dir=ltr] .al-rounded-end-bottom-3 {
   border-bottom-right-radius: 3px !important;
 }
 
-html[dir=ltr] .al-rounded-start-4 {
+html:not([dir]) .al-rounded-start-4, html[dir=""] .al-rounded-start-4, html[dir=ltr] .al-rounded-start-4 {
   border-top-left-radius: 4px !important;
   border-bottom-left-radius: 4px !important;
 }
 
-html[dir=ltr] .al-rounded-start-top-4 {
+html:not([dir]) .al-rounded-start-top-4, html[dir=""] .al-rounded-start-top-4, html[dir=ltr] .al-rounded-start-top-4 {
   border-top-left-radius: 4px !important;
 }
 
-html[dir=ltr] .al-rounded-start-bottom-4 {
+html:not([dir]) .al-rounded-start-bottom-4, html[dir=""] .al-rounded-start-bottom-4, html[dir=ltr] .al-rounded-start-bottom-4 {
   border-bottom-left-radius: 4px !important;
 }
 
-html[dir=ltr] .al-rounded-end-4 {
+html:not([dir]) .al-rounded-end-4, html[dir=""] .al-rounded-end-4, html[dir=ltr] .al-rounded-end-4 {
   border-top-right-radius: 4px !important;
   border-bottom-right-radius: 4px !important;
 }
 
-html[dir=ltr] .al-rounded-end-top-4 {
+html:not([dir]) .al-rounded-end-top-4, html[dir=""] .al-rounded-end-top-4, html[dir=ltr] .al-rounded-end-top-4 {
   border-top-right-radius: 4px !important;
 }
 
-html[dir=ltr] .al-rounded-end-bottom-4 {
+html:not([dir]) .al-rounded-end-bottom-4, html[dir=""] .al-rounded-end-bottom-4, html[dir=ltr] .al-rounded-end-bottom-4 {
   border-bottom-right-radius: 4px !important;
 }
 
-html[dir=ltr] .al-rounded-start-5 {
+html:not([dir]) .al-rounded-start-5, html[dir=""] .al-rounded-start-5, html[dir=ltr] .al-rounded-start-5 {
   border-top-left-radius: 5px !important;
   border-bottom-left-radius: 5px !important;
 }
 
-html[dir=ltr] .al-rounded-start-top-5 {
+html:not([dir]) .al-rounded-start-top-5, html[dir=""] .al-rounded-start-top-5, html[dir=ltr] .al-rounded-start-top-5 {
   border-top-left-radius: 5px !important;
 }
 
-html[dir=ltr] .al-rounded-start-bottom-5 {
+html:not([dir]) .al-rounded-start-bottom-5, html[dir=""] .al-rounded-start-bottom-5, html[dir=ltr] .al-rounded-start-bottom-5 {
   border-bottom-left-radius: 5px !important;
 }
 
-html[dir=ltr] .al-rounded-end-5 {
+html:not([dir]) .al-rounded-end-5, html[dir=""] .al-rounded-end-5, html[dir=ltr] .al-rounded-end-5 {
   border-top-right-radius: 5px !important;
   border-bottom-right-radius: 5px !important;
 }
 
-html[dir=ltr] .al-rounded-end-top-5 {
+html:not([dir]) .al-rounded-end-top-5, html[dir=""] .al-rounded-end-top-5, html[dir=ltr] .al-rounded-end-top-5 {
   border-top-right-radius: 5px !important;
 }
 
-html[dir=ltr] .al-rounded-end-bottom-5 {
+html:not([dir]) .al-rounded-end-bottom-5, html[dir=""] .al-rounded-end-bottom-5, html[dir=ltr] .al-rounded-end-bottom-5 {
   border-bottom-right-radius: 5px !important;
 }
 
-html[dir=ltr] .al-rounded-start-6 {
+html:not([dir]) .al-rounded-start-6, html[dir=""] .al-rounded-start-6, html[dir=ltr] .al-rounded-start-6 {
   border-top-left-radius: 6px !important;
   border-bottom-left-radius: 6px !important;
 }
 
-html[dir=ltr] .al-rounded-start-top-6 {
+html:not([dir]) .al-rounded-start-top-6, html[dir=""] .al-rounded-start-top-6, html[dir=ltr] .al-rounded-start-top-6 {
   border-top-left-radius: 6px !important;
 }
 
-html[dir=ltr] .al-rounded-start-bottom-6 {
+html:not([dir]) .al-rounded-start-bottom-6, html[dir=""] .al-rounded-start-bottom-6, html[dir=ltr] .al-rounded-start-bottom-6 {
   border-bottom-left-radius: 6px !important;
 }
 
-html[dir=ltr] .al-rounded-end-6 {
+html:not([dir]) .al-rounded-end-6, html[dir=""] .al-rounded-end-6, html[dir=ltr] .al-rounded-end-6 {
   border-top-right-radius: 6px !important;
   border-bottom-right-radius: 6px !important;
 }
 
-html[dir=ltr] .al-rounded-end-top-6 {
+html:not([dir]) .al-rounded-end-top-6, html[dir=""] .al-rounded-end-top-6, html[dir=ltr] .al-rounded-end-top-6 {
   border-top-right-radius: 6px !important;
 }
 
-html[dir=ltr] .al-rounded-end-bottom-6 {
+html:not([dir]) .al-rounded-end-bottom-6, html[dir=""] .al-rounded-end-bottom-6, html[dir=ltr] .al-rounded-end-bottom-6 {
   border-bottom-right-radius: 6px !important;
 }
 
-html[dir=ltr] .al-rounded-start-8 {
+html:not([dir]) .al-rounded-start-8, html[dir=""] .al-rounded-start-8, html[dir=ltr] .al-rounded-start-8 {
   border-top-left-radius: 8px !important;
   border-bottom-left-radius: 8px !important;
 }
 
-html[dir=ltr] .al-rounded-start-top-8 {
+html:not([dir]) .al-rounded-start-top-8, html[dir=""] .al-rounded-start-top-8, html[dir=ltr] .al-rounded-start-top-8 {
   border-top-left-radius: 8px !important;
 }
 
-html[dir=ltr] .al-rounded-start-bottom-8 {
+html:not([dir]) .al-rounded-start-bottom-8, html[dir=""] .al-rounded-start-bottom-8, html[dir=ltr] .al-rounded-start-bottom-8 {
   border-bottom-left-radius: 8px !important;
 }
 
-html[dir=ltr] .al-rounded-end-8 {
+html:not([dir]) .al-rounded-end-8, html[dir=""] .al-rounded-end-8, html[dir=ltr] .al-rounded-end-8 {
   border-top-right-radius: 8px !important;
   border-bottom-right-radius: 8px !important;
 }
 
-html[dir=ltr] .al-rounded-end-top-8 {
+html:not([dir]) .al-rounded-end-top-8, html[dir=""] .al-rounded-end-top-8, html[dir=ltr] .al-rounded-end-top-8 {
   border-top-right-radius: 8px !important;
 }
 
-html[dir=ltr] .al-rounded-end-bottom-8 {
+html:not([dir]) .al-rounded-end-bottom-8, html[dir=""] .al-rounded-end-bottom-8, html[dir=ltr] .al-rounded-end-bottom-8 {
   border-bottom-right-radius: 8px !important;
 }
 
-html[dir=ltr] .al-rounded-start-10 {
+html:not([dir]) .al-rounded-start-10, html[dir=""] .al-rounded-start-10, html[dir=ltr] .al-rounded-start-10 {
   border-top-left-radius: 10px !important;
   border-bottom-left-radius: 10px !important;
 }
 
-html[dir=ltr] .al-rounded-start-top-10 {
+html:not([dir]) .al-rounded-start-top-10, html[dir=""] .al-rounded-start-top-10, html[dir=ltr] .al-rounded-start-top-10 {
   border-top-left-radius: 10px !important;
 }
 
-html[dir=ltr] .al-rounded-start-bottom-10 {
+html:not([dir]) .al-rounded-start-bottom-10, html[dir=""] .al-rounded-start-bottom-10, html[dir=ltr] .al-rounded-start-bottom-10 {
   border-bottom-left-radius: 10px !important;
 }
 
-html[dir=ltr] .al-rounded-end-10 {
+html:not([dir]) .al-rounded-end-10, html[dir=""] .al-rounded-end-10, html[dir=ltr] .al-rounded-end-10 {
   border-top-right-radius: 10px !important;
   border-bottom-right-radius: 10px !important;
 }
 
-html[dir=ltr] .al-rounded-end-top-10 {
+html:not([dir]) .al-rounded-end-top-10, html[dir=""] .al-rounded-end-top-10, html[dir=ltr] .al-rounded-end-top-10 {
   border-top-right-radius: 10px !important;
 }
 
-html[dir=ltr] .al-rounded-end-bottom-10 {
+html:not([dir]) .al-rounded-end-bottom-10, html[dir=""] .al-rounded-end-bottom-10, html[dir=ltr] .al-rounded-end-bottom-10 {
   border-bottom-right-radius: 10px !important;
 }
 
-html[dir=ltr] .al-rounded-start-12 {
+html:not([dir]) .al-rounded-start-12, html[dir=""] .al-rounded-start-12, html[dir=ltr] .al-rounded-start-12 {
   border-top-left-radius: 12px !important;
   border-bottom-left-radius: 12px !important;
 }
 
-html[dir=ltr] .al-rounded-start-top-12 {
+html:not([dir]) .al-rounded-start-top-12, html[dir=""] .al-rounded-start-top-12, html[dir=ltr] .al-rounded-start-top-12 {
   border-top-left-radius: 12px !important;
 }
 
-html[dir=ltr] .al-rounded-start-bottom-12 {
+html:not([dir]) .al-rounded-start-bottom-12, html[dir=""] .al-rounded-start-bottom-12, html[dir=ltr] .al-rounded-start-bottom-12 {
   border-bottom-left-radius: 12px !important;
 }
 
-html[dir=ltr] .al-rounded-end-12 {
+html:not([dir]) .al-rounded-end-12, html[dir=""] .al-rounded-end-12, html[dir=ltr] .al-rounded-end-12 {
   border-top-right-radius: 12px !important;
   border-bottom-right-radius: 12px !important;
 }
 
-html[dir=ltr] .al-rounded-end-top-12 {
+html:not([dir]) .al-rounded-end-top-12, html[dir=""] .al-rounded-end-top-12, html[dir=ltr] .al-rounded-end-top-12 {
   border-top-right-radius: 12px !important;
 }
 
-html[dir=ltr] .al-rounded-end-bottom-12 {
+html:not([dir]) .al-rounded-end-bottom-12, html[dir=""] .al-rounded-end-bottom-12, html[dir=ltr] .al-rounded-end-bottom-12 {
   border-bottom-right-radius: 12px !important;
 }
 
-html[dir=ltr] .al-rounded-start-15 {
+html:not([dir]) .al-rounded-start-15, html[dir=""] .al-rounded-start-15, html[dir=ltr] .al-rounded-start-15 {
   border-top-left-radius: 15px !important;
   border-bottom-left-radius: 15px !important;
 }
 
-html[dir=ltr] .al-rounded-start-top-15 {
+html:not([dir]) .al-rounded-start-top-15, html[dir=""] .al-rounded-start-top-15, html[dir=ltr] .al-rounded-start-top-15 {
   border-top-left-radius: 15px !important;
 }
 
-html[dir=ltr] .al-rounded-start-bottom-15 {
+html:not([dir]) .al-rounded-start-bottom-15, html[dir=""] .al-rounded-start-bottom-15, html[dir=ltr] .al-rounded-start-bottom-15 {
   border-bottom-left-radius: 15px !important;
 }
 
-html[dir=ltr] .al-rounded-end-15 {
+html:not([dir]) .al-rounded-end-15, html[dir=""] .al-rounded-end-15, html[dir=ltr] .al-rounded-end-15 {
   border-top-right-radius: 15px !important;
   border-bottom-right-radius: 15px !important;
 }
 
-html[dir=ltr] .al-rounded-end-top-15 {
+html:not([dir]) .al-rounded-end-top-15, html[dir=""] .al-rounded-end-top-15, html[dir=ltr] .al-rounded-end-top-15 {
   border-top-right-radius: 15px !important;
 }
 
-html[dir=ltr] .al-rounded-end-bottom-15 {
+html:not([dir]) .al-rounded-end-bottom-15, html[dir=""] .al-rounded-end-bottom-15, html[dir=ltr] .al-rounded-end-bottom-15 {
   border-bottom-right-radius: 15px !important;
 }
 
-html[dir=ltr] .al-rounded-start-16 {
+html:not([dir]) .al-rounded-start-16, html[dir=""] .al-rounded-start-16, html[dir=ltr] .al-rounded-start-16 {
   border-top-left-radius: 16px !important;
   border-bottom-left-radius: 16px !important;
 }
 
-html[dir=ltr] .al-rounded-start-top-16 {
+html:not([dir]) .al-rounded-start-top-16, html[dir=""] .al-rounded-start-top-16, html[dir=ltr] .al-rounded-start-top-16 {
   border-top-left-radius: 16px !important;
 }
 
-html[dir=ltr] .al-rounded-start-bottom-16 {
+html:not([dir]) .al-rounded-start-bottom-16, html[dir=""] .al-rounded-start-bottom-16, html[dir=ltr] .al-rounded-start-bottom-16 {
   border-bottom-left-radius: 16px !important;
 }
 
-html[dir=ltr] .al-rounded-end-16 {
+html:not([dir]) .al-rounded-end-16, html[dir=""] .al-rounded-end-16, html[dir=ltr] .al-rounded-end-16 {
   border-top-right-radius: 16px !important;
   border-bottom-right-radius: 16px !important;
 }
 
-html[dir=ltr] .al-rounded-end-top-16 {
+html:not([dir]) .al-rounded-end-top-16, html[dir=""] .al-rounded-end-top-16, html[dir=ltr] .al-rounded-end-top-16 {
   border-top-right-radius: 16px !important;
 }
 
-html[dir=ltr] .al-rounded-end-bottom-16 {
+html:not([dir]) .al-rounded-end-bottom-16, html[dir=""] .al-rounded-end-bottom-16, html[dir=ltr] .al-rounded-end-bottom-16 {
   border-bottom-right-radius: 16px !important;
 }
 
-html[dir=ltr] .al-rounded-start-20 {
+html:not([dir]) .al-rounded-start-20, html[dir=""] .al-rounded-start-20, html[dir=ltr] .al-rounded-start-20 {
   border-top-left-radius: 20px !important;
   border-bottom-left-radius: 20px !important;
 }
 
-html[dir=ltr] .al-rounded-start-top-20 {
+html:not([dir]) .al-rounded-start-top-20, html[dir=""] .al-rounded-start-top-20, html[dir=ltr] .al-rounded-start-top-20 {
   border-top-left-radius: 20px !important;
 }
 
-html[dir=ltr] .al-rounded-start-bottom-20 {
+html:not([dir]) .al-rounded-start-bottom-20, html[dir=""] .al-rounded-start-bottom-20, html[dir=ltr] .al-rounded-start-bottom-20 {
   border-bottom-left-radius: 20px !important;
 }
 
-html[dir=ltr] .al-rounded-end-20 {
+html:not([dir]) .al-rounded-end-20, html[dir=""] .al-rounded-end-20, html[dir=ltr] .al-rounded-end-20 {
   border-top-right-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
 }
 
-html[dir=ltr] .al-rounded-end-top-20 {
+html:not([dir]) .al-rounded-end-top-20, html[dir=""] .al-rounded-end-top-20, html[dir=ltr] .al-rounded-end-top-20 {
   border-top-right-radius: 20px !important;
 }
 
-html[dir=ltr] .al-rounded-end-bottom-20 {
+html:not([dir]) .al-rounded-end-bottom-20, html[dir=""] .al-rounded-end-bottom-20, html[dir=ltr] .al-rounded-end-bottom-20 {
   border-bottom-right-radius: 20px !important;
 }
 
-html[dir=ltr] .al-rounded-start-24 {
+html:not([dir]) .al-rounded-start-24, html[dir=""] .al-rounded-start-24, html[dir=ltr] .al-rounded-start-24 {
   border-top-left-radius: 24px !important;
   border-bottom-left-radius: 24px !important;
 }
 
-html[dir=ltr] .al-rounded-start-top-24 {
+html:not([dir]) .al-rounded-start-top-24, html[dir=""] .al-rounded-start-top-24, html[dir=ltr] .al-rounded-start-top-24 {
   border-top-left-radius: 24px !important;
 }
 
-html[dir=ltr] .al-rounded-start-bottom-24 {
+html:not([dir]) .al-rounded-start-bottom-24, html[dir=""] .al-rounded-start-bottom-24, html[dir=ltr] .al-rounded-start-bottom-24 {
   border-bottom-left-radius: 24px !important;
 }
 
-html[dir=ltr] .al-rounded-end-24 {
+html:not([dir]) .al-rounded-end-24, html[dir=""] .al-rounded-end-24, html[dir=ltr] .al-rounded-end-24 {
   border-top-right-radius: 24px !important;
   border-bottom-right-radius: 24px !important;
 }
 
-html[dir=ltr] .al-rounded-end-top-24 {
+html:not([dir]) .al-rounded-end-top-24, html[dir=""] .al-rounded-end-top-24, html[dir=ltr] .al-rounded-end-top-24 {
   border-top-right-radius: 24px !important;
 }
 
-html[dir=ltr] .al-rounded-end-bottom-24 {
+html:not([dir]) .al-rounded-end-bottom-24, html[dir=""] .al-rounded-end-bottom-24, html[dir=ltr] .al-rounded-end-bottom-24 {
   border-bottom-right-radius: 24px !important;
 }
 
-html[dir=ltr] .al-rounded-start-32 {
+html:not([dir]) .al-rounded-start-32, html[dir=""] .al-rounded-start-32, html[dir=ltr] .al-rounded-start-32 {
   border-top-left-radius: 32px !important;
   border-bottom-left-radius: 32px !important;
 }
 
-html[dir=ltr] .al-rounded-start-top-32 {
+html:not([dir]) .al-rounded-start-top-32, html[dir=""] .al-rounded-start-top-32, html[dir=ltr] .al-rounded-start-top-32 {
   border-top-left-radius: 32px !important;
 }
 
-html[dir=ltr] .al-rounded-start-bottom-32 {
+html:not([dir]) .al-rounded-start-bottom-32, html[dir=""] .al-rounded-start-bottom-32, html[dir=ltr] .al-rounded-start-bottom-32 {
   border-bottom-left-radius: 32px !important;
 }
 
-html[dir=ltr] .al-rounded-end-32 {
+html:not([dir]) .al-rounded-end-32, html[dir=""] .al-rounded-end-32, html[dir=ltr] .al-rounded-end-32 {
   border-top-right-radius: 32px !important;
   border-bottom-right-radius: 32px !important;
 }
 
-html[dir=ltr] .al-rounded-end-top-32 {
+html:not([dir]) .al-rounded-end-top-32, html[dir=""] .al-rounded-end-top-32, html[dir=ltr] .al-rounded-end-top-32 {
   border-top-right-radius: 32px !important;
 }
 
-html[dir=ltr] .al-rounded-end-bottom-32 {
+html:not([dir]) .al-rounded-end-bottom-32, html[dir=""] .al-rounded-end-bottom-32, html[dir=ltr] .al-rounded-end-bottom-32 {
   border-bottom-right-radius: 32px !important;
 }
 
-html[dir=ltr] .al-rounded-start-48 {
+html:not([dir]) .al-rounded-start-48, html[dir=""] .al-rounded-start-48, html[dir=ltr] .al-rounded-start-48 {
   border-top-left-radius: 48px !important;
   border-bottom-left-radius: 48px !important;
 }
 
-html[dir=ltr] .al-rounded-start-top-48 {
+html:not([dir]) .al-rounded-start-top-48, html[dir=""] .al-rounded-start-top-48, html[dir=ltr] .al-rounded-start-top-48 {
   border-top-left-radius: 48px !important;
 }
 
-html[dir=ltr] .al-rounded-start-bottom-48 {
+html:not([dir]) .al-rounded-start-bottom-48, html[dir=""] .al-rounded-start-bottom-48, html[dir=ltr] .al-rounded-start-bottom-48 {
   border-bottom-left-radius: 48px !important;
 }
 
-html[dir=ltr] .al-rounded-end-48 {
+html:not([dir]) .al-rounded-end-48, html[dir=""] .al-rounded-end-48, html[dir=ltr] .al-rounded-end-48 {
   border-top-right-radius: 48px !important;
   border-bottom-right-radius: 48px !important;
 }
 
-html[dir=ltr] .al-rounded-end-top-48 {
+html:not([dir]) .al-rounded-end-top-48, html[dir=""] .al-rounded-end-top-48, html[dir=ltr] .al-rounded-end-top-48 {
   border-top-right-radius: 48px !important;
 }
 
-html[dir=ltr] .al-rounded-end-bottom-48 {
+html:not([dir]) .al-rounded-end-bottom-48, html[dir=""] .al-rounded-end-bottom-48, html[dir=ltr] .al-rounded-end-bottom-48 {
   border-bottom-right-radius: 48px !important;
 }
 
-html[dir=ltr] .al-rounded-start-64 {
+html:not([dir]) .al-rounded-start-64, html[dir=""] .al-rounded-start-64, html[dir=ltr] .al-rounded-start-64 {
   border-top-left-radius: 64px !important;
   border-bottom-left-radius: 64px !important;
 }
 
-html[dir=ltr] .al-rounded-start-top-64 {
+html:not([dir]) .al-rounded-start-top-64, html[dir=""] .al-rounded-start-top-64, html[dir=ltr] .al-rounded-start-top-64 {
   border-top-left-radius: 64px !important;
 }
 
-html[dir=ltr] .al-rounded-start-bottom-64 {
+html:not([dir]) .al-rounded-start-bottom-64, html[dir=""] .al-rounded-start-bottom-64, html[dir=ltr] .al-rounded-start-bottom-64 {
   border-bottom-left-radius: 64px !important;
 }
 
-html[dir=ltr] .al-rounded-end-64 {
+html:not([dir]) .al-rounded-end-64, html[dir=""] .al-rounded-end-64, html[dir=ltr] .al-rounded-end-64 {
   border-top-right-radius: 64px !important;
   border-bottom-right-radius: 64px !important;
 }
 
-html[dir=ltr] .al-rounded-end-top-64 {
+html:not([dir]) .al-rounded-end-top-64, html[dir=""] .al-rounded-end-top-64, html[dir=ltr] .al-rounded-end-top-64 {
   border-top-right-radius: 64px !important;
 }
 
-html[dir=ltr] .al-rounded-end-bottom-64 {
+html:not([dir]) .al-rounded-end-bottom-64, html[dir=""] .al-rounded-end-bottom-64, html[dir=ltr] .al-rounded-end-bottom-64 {
   border-bottom-right-radius: 64px !important;
 }
 
@@ -2316,837 +2316,837 @@ html[dir=rtl] .al-rounded-end-bottom-64 {
 }
 
 /* ===== clip Rtl & Ltr ===== */
-html[dir=ltr] .al-triangle-ts-2 {
+html:not([dir]) .al-triangle-ts-2, html[dir=""] .al-triangle-ts-2, html[dir=ltr] .al-triangle-ts-2 {
   border-top: 2px solid !important;
   border-right: 2px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-2 {
+html:not([dir]) .al-triangle-te-2, html[dir=""] .al-triangle-te-2, html[dir=ltr] .al-triangle-te-2 {
   border-top: 2px solid !important;
   border-left: 2px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-2 {
+html:not([dir]) .al-triangle-be-2, html[dir=""] .al-triangle-be-2, html[dir=ltr] .al-triangle-be-2 {
   border-bottom: 2px solid !important;
   border-left: 2px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-2 {
+html:not([dir]) .al-triangle-bs-2, html[dir=""] .al-triangle-bs-2, html[dir=ltr] .al-triangle-bs-2 {
   border-bottom: 2px solid !important;
   border-right: 2px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-2 {
+html:not([dir]) .al-triangle-e-2, html[dir=""] .al-triangle-e-2, html[dir=ltr] .al-triangle-e-2 {
   border-top: 2px solid transparent !important;
   border-left: 2px solid !important;
   border-bottom: 2px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-2 {
+html:not([dir]) .al-triangle-s-2, html[dir=""] .al-triangle-s-2, html[dir=ltr] .al-triangle-s-2 {
   border-top: 2px solid transparent !important;
   border-right: 2px solid !important;
   border-bottom: 2px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-2 {
+html:not([dir]) .al-trapezoid-s-2, html[dir=""] .al-trapezoid-s-2, html[dir=ltr] .al-trapezoid-s-2 {
   border-right: 2px solid !important;
   border-top: 2px solid transparent !important;
   border-bottom: 2px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-2 {
+html:not([dir]) .al-trapezoid-e-2, html[dir=""] .al-trapezoid-e-2, html[dir=ltr] .al-trapezoid-e-2 {
   border-left: 2px solid !important;
   border-top: 2px solid transparent !important;
   border-bottom: 2px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-3 {
+html:not([dir]) .al-triangle-ts-3, html[dir=""] .al-triangle-ts-3, html[dir=ltr] .al-triangle-ts-3 {
   border-top: 3px solid !important;
   border-right: 3px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-3 {
+html:not([dir]) .al-triangle-te-3, html[dir=""] .al-triangle-te-3, html[dir=ltr] .al-triangle-te-3 {
   border-top: 3px solid !important;
   border-left: 3px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-3 {
+html:not([dir]) .al-triangle-be-3, html[dir=""] .al-triangle-be-3, html[dir=ltr] .al-triangle-be-3 {
   border-bottom: 3px solid !important;
   border-left: 3px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-3 {
+html:not([dir]) .al-triangle-bs-3, html[dir=""] .al-triangle-bs-3, html[dir=ltr] .al-triangle-bs-3 {
   border-bottom: 3px solid !important;
   border-right: 3px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-3 {
+html:not([dir]) .al-triangle-e-3, html[dir=""] .al-triangle-e-3, html[dir=ltr] .al-triangle-e-3 {
   border-top: 3px solid transparent !important;
   border-left: 3px solid !important;
   border-bottom: 3px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-3 {
+html:not([dir]) .al-triangle-s-3, html[dir=""] .al-triangle-s-3, html[dir=ltr] .al-triangle-s-3 {
   border-top: 3px solid transparent !important;
   border-right: 3px solid !important;
   border-bottom: 3px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-3 {
+html:not([dir]) .al-trapezoid-s-3, html[dir=""] .al-trapezoid-s-3, html[dir=ltr] .al-trapezoid-s-3 {
   border-right: 3px solid !important;
   border-top: 3px solid transparent !important;
   border-bottom: 3px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-3 {
+html:not([dir]) .al-trapezoid-e-3, html[dir=""] .al-trapezoid-e-3, html[dir=ltr] .al-trapezoid-e-3 {
   border-left: 3px solid !important;
   border-top: 3px solid transparent !important;
   border-bottom: 3px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-4 {
+html:not([dir]) .al-triangle-ts-4, html[dir=""] .al-triangle-ts-4, html[dir=ltr] .al-triangle-ts-4 {
   border-top: 4px solid !important;
   border-right: 4px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-4 {
+html:not([dir]) .al-triangle-te-4, html[dir=""] .al-triangle-te-4, html[dir=ltr] .al-triangle-te-4 {
   border-top: 4px solid !important;
   border-left: 4px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-4 {
+html:not([dir]) .al-triangle-be-4, html[dir=""] .al-triangle-be-4, html[dir=ltr] .al-triangle-be-4 {
   border-bottom: 4px solid !important;
   border-left: 4px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-4 {
+html:not([dir]) .al-triangle-bs-4, html[dir=""] .al-triangle-bs-4, html[dir=ltr] .al-triangle-bs-4 {
   border-bottom: 4px solid !important;
   border-right: 4px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-4 {
+html:not([dir]) .al-triangle-e-4, html[dir=""] .al-triangle-e-4, html[dir=ltr] .al-triangle-e-4 {
   border-top: 4px solid transparent !important;
   border-left: 4px solid !important;
   border-bottom: 4px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-4 {
+html:not([dir]) .al-triangle-s-4, html[dir=""] .al-triangle-s-4, html[dir=ltr] .al-triangle-s-4 {
   border-top: 4px solid transparent !important;
   border-right: 4px solid !important;
   border-bottom: 4px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-4 {
+html:not([dir]) .al-trapezoid-s-4, html[dir=""] .al-trapezoid-s-4, html[dir=ltr] .al-trapezoid-s-4 {
   border-right: 4px solid !important;
   border-top: 4px solid transparent !important;
   border-bottom: 4px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-4 {
+html:not([dir]) .al-trapezoid-e-4, html[dir=""] .al-trapezoid-e-4, html[dir=ltr] .al-trapezoid-e-4 {
   border-left: 4px solid !important;
   border-top: 4px solid transparent !important;
   border-bottom: 4px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-5 {
+html:not([dir]) .al-triangle-ts-5, html[dir=""] .al-triangle-ts-5, html[dir=ltr] .al-triangle-ts-5 {
   border-top: 5px solid !important;
   border-right: 5px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-5 {
+html:not([dir]) .al-triangle-te-5, html[dir=""] .al-triangle-te-5, html[dir=ltr] .al-triangle-te-5 {
   border-top: 5px solid !important;
   border-left: 5px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-5 {
+html:not([dir]) .al-triangle-be-5, html[dir=""] .al-triangle-be-5, html[dir=ltr] .al-triangle-be-5 {
   border-bottom: 5px solid !important;
   border-left: 5px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-5 {
+html:not([dir]) .al-triangle-bs-5, html[dir=""] .al-triangle-bs-5, html[dir=ltr] .al-triangle-bs-5 {
   border-bottom: 5px solid !important;
   border-right: 5px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-5 {
+html:not([dir]) .al-triangle-e-5, html[dir=""] .al-triangle-e-5, html[dir=ltr] .al-triangle-e-5 {
   border-top: 5px solid transparent !important;
   border-left: 5px solid !important;
   border-bottom: 5px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-5 {
+html:not([dir]) .al-triangle-s-5, html[dir=""] .al-triangle-s-5, html[dir=ltr] .al-triangle-s-5 {
   border-top: 5px solid transparent !important;
   border-right: 5px solid !important;
   border-bottom: 5px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-5 {
+html:not([dir]) .al-trapezoid-s-5, html[dir=""] .al-trapezoid-s-5, html[dir=ltr] .al-trapezoid-s-5 {
   border-right: 5px solid !important;
   border-top: 5px solid transparent !important;
   border-bottom: 5px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-5 {
+html:not([dir]) .al-trapezoid-e-5, html[dir=""] .al-trapezoid-e-5, html[dir=ltr] .al-trapezoid-e-5 {
   border-left: 5px solid !important;
   border-top: 5px solid transparent !important;
   border-bottom: 5px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-6 {
+html:not([dir]) .al-triangle-ts-6, html[dir=""] .al-triangle-ts-6, html[dir=ltr] .al-triangle-ts-6 {
   border-top: 6px solid !important;
   border-right: 6px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-6 {
+html:not([dir]) .al-triangle-te-6, html[dir=""] .al-triangle-te-6, html[dir=ltr] .al-triangle-te-6 {
   border-top: 6px solid !important;
   border-left: 6px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-6 {
+html:not([dir]) .al-triangle-be-6, html[dir=""] .al-triangle-be-6, html[dir=ltr] .al-triangle-be-6 {
   border-bottom: 6px solid !important;
   border-left: 6px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-6 {
+html:not([dir]) .al-triangle-bs-6, html[dir=""] .al-triangle-bs-6, html[dir=ltr] .al-triangle-bs-6 {
   border-bottom: 6px solid !important;
   border-right: 6px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-6 {
+html:not([dir]) .al-triangle-e-6, html[dir=""] .al-triangle-e-6, html[dir=ltr] .al-triangle-e-6 {
   border-top: 6px solid transparent !important;
   border-left: 6px solid !important;
   border-bottom: 6px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-6 {
+html:not([dir]) .al-triangle-s-6, html[dir=""] .al-triangle-s-6, html[dir=ltr] .al-triangle-s-6 {
   border-top: 6px solid transparent !important;
   border-right: 6px solid !important;
   border-bottom: 6px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-6 {
+html:not([dir]) .al-trapezoid-s-6, html[dir=""] .al-trapezoid-s-6, html[dir=ltr] .al-trapezoid-s-6 {
   border-right: 6px solid !important;
   border-top: 6px solid transparent !important;
   border-bottom: 6px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-6 {
+html:not([dir]) .al-trapezoid-e-6, html[dir=""] .al-trapezoid-e-6, html[dir=ltr] .al-trapezoid-e-6 {
   border-left: 6px solid !important;
   border-top: 6px solid transparent !important;
   border-bottom: 6px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-7 {
+html:not([dir]) .al-triangle-ts-7, html[dir=""] .al-triangle-ts-7, html[dir=ltr] .al-triangle-ts-7 {
   border-top: 7px solid !important;
   border-right: 7px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-7 {
+html:not([dir]) .al-triangle-te-7, html[dir=""] .al-triangle-te-7, html[dir=ltr] .al-triangle-te-7 {
   border-top: 7px solid !important;
   border-left: 7px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-7 {
+html:not([dir]) .al-triangle-be-7, html[dir=""] .al-triangle-be-7, html[dir=ltr] .al-triangle-be-7 {
   border-bottom: 7px solid !important;
   border-left: 7px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-7 {
+html:not([dir]) .al-triangle-bs-7, html[dir=""] .al-triangle-bs-7, html[dir=ltr] .al-triangle-bs-7 {
   border-bottom: 7px solid !important;
   border-right: 7px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-7 {
+html:not([dir]) .al-triangle-e-7, html[dir=""] .al-triangle-e-7, html[dir=ltr] .al-triangle-e-7 {
   border-top: 7px solid transparent !important;
   border-left: 7px solid !important;
   border-bottom: 7px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-7 {
+html:not([dir]) .al-triangle-s-7, html[dir=""] .al-triangle-s-7, html[dir=ltr] .al-triangle-s-7 {
   border-top: 7px solid transparent !important;
   border-right: 7px solid !important;
   border-bottom: 7px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-7 {
+html:not([dir]) .al-trapezoid-s-7, html[dir=""] .al-trapezoid-s-7, html[dir=ltr] .al-trapezoid-s-7 {
   border-right: 7px solid !important;
   border-top: 7px solid transparent !important;
   border-bottom: 7px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-7 {
+html:not([dir]) .al-trapezoid-e-7, html[dir=""] .al-trapezoid-e-7, html[dir=ltr] .al-trapezoid-e-7 {
   border-left: 7px solid !important;
   border-top: 7px solid transparent !important;
   border-bottom: 7px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-8 {
+html:not([dir]) .al-triangle-ts-8, html[dir=""] .al-triangle-ts-8, html[dir=ltr] .al-triangle-ts-8 {
   border-top: 8px solid !important;
   border-right: 8px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-8 {
+html:not([dir]) .al-triangle-te-8, html[dir=""] .al-triangle-te-8, html[dir=ltr] .al-triangle-te-8 {
   border-top: 8px solid !important;
   border-left: 8px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-8 {
+html:not([dir]) .al-triangle-be-8, html[dir=""] .al-triangle-be-8, html[dir=ltr] .al-triangle-be-8 {
   border-bottom: 8px solid !important;
   border-left: 8px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-8 {
+html:not([dir]) .al-triangle-bs-8, html[dir=""] .al-triangle-bs-8, html[dir=ltr] .al-triangle-bs-8 {
   border-bottom: 8px solid !important;
   border-right: 8px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-8 {
+html:not([dir]) .al-triangle-e-8, html[dir=""] .al-triangle-e-8, html[dir=ltr] .al-triangle-e-8 {
   border-top: 8px solid transparent !important;
   border-left: 8px solid !important;
   border-bottom: 8px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-8 {
+html:not([dir]) .al-triangle-s-8, html[dir=""] .al-triangle-s-8, html[dir=ltr] .al-triangle-s-8 {
   border-top: 8px solid transparent !important;
   border-right: 8px solid !important;
   border-bottom: 8px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-8 {
+html:not([dir]) .al-trapezoid-s-8, html[dir=""] .al-trapezoid-s-8, html[dir=ltr] .al-trapezoid-s-8 {
   border-right: 8px solid !important;
   border-top: 8px solid transparent !important;
   border-bottom: 8px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-8 {
+html:not([dir]) .al-trapezoid-e-8, html[dir=""] .al-trapezoid-e-8, html[dir=ltr] .al-trapezoid-e-8 {
   border-left: 8px solid !important;
   border-top: 8px solid transparent !important;
   border-bottom: 8px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-9 {
+html:not([dir]) .al-triangle-ts-9, html[dir=""] .al-triangle-ts-9, html[dir=ltr] .al-triangle-ts-9 {
   border-top: 9px solid !important;
   border-right: 9px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-9 {
+html:not([dir]) .al-triangle-te-9, html[dir=""] .al-triangle-te-9, html[dir=ltr] .al-triangle-te-9 {
   border-top: 9px solid !important;
   border-left: 9px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-9 {
+html:not([dir]) .al-triangle-be-9, html[dir=""] .al-triangle-be-9, html[dir=ltr] .al-triangle-be-9 {
   border-bottom: 9px solid !important;
   border-left: 9px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-9 {
+html:not([dir]) .al-triangle-bs-9, html[dir=""] .al-triangle-bs-9, html[dir=ltr] .al-triangle-bs-9 {
   border-bottom: 9px solid !important;
   border-right: 9px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-9 {
+html:not([dir]) .al-triangle-e-9, html[dir=""] .al-triangle-e-9, html[dir=ltr] .al-triangle-e-9 {
   border-top: 9px solid transparent !important;
   border-left: 9px solid !important;
   border-bottom: 9px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-9 {
+html:not([dir]) .al-triangle-s-9, html[dir=""] .al-triangle-s-9, html[dir=ltr] .al-triangle-s-9 {
   border-top: 9px solid transparent !important;
   border-right: 9px solid !important;
   border-bottom: 9px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-9 {
+html:not([dir]) .al-trapezoid-s-9, html[dir=""] .al-trapezoid-s-9, html[dir=ltr] .al-trapezoid-s-9 {
   border-right: 9px solid !important;
   border-top: 9px solid transparent !important;
   border-bottom: 9px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-9 {
+html:not([dir]) .al-trapezoid-e-9, html[dir=""] .al-trapezoid-e-9, html[dir=ltr] .al-trapezoid-e-9 {
   border-left: 9px solid !important;
   border-top: 9px solid transparent !important;
   border-bottom: 9px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-10 {
+html:not([dir]) .al-triangle-ts-10, html[dir=""] .al-triangle-ts-10, html[dir=ltr] .al-triangle-ts-10 {
   border-top: 10px solid !important;
   border-right: 10px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-10 {
+html:not([dir]) .al-triangle-te-10, html[dir=""] .al-triangle-te-10, html[dir=ltr] .al-triangle-te-10 {
   border-top: 10px solid !important;
   border-left: 10px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-10 {
+html:not([dir]) .al-triangle-be-10, html[dir=""] .al-triangle-be-10, html[dir=ltr] .al-triangle-be-10 {
   border-bottom: 10px solid !important;
   border-left: 10px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-10 {
+html:not([dir]) .al-triangle-bs-10, html[dir=""] .al-triangle-bs-10, html[dir=ltr] .al-triangle-bs-10 {
   border-bottom: 10px solid !important;
   border-right: 10px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-10 {
+html:not([dir]) .al-triangle-e-10, html[dir=""] .al-triangle-e-10, html[dir=ltr] .al-triangle-e-10 {
   border-top: 10px solid transparent !important;
   border-left: 10px solid !important;
   border-bottom: 10px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-10 {
+html:not([dir]) .al-triangle-s-10, html[dir=""] .al-triangle-s-10, html[dir=ltr] .al-triangle-s-10 {
   border-top: 10px solid transparent !important;
   border-right: 10px solid !important;
   border-bottom: 10px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-10 {
+html:not([dir]) .al-trapezoid-s-10, html[dir=""] .al-trapezoid-s-10, html[dir=ltr] .al-trapezoid-s-10 {
   border-right: 10px solid !important;
   border-top: 10px solid transparent !important;
   border-bottom: 10px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-10 {
+html:not([dir]) .al-trapezoid-e-10, html[dir=""] .al-trapezoid-e-10, html[dir=ltr] .al-trapezoid-e-10 {
   border-left: 10px solid !important;
   border-top: 10px solid transparent !important;
   border-bottom: 10px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-12 {
+html:not([dir]) .al-triangle-ts-12, html[dir=""] .al-triangle-ts-12, html[dir=ltr] .al-triangle-ts-12 {
   border-top: 12px solid !important;
   border-right: 12px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-12 {
+html:not([dir]) .al-triangle-te-12, html[dir=""] .al-triangle-te-12, html[dir=ltr] .al-triangle-te-12 {
   border-top: 12px solid !important;
   border-left: 12px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-12 {
+html:not([dir]) .al-triangle-be-12, html[dir=""] .al-triangle-be-12, html[dir=ltr] .al-triangle-be-12 {
   border-bottom: 12px solid !important;
   border-left: 12px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-12 {
+html:not([dir]) .al-triangle-bs-12, html[dir=""] .al-triangle-bs-12, html[dir=ltr] .al-triangle-bs-12 {
   border-bottom: 12px solid !important;
   border-right: 12px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-12 {
+html:not([dir]) .al-triangle-e-12, html[dir=""] .al-triangle-e-12, html[dir=ltr] .al-triangle-e-12 {
   border-top: 12px solid transparent !important;
   border-left: 12px solid !important;
   border-bottom: 12px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-12 {
+html:not([dir]) .al-triangle-s-12, html[dir=""] .al-triangle-s-12, html[dir=ltr] .al-triangle-s-12 {
   border-top: 12px solid transparent !important;
   border-right: 12px solid !important;
   border-bottom: 12px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-12 {
+html:not([dir]) .al-trapezoid-s-12, html[dir=""] .al-trapezoid-s-12, html[dir=ltr] .al-trapezoid-s-12 {
   border-right: 12px solid !important;
   border-top: 12px solid transparent !important;
   border-bottom: 12px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-12 {
+html:not([dir]) .al-trapezoid-e-12, html[dir=""] .al-trapezoid-e-12, html[dir=ltr] .al-trapezoid-e-12 {
   border-left: 12px solid !important;
   border-top: 12px solid transparent !important;
   border-bottom: 12px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-16 {
+html:not([dir]) .al-triangle-ts-16, html[dir=""] .al-triangle-ts-16, html[dir=ltr] .al-triangle-ts-16 {
   border-top: 16px solid !important;
   border-right: 16px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-16 {
+html:not([dir]) .al-triangle-te-16, html[dir=""] .al-triangle-te-16, html[dir=ltr] .al-triangle-te-16 {
   border-top: 16px solid !important;
   border-left: 16px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-16 {
+html:not([dir]) .al-triangle-be-16, html[dir=""] .al-triangle-be-16, html[dir=ltr] .al-triangle-be-16 {
   border-bottom: 16px solid !important;
   border-left: 16px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-16 {
+html:not([dir]) .al-triangle-bs-16, html[dir=""] .al-triangle-bs-16, html[dir=ltr] .al-triangle-bs-16 {
   border-bottom: 16px solid !important;
   border-right: 16px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-16 {
+html:not([dir]) .al-triangle-e-16, html[dir=""] .al-triangle-e-16, html[dir=ltr] .al-triangle-e-16 {
   border-top: 16px solid transparent !important;
   border-left: 16px solid !important;
   border-bottom: 16px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-16 {
+html:not([dir]) .al-triangle-s-16, html[dir=""] .al-triangle-s-16, html[dir=ltr] .al-triangle-s-16 {
   border-top: 16px solid transparent !important;
   border-right: 16px solid !important;
   border-bottom: 16px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-16 {
+html:not([dir]) .al-trapezoid-s-16, html[dir=""] .al-trapezoid-s-16, html[dir=ltr] .al-trapezoid-s-16 {
   border-right: 16px solid !important;
   border-top: 16px solid transparent !important;
   border-bottom: 16px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-16 {
+html:not([dir]) .al-trapezoid-e-16, html[dir=""] .al-trapezoid-e-16, html[dir=ltr] .al-trapezoid-e-16 {
   border-left: 16px solid !important;
   border-top: 16px solid transparent !important;
   border-bottom: 16px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-20 {
+html:not([dir]) .al-triangle-ts-20, html[dir=""] .al-triangle-ts-20, html[dir=ltr] .al-triangle-ts-20 {
   border-top: 20px solid !important;
   border-right: 20px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-20 {
+html:not([dir]) .al-triangle-te-20, html[dir=""] .al-triangle-te-20, html[dir=ltr] .al-triangle-te-20 {
   border-top: 20px solid !important;
   border-left: 20px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-20 {
+html:not([dir]) .al-triangle-be-20, html[dir=""] .al-triangle-be-20, html[dir=ltr] .al-triangle-be-20 {
   border-bottom: 20px solid !important;
   border-left: 20px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-20 {
+html:not([dir]) .al-triangle-bs-20, html[dir=""] .al-triangle-bs-20, html[dir=ltr] .al-triangle-bs-20 {
   border-bottom: 20px solid !important;
   border-right: 20px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-20 {
+html:not([dir]) .al-triangle-e-20, html[dir=""] .al-triangle-e-20, html[dir=ltr] .al-triangle-e-20 {
   border-top: 20px solid transparent !important;
   border-left: 20px solid !important;
   border-bottom: 20px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-20 {
+html:not([dir]) .al-triangle-s-20, html[dir=""] .al-triangle-s-20, html[dir=ltr] .al-triangle-s-20 {
   border-top: 20px solid transparent !important;
   border-right: 20px solid !important;
   border-bottom: 20px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-20 {
+html:not([dir]) .al-trapezoid-s-20, html[dir=""] .al-trapezoid-s-20, html[dir=ltr] .al-trapezoid-s-20 {
   border-right: 20px solid !important;
   border-top: 20px solid transparent !important;
   border-bottom: 20px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-20 {
+html:not([dir]) .al-trapezoid-e-20, html[dir=""] .al-trapezoid-e-20, html[dir=ltr] .al-trapezoid-e-20 {
   border-left: 20px solid !important;
   border-top: 20px solid transparent !important;
   border-bottom: 20px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-24 {
+html:not([dir]) .al-triangle-ts-24, html[dir=""] .al-triangle-ts-24, html[dir=ltr] .al-triangle-ts-24 {
   border-top: 24px solid !important;
   border-right: 24px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-24 {
+html:not([dir]) .al-triangle-te-24, html[dir=""] .al-triangle-te-24, html[dir=ltr] .al-triangle-te-24 {
   border-top: 24px solid !important;
   border-left: 24px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-24 {
+html:not([dir]) .al-triangle-be-24, html[dir=""] .al-triangle-be-24, html[dir=ltr] .al-triangle-be-24 {
   border-bottom: 24px solid !important;
   border-left: 24px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-24 {
+html:not([dir]) .al-triangle-bs-24, html[dir=""] .al-triangle-bs-24, html[dir=ltr] .al-triangle-bs-24 {
   border-bottom: 24px solid !important;
   border-right: 24px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-24 {
+html:not([dir]) .al-triangle-e-24, html[dir=""] .al-triangle-e-24, html[dir=ltr] .al-triangle-e-24 {
   border-top: 24px solid transparent !important;
   border-left: 24px solid !important;
   border-bottom: 24px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-24 {
+html:not([dir]) .al-triangle-s-24, html[dir=""] .al-triangle-s-24, html[dir=ltr] .al-triangle-s-24 {
   border-top: 24px solid transparent !important;
   border-right: 24px solid !important;
   border-bottom: 24px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-24 {
+html:not([dir]) .al-trapezoid-s-24, html[dir=""] .al-trapezoid-s-24, html[dir=ltr] .al-trapezoid-s-24 {
   border-right: 24px solid !important;
   border-top: 24px solid transparent !important;
   border-bottom: 24px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-24 {
+html:not([dir]) .al-trapezoid-e-24, html[dir=""] .al-trapezoid-e-24, html[dir=ltr] .al-trapezoid-e-24 {
   border-left: 24px solid !important;
   border-top: 24px solid transparent !important;
   border-bottom: 24px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-32 {
+html:not([dir]) .al-triangle-ts-32, html[dir=""] .al-triangle-ts-32, html[dir=ltr] .al-triangle-ts-32 {
   border-top: 32px solid !important;
   border-right: 32px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-32 {
+html:not([dir]) .al-triangle-te-32, html[dir=""] .al-triangle-te-32, html[dir=ltr] .al-triangle-te-32 {
   border-top: 32px solid !important;
   border-left: 32px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-32 {
+html:not([dir]) .al-triangle-be-32, html[dir=""] .al-triangle-be-32, html[dir=ltr] .al-triangle-be-32 {
   border-bottom: 32px solid !important;
   border-left: 32px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-32 {
+html:not([dir]) .al-triangle-bs-32, html[dir=""] .al-triangle-bs-32, html[dir=ltr] .al-triangle-bs-32 {
   border-bottom: 32px solid !important;
   border-right: 32px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-32 {
+html:not([dir]) .al-triangle-e-32, html[dir=""] .al-triangle-e-32, html[dir=ltr] .al-triangle-e-32 {
   border-top: 32px solid transparent !important;
   border-left: 32px solid !important;
   border-bottom: 32px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-32 {
+html:not([dir]) .al-triangle-s-32, html[dir=""] .al-triangle-s-32, html[dir=ltr] .al-triangle-s-32 {
   border-top: 32px solid transparent !important;
   border-right: 32px solid !important;
   border-bottom: 32px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-32 {
+html:not([dir]) .al-trapezoid-s-32, html[dir=""] .al-trapezoid-s-32, html[dir=ltr] .al-trapezoid-s-32 {
   border-right: 32px solid !important;
   border-top: 32px solid transparent !important;
   border-bottom: 32px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-32 {
+html:not([dir]) .al-trapezoid-e-32, html[dir=""] .al-trapezoid-e-32, html[dir=ltr] .al-trapezoid-e-32 {
   border-left: 32px solid !important;
   border-top: 32px solid transparent !important;
   border-bottom: 32px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-48 {
+html:not([dir]) .al-triangle-ts-48, html[dir=""] .al-triangle-ts-48, html[dir=ltr] .al-triangle-ts-48 {
   border-top: 48px solid !important;
   border-right: 48px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-48 {
+html:not([dir]) .al-triangle-te-48, html[dir=""] .al-triangle-te-48, html[dir=ltr] .al-triangle-te-48 {
   border-top: 48px solid !important;
   border-left: 48px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-48 {
+html:not([dir]) .al-triangle-be-48, html[dir=""] .al-triangle-be-48, html[dir=ltr] .al-triangle-be-48 {
   border-bottom: 48px solid !important;
   border-left: 48px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-48 {
+html:not([dir]) .al-triangle-bs-48, html[dir=""] .al-triangle-bs-48, html[dir=ltr] .al-triangle-bs-48 {
   border-bottom: 48px solid !important;
   border-right: 48px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-48 {
+html:not([dir]) .al-triangle-e-48, html[dir=""] .al-triangle-e-48, html[dir=ltr] .al-triangle-e-48 {
   border-top: 48px solid transparent !important;
   border-left: 48px solid !important;
   border-bottom: 48px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-48 {
+html:not([dir]) .al-triangle-s-48, html[dir=""] .al-triangle-s-48, html[dir=ltr] .al-triangle-s-48 {
   border-top: 48px solid transparent !important;
   border-right: 48px solid !important;
   border-bottom: 48px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-48 {
+html:not([dir]) .al-trapezoid-s-48, html[dir=""] .al-trapezoid-s-48, html[dir=ltr] .al-trapezoid-s-48 {
   border-right: 48px solid !important;
   border-top: 48px solid transparent !important;
   border-bottom: 48px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-48 {
+html:not([dir]) .al-trapezoid-e-48, html[dir=""] .al-trapezoid-e-48, html[dir=ltr] .al-trapezoid-e-48 {
   border-left: 48px solid !important;
   border-top: 48px solid transparent !important;
   border-bottom: 48px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-64 {
+html:not([dir]) .al-triangle-ts-64, html[dir=""] .al-triangle-ts-64, html[dir=ltr] .al-triangle-ts-64 {
   border-top: 64px solid !important;
   border-right: 64px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-64 {
+html:not([dir]) .al-triangle-te-64, html[dir=""] .al-triangle-te-64, html[dir=ltr] .al-triangle-te-64 {
   border-top: 64px solid !important;
   border-left: 64px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-64 {
+html:not([dir]) .al-triangle-be-64, html[dir=""] .al-triangle-be-64, html[dir=ltr] .al-triangle-be-64 {
   border-bottom: 64px solid !important;
   border-left: 64px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-64 {
+html:not([dir]) .al-triangle-bs-64, html[dir=""] .al-triangle-bs-64, html[dir=ltr] .al-triangle-bs-64 {
   border-bottom: 64px solid !important;
   border-right: 64px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-64 {
+html:not([dir]) .al-triangle-e-64, html[dir=""] .al-triangle-e-64, html[dir=ltr] .al-triangle-e-64 {
   border-top: 64px solid transparent !important;
   border-left: 64px solid !important;
   border-bottom: 64px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-64 {
+html:not([dir]) .al-triangle-s-64, html[dir=""] .al-triangle-s-64, html[dir=ltr] .al-triangle-s-64 {
   border-top: 64px solid transparent !important;
   border-right: 64px solid !important;
   border-bottom: 64px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-64 {
+html:not([dir]) .al-trapezoid-s-64, html[dir=""] .al-trapezoid-s-64, html[dir=ltr] .al-trapezoid-s-64 {
   border-right: 64px solid !important;
   border-top: 64px solid transparent !important;
   border-bottom: 64px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-64 {
+html:not([dir]) .al-trapezoid-e-64, html[dir=""] .al-trapezoid-e-64, html[dir=ltr] .al-trapezoid-e-64 {
   border-left: 64px solid !important;
   border-top: 64px solid transparent !important;
   border-bottom: 64px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-80 {
+html:not([dir]) .al-triangle-ts-80, html[dir=""] .al-triangle-ts-80, html[dir=ltr] .al-triangle-ts-80 {
   border-top: 80px solid !important;
   border-right: 80px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-80 {
+html:not([dir]) .al-triangle-te-80, html[dir=""] .al-triangle-te-80, html[dir=ltr] .al-triangle-te-80 {
   border-top: 80px solid !important;
   border-left: 80px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-80 {
+html:not([dir]) .al-triangle-be-80, html[dir=""] .al-triangle-be-80, html[dir=ltr] .al-triangle-be-80 {
   border-bottom: 80px solid !important;
   border-left: 80px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-80 {
+html:not([dir]) .al-triangle-bs-80, html[dir=""] .al-triangle-bs-80, html[dir=ltr] .al-triangle-bs-80 {
   border-bottom: 80px solid !important;
   border-right: 80px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-80 {
+html:not([dir]) .al-triangle-e-80, html[dir=""] .al-triangle-e-80, html[dir=ltr] .al-triangle-e-80 {
   border-top: 80px solid transparent !important;
   border-left: 80px solid !important;
   border-bottom: 80px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-80 {
+html:not([dir]) .al-triangle-s-80, html[dir=""] .al-triangle-s-80, html[dir=ltr] .al-triangle-s-80 {
   border-top: 80px solid transparent !important;
   border-right: 80px solid !important;
   border-bottom: 80px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-80 {
+html:not([dir]) .al-trapezoid-s-80, html[dir=""] .al-trapezoid-s-80, html[dir=ltr] .al-trapezoid-s-80 {
   border-right: 80px solid !important;
   border-top: 80px solid transparent !important;
   border-bottom: 80px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-80 {
+html:not([dir]) .al-trapezoid-e-80, html[dir=""] .al-trapezoid-e-80, html[dir=ltr] .al-trapezoid-e-80 {
   border-left: 80px solid !important;
   border-top: 80px solid transparent !important;
   border-bottom: 80px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-96 {
+html:not([dir]) .al-triangle-ts-96, html[dir=""] .al-triangle-ts-96, html[dir=ltr] .al-triangle-ts-96 {
   border-top: 96px solid !important;
   border-right: 96px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-96 {
+html:not([dir]) .al-triangle-te-96, html[dir=""] .al-triangle-te-96, html[dir=ltr] .al-triangle-te-96 {
   border-top: 96px solid !important;
   border-left: 96px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-96 {
+html:not([dir]) .al-triangle-be-96, html[dir=""] .al-triangle-be-96, html[dir=ltr] .al-triangle-be-96 {
   border-bottom: 96px solid !important;
   border-left: 96px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-96 {
+html:not([dir]) .al-triangle-bs-96, html[dir=""] .al-triangle-bs-96, html[dir=ltr] .al-triangle-bs-96 {
   border-bottom: 96px solid !important;
   border-right: 96px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-96 {
+html:not([dir]) .al-triangle-e-96, html[dir=""] .al-triangle-e-96, html[dir=ltr] .al-triangle-e-96 {
   border-top: 96px solid transparent !important;
   border-left: 96px solid !important;
   border-bottom: 96px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-96 {
+html:not([dir]) .al-triangle-s-96, html[dir=""] .al-triangle-s-96, html[dir=ltr] .al-triangle-s-96 {
   border-top: 96px solid transparent !important;
   border-right: 96px solid !important;
   border-bottom: 96px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-96 {
+html:not([dir]) .al-trapezoid-s-96, html[dir=""] .al-trapezoid-s-96, html[dir=ltr] .al-trapezoid-s-96 {
   border-right: 96px solid !important;
   border-top: 96px solid transparent !important;
   border-bottom: 96px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-96 {
+html:not([dir]) .al-trapezoid-e-96, html[dir=""] .al-trapezoid-e-96, html[dir=ltr] .al-trapezoid-e-96 {
   border-left: 96px solid !important;
   border-top: 96px solid transparent !important;
   border-bottom: 96px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-ts-112 {
+html:not([dir]) .al-triangle-ts-112, html[dir=""] .al-triangle-ts-112, html[dir=ltr] .al-triangle-ts-112 {
   border-top: 112px solid !important;
   border-right: 112px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-te-112 {
+html:not([dir]) .al-triangle-te-112, html[dir=""] .al-triangle-te-112, html[dir=ltr] .al-triangle-te-112 {
   border-top: 112px solid !important;
   border-left: 112px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-be-112 {
+html:not([dir]) .al-triangle-be-112, html[dir=""] .al-triangle-be-112, html[dir=ltr] .al-triangle-be-112 {
   border-bottom: 112px solid !important;
   border-left: 112px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-bs-112 {
+html:not([dir]) .al-triangle-bs-112, html[dir=""] .al-triangle-bs-112, html[dir=ltr] .al-triangle-bs-112 {
   border-bottom: 112px solid !important;
   border-right: 112px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-e-112 {
+html:not([dir]) .al-triangle-e-112, html[dir=""] .al-triangle-e-112, html[dir=ltr] .al-triangle-e-112 {
   border-top: 112px solid transparent !important;
   border-left: 112px solid !important;
   border-bottom: 112px solid transparent !important;
 }
 
-html[dir=ltr] .al-triangle-s-112 {
+html:not([dir]) .al-triangle-s-112, html[dir=""] .al-triangle-s-112, html[dir=ltr] .al-triangle-s-112 {
   border-top: 112px solid transparent !important;
   border-right: 112px solid !important;
   border-bottom: 112px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-s-112 {
+html:not([dir]) .al-trapezoid-s-112, html[dir=""] .al-trapezoid-s-112, html[dir=ltr] .al-trapezoid-s-112 {
   border-right: 112px solid !important;
   border-top: 112px solid transparent !important;
   border-bottom: 112px solid transparent !important;
 }
 
-html[dir=ltr] .al-trapezoid-e-112 {
+html:not([dir]) .al-trapezoid-e-112, html[dir=""] .al-trapezoid-e-112, html[dir=ltr] .al-trapezoid-e-112 {
   border-left: 112px solid !important;
   border-top: 112px solid transparent !important;
   border-bottom: 112px solid transparent !important;
@@ -7735,1365 +7735,1365 @@ html[dir=rtl] .al-trapezoid-e-112 {
 }
 
 /* ===== clip Rtl & Ltr ===== */
-html[dir=ltr] .al-e-clip-y {
+html:not([dir]) .al-e-clip-y, html[dir=""] .al-e-clip-y, html[dir=ltr] .al-e-clip-y {
   --al-extend-e:50px !important;
   --al-e:16px !important;
 }
 
-html[dir=ltr] .al-s-clip-y {
+html:not([dir]) .al-s-clip-y, html[dir=""] .al-s-clip-y, html[dir=ltr] .al-s-clip-y {
   --al-extend-s:50px !important;
   --al-s:16px !important;
 }
 
-html[dir=ltr] .al-ts {
+html:not([dir]) .al-ts, html[dir=""] .al-ts, html[dir=ltr] .al-ts {
   --al-ts:16px !important;
 }
 
-html[dir=ltr] .al-te {
+html:not([dir]) .al-te, html[dir=""] .al-te, html[dir=ltr] .al-te {
   --al-te:16px !important;
 }
 
-html[dir=ltr] .al-be {
+html:not([dir]) .al-be, html[dir=""] .al-be, html[dir=ltr] .al-be {
   --al-be:16px !important;
 }
 
-html[dir=ltr] .al-bs {
+html:not([dir]) .al-bs, html[dir=""] .al-bs, html[dir=ltr] .al-bs {
   --al-bs:16px !important;
 }
 
-html[dir=ltr] .al-ts-0 {
+html:not([dir]) .al-ts-0, html[dir=""] .al-ts-0, html[dir=ltr] .al-ts-0 {
   --al-ts: 0px !important;
 }
 
-html[dir=ltr] .al-te-0 {
+html:not([dir]) .al-te-0, html[dir=""] .al-te-0, html[dir=ltr] .al-te-0 {
   --al-te: 0px !important;
 }
 
-html[dir=ltr] .al-bs-0 {
+html:not([dir]) .al-bs-0, html[dir=""] .al-bs-0, html[dir=ltr] .al-bs-0 {
   --al-bs: 0px !important;
 }
 
-html[dir=ltr] .al-be-0 {
+html:not([dir]) .al-be-0, html[dir=""] .al-be-0, html[dir=ltr] .al-be-0 {
   --al-be: 0px !important;
 }
 
-html[dir=ltr] .al-ts-1 {
+html:not([dir]) .al-ts-1, html[dir=""] .al-ts-1, html[dir=ltr] .al-ts-1 {
   --al-ts: 1px !important;
 }
 
-html[dir=ltr] .al-te-1 {
+html:not([dir]) .al-te-1, html[dir=""] .al-te-1, html[dir=ltr] .al-te-1 {
   --al-te: 1px !important;
 }
 
-html[dir=ltr] .al-bs-1 {
+html:not([dir]) .al-bs-1, html[dir=""] .al-bs-1, html[dir=ltr] .al-bs-1 {
   --al-bs: 1px !important;
 }
 
-html[dir=ltr] .al-be-1 {
+html:not([dir]) .al-be-1, html[dir=""] .al-be-1, html[dir=ltr] .al-be-1 {
   --al-be: 1px !important;
 }
 
-html[dir=ltr] .al-ts-2 {
+html:not([dir]) .al-ts-2, html[dir=""] .al-ts-2, html[dir=ltr] .al-ts-2 {
   --al-ts: 2px !important;
 }
 
-html[dir=ltr] .al-te-2 {
+html:not([dir]) .al-te-2, html[dir=""] .al-te-2, html[dir=ltr] .al-te-2 {
   --al-te: 2px !important;
 }
 
-html[dir=ltr] .al-bs-2 {
+html:not([dir]) .al-bs-2, html[dir=""] .al-bs-2, html[dir=ltr] .al-bs-2 {
   --al-bs: 2px !important;
 }
 
-html[dir=ltr] .al-be-2 {
+html:not([dir]) .al-be-2, html[dir=""] .al-be-2, html[dir=ltr] .al-be-2 {
   --al-be: 2px !important;
 }
 
-html[dir=ltr] .al-ts-3 {
+html:not([dir]) .al-ts-3, html[dir=""] .al-ts-3, html[dir=ltr] .al-ts-3 {
   --al-ts: 3px !important;
 }
 
-html[dir=ltr] .al-te-3 {
+html:not([dir]) .al-te-3, html[dir=""] .al-te-3, html[dir=ltr] .al-te-3 {
   --al-te: 3px !important;
 }
 
-html[dir=ltr] .al-bs-3 {
+html:not([dir]) .al-bs-3, html[dir=""] .al-bs-3, html[dir=ltr] .al-bs-3 {
   --al-bs: 3px !important;
 }
 
-html[dir=ltr] .al-be-3 {
+html:not([dir]) .al-be-3, html[dir=""] .al-be-3, html[dir=ltr] .al-be-3 {
   --al-be: 3px !important;
 }
 
-html[dir=ltr] .al-ts-4 {
+html:not([dir]) .al-ts-4, html[dir=""] .al-ts-4, html[dir=ltr] .al-ts-4 {
   --al-ts: 4px !important;
 }
 
-html[dir=ltr] .al-te-4 {
+html:not([dir]) .al-te-4, html[dir=""] .al-te-4, html[dir=ltr] .al-te-4 {
   --al-te: 4px !important;
 }
 
-html[dir=ltr] .al-bs-4 {
+html:not([dir]) .al-bs-4, html[dir=""] .al-bs-4, html[dir=ltr] .al-bs-4 {
   --al-bs: 4px !important;
 }
 
-html[dir=ltr] .al-be-4 {
+html:not([dir]) .al-be-4, html[dir=""] .al-be-4, html[dir=ltr] .al-be-4 {
   --al-be: 4px !important;
 }
 
-html[dir=ltr] .al-ts-5 {
+html:not([dir]) .al-ts-5, html[dir=""] .al-ts-5, html[dir=ltr] .al-ts-5 {
   --al-ts: 5px !important;
 }
 
-html[dir=ltr] .al-te-5 {
+html:not([dir]) .al-te-5, html[dir=""] .al-te-5, html[dir=ltr] .al-te-5 {
   --al-te: 5px !important;
 }
 
-html[dir=ltr] .al-bs-5 {
+html:not([dir]) .al-bs-5, html[dir=""] .al-bs-5, html[dir=ltr] .al-bs-5 {
   --al-bs: 5px !important;
 }
 
-html[dir=ltr] .al-be-5 {
+html:not([dir]) .al-be-5, html[dir=""] .al-be-5, html[dir=ltr] .al-be-5 {
   --al-be: 5px !important;
 }
 
-html[dir=ltr] .al-ts-6 {
+html:not([dir]) .al-ts-6, html[dir=""] .al-ts-6, html[dir=ltr] .al-ts-6 {
   --al-ts: 6px !important;
 }
 
-html[dir=ltr] .al-te-6 {
+html:not([dir]) .al-te-6, html[dir=""] .al-te-6, html[dir=ltr] .al-te-6 {
   --al-te: 6px !important;
 }
 
-html[dir=ltr] .al-bs-6 {
+html:not([dir]) .al-bs-6, html[dir=""] .al-bs-6, html[dir=ltr] .al-bs-6 {
   --al-bs: 6px !important;
 }
 
-html[dir=ltr] .al-be-6 {
+html:not([dir]) .al-be-6, html[dir=""] .al-be-6, html[dir=ltr] .al-be-6 {
   --al-be: 6px !important;
 }
 
-html[dir=ltr] .al-ts-7 {
+html:not([dir]) .al-ts-7, html[dir=""] .al-ts-7, html[dir=ltr] .al-ts-7 {
   --al-ts: 7px !important;
 }
 
-html[dir=ltr] .al-te-7 {
+html:not([dir]) .al-te-7, html[dir=""] .al-te-7, html[dir=ltr] .al-te-7 {
   --al-te: 7px !important;
 }
 
-html[dir=ltr] .al-bs-7 {
+html:not([dir]) .al-bs-7, html[dir=""] .al-bs-7, html[dir=ltr] .al-bs-7 {
   --al-bs: 7px !important;
 }
 
-html[dir=ltr] .al-be-7 {
+html:not([dir]) .al-be-7, html[dir=""] .al-be-7, html[dir=ltr] .al-be-7 {
   --al-be: 7px !important;
 }
 
-html[dir=ltr] .al-ts-8 {
+html:not([dir]) .al-ts-8, html[dir=""] .al-ts-8, html[dir=ltr] .al-ts-8 {
   --al-ts: 8px !important;
 }
 
-html[dir=ltr] .al-te-8 {
+html:not([dir]) .al-te-8, html[dir=""] .al-te-8, html[dir=ltr] .al-te-8 {
   --al-te: 8px !important;
 }
 
-html[dir=ltr] .al-bs-8 {
+html:not([dir]) .al-bs-8, html[dir=""] .al-bs-8, html[dir=ltr] .al-bs-8 {
   --al-bs: 8px !important;
 }
 
-html[dir=ltr] .al-be-8 {
+html:not([dir]) .al-be-8, html[dir=""] .al-be-8, html[dir=ltr] .al-be-8 {
   --al-be: 8px !important;
 }
 
-html[dir=ltr] .al-ts-9 {
+html:not([dir]) .al-ts-9, html[dir=""] .al-ts-9, html[dir=ltr] .al-ts-9 {
   --al-ts: 9px !important;
 }
 
-html[dir=ltr] .al-te-9 {
+html:not([dir]) .al-te-9, html[dir=""] .al-te-9, html[dir=ltr] .al-te-9 {
   --al-te: 9px !important;
 }
 
-html[dir=ltr] .al-bs-9 {
+html:not([dir]) .al-bs-9, html[dir=""] .al-bs-9, html[dir=ltr] .al-bs-9 {
   --al-bs: 9px !important;
 }
 
-html[dir=ltr] .al-be-9 {
+html:not([dir]) .al-be-9, html[dir=""] .al-be-9, html[dir=ltr] .al-be-9 {
   --al-be: 9px !important;
 }
 
-html[dir=ltr] .al-ts-10 {
+html:not([dir]) .al-ts-10, html[dir=""] .al-ts-10, html[dir=ltr] .al-ts-10 {
   --al-ts: 10px !important;
 }
 
-html[dir=ltr] .al-te-10 {
+html:not([dir]) .al-te-10, html[dir=""] .al-te-10, html[dir=ltr] .al-te-10 {
   --al-te: 10px !important;
 }
 
-html[dir=ltr] .al-bs-10 {
+html:not([dir]) .al-bs-10, html[dir=""] .al-bs-10, html[dir=ltr] .al-bs-10 {
   --al-bs: 10px !important;
 }
 
-html[dir=ltr] .al-be-10 {
+html:not([dir]) .al-be-10, html[dir=""] .al-be-10, html[dir=ltr] .al-be-10 {
   --al-be: 10px !important;
 }
 
-html[dir=ltr] .al-ts-11 {
+html:not([dir]) .al-ts-11, html[dir=""] .al-ts-11, html[dir=ltr] .al-ts-11 {
   --al-ts: 11px !important;
 }
 
-html[dir=ltr] .al-te-11 {
+html:not([dir]) .al-te-11, html[dir=""] .al-te-11, html[dir=ltr] .al-te-11 {
   --al-te: 11px !important;
 }
 
-html[dir=ltr] .al-bs-11 {
+html:not([dir]) .al-bs-11, html[dir=""] .al-bs-11, html[dir=ltr] .al-bs-11 {
   --al-bs: 11px !important;
 }
 
-html[dir=ltr] .al-be-11 {
+html:not([dir]) .al-be-11, html[dir=""] .al-be-11, html[dir=ltr] .al-be-11 {
   --al-be: 11px !important;
 }
 
-html[dir=ltr] .al-ts-12 {
+html:not([dir]) .al-ts-12, html[dir=""] .al-ts-12, html[dir=ltr] .al-ts-12 {
   --al-ts: 12px !important;
 }
 
-html[dir=ltr] .al-te-12 {
+html:not([dir]) .al-te-12, html[dir=""] .al-te-12, html[dir=ltr] .al-te-12 {
   --al-te: 12px !important;
 }
 
-html[dir=ltr] .al-bs-12 {
+html:not([dir]) .al-bs-12, html[dir=""] .al-bs-12, html[dir=ltr] .al-bs-12 {
   --al-bs: 12px !important;
 }
 
-html[dir=ltr] .al-be-12 {
+html:not([dir]) .al-be-12, html[dir=""] .al-be-12, html[dir=ltr] .al-be-12 {
   --al-be: 12px !important;
 }
 
-html[dir=ltr] .al-ts-13 {
+html:not([dir]) .al-ts-13, html[dir=""] .al-ts-13, html[dir=ltr] .al-ts-13 {
   --al-ts: 13px !important;
 }
 
-html[dir=ltr] .al-te-13 {
+html:not([dir]) .al-te-13, html[dir=""] .al-te-13, html[dir=ltr] .al-te-13 {
   --al-te: 13px !important;
 }
 
-html[dir=ltr] .al-bs-13 {
+html:not([dir]) .al-bs-13, html[dir=""] .al-bs-13, html[dir=ltr] .al-bs-13 {
   --al-bs: 13px !important;
 }
 
-html[dir=ltr] .al-be-13 {
+html:not([dir]) .al-be-13, html[dir=""] .al-be-13, html[dir=ltr] .al-be-13 {
   --al-be: 13px !important;
 }
 
-html[dir=ltr] .al-ts-14 {
+html:not([dir]) .al-ts-14, html[dir=""] .al-ts-14, html[dir=ltr] .al-ts-14 {
   --al-ts: 14px !important;
 }
 
-html[dir=ltr] .al-te-14 {
+html:not([dir]) .al-te-14, html[dir=""] .al-te-14, html[dir=ltr] .al-te-14 {
   --al-te: 14px !important;
 }
 
-html[dir=ltr] .al-bs-14 {
+html:not([dir]) .al-bs-14, html[dir=""] .al-bs-14, html[dir=ltr] .al-bs-14 {
   --al-bs: 14px !important;
 }
 
-html[dir=ltr] .al-be-14 {
+html:not([dir]) .al-be-14, html[dir=""] .al-be-14, html[dir=ltr] .al-be-14 {
   --al-be: 14px !important;
 }
 
-html[dir=ltr] .al-ts-15 {
+html:not([dir]) .al-ts-15, html[dir=""] .al-ts-15, html[dir=ltr] .al-ts-15 {
   --al-ts: 15px !important;
 }
 
-html[dir=ltr] .al-te-15 {
+html:not([dir]) .al-te-15, html[dir=""] .al-te-15, html[dir=ltr] .al-te-15 {
   --al-te: 15px !important;
 }
 
-html[dir=ltr] .al-bs-15 {
+html:not([dir]) .al-bs-15, html[dir=""] .al-bs-15, html[dir=ltr] .al-bs-15 {
   --al-bs: 15px !important;
 }
 
-html[dir=ltr] .al-be-15 {
+html:not([dir]) .al-be-15, html[dir=""] .al-be-15, html[dir=ltr] .al-be-15 {
   --al-be: 15px !important;
 }
 
-html[dir=ltr] .al-ts-16 {
+html:not([dir]) .al-ts-16, html[dir=""] .al-ts-16, html[dir=ltr] .al-ts-16 {
   --al-ts: 16px !important;
 }
 
-html[dir=ltr] .al-te-16 {
+html:not([dir]) .al-te-16, html[dir=""] .al-te-16, html[dir=ltr] .al-te-16 {
   --al-te: 16px !important;
 }
 
-html[dir=ltr] .al-bs-16 {
+html:not([dir]) .al-bs-16, html[dir=""] .al-bs-16, html[dir=ltr] .al-bs-16 {
   --al-bs: 16px !important;
 }
 
-html[dir=ltr] .al-be-16 {
+html:not([dir]) .al-be-16, html[dir=""] .al-be-16, html[dir=ltr] .al-be-16 {
   --al-be: 16px !important;
 }
 
-html[dir=ltr] .al-ts-20 {
+html:not([dir]) .al-ts-20, html[dir=""] .al-ts-20, html[dir=ltr] .al-ts-20 {
   --al-ts: 20px !important;
 }
 
-html[dir=ltr] .al-te-20 {
+html:not([dir]) .al-te-20, html[dir=""] .al-te-20, html[dir=ltr] .al-te-20 {
   --al-te: 20px !important;
 }
 
-html[dir=ltr] .al-bs-20 {
+html:not([dir]) .al-bs-20, html[dir=""] .al-bs-20, html[dir=ltr] .al-bs-20 {
   --al-bs: 20px !important;
 }
 
-html[dir=ltr] .al-be-20 {
+html:not([dir]) .al-be-20, html[dir=""] .al-be-20, html[dir=ltr] .al-be-20 {
   --al-be: 20px !important;
 }
 
-html[dir=ltr] .al-ts-24 {
+html:not([dir]) .al-ts-24, html[dir=""] .al-ts-24, html[dir=ltr] .al-ts-24 {
   --al-ts: 24px !important;
 }
 
-html[dir=ltr] .al-te-24 {
+html:not([dir]) .al-te-24, html[dir=""] .al-te-24, html[dir=ltr] .al-te-24 {
   --al-te: 24px !important;
 }
 
-html[dir=ltr] .al-bs-24 {
+html:not([dir]) .al-bs-24, html[dir=""] .al-bs-24, html[dir=ltr] .al-bs-24 {
   --al-bs: 24px !important;
 }
 
-html[dir=ltr] .al-be-24 {
+html:not([dir]) .al-be-24, html[dir=""] .al-be-24, html[dir=ltr] .al-be-24 {
   --al-be: 24px !important;
 }
 
-html[dir=ltr] .al-ts-25 {
+html:not([dir]) .al-ts-25, html[dir=""] .al-ts-25, html[dir=ltr] .al-ts-25 {
   --al-ts: 25px !important;
 }
 
-html[dir=ltr] .al-te-25 {
+html:not([dir]) .al-te-25, html[dir=""] .al-te-25, html[dir=ltr] .al-te-25 {
   --al-te: 25px !important;
 }
 
-html[dir=ltr] .al-bs-25 {
+html:not([dir]) .al-bs-25, html[dir=""] .al-bs-25, html[dir=ltr] .al-bs-25 {
   --al-bs: 25px !important;
 }
 
-html[dir=ltr] .al-be-25 {
+html:not([dir]) .al-be-25, html[dir=""] .al-be-25, html[dir=ltr] .al-be-25 {
   --al-be: 25px !important;
 }
 
-html[dir=ltr] .al-ts-26 {
+html:not([dir]) .al-ts-26, html[dir=""] .al-ts-26, html[dir=ltr] .al-ts-26 {
   --al-ts: 26px !important;
 }
 
-html[dir=ltr] .al-te-26 {
+html:not([dir]) .al-te-26, html[dir=""] .al-te-26, html[dir=ltr] .al-te-26 {
   --al-te: 26px !important;
 }
 
-html[dir=ltr] .al-bs-26 {
+html:not([dir]) .al-bs-26, html[dir=""] .al-bs-26, html[dir=ltr] .al-bs-26 {
   --al-bs: 26px !important;
 }
 
-html[dir=ltr] .al-be-26 {
+html:not([dir]) .al-be-26, html[dir=""] .al-be-26, html[dir=ltr] .al-be-26 {
   --al-be: 26px !important;
 }
 
-html[dir=ltr] .al-ts-28 {
+html:not([dir]) .al-ts-28, html[dir=""] .al-ts-28, html[dir=ltr] .al-ts-28 {
   --al-ts: 28px !important;
 }
 
-html[dir=ltr] .al-te-28 {
+html:not([dir]) .al-te-28, html[dir=""] .al-te-28, html[dir=ltr] .al-te-28 {
   --al-te: 28px !important;
 }
 
-html[dir=ltr] .al-bs-28 {
+html:not([dir]) .al-bs-28, html[dir=""] .al-bs-28, html[dir=ltr] .al-bs-28 {
   --al-bs: 28px !important;
 }
 
-html[dir=ltr] .al-be-28 {
+html:not([dir]) .al-be-28, html[dir=""] .al-be-28, html[dir=ltr] .al-be-28 {
   --al-be: 28px !important;
 }
 
-html[dir=ltr] .al-ts-30 {
+html:not([dir]) .al-ts-30, html[dir=""] .al-ts-30, html[dir=ltr] .al-ts-30 {
   --al-ts: 30px !important;
 }
 
-html[dir=ltr] .al-te-30 {
+html:not([dir]) .al-te-30, html[dir=""] .al-te-30, html[dir=ltr] .al-te-30 {
   --al-te: 30px !important;
 }
 
-html[dir=ltr] .al-bs-30 {
+html:not([dir]) .al-bs-30, html[dir=""] .al-bs-30, html[dir=ltr] .al-bs-30 {
   --al-bs: 30px !important;
 }
 
-html[dir=ltr] .al-be-30 {
+html:not([dir]) .al-be-30, html[dir=""] .al-be-30, html[dir=ltr] .al-be-30 {
   --al-be: 30px !important;
 }
 
-html[dir=ltr] .al-ts-32 {
+html:not([dir]) .al-ts-32, html[dir=""] .al-ts-32, html[dir=ltr] .al-ts-32 {
   --al-ts: 32px !important;
 }
 
-html[dir=ltr] .al-te-32 {
+html:not([dir]) .al-te-32, html[dir=""] .al-te-32, html[dir=ltr] .al-te-32 {
   --al-te: 32px !important;
 }
 
-html[dir=ltr] .al-bs-32 {
+html:not([dir]) .al-bs-32, html[dir=""] .al-bs-32, html[dir=ltr] .al-bs-32 {
   --al-bs: 32px !important;
 }
 
-html[dir=ltr] .al-be-32 {
+html:not([dir]) .al-be-32, html[dir=""] .al-be-32, html[dir=ltr] .al-be-32 {
   --al-be: 32px !important;
 }
 
-html[dir=ltr] .al-ts-34 {
+html:not([dir]) .al-ts-34, html[dir=""] .al-ts-34, html[dir=ltr] .al-ts-34 {
   --al-ts: 34px !important;
 }
 
-html[dir=ltr] .al-te-34 {
+html:not([dir]) .al-te-34, html[dir=""] .al-te-34, html[dir=ltr] .al-te-34 {
   --al-te: 34px !important;
 }
 
-html[dir=ltr] .al-bs-34 {
+html:not([dir]) .al-bs-34, html[dir=""] .al-bs-34, html[dir=ltr] .al-bs-34 {
   --al-bs: 34px !important;
 }
 
-html[dir=ltr] .al-be-34 {
+html:not([dir]) .al-be-34, html[dir=""] .al-be-34, html[dir=ltr] .al-be-34 {
   --al-be: 34px !important;
 }
 
-html[dir=ltr] .al-ts-35 {
+html:not([dir]) .al-ts-35, html[dir=""] .al-ts-35, html[dir=ltr] .al-ts-35 {
   --al-ts: 35px !important;
 }
 
-html[dir=ltr] .al-te-35 {
+html:not([dir]) .al-te-35, html[dir=""] .al-te-35, html[dir=ltr] .al-te-35 {
   --al-te: 35px !important;
 }
 
-html[dir=ltr] .al-bs-35 {
+html:not([dir]) .al-bs-35, html[dir=""] .al-bs-35, html[dir=ltr] .al-bs-35 {
   --al-bs: 35px !important;
 }
 
-html[dir=ltr] .al-be-35 {
+html:not([dir]) .al-be-35, html[dir=""] .al-be-35, html[dir=ltr] .al-be-35 {
   --al-be: 35px !important;
 }
 
-html[dir=ltr] .al-ts-36 {
+html:not([dir]) .al-ts-36, html[dir=""] .al-ts-36, html[dir=ltr] .al-ts-36 {
   --al-ts: 36px !important;
 }
 
-html[dir=ltr] .al-te-36 {
+html:not([dir]) .al-te-36, html[dir=""] .al-te-36, html[dir=ltr] .al-te-36 {
   --al-te: 36px !important;
 }
 
-html[dir=ltr] .al-bs-36 {
+html:not([dir]) .al-bs-36, html[dir=""] .al-bs-36, html[dir=ltr] .al-bs-36 {
   --al-bs: 36px !important;
 }
 
-html[dir=ltr] .al-be-36 {
+html:not([dir]) .al-be-36, html[dir=""] .al-be-36, html[dir=ltr] .al-be-36 {
   --al-be: 36px !important;
 }
 
-html[dir=ltr] .al-ts-48 {
+html:not([dir]) .al-ts-48, html[dir=""] .al-ts-48, html[dir=ltr] .al-ts-48 {
   --al-ts: 48px !important;
 }
 
-html[dir=ltr] .al-te-48 {
+html:not([dir]) .al-te-48, html[dir=""] .al-te-48, html[dir=ltr] .al-te-48 {
   --al-te: 48px !important;
 }
 
-html[dir=ltr] .al-bs-48 {
+html:not([dir]) .al-bs-48, html[dir=""] .al-bs-48, html[dir=ltr] .al-bs-48 {
   --al-bs: 48px !important;
 }
 
-html[dir=ltr] .al-be-48 {
+html:not([dir]) .al-be-48, html[dir=""] .al-be-48, html[dir=ltr] .al-be-48 {
   --al-be: 48px !important;
 }
 
-html[dir=ltr] .al-ts-50 {
+html:not([dir]) .al-ts-50, html[dir=""] .al-ts-50, html[dir=ltr] .al-ts-50 {
   --al-ts: 50px !important;
 }
 
-html[dir=ltr] .al-te-50 {
+html:not([dir]) .al-te-50, html[dir=""] .al-te-50, html[dir=ltr] .al-te-50 {
   --al-te: 50px !important;
 }
 
-html[dir=ltr] .al-bs-50 {
+html:not([dir]) .al-bs-50, html[dir=""] .al-bs-50, html[dir=ltr] .al-bs-50 {
   --al-bs: 50px !important;
 }
 
-html[dir=ltr] .al-be-50 {
+html:not([dir]) .al-be-50, html[dir=""] .al-be-50, html[dir=ltr] .al-be-50 {
   --al-be: 50px !important;
 }
 
-html[dir=ltr] .al-ts-64 {
+html:not([dir]) .al-ts-64, html[dir=""] .al-ts-64, html[dir=ltr] .al-ts-64 {
   --al-ts: 64px !important;
 }
 
-html[dir=ltr] .al-te-64 {
+html:not([dir]) .al-te-64, html[dir=""] .al-te-64, html[dir=ltr] .al-te-64 {
   --al-te: 64px !important;
 }
 
-html[dir=ltr] .al-bs-64 {
+html:not([dir]) .al-bs-64, html[dir=""] .al-bs-64, html[dir=ltr] .al-bs-64 {
   --al-bs: 64px !important;
 }
 
-html[dir=ltr] .al-be-64 {
+html:not([dir]) .al-be-64, html[dir=""] .al-be-64, html[dir=ltr] .al-be-64 {
   --al-be: 64px !important;
 }
 
-html[dir=ltr] .al-ts-75 {
+html:not([dir]) .al-ts-75, html[dir=""] .al-ts-75, html[dir=ltr] .al-ts-75 {
   --al-ts: 75px !important;
 }
 
-html[dir=ltr] .al-te-75 {
+html:not([dir]) .al-te-75, html[dir=""] .al-te-75, html[dir=ltr] .al-te-75 {
   --al-te: 75px !important;
 }
 
-html[dir=ltr] .al-bs-75 {
+html:not([dir]) .al-bs-75, html[dir=""] .al-bs-75, html[dir=ltr] .al-bs-75 {
   --al-bs: 75px !important;
 }
 
-html[dir=ltr] .al-be-75 {
+html:not([dir]) .al-be-75, html[dir=""] .al-be-75, html[dir=ltr] .al-be-75 {
   --al-be: 75px !important;
 }
 
-html[dir=ltr] .al-ts-80 {
+html:not([dir]) .al-ts-80, html[dir=""] .al-ts-80, html[dir=ltr] .al-ts-80 {
   --al-ts: 80px !important;
 }
 
-html[dir=ltr] .al-te-80 {
+html:not([dir]) .al-te-80, html[dir=""] .al-te-80, html[dir=ltr] .al-te-80 {
   --al-te: 80px !important;
 }
 
-html[dir=ltr] .al-bs-80 {
+html:not([dir]) .al-bs-80, html[dir=""] .al-bs-80, html[dir=ltr] .al-bs-80 {
   --al-bs: 80px !important;
 }
 
-html[dir=ltr] .al-be-80 {
+html:not([dir]) .al-be-80, html[dir=""] .al-be-80, html[dir=ltr] .al-be-80 {
   --al-be: 80px !important;
 }
 
-html[dir=ltr] .al-ts-96 {
+html:not([dir]) .al-ts-96, html[dir=""] .al-ts-96, html[dir=ltr] .al-ts-96 {
   --al-ts: 96px !important;
 }
 
-html[dir=ltr] .al-te-96 {
+html:not([dir]) .al-te-96, html[dir=""] .al-te-96, html[dir=ltr] .al-te-96 {
   --al-te: 96px !important;
 }
 
-html[dir=ltr] .al-bs-96 {
+html:not([dir]) .al-bs-96, html[dir=""] .al-bs-96, html[dir=ltr] .al-bs-96 {
   --al-bs: 96px !important;
 }
 
-html[dir=ltr] .al-be-96 {
+html:not([dir]) .al-be-96, html[dir=""] .al-be-96, html[dir=ltr] .al-be-96 {
   --al-be: 96px !important;
 }
 
-html[dir=ltr] .al-ts-112 {
+html:not([dir]) .al-ts-112, html[dir=""] .al-ts-112, html[dir=ltr] .al-ts-112 {
   --al-ts: 112px !important;
 }
 
-html[dir=ltr] .al-te-112 {
+html:not([dir]) .al-te-112, html[dir=""] .al-te-112, html[dir=ltr] .al-te-112 {
   --al-te: 112px !important;
 }
 
-html[dir=ltr] .al-bs-112 {
+html:not([dir]) .al-bs-112, html[dir=""] .al-bs-112, html[dir=ltr] .al-bs-112 {
   --al-bs: 112px !important;
 }
 
-html[dir=ltr] .al-be-112 {
+html:not([dir]) .al-be-112, html[dir=""] .al-be-112, html[dir=ltr] .al-be-112 {
   --al-be: 112px !important;
 }
 
-html[dir=ltr] .al-extend-s-0 {
+html:not([dir]) .al-extend-s-0, html[dir=""] .al-extend-s-0, html[dir=ltr] .al-extend-s-0 {
   --al-extend-s: 0px !important;
 }
 
-html[dir=ltr] .al-extend-e-0 {
+html:not([dir]) .al-extend-e-0, html[dir=""] .al-extend-e-0, html[dir=ltr] .al-extend-e-0 {
   --al-extend-e: 0px !important;
 }
 
-html[dir=ltr] .al-s-0 {
+html:not([dir]) .al-s-0, html[dir=""] .al-s-0, html[dir=ltr] .al-s-0 {
   --al-s: 0px !important;
 }
 
-html[dir=ltr] .al-e-0 {
+html:not([dir]) .al-e-0, html[dir=""] .al-e-0, html[dir=ltr] .al-e-0 {
   --al-e: 0px !important;
 }
 
-html[dir=ltr] .al-extend-s-1 {
+html:not([dir]) .al-extend-s-1, html[dir=""] .al-extend-s-1, html[dir=ltr] .al-extend-s-1 {
   --al-extend-s: 1px !important;
 }
 
-html[dir=ltr] .al-extend-e-1 {
+html:not([dir]) .al-extend-e-1, html[dir=""] .al-extend-e-1, html[dir=ltr] .al-extend-e-1 {
   --al-extend-e: 1px !important;
 }
 
-html[dir=ltr] .al-s-1 {
+html:not([dir]) .al-s-1, html[dir=""] .al-s-1, html[dir=ltr] .al-s-1 {
   --al-s: 1px !important;
 }
 
-html[dir=ltr] .al-e-1 {
+html:not([dir]) .al-e-1, html[dir=""] .al-e-1, html[dir=ltr] .al-e-1 {
   --al-e: 1px !important;
 }
 
-html[dir=ltr] .al-extend-s-2 {
+html:not([dir]) .al-extend-s-2, html[dir=""] .al-extend-s-2, html[dir=ltr] .al-extend-s-2 {
   --al-extend-s: 2px !important;
 }
 
-html[dir=ltr] .al-extend-e-2 {
+html:not([dir]) .al-extend-e-2, html[dir=""] .al-extend-e-2, html[dir=ltr] .al-extend-e-2 {
   --al-extend-e: 2px !important;
 }
 
-html[dir=ltr] .al-s-2 {
+html:not([dir]) .al-s-2, html[dir=""] .al-s-2, html[dir=ltr] .al-s-2 {
   --al-s: 2px !important;
 }
 
-html[dir=ltr] .al-e-2 {
+html:not([dir]) .al-e-2, html[dir=""] .al-e-2, html[dir=ltr] .al-e-2 {
   --al-e: 2px !important;
 }
 
-html[dir=ltr] .al-extend-s-3 {
+html:not([dir]) .al-extend-s-3, html[dir=""] .al-extend-s-3, html[dir=ltr] .al-extend-s-3 {
   --al-extend-s: 3px !important;
 }
 
-html[dir=ltr] .al-extend-e-3 {
+html:not([dir]) .al-extend-e-3, html[dir=""] .al-extend-e-3, html[dir=ltr] .al-extend-e-3 {
   --al-extend-e: 3px !important;
 }
 
-html[dir=ltr] .al-s-3 {
+html:not([dir]) .al-s-3, html[dir=""] .al-s-3, html[dir=ltr] .al-s-3 {
   --al-s: 3px !important;
 }
 
-html[dir=ltr] .al-e-3 {
+html:not([dir]) .al-e-3, html[dir=""] .al-e-3, html[dir=ltr] .al-e-3 {
   --al-e: 3px !important;
 }
 
-html[dir=ltr] .al-extend-s-4 {
+html:not([dir]) .al-extend-s-4, html[dir=""] .al-extend-s-4, html[dir=ltr] .al-extend-s-4 {
   --al-extend-s: 4px !important;
 }
 
-html[dir=ltr] .al-extend-e-4 {
+html:not([dir]) .al-extend-e-4, html[dir=""] .al-extend-e-4, html[dir=ltr] .al-extend-e-4 {
   --al-extend-e: 4px !important;
 }
 
-html[dir=ltr] .al-s-4 {
+html:not([dir]) .al-s-4, html[dir=""] .al-s-4, html[dir=ltr] .al-s-4 {
   --al-s: 4px !important;
 }
 
-html[dir=ltr] .al-e-4 {
+html:not([dir]) .al-e-4, html[dir=""] .al-e-4, html[dir=ltr] .al-e-4 {
   --al-e: 4px !important;
 }
 
-html[dir=ltr] .al-extend-s-5 {
+html:not([dir]) .al-extend-s-5, html[dir=""] .al-extend-s-5, html[dir=ltr] .al-extend-s-5 {
   --al-extend-s: 5px !important;
 }
 
-html[dir=ltr] .al-extend-e-5 {
+html:not([dir]) .al-extend-e-5, html[dir=""] .al-extend-e-5, html[dir=ltr] .al-extend-e-5 {
   --al-extend-e: 5px !important;
 }
 
-html[dir=ltr] .al-s-5 {
+html:not([dir]) .al-s-5, html[dir=""] .al-s-5, html[dir=ltr] .al-s-5 {
   --al-s: 5px !important;
 }
 
-html[dir=ltr] .al-e-5 {
+html:not([dir]) .al-e-5, html[dir=""] .al-e-5, html[dir=ltr] .al-e-5 {
   --al-e: 5px !important;
 }
 
-html[dir=ltr] .al-extend-s-6 {
+html:not([dir]) .al-extend-s-6, html[dir=""] .al-extend-s-6, html[dir=ltr] .al-extend-s-6 {
   --al-extend-s: 6px !important;
 }
 
-html[dir=ltr] .al-extend-e-6 {
+html:not([dir]) .al-extend-e-6, html[dir=""] .al-extend-e-6, html[dir=ltr] .al-extend-e-6 {
   --al-extend-e: 6px !important;
 }
 
-html[dir=ltr] .al-s-6 {
+html:not([dir]) .al-s-6, html[dir=""] .al-s-6, html[dir=ltr] .al-s-6 {
   --al-s: 6px !important;
 }
 
-html[dir=ltr] .al-e-6 {
+html:not([dir]) .al-e-6, html[dir=""] .al-e-6, html[dir=ltr] .al-e-6 {
   --al-e: 6px !important;
 }
 
-html[dir=ltr] .al-extend-s-7 {
+html:not([dir]) .al-extend-s-7, html[dir=""] .al-extend-s-7, html[dir=ltr] .al-extend-s-7 {
   --al-extend-s: 7px !important;
 }
 
-html[dir=ltr] .al-extend-e-7 {
+html:not([dir]) .al-extend-e-7, html[dir=""] .al-extend-e-7, html[dir=ltr] .al-extend-e-7 {
   --al-extend-e: 7px !important;
 }
 
-html[dir=ltr] .al-s-7 {
+html:not([dir]) .al-s-7, html[dir=""] .al-s-7, html[dir=ltr] .al-s-7 {
   --al-s: 7px !important;
 }
 
-html[dir=ltr] .al-e-7 {
+html:not([dir]) .al-e-7, html[dir=""] .al-e-7, html[dir=ltr] .al-e-7 {
   --al-e: 7px !important;
 }
 
-html[dir=ltr] .al-extend-s-8 {
+html:not([dir]) .al-extend-s-8, html[dir=""] .al-extend-s-8, html[dir=ltr] .al-extend-s-8 {
   --al-extend-s: 8px !important;
 }
 
-html[dir=ltr] .al-extend-e-8 {
+html:not([dir]) .al-extend-e-8, html[dir=""] .al-extend-e-8, html[dir=ltr] .al-extend-e-8 {
   --al-extend-e: 8px !important;
 }
 
-html[dir=ltr] .al-s-8 {
+html:not([dir]) .al-s-8, html[dir=""] .al-s-8, html[dir=ltr] .al-s-8 {
   --al-s: 8px !important;
 }
 
-html[dir=ltr] .al-e-8 {
+html:not([dir]) .al-e-8, html[dir=""] .al-e-8, html[dir=ltr] .al-e-8 {
   --al-e: 8px !important;
 }
 
-html[dir=ltr] .al-extend-s-9 {
+html:not([dir]) .al-extend-s-9, html[dir=""] .al-extend-s-9, html[dir=ltr] .al-extend-s-9 {
   --al-extend-s: 9px !important;
 }
 
-html[dir=ltr] .al-extend-e-9 {
+html:not([dir]) .al-extend-e-9, html[dir=""] .al-extend-e-9, html[dir=ltr] .al-extend-e-9 {
   --al-extend-e: 9px !important;
 }
 
-html[dir=ltr] .al-s-9 {
+html:not([dir]) .al-s-9, html[dir=""] .al-s-9, html[dir=ltr] .al-s-9 {
   --al-s: 9px !important;
 }
 
-html[dir=ltr] .al-e-9 {
+html:not([dir]) .al-e-9, html[dir=""] .al-e-9, html[dir=ltr] .al-e-9 {
   --al-e: 9px !important;
 }
 
-html[dir=ltr] .al-extend-s-10 {
+html:not([dir]) .al-extend-s-10, html[dir=""] .al-extend-s-10, html[dir=ltr] .al-extend-s-10 {
   --al-extend-s: 10px !important;
 }
 
-html[dir=ltr] .al-extend-e-10 {
+html:not([dir]) .al-extend-e-10, html[dir=""] .al-extend-e-10, html[dir=ltr] .al-extend-e-10 {
   --al-extend-e: 10px !important;
 }
 
-html[dir=ltr] .al-s-10 {
+html:not([dir]) .al-s-10, html[dir=""] .al-s-10, html[dir=ltr] .al-s-10 {
   --al-s: 10px !important;
 }
 
-html[dir=ltr] .al-e-10 {
+html:not([dir]) .al-e-10, html[dir=""] .al-e-10, html[dir=ltr] .al-e-10 {
   --al-e: 10px !important;
 }
 
-html[dir=ltr] .al-extend-s-11 {
+html:not([dir]) .al-extend-s-11, html[dir=""] .al-extend-s-11, html[dir=ltr] .al-extend-s-11 {
   --al-extend-s: 11px !important;
 }
 
-html[dir=ltr] .al-extend-e-11 {
+html:not([dir]) .al-extend-e-11, html[dir=""] .al-extend-e-11, html[dir=ltr] .al-extend-e-11 {
   --al-extend-e: 11px !important;
 }
 
-html[dir=ltr] .al-s-11 {
+html:not([dir]) .al-s-11, html[dir=""] .al-s-11, html[dir=ltr] .al-s-11 {
   --al-s: 11px !important;
 }
 
-html[dir=ltr] .al-e-11 {
+html:not([dir]) .al-e-11, html[dir=""] .al-e-11, html[dir=ltr] .al-e-11 {
   --al-e: 11px !important;
 }
 
-html[dir=ltr] .al-extend-s-12 {
+html:not([dir]) .al-extend-s-12, html[dir=""] .al-extend-s-12, html[dir=ltr] .al-extend-s-12 {
   --al-extend-s: 12px !important;
 }
 
-html[dir=ltr] .al-extend-e-12 {
+html:not([dir]) .al-extend-e-12, html[dir=""] .al-extend-e-12, html[dir=ltr] .al-extend-e-12 {
   --al-extend-e: 12px !important;
 }
 
-html[dir=ltr] .al-s-12 {
+html:not([dir]) .al-s-12, html[dir=""] .al-s-12, html[dir=ltr] .al-s-12 {
   --al-s: 12px !important;
 }
 
-html[dir=ltr] .al-e-12 {
+html:not([dir]) .al-e-12, html[dir=""] .al-e-12, html[dir=ltr] .al-e-12 {
   --al-e: 12px !important;
 }
 
-html[dir=ltr] .al-extend-s-13 {
+html:not([dir]) .al-extend-s-13, html[dir=""] .al-extend-s-13, html[dir=ltr] .al-extend-s-13 {
   --al-extend-s: 13px !important;
 }
 
-html[dir=ltr] .al-extend-e-13 {
+html:not([dir]) .al-extend-e-13, html[dir=""] .al-extend-e-13, html[dir=ltr] .al-extend-e-13 {
   --al-extend-e: 13px !important;
 }
 
-html[dir=ltr] .al-s-13 {
+html:not([dir]) .al-s-13, html[dir=""] .al-s-13, html[dir=ltr] .al-s-13 {
   --al-s: 13px !important;
 }
 
-html[dir=ltr] .al-e-13 {
+html:not([dir]) .al-e-13, html[dir=""] .al-e-13, html[dir=ltr] .al-e-13 {
   --al-e: 13px !important;
 }
 
-html[dir=ltr] .al-extend-s-14 {
+html:not([dir]) .al-extend-s-14, html[dir=""] .al-extend-s-14, html[dir=ltr] .al-extend-s-14 {
   --al-extend-s: 14px !important;
 }
 
-html[dir=ltr] .al-extend-e-14 {
+html:not([dir]) .al-extend-e-14, html[dir=""] .al-extend-e-14, html[dir=ltr] .al-extend-e-14 {
   --al-extend-e: 14px !important;
 }
 
-html[dir=ltr] .al-s-14 {
+html:not([dir]) .al-s-14, html[dir=""] .al-s-14, html[dir=ltr] .al-s-14 {
   --al-s: 14px !important;
 }
 
-html[dir=ltr] .al-e-14 {
+html:not([dir]) .al-e-14, html[dir=""] .al-e-14, html[dir=ltr] .al-e-14 {
   --al-e: 14px !important;
 }
 
-html[dir=ltr] .al-extend-s-15 {
+html:not([dir]) .al-extend-s-15, html[dir=""] .al-extend-s-15, html[dir=ltr] .al-extend-s-15 {
   --al-extend-s: 15px !important;
 }
 
-html[dir=ltr] .al-extend-e-15 {
+html:not([dir]) .al-extend-e-15, html[dir=""] .al-extend-e-15, html[dir=ltr] .al-extend-e-15 {
   --al-extend-e: 15px !important;
 }
 
-html[dir=ltr] .al-s-15 {
+html:not([dir]) .al-s-15, html[dir=""] .al-s-15, html[dir=ltr] .al-s-15 {
   --al-s: 15px !important;
 }
 
-html[dir=ltr] .al-e-15 {
+html:not([dir]) .al-e-15, html[dir=""] .al-e-15, html[dir=ltr] .al-e-15 {
   --al-e: 15px !important;
 }
 
-html[dir=ltr] .al-extend-s-16 {
+html:not([dir]) .al-extend-s-16, html[dir=""] .al-extend-s-16, html[dir=ltr] .al-extend-s-16 {
   --al-extend-s: 16px !important;
 }
 
-html[dir=ltr] .al-extend-e-16 {
+html:not([dir]) .al-extend-e-16, html[dir=""] .al-extend-e-16, html[dir=ltr] .al-extend-e-16 {
   --al-extend-e: 16px !important;
 }
 
-html[dir=ltr] .al-s-16 {
+html:not([dir]) .al-s-16, html[dir=""] .al-s-16, html[dir=ltr] .al-s-16 {
   --al-s: 16px !important;
 }
 
-html[dir=ltr] .al-e-16 {
+html:not([dir]) .al-e-16, html[dir=""] .al-e-16, html[dir=ltr] .al-e-16 {
   --al-e: 16px !important;
 }
 
-html[dir=ltr] .al-extend-s-20 {
+html:not([dir]) .al-extend-s-20, html[dir=""] .al-extend-s-20, html[dir=ltr] .al-extend-s-20 {
   --al-extend-s: 20px !important;
 }
 
-html[dir=ltr] .al-extend-e-20 {
+html:not([dir]) .al-extend-e-20, html[dir=""] .al-extend-e-20, html[dir=ltr] .al-extend-e-20 {
   --al-extend-e: 20px !important;
 }
 
-html[dir=ltr] .al-s-20 {
+html:not([dir]) .al-s-20, html[dir=""] .al-s-20, html[dir=ltr] .al-s-20 {
   --al-s: 20px !important;
 }
 
-html[dir=ltr] .al-e-20 {
+html:not([dir]) .al-e-20, html[dir=""] .al-e-20, html[dir=ltr] .al-e-20 {
   --al-e: 20px !important;
 }
 
-html[dir=ltr] .al-extend-s-24 {
+html:not([dir]) .al-extend-s-24, html[dir=""] .al-extend-s-24, html[dir=ltr] .al-extend-s-24 {
   --al-extend-s: 24px !important;
 }
 
-html[dir=ltr] .al-extend-e-24 {
+html:not([dir]) .al-extend-e-24, html[dir=""] .al-extend-e-24, html[dir=ltr] .al-extend-e-24 {
   --al-extend-e: 24px !important;
 }
 
-html[dir=ltr] .al-s-24 {
+html:not([dir]) .al-s-24, html[dir=""] .al-s-24, html[dir=ltr] .al-s-24 {
   --al-s: 24px !important;
 }
 
-html[dir=ltr] .al-e-24 {
+html:not([dir]) .al-e-24, html[dir=""] .al-e-24, html[dir=ltr] .al-e-24 {
   --al-e: 24px !important;
 }
 
-html[dir=ltr] .al-extend-s-25 {
+html:not([dir]) .al-extend-s-25, html[dir=""] .al-extend-s-25, html[dir=ltr] .al-extend-s-25 {
   --al-extend-s: 25px !important;
 }
 
-html[dir=ltr] .al-extend-e-25 {
+html:not([dir]) .al-extend-e-25, html[dir=""] .al-extend-e-25, html[dir=ltr] .al-extend-e-25 {
   --al-extend-e: 25px !important;
 }
 
-html[dir=ltr] .al-s-25 {
+html:not([dir]) .al-s-25, html[dir=""] .al-s-25, html[dir=ltr] .al-s-25 {
   --al-s: 25px !important;
 }
 
-html[dir=ltr] .al-e-25 {
+html:not([dir]) .al-e-25, html[dir=""] .al-e-25, html[dir=ltr] .al-e-25 {
   --al-e: 25px !important;
 }
 
-html[dir=ltr] .al-extend-s-26 {
+html:not([dir]) .al-extend-s-26, html[dir=""] .al-extend-s-26, html[dir=ltr] .al-extend-s-26 {
   --al-extend-s: 26px !important;
 }
 
-html[dir=ltr] .al-extend-e-26 {
+html:not([dir]) .al-extend-e-26, html[dir=""] .al-extend-e-26, html[dir=ltr] .al-extend-e-26 {
   --al-extend-e: 26px !important;
 }
 
-html[dir=ltr] .al-s-26 {
+html:not([dir]) .al-s-26, html[dir=""] .al-s-26, html[dir=ltr] .al-s-26 {
   --al-s: 26px !important;
 }
 
-html[dir=ltr] .al-e-26 {
+html:not([dir]) .al-e-26, html[dir=""] .al-e-26, html[dir=ltr] .al-e-26 {
   --al-e: 26px !important;
 }
 
-html[dir=ltr] .al-extend-s-30 {
+html:not([dir]) .al-extend-s-30, html[dir=""] .al-extend-s-30, html[dir=ltr] .al-extend-s-30 {
   --al-extend-s: 30px !important;
 }
 
-html[dir=ltr] .al-extend-e-30 {
+html:not([dir]) .al-extend-e-30, html[dir=""] .al-extend-e-30, html[dir=ltr] .al-extend-e-30 {
   --al-extend-e: 30px !important;
 }
 
-html[dir=ltr] .al-s-30 {
+html:not([dir]) .al-s-30, html[dir=""] .al-s-30, html[dir=ltr] .al-s-30 {
   --al-s: 30px !important;
 }
 
-html[dir=ltr] .al-e-30 {
+html:not([dir]) .al-e-30, html[dir=""] .al-e-30, html[dir=ltr] .al-e-30 {
   --al-e: 30px !important;
 }
 
-html[dir=ltr] .al-extend-s-32 {
+html:not([dir]) .al-extend-s-32, html[dir=""] .al-extend-s-32, html[dir=ltr] .al-extend-s-32 {
   --al-extend-s: 32px !important;
 }
 
-html[dir=ltr] .al-extend-e-32 {
+html:not([dir]) .al-extend-e-32, html[dir=""] .al-extend-e-32, html[dir=ltr] .al-extend-e-32 {
   --al-extend-e: 32px !important;
 }
 
-html[dir=ltr] .al-s-32 {
+html:not([dir]) .al-s-32, html[dir=""] .al-s-32, html[dir=ltr] .al-s-32 {
   --al-s: 32px !important;
 }
 
-html[dir=ltr] .al-e-32 {
+html:not([dir]) .al-e-32, html[dir=""] .al-e-32, html[dir=ltr] .al-e-32 {
   --al-e: 32px !important;
 }
 
-html[dir=ltr] .al-extend-s-34 {
+html:not([dir]) .al-extend-s-34, html[dir=""] .al-extend-s-34, html[dir=ltr] .al-extend-s-34 {
   --al-extend-s: 34px !important;
 }
 
-html[dir=ltr] .al-extend-e-34 {
+html:not([dir]) .al-extend-e-34, html[dir=""] .al-extend-e-34, html[dir=ltr] .al-extend-e-34 {
   --al-extend-e: 34px !important;
 }
 
-html[dir=ltr] .al-s-34 {
+html:not([dir]) .al-s-34, html[dir=""] .al-s-34, html[dir=ltr] .al-s-34 {
   --al-s: 34px !important;
 }
 
-html[dir=ltr] .al-e-34 {
+html:not([dir]) .al-e-34, html[dir=""] .al-e-34, html[dir=ltr] .al-e-34 {
   --al-e: 34px !important;
 }
 
-html[dir=ltr] .al-extend-s-35 {
+html:not([dir]) .al-extend-s-35, html[dir=""] .al-extend-s-35, html[dir=ltr] .al-extend-s-35 {
   --al-extend-s: 35px !important;
 }
 
-html[dir=ltr] .al-extend-e-35 {
+html:not([dir]) .al-extend-e-35, html[dir=""] .al-extend-e-35, html[dir=ltr] .al-extend-e-35 {
   --al-extend-e: 35px !important;
 }
 
-html[dir=ltr] .al-s-35 {
+html:not([dir]) .al-s-35, html[dir=""] .al-s-35, html[dir=ltr] .al-s-35 {
   --al-s: 35px !important;
 }
 
-html[dir=ltr] .al-e-35 {
+html:not([dir]) .al-e-35, html[dir=""] .al-e-35, html[dir=ltr] .al-e-35 {
   --al-e: 35px !important;
 }
 
-html[dir=ltr] .al-extend-s-36 {
+html:not([dir]) .al-extend-s-36, html[dir=""] .al-extend-s-36, html[dir=ltr] .al-extend-s-36 {
   --al-extend-s: 36px !important;
 }
 
-html[dir=ltr] .al-extend-e-36 {
+html:not([dir]) .al-extend-e-36, html[dir=""] .al-extend-e-36, html[dir=ltr] .al-extend-e-36 {
   --al-extend-e: 36px !important;
 }
 
-html[dir=ltr] .al-s-36 {
+html:not([dir]) .al-s-36, html[dir=""] .al-s-36, html[dir=ltr] .al-s-36 {
   --al-s: 36px !important;
 }
 
-html[dir=ltr] .al-e-36 {
+html:not([dir]) .al-e-36, html[dir=""] .al-e-36, html[dir=ltr] .al-e-36 {
   --al-e: 36px !important;
 }
 
-html[dir=ltr] .al-extend-s-40 {
+html:not([dir]) .al-extend-s-40, html[dir=""] .al-extend-s-40, html[dir=ltr] .al-extend-s-40 {
   --al-extend-s: 40px !important;
 }
 
-html[dir=ltr] .al-extend-e-40 {
+html:not([dir]) .al-extend-e-40, html[dir=""] .al-extend-e-40, html[dir=ltr] .al-extend-e-40 {
   --al-extend-e: 40px !important;
 }
 
-html[dir=ltr] .al-s-40 {
+html:not([dir]) .al-s-40, html[dir=""] .al-s-40, html[dir=ltr] .al-s-40 {
   --al-s: 40px !important;
 }
 
-html[dir=ltr] .al-e-40 {
+html:not([dir]) .al-e-40, html[dir=""] .al-e-40, html[dir=ltr] .al-e-40 {
   --al-e: 40px !important;
 }
 
-html[dir=ltr] .al-extend-s-45 {
+html:not([dir]) .al-extend-s-45, html[dir=""] .al-extend-s-45, html[dir=ltr] .al-extend-s-45 {
   --al-extend-s: 45px !important;
 }
 
-html[dir=ltr] .al-extend-e-45 {
+html:not([dir]) .al-extend-e-45, html[dir=""] .al-extend-e-45, html[dir=ltr] .al-extend-e-45 {
   --al-extend-e: 45px !important;
 }
 
-html[dir=ltr] .al-s-45 {
+html:not([dir]) .al-s-45, html[dir=""] .al-s-45, html[dir=ltr] .al-s-45 {
   --al-s: 45px !important;
 }
 
-html[dir=ltr] .al-e-45 {
+html:not([dir]) .al-e-45, html[dir=""] .al-e-45, html[dir=ltr] .al-e-45 {
   --al-e: 45px !important;
 }
 
-html[dir=ltr] .al-extend-s-48 {
+html:not([dir]) .al-extend-s-48, html[dir=""] .al-extend-s-48, html[dir=ltr] .al-extend-s-48 {
   --al-extend-s: 48px !important;
 }
 
-html[dir=ltr] .al-extend-e-48 {
+html:not([dir]) .al-extend-e-48, html[dir=""] .al-extend-e-48, html[dir=ltr] .al-extend-e-48 {
   --al-extend-e: 48px !important;
 }
 
-html[dir=ltr] .al-s-48 {
+html:not([dir]) .al-s-48, html[dir=""] .al-s-48, html[dir=ltr] .al-s-48 {
   --al-s: 48px !important;
 }
 
-html[dir=ltr] .al-e-48 {
+html:not([dir]) .al-e-48, html[dir=""] .al-e-48, html[dir=ltr] .al-e-48 {
   --al-e: 48px !important;
 }
 
-html[dir=ltr] .al-extend-s-50 {
+html:not([dir]) .al-extend-s-50, html[dir=""] .al-extend-s-50, html[dir=ltr] .al-extend-s-50 {
   --al-extend-s: 50px !important;
 }
 
-html[dir=ltr] .al-extend-e-50 {
+html:not([dir]) .al-extend-e-50, html[dir=""] .al-extend-e-50, html[dir=ltr] .al-extend-e-50 {
   --al-extend-e: 50px !important;
 }
 
-html[dir=ltr] .al-s-50 {
+html:not([dir]) .al-s-50, html[dir=""] .al-s-50, html[dir=ltr] .al-s-50 {
   --al-s: 50px !important;
 }
 
-html[dir=ltr] .al-e-50 {
+html:not([dir]) .al-e-50, html[dir=""] .al-e-50, html[dir=ltr] .al-e-50 {
   --al-e: 50px !important;
 }
 
-html[dir=ltr] .al-extend-s-55 {
+html:not([dir]) .al-extend-s-55, html[dir=""] .al-extend-s-55, html[dir=ltr] .al-extend-s-55 {
   --al-extend-s: 55px !important;
 }
 
-html[dir=ltr] .al-extend-e-55 {
+html:not([dir]) .al-extend-e-55, html[dir=""] .al-extend-e-55, html[dir=ltr] .al-extend-e-55 {
   --al-extend-e: 55px !important;
 }
 
-html[dir=ltr] .al-s-55 {
+html:not([dir]) .al-s-55, html[dir=""] .al-s-55, html[dir=ltr] .al-s-55 {
   --al-s: 55px !important;
 }
 
-html[dir=ltr] .al-e-55 {
+html:not([dir]) .al-e-55, html[dir=""] .al-e-55, html[dir=ltr] .al-e-55 {
   --al-e: 55px !important;
 }
 
-html[dir=ltr] .al-extend-s-60 {
+html:not([dir]) .al-extend-s-60, html[dir=""] .al-extend-s-60, html[dir=ltr] .al-extend-s-60 {
   --al-extend-s: 60px !important;
 }
 
-html[dir=ltr] .al-extend-e-60 {
+html:not([dir]) .al-extend-e-60, html[dir=""] .al-extend-e-60, html[dir=ltr] .al-extend-e-60 {
   --al-extend-e: 60px !important;
 }
 
-html[dir=ltr] .al-s-60 {
+html:not([dir]) .al-s-60, html[dir=""] .al-s-60, html[dir=ltr] .al-s-60 {
   --al-s: 60px !important;
 }
 
-html[dir=ltr] .al-e-60 {
+html:not([dir]) .al-e-60, html[dir=""] .al-e-60, html[dir=ltr] .al-e-60 {
   --al-e: 60px !important;
 }
 
-html[dir=ltr] .al-extend-s-64 {
+html:not([dir]) .al-extend-s-64, html[dir=""] .al-extend-s-64, html[dir=ltr] .al-extend-s-64 {
   --al-extend-s: 64px !important;
 }
 
-html[dir=ltr] .al-extend-e-64 {
+html:not([dir]) .al-extend-e-64, html[dir=""] .al-extend-e-64, html[dir=ltr] .al-extend-e-64 {
   --al-extend-e: 64px !important;
 }
 
-html[dir=ltr] .al-s-64 {
+html:not([dir]) .al-s-64, html[dir=""] .al-s-64, html[dir=ltr] .al-s-64 {
   --al-s: 64px !important;
 }
 
-html[dir=ltr] .al-e-64 {
+html:not([dir]) .al-e-64, html[dir=""] .al-e-64, html[dir=ltr] .al-e-64 {
   --al-e: 64px !important;
 }
 
-html[dir=ltr] .al-extend-s-65 {
+html:not([dir]) .al-extend-s-65, html[dir=""] .al-extend-s-65, html[dir=ltr] .al-extend-s-65 {
   --al-extend-s: 65px !important;
 }
 
-html[dir=ltr] .al-extend-e-65 {
+html:not([dir]) .al-extend-e-65, html[dir=""] .al-extend-e-65, html[dir=ltr] .al-extend-e-65 {
   --al-extend-e: 65px !important;
 }
 
-html[dir=ltr] .al-s-65 {
+html:not([dir]) .al-s-65, html[dir=""] .al-s-65, html[dir=ltr] .al-s-65 {
   --al-s: 65px !important;
 }
 
-html[dir=ltr] .al-e-65 {
+html:not([dir]) .al-e-65, html[dir=""] .al-e-65, html[dir=ltr] .al-e-65 {
   --al-e: 65px !important;
 }
 
-html[dir=ltr] .al-extend-s-70 {
+html:not([dir]) .al-extend-s-70, html[dir=""] .al-extend-s-70, html[dir=ltr] .al-extend-s-70 {
   --al-extend-s: 70px !important;
 }
 
-html[dir=ltr] .al-extend-e-70 {
+html:not([dir]) .al-extend-e-70, html[dir=""] .al-extend-e-70, html[dir=ltr] .al-extend-e-70 {
   --al-extend-e: 70px !important;
 }
 
-html[dir=ltr] .al-s-70 {
+html:not([dir]) .al-s-70, html[dir=""] .al-s-70, html[dir=ltr] .al-s-70 {
   --al-s: 70px !important;
 }
 
-html[dir=ltr] .al-e-70 {
+html:not([dir]) .al-e-70, html[dir=""] .al-e-70, html[dir=ltr] .al-e-70 {
   --al-e: 70px !important;
 }
 
-html[dir=ltr] .al-extend-s-75 {
+html:not([dir]) .al-extend-s-75, html[dir=""] .al-extend-s-75, html[dir=ltr] .al-extend-s-75 {
   --al-extend-s: 75px !important;
 }
 
-html[dir=ltr] .al-extend-e-75 {
+html:not([dir]) .al-extend-e-75, html[dir=""] .al-extend-e-75, html[dir=ltr] .al-extend-e-75 {
   --al-extend-e: 75px !important;
 }
 
-html[dir=ltr] .al-s-75 {
+html:not([dir]) .al-s-75, html[dir=""] .al-s-75, html[dir=ltr] .al-s-75 {
   --al-s: 75px !important;
 }
 
-html[dir=ltr] .al-e-75 {
+html:not([dir]) .al-e-75, html[dir=""] .al-e-75, html[dir=ltr] .al-e-75 {
   --al-e: 75px !important;
 }
 
-html[dir=ltr] .al-extend-s-80 {
+html:not([dir]) .al-extend-s-80, html[dir=""] .al-extend-s-80, html[dir=ltr] .al-extend-s-80 {
   --al-extend-s: 80px !important;
 }
 
-html[dir=ltr] .al-extend-e-80 {
+html:not([dir]) .al-extend-e-80, html[dir=""] .al-extend-e-80, html[dir=ltr] .al-extend-e-80 {
   --al-extend-e: 80px !important;
 }
 
-html[dir=ltr] .al-s-80 {
+html:not([dir]) .al-s-80, html[dir=""] .al-s-80, html[dir=ltr] .al-s-80 {
   --al-s: 80px !important;
 }
 
-html[dir=ltr] .al-e-80 {
+html:not([dir]) .al-e-80, html[dir=""] .al-e-80, html[dir=ltr] .al-e-80 {
   --al-e: 80px !important;
 }
 
-html[dir=ltr] .al-extend-s-85 {
+html:not([dir]) .al-extend-s-85, html[dir=""] .al-extend-s-85, html[dir=ltr] .al-extend-s-85 {
   --al-extend-s: 85px !important;
 }
 
-html[dir=ltr] .al-extend-e-85 {
+html:not([dir]) .al-extend-e-85, html[dir=""] .al-extend-e-85, html[dir=ltr] .al-extend-e-85 {
   --al-extend-e: 85px !important;
 }
 
-html[dir=ltr] .al-s-85 {
+html:not([dir]) .al-s-85, html[dir=""] .al-s-85, html[dir=ltr] .al-s-85 {
   --al-s: 85px !important;
 }
 
-html[dir=ltr] .al-e-85 {
+html:not([dir]) .al-e-85, html[dir=""] .al-e-85, html[dir=ltr] .al-e-85 {
   --al-e: 85px !important;
 }
 
-html[dir=ltr] .al-extend-s-90 {
+html:not([dir]) .al-extend-s-90, html[dir=""] .al-extend-s-90, html[dir=ltr] .al-extend-s-90 {
   --al-extend-s: 90px !important;
 }
 
-html[dir=ltr] .al-extend-e-90 {
+html:not([dir]) .al-extend-e-90, html[dir=""] .al-extend-e-90, html[dir=ltr] .al-extend-e-90 {
   --al-extend-e: 90px !important;
 }
 
-html[dir=ltr] .al-s-90 {
+html:not([dir]) .al-s-90, html[dir=""] .al-s-90, html[dir=ltr] .al-s-90 {
   --al-s: 90px !important;
 }
 
-html[dir=ltr] .al-e-90 {
+html:not([dir]) .al-e-90, html[dir=""] .al-e-90, html[dir=ltr] .al-e-90 {
   --al-e: 90px !important;
 }
 
-html[dir=ltr] .al-extend-s-95 {
+html:not([dir]) .al-extend-s-95, html[dir=""] .al-extend-s-95, html[dir=ltr] .al-extend-s-95 {
   --al-extend-s: 95px !important;
 }
 
-html[dir=ltr] .al-extend-e-95 {
+html:not([dir]) .al-extend-e-95, html[dir=""] .al-extend-e-95, html[dir=ltr] .al-extend-e-95 {
   --al-extend-e: 95px !important;
 }
 
-html[dir=ltr] .al-s-95 {
+html:not([dir]) .al-s-95, html[dir=""] .al-s-95, html[dir=ltr] .al-s-95 {
   --al-s: 95px !important;
 }
 
-html[dir=ltr] .al-e-95 {
+html:not([dir]) .al-e-95, html[dir=""] .al-e-95, html[dir=ltr] .al-e-95 {
   --al-e: 95px !important;
 }
 
-html[dir=ltr] .al-extend-s-96 {
+html:not([dir]) .al-extend-s-96, html[dir=""] .al-extend-s-96, html[dir=ltr] .al-extend-s-96 {
   --al-extend-s: 96px !important;
 }
 
-html[dir=ltr] .al-extend-e-96 {
+html:not([dir]) .al-extend-e-96, html[dir=""] .al-extend-e-96, html[dir=ltr] .al-extend-e-96 {
   --al-extend-e: 96px !important;
 }
 
-html[dir=ltr] .al-s-96 {
+html:not([dir]) .al-s-96, html[dir=""] .al-s-96, html[dir=ltr] .al-s-96 {
   --al-s: 96px !important;
 }
 
-html[dir=ltr] .al-e-96 {
+html:not([dir]) .al-e-96, html[dir=""] .al-e-96, html[dir=ltr] .al-e-96 {
   --al-e: 96px !important;
 }
 
-html[dir=ltr] .al-extend-s-100 {
+html:not([dir]) .al-extend-s-100, html[dir=""] .al-extend-s-100, html[dir=ltr] .al-extend-s-100 {
   --al-extend-s: 100px !important;
 }
 
-html[dir=ltr] .al-extend-e-100 {
+html:not([dir]) .al-extend-e-100, html[dir=""] .al-extend-e-100, html[dir=ltr] .al-extend-e-100 {
   --al-extend-e: 100px !important;
 }
 
-html[dir=ltr] .al-s-100 {
+html:not([dir]) .al-s-100, html[dir=""] .al-s-100, html[dir=ltr] .al-s-100 {
   --al-s: 100px !important;
 }
 
-html[dir=ltr] .al-e-100 {
+html:not([dir]) .al-e-100, html[dir=""] .al-e-100, html[dir=ltr] .al-e-100 {
   --al-e: 100px !important;
 }
 
-html[dir=ltr] .al-extend-s-120 {
+html:not([dir]) .al-extend-s-120, html[dir=""] .al-extend-s-120, html[dir=ltr] .al-extend-s-120 {
   --al-extend-s: 120px !important;
 }
 
-html[dir=ltr] .al-extend-e-120 {
+html:not([dir]) .al-extend-e-120, html[dir=""] .al-extend-e-120, html[dir=ltr] .al-extend-e-120 {
   --al-extend-e: 120px !important;
 }
 
-html[dir=ltr] .al-s-120 {
+html:not([dir]) .al-s-120, html[dir=""] .al-s-120, html[dir=ltr] .al-s-120 {
   --al-s: 120px !important;
 }
 
-html[dir=ltr] .al-e-120 {
+html:not([dir]) .al-e-120, html[dir=""] .al-e-120, html[dir=ltr] .al-e-120 {
   --al-e: 120px !important;
 }
 
-html[dir=ltr] .al-extend-s-150 {
+html:not([dir]) .al-extend-s-150, html[dir=""] .al-extend-s-150, html[dir=ltr] .al-extend-s-150 {
   --al-extend-s: 150px !important;
 }
 
-html[dir=ltr] .al-extend-e-150 {
+html:not([dir]) .al-extend-e-150, html[dir=""] .al-extend-e-150, html[dir=ltr] .al-extend-e-150 {
   --al-extend-e: 150px !important;
 }
 
-html[dir=ltr] .al-s-150 {
+html:not([dir]) .al-s-150, html[dir=""] .al-s-150, html[dir=ltr] .al-s-150 {
   --al-s: 150px !important;
 }
 
-html[dir=ltr] .al-e-150 {
+html:not([dir]) .al-e-150, html[dir=""] .al-e-150, html[dir=ltr] .al-e-150 {
   --al-e: 150px !important;
 }
 
-html[dir=ltr] .al-extend-s-200 {
+html:not([dir]) .al-extend-s-200, html[dir=""] .al-extend-s-200, html[dir=ltr] .al-extend-s-200 {
   --al-extend-s: 200px !important;
 }
 
-html[dir=ltr] .al-extend-e-200 {
+html:not([dir]) .al-extend-e-200, html[dir=""] .al-extend-e-200, html[dir=ltr] .al-extend-e-200 {
   --al-extend-e: 200px !important;
 }
 
-html[dir=ltr] .al-s-200 {
+html:not([dir]) .al-s-200, html[dir=""] .al-s-200, html[dir=ltr] .al-s-200 {
   --al-s: 200px !important;
 }
 
-html[dir=ltr] .al-e-200 {
+html:not([dir]) .al-e-200, html[dir=""] .al-e-200, html[dir=ltr] .al-e-200 {
   --al-e: 200px !important;
 }
 
-html[dir=ltr] .al-extend-s-250 {
+html:not([dir]) .al-extend-s-250, html[dir=""] .al-extend-s-250, html[dir=ltr] .al-extend-s-250 {
   --al-extend-s: 250px !important;
 }
 
-html[dir=ltr] .al-extend-e-250 {
+html:not([dir]) .al-extend-e-250, html[dir=""] .al-extend-e-250, html[dir=ltr] .al-extend-e-250 {
   --al-extend-e: 250px !important;
 }
 
-html[dir=ltr] .al-s-250 {
+html:not([dir]) .al-s-250, html[dir=""] .al-s-250, html[dir=ltr] .al-s-250 {
   --al-s: 250px !important;
 }
 
-html[dir=ltr] .al-e-250 {
+html:not([dir]) .al-e-250, html[dir=""] .al-e-250, html[dir=ltr] .al-e-250 {
   --al-e: 250px !important;
 }
 
-html[dir=ltr] .al-center-s-0 {
+html:not([dir]) .al-center-s-0, html[dir=""] .al-center-s-0, html[dir=ltr] .al-center-s-0 {
   --al-center-s: 0% !important;
 }
 
-html[dir=ltr] .al-center-e-0 {
+html:not([dir]) .al-center-e-0, html[dir=""] .al-center-e-0, html[dir=ltr] .al-center-e-0 {
   --al-center-e: 0% !important;
 }
 
-html[dir=ltr] .al-center-s-10 {
+html:not([dir]) .al-center-s-10, html[dir=""] .al-center-s-10, html[dir=ltr] .al-center-s-10 {
   --al-center-s: 10% !important;
 }
 
-html[dir=ltr] .al-center-e-10 {
+html:not([dir]) .al-center-e-10, html[dir=""] .al-center-e-10, html[dir=ltr] .al-center-e-10 {
   --al-center-e: 10% !important;
 }
 
-html[dir=ltr] .al-center-s-25 {
+html:not([dir]) .al-center-s-25, html[dir=""] .al-center-s-25, html[dir=ltr] .al-center-s-25 {
   --al-center-s: 25% !important;
 }
 
-html[dir=ltr] .al-center-e-25 {
+html:not([dir]) .al-center-e-25, html[dir=""] .al-center-e-25, html[dir=ltr] .al-center-e-25 {
   --al-center-e: 25% !important;
 }
 
-html[dir=ltr] .al-center-s-50 {
+html:not([dir]) .al-center-s-50, html[dir=""] .al-center-s-50, html[dir=ltr] .al-center-s-50 {
   --al-center-s: 50% !important;
 }
 
-html[dir=ltr] .al-center-e-50 {
+html:not([dir]) .al-center-e-50, html[dir=""] .al-center-e-50, html[dir=ltr] .al-center-e-50 {
   --al-center-e: 50% !important;
 }
 
-html[dir=ltr] .al-center-s-75 {
+html:not([dir]) .al-center-s-75, html[dir=""] .al-center-s-75, html[dir=ltr] .al-center-s-75 {
   --al-center-s: 75% !important;
 }
 
-html[dir=ltr] .al-center-e-75 {
+html:not([dir]) .al-center-e-75, html[dir=""] .al-center-e-75, html[dir=ltr] .al-center-e-75 {
   --al-center-e: 75% !important;
 }
 
-html[dir=ltr] .al-center-s-90 {
+html:not([dir]) .al-center-s-90, html[dir=""] .al-center-s-90, html[dir=ltr] .al-center-s-90 {
   --al-center-s: 90% !important;
 }
 
-html[dir=ltr] .al-center-e-90 {
+html:not([dir]) .al-center-e-90, html[dir=""] .al-center-e-90, html[dir=ltr] .al-center-e-90 {
   --al-center-e: 90% !important;
 }
 
-html[dir=ltr] .al-center-s-100 {
+html:not([dir]) .al-center-s-100, html[dir=""] .al-center-s-100, html[dir=ltr] .al-center-s-100 {
   --al-center-s: 100% !important;
 }
 
-html[dir=ltr] .al-center-e-100 {
+html:not([dir]) .al-center-e-100, html[dir=""] .al-center-e-100, html[dir=ltr] .al-center-e-100 {
   --al-center-e: 100% !important;
 }
 
@@ -11730,12 +11730,12 @@ html[dir=rtl] .al-center-e-100 {
   -webkit-text-fill-color: transparent;
 }
 
-/*====== Varibles start =====*/
+/* Sizes list */
+/*========================
+  Core .al utilities
+=========================*/
 .al {
   /*=== position top +ve utilities ===*/
-  /*=== position bottom +ve utilities ===*/
-  /*=== position top -ve utilities ===*/
-  /*=== position bottom -ve utilities ===*/
 }
 
 .al-top-0 {
@@ -11818,6 +11818,10 @@ html[dir=rtl] .al-center-e-100 {
   top: 64px !important;
 }
 
+.al {
+  /*=== position bottom +ve utilities ===*/
+}
+
 .al-bottom-0 {
   bottom: 0px !important;
 }
@@ -11898,8 +11902,12 @@ html[dir=rtl] .al-center-e-100 {
   bottom: 64px !important;
 }
 
+.al {
+  /*=== position top -ve utilities ===*/
+}
+
 .al-top-n-0 {
-  top: 0px !important;
+  top: -0px !important;
 }
 
 .al-top-n-1 {
@@ -11978,8 +11986,12 @@ html[dir=rtl] .al-center-e-100 {
   top: -64px !important;
 }
 
+.al {
+  /*=== position bottom -ve utilities ===*/
+}
+
 .al-bottom-n-0 {
-  bottom: 0px !important;
+  bottom: -0px !important;
 }
 
 .al-bottom-n-1 {
@@ -12058,6 +12070,10 @@ html[dir=rtl] .al-center-e-100 {
   bottom: -64px !important;
 }
 
+.al {
+  /*=== object center ===*/
+}
+
 .al-object-center {
   top: 50% !important;
   left: 50% !important;
@@ -12074,504 +12090,349 @@ html[dir=rtl] .al-center-e-100 {
   transform: translateX(-50%) !important;
 }
 
-/* ===== position (left & right) RTL & LTR ===== */
-html[dir=ltr] .al {
-  /*=== position start +ve utilities ===*/
-  /*=== position end +ve utilities ===*/
-  /*=== position start -ve utilities ===*/
-  /*=== position end -ve utilities ===*/
-}
-
-html[dir=ltr] .al-start-0 {
+/*========================
+  RTL / LTR directional utilities
+=========================*/
+html:not([dir]) .al-start-0, html[dir=""] .al-start-0, html[dir=ltr] .al-start-0 {
   left: 0px !important;
 }
 
-html[dir=ltr] .al-start-1 {
+html:not([dir]) .al-start-n-0, html[dir=""] .al-start-n-0, html[dir=ltr] .al-start-n-0 {
+  left: -0px !important;
+}
+
+html:not([dir]) .al-end-0, html[dir=""] .al-end-0, html[dir=ltr] .al-end-0 {
+  right: 0px !important;
+}
+
+html:not([dir]) .al-end-n-0, html[dir=""] .al-end-n-0, html[dir=ltr] .al-end-n-0 {
+  right: -0px !important;
+}
+
+html:not([dir]) .al-start-1, html[dir=""] .al-start-1, html[dir=ltr] .al-start-1 {
   left: 1px !important;
 }
 
-html[dir=ltr] .al-start-2 {
-  left: 2px !important;
-}
-
-html[dir=ltr] .al-start-3 {
-  left: 3px !important;
-}
-
-html[dir=ltr] .al-start-4 {
-  left: 4px !important;
-}
-
-html[dir=ltr] .al-start-5 {
-  left: 5px !important;
-}
-
-html[dir=ltr] .al-start-6 {
-  left: 6px !important;
-}
-
-html[dir=ltr] .al-start-7 {
-  left: 7px !important;
-}
-
-html[dir=ltr] .al-start-8 {
-  left: 8px !important;
-}
-
-html[dir=ltr] .al-start-9 {
-  left: 9px !important;
-}
-
-html[dir=ltr] .al-start-10 {
-  left: 10px !important;
-}
-
-html[dir=ltr] .al-start-12 {
-  left: 12px !important;
-}
-
-html[dir=ltr] .al-start-14 {
-  left: 14px !important;
-}
-
-html[dir=ltr] .al-start-15 {
-  left: 15px !important;
-}
-
-html[dir=ltr] .al-start-16 {
-  left: 16px !important;
-}
-
-html[dir=ltr] .al-start-20 {
-  left: 20px !important;
-}
-
-html[dir=ltr] .al-start-24 {
-  left: 24px !important;
-}
-
-html[dir=ltr] .al-start-32 {
-  left: 32px !important;
-}
-
-html[dir=ltr] .al-start-48 {
-  left: 48px !important;
-}
-
-html[dir=ltr] .al-start-64 {
-  left: 64px !important;
-}
-
-html[dir=ltr] .al-end-0 {
-  right: 0px !important;
-}
-
-html[dir=ltr] .al-end-1 {
-  right: 1px !important;
-}
-
-html[dir=ltr] .al-end-2 {
-  right: 2px !important;
-}
-
-html[dir=ltr] .al-end-3 {
-  right: 3px !important;
-}
-
-html[dir=ltr] .al-end-4 {
-  right: 4px !important;
-}
-
-html[dir=ltr] .al-end-5 {
-  right: 5px !important;
-}
-
-html[dir=ltr] .al-end-6 {
-  right: 6px !important;
-}
-
-html[dir=ltr] .al-end-7 {
-  right: 7px !important;
-}
-
-html[dir=ltr] .al-end-8 {
-  right: 8px !important;
-}
-
-html[dir=ltr] .al-end-9 {
-  right: 9px !important;
-}
-
-html[dir=ltr] .al-end-10 {
-  right: 10px !important;
-}
-
-html[dir=ltr] .al-end-12 {
-  right: 12px !important;
-}
-
-html[dir=ltr] .al-end-14 {
-  right: 14px !important;
-}
-
-html[dir=ltr] .al-end-15 {
-  right: 15px !important;
-}
-
-html[dir=ltr] .al-end-16 {
-  right: 16px !important;
-}
-
-html[dir=ltr] .al-end-20 {
-  right: 20px !important;
-}
-
-html[dir=ltr] .al-end-24 {
-  right: 24px !important;
-}
-
-html[dir=ltr] .al-end-32 {
-  right: 32px !important;
-}
-
-html[dir=ltr] .al-end-48 {
-  right: 48px !important;
-}
-
-html[dir=ltr] .al-end-64 {
-  right: 64px !important;
-}
-
-html[dir=ltr] .al-start-n-0 {
-  left: 0px !important;
-}
-
-html[dir=ltr] .al-start-n-1 {
+html:not([dir]) .al-start-n-1, html[dir=""] .al-start-n-1, html[dir=ltr] .al-start-n-1 {
   left: -1px !important;
 }
 
-html[dir=ltr] .al-start-n-2 {
-  left: -2px !important;
+html:not([dir]) .al-end-1, html[dir=""] .al-end-1, html[dir=ltr] .al-end-1 {
+  right: 1px !important;
 }
 
-html[dir=ltr] .al-start-n-3 {
-  left: -3px !important;
-}
-
-html[dir=ltr] .al-start-n-4 {
-  left: -4px !important;
-}
-
-html[dir=ltr] .al-start-n-5 {
-  left: -5px !important;
-}
-
-html[dir=ltr] .al-start-n-6 {
-  left: -6px !important;
-}
-
-html[dir=ltr] .al-start-n-7 {
-  left: -7px !important;
-}
-
-html[dir=ltr] .al-start-n-8 {
-  left: -8px !important;
-}
-
-html[dir=ltr] .al-start-n-9 {
-  left: -9px !important;
-}
-
-html[dir=ltr] .al-start-n-10 {
-  left: -10px !important;
-}
-
-html[dir=ltr] .al-start-n-12 {
-  left: -12px !important;
-}
-
-html[dir=ltr] .al-start-n-14 {
-  left: -14px !important;
-}
-
-html[dir=ltr] .al-start-n-15 {
-  left: -15px !important;
-}
-
-html[dir=ltr] .al-start-n-16 {
-  left: -16px !important;
-}
-
-html[dir=ltr] .al-start-n-20 {
-  left: -20px !important;
-}
-
-html[dir=ltr] .al-start-n-24 {
-  left: -24px !important;
-}
-
-html[dir=ltr] .al-start-n-32 {
-  left: -32px !important;
-}
-
-html[dir=ltr] .al-start-n-48 {
-  left: -48px !important;
-}
-
-html[dir=ltr] .al-start-n-64 {
-  left: -64px !important;
-}
-
-html[dir=ltr] .al-end-n-0 {
-  right: 0px !important;
-}
-
-html[dir=ltr] .al-end-n-1 {
+html:not([dir]) .al-end-n-1, html[dir=""] .al-end-n-1, html[dir=ltr] .al-end-n-1 {
   right: -1px !important;
 }
 
-html[dir=ltr] .al-end-n-2 {
+html:not([dir]) .al-start-2, html[dir=""] .al-start-2, html[dir=ltr] .al-start-2 {
+  left: 2px !important;
+}
+
+html:not([dir]) .al-start-n-2, html[dir=""] .al-start-n-2, html[dir=ltr] .al-start-n-2 {
+  left: -2px !important;
+}
+
+html:not([dir]) .al-end-2, html[dir=""] .al-end-2, html[dir=ltr] .al-end-2 {
+  right: 2px !important;
+}
+
+html:not([dir]) .al-end-n-2, html[dir=""] .al-end-n-2, html[dir=ltr] .al-end-n-2 {
   right: -2px !important;
 }
 
-html[dir=ltr] .al-end-n-3 {
+html:not([dir]) .al-start-3, html[dir=""] .al-start-3, html[dir=ltr] .al-start-3 {
+  left: 3px !important;
+}
+
+html:not([dir]) .al-start-n-3, html[dir=""] .al-start-n-3, html[dir=ltr] .al-start-n-3 {
+  left: -3px !important;
+}
+
+html:not([dir]) .al-end-3, html[dir=""] .al-end-3, html[dir=ltr] .al-end-3 {
+  right: 3px !important;
+}
+
+html:not([dir]) .al-end-n-3, html[dir=""] .al-end-n-3, html[dir=ltr] .al-end-n-3 {
   right: -3px !important;
 }
 
-html[dir=ltr] .al-end-n-4 {
+html:not([dir]) .al-start-4, html[dir=""] .al-start-4, html[dir=ltr] .al-start-4 {
+  left: 4px !important;
+}
+
+html:not([dir]) .al-start-n-4, html[dir=""] .al-start-n-4, html[dir=ltr] .al-start-n-4 {
+  left: -4px !important;
+}
+
+html:not([dir]) .al-end-4, html[dir=""] .al-end-4, html[dir=ltr] .al-end-4 {
+  right: 4px !important;
+}
+
+html:not([dir]) .al-end-n-4, html[dir=""] .al-end-n-4, html[dir=ltr] .al-end-n-4 {
   right: -4px !important;
 }
 
-html[dir=ltr] .al-end-n-5 {
+html:not([dir]) .al-start-5, html[dir=""] .al-start-5, html[dir=ltr] .al-start-5 {
+  left: 5px !important;
+}
+
+html:not([dir]) .al-start-n-5, html[dir=""] .al-start-n-5, html[dir=ltr] .al-start-n-5 {
+  left: -5px !important;
+}
+
+html:not([dir]) .al-end-5, html[dir=""] .al-end-5, html[dir=ltr] .al-end-5 {
+  right: 5px !important;
+}
+
+html:not([dir]) .al-end-n-5, html[dir=""] .al-end-n-5, html[dir=ltr] .al-end-n-5 {
   right: -5px !important;
 }
 
-html[dir=ltr] .al-end-n-6 {
+html:not([dir]) .al-start-6, html[dir=""] .al-start-6, html[dir=ltr] .al-start-6 {
+  left: 6px !important;
+}
+
+html:not([dir]) .al-start-n-6, html[dir=""] .al-start-n-6, html[dir=ltr] .al-start-n-6 {
+  left: -6px !important;
+}
+
+html:not([dir]) .al-end-6, html[dir=""] .al-end-6, html[dir=ltr] .al-end-6 {
+  right: 6px !important;
+}
+
+html:not([dir]) .al-end-n-6, html[dir=""] .al-end-n-6, html[dir=ltr] .al-end-n-6 {
   right: -6px !important;
 }
 
-html[dir=ltr] .al-end-n-7 {
+html:not([dir]) .al-start-7, html[dir=""] .al-start-7, html[dir=ltr] .al-start-7 {
+  left: 7px !important;
+}
+
+html:not([dir]) .al-start-n-7, html[dir=""] .al-start-n-7, html[dir=ltr] .al-start-n-7 {
+  left: -7px !important;
+}
+
+html:not([dir]) .al-end-7, html[dir=""] .al-end-7, html[dir=ltr] .al-end-7 {
+  right: 7px !important;
+}
+
+html:not([dir]) .al-end-n-7, html[dir=""] .al-end-n-7, html[dir=ltr] .al-end-n-7 {
   right: -7px !important;
 }
 
-html[dir=ltr] .al-end-n-8 {
+html:not([dir]) .al-start-8, html[dir=""] .al-start-8, html[dir=ltr] .al-start-8 {
+  left: 8px !important;
+}
+
+html:not([dir]) .al-start-n-8, html[dir=""] .al-start-n-8, html[dir=ltr] .al-start-n-8 {
+  left: -8px !important;
+}
+
+html:not([dir]) .al-end-8, html[dir=""] .al-end-8, html[dir=ltr] .al-end-8 {
+  right: 8px !important;
+}
+
+html:not([dir]) .al-end-n-8, html[dir=""] .al-end-n-8, html[dir=ltr] .al-end-n-8 {
   right: -8px !important;
 }
 
-html[dir=ltr] .al-end-n-9 {
+html:not([dir]) .al-start-9, html[dir=""] .al-start-9, html[dir=ltr] .al-start-9 {
+  left: 9px !important;
+}
+
+html:not([dir]) .al-start-n-9, html[dir=""] .al-start-n-9, html[dir=ltr] .al-start-n-9 {
+  left: -9px !important;
+}
+
+html:not([dir]) .al-end-9, html[dir=""] .al-end-9, html[dir=ltr] .al-end-9 {
+  right: 9px !important;
+}
+
+html:not([dir]) .al-end-n-9, html[dir=""] .al-end-n-9, html[dir=ltr] .al-end-n-9 {
   right: -9px !important;
 }
 
-html[dir=ltr] .al-end-n-10 {
+html:not([dir]) .al-start-10, html[dir=""] .al-start-10, html[dir=ltr] .al-start-10 {
+  left: 10px !important;
+}
+
+html:not([dir]) .al-start-n-10, html[dir=""] .al-start-n-10, html[dir=ltr] .al-start-n-10 {
+  left: -10px !important;
+}
+
+html:not([dir]) .al-end-10, html[dir=""] .al-end-10, html[dir=ltr] .al-end-10 {
+  right: 10px !important;
+}
+
+html:not([dir]) .al-end-n-10, html[dir=""] .al-end-n-10, html[dir=ltr] .al-end-n-10 {
   right: -10px !important;
 }
 
-html[dir=ltr] .al-end-n-12 {
+html:not([dir]) .al-start-12, html[dir=""] .al-start-12, html[dir=ltr] .al-start-12 {
+  left: 12px !important;
+}
+
+html:not([dir]) .al-start-n-12, html[dir=""] .al-start-n-12, html[dir=ltr] .al-start-n-12 {
+  left: -12px !important;
+}
+
+html:not([dir]) .al-end-12, html[dir=""] .al-end-12, html[dir=ltr] .al-end-12 {
+  right: 12px !important;
+}
+
+html:not([dir]) .al-end-n-12, html[dir=""] .al-end-n-12, html[dir=ltr] .al-end-n-12 {
   right: -12px !important;
 }
 
-html[dir=ltr] .al-end-n-14 {
+html:not([dir]) .al-start-14, html[dir=""] .al-start-14, html[dir=ltr] .al-start-14 {
+  left: 14px !important;
+}
+
+html:not([dir]) .al-start-n-14, html[dir=""] .al-start-n-14, html[dir=ltr] .al-start-n-14 {
+  left: -14px !important;
+}
+
+html:not([dir]) .al-end-14, html[dir=""] .al-end-14, html[dir=ltr] .al-end-14 {
+  right: 14px !important;
+}
+
+html:not([dir]) .al-end-n-14, html[dir=""] .al-end-n-14, html[dir=ltr] .al-end-n-14 {
   right: -14px !important;
 }
 
-html[dir=ltr] .al-end-n-15 {
+html:not([dir]) .al-start-15, html[dir=""] .al-start-15, html[dir=ltr] .al-start-15 {
+  left: 15px !important;
+}
+
+html:not([dir]) .al-start-n-15, html[dir=""] .al-start-n-15, html[dir=ltr] .al-start-n-15 {
+  left: -15px !important;
+}
+
+html:not([dir]) .al-end-15, html[dir=""] .al-end-15, html[dir=ltr] .al-end-15 {
+  right: 15px !important;
+}
+
+html:not([dir]) .al-end-n-15, html[dir=""] .al-end-n-15, html[dir=ltr] .al-end-n-15 {
   right: -15px !important;
 }
 
-html[dir=ltr] .al-end-n-16 {
+html:not([dir]) .al-start-16, html[dir=""] .al-start-16, html[dir=ltr] .al-start-16 {
+  left: 16px !important;
+}
+
+html:not([dir]) .al-start-n-16, html[dir=""] .al-start-n-16, html[dir=ltr] .al-start-n-16 {
+  left: -16px !important;
+}
+
+html:not([dir]) .al-end-16, html[dir=""] .al-end-16, html[dir=ltr] .al-end-16 {
+  right: 16px !important;
+}
+
+html:not([dir]) .al-end-n-16, html[dir=""] .al-end-n-16, html[dir=ltr] .al-end-n-16 {
   right: -16px !important;
 }
 
-html[dir=ltr] .al-end-n-20 {
+html:not([dir]) .al-start-20, html[dir=""] .al-start-20, html[dir=ltr] .al-start-20 {
+  left: 20px !important;
+}
+
+html:not([dir]) .al-start-n-20, html[dir=""] .al-start-n-20, html[dir=ltr] .al-start-n-20 {
+  left: -20px !important;
+}
+
+html:not([dir]) .al-end-20, html[dir=""] .al-end-20, html[dir=ltr] .al-end-20 {
+  right: 20px !important;
+}
+
+html:not([dir]) .al-end-n-20, html[dir=""] .al-end-n-20, html[dir=ltr] .al-end-n-20 {
   right: -20px !important;
 }
 
-html[dir=ltr] .al-end-n-24 {
+html:not([dir]) .al-start-24, html[dir=""] .al-start-24, html[dir=ltr] .al-start-24 {
+  left: 24px !important;
+}
+
+html:not([dir]) .al-start-n-24, html[dir=""] .al-start-n-24, html[dir=ltr] .al-start-n-24 {
+  left: -24px !important;
+}
+
+html:not([dir]) .al-end-24, html[dir=""] .al-end-24, html[dir=ltr] .al-end-24 {
+  right: 24px !important;
+}
+
+html:not([dir]) .al-end-n-24, html[dir=""] .al-end-n-24, html[dir=ltr] .al-end-n-24 {
   right: -24px !important;
 }
 
-html[dir=ltr] .al-end-n-32 {
+html:not([dir]) .al-start-32, html[dir=""] .al-start-32, html[dir=ltr] .al-start-32 {
+  left: 32px !important;
+}
+
+html:not([dir]) .al-start-n-32, html[dir=""] .al-start-n-32, html[dir=ltr] .al-start-n-32 {
+  left: -32px !important;
+}
+
+html:not([dir]) .al-end-32, html[dir=""] .al-end-32, html[dir=ltr] .al-end-32 {
+  right: 32px !important;
+}
+
+html:not([dir]) .al-end-n-32, html[dir=""] .al-end-n-32, html[dir=ltr] .al-end-n-32 {
   right: -32px !important;
 }
 
-html[dir=ltr] .al-end-n-48 {
+html:not([dir]) .al-start-48, html[dir=""] .al-start-48, html[dir=ltr] .al-start-48 {
+  left: 48px !important;
+}
+
+html:not([dir]) .al-start-n-48, html[dir=""] .al-start-n-48, html[dir=ltr] .al-start-n-48 {
+  left: -48px !important;
+}
+
+html:not([dir]) .al-end-48, html[dir=""] .al-end-48, html[dir=ltr] .al-end-48 {
+  right: 48px !important;
+}
+
+html:not([dir]) .al-end-n-48, html[dir=""] .al-end-n-48, html[dir=ltr] .al-end-n-48 {
   right: -48px !important;
 }
 
-html[dir=ltr] .al-end-n-64 {
-  right: -64px !important;
+html:not([dir]) .al-start-64, html[dir=""] .al-start-64, html[dir=ltr] .al-start-64 {
+  left: 64px !important;
 }
 
-html[dir=rtl] .al {
-  /*=== position start +ve utilities ===*/
-  /*=== position end +ve utilities ===*/
-  /*=== position start -ve utilities ===*/
-  /*=== position end -ve utilities ===*/
+html:not([dir]) .al-start-n-64, html[dir=""] .al-start-n-64, html[dir=ltr] .al-start-n-64 {
+  left: -64px !important;
+}
+
+html:not([dir]) .al-end-64, html[dir=""] .al-end-64, html[dir=ltr] .al-end-64 {
+  right: 64px !important;
+}
+
+html:not([dir]) .al-end-n-64, html[dir=""] .al-end-n-64, html[dir=ltr] .al-end-n-64 {
+  right: -64px !important;
 }
 
 html[dir=rtl] .al-start-0 {
   right: 0px !important;
 }
 
-html[dir=rtl] .al-start-1 {
-  right: 1px !important;
-}
-
-html[dir=rtl] .al-start-2 {
-  right: 2px !important;
-}
-
-html[dir=rtl] .al-start-3 {
-  right: 3px !important;
-}
-
-html[dir=rtl] .al-start-4 {
-  right: 4px !important;
-}
-
-html[dir=rtl] .al-start-5 {
-  right: 5px !important;
-}
-
-html[dir=rtl] .al-start-6 {
-  right: 6px !important;
-}
-
-html[dir=rtl] .al-start-7 {
-  right: 7px !important;
-}
-
-html[dir=rtl] .al-start-8 {
-  right: 8px !important;
-}
-
-html[dir=rtl] .al-start-9 {
-  right: 9px !important;
-}
-
-html[dir=rtl] .al-start-10 {
-  right: 10px !important;
-}
-
-html[dir=rtl] .al-start-12 {
-  right: 12px !important;
-}
-
-html[dir=rtl] .al-start-14 {
-  right: 14px !important;
-}
-
-html[dir=rtl] .al-start-15 {
-  right: 15px !important;
-}
-
-html[dir=rtl] .al-start-16 {
-  right: 16px !important;
-}
-
-html[dir=rtl] .al-start-20 {
-  right: 20px !important;
-}
-
-html[dir=rtl] .al-start-24 {
-  right: 24px !important;
-}
-
-html[dir=rtl] .al-start-32 {
-  right: 32px !important;
-}
-
-html[dir=rtl] .al-start-48 {
-  right: 48px !important;
-}
-
-html[dir=rtl] .al-start-64 {
-  right: 64px !important;
+html[dir=rtl] .al-start-n-0 {
+  right: -0px !important;
+  left: inherit !important;
 }
 
 html[dir=rtl] .al-end-0 {
   left: 0px !important;
 }
 
-html[dir=rtl] .al-end-1 {
-  left: 1px !important;
+html[dir=rtl] .al-end-n-0 {
+  left: -0px !important;
+  right: inherit !important;
 }
 
-html[dir=rtl] .al-end-2 {
-  left: 2px !important;
-}
-
-html[dir=rtl] .al-end-3 {
-  left: 3px !important;
-}
-
-html[dir=rtl] .al-end-4 {
-  left: 4px !important;
-}
-
-html[dir=rtl] .al-end-5 {
-  left: 5px !important;
-}
-
-html[dir=rtl] .al-end-6 {
-  left: 6px !important;
-}
-
-html[dir=rtl] .al-end-7 {
-  left: 7px !important;
-}
-
-html[dir=rtl] .al-end-8 {
-  left: 8px !important;
-}
-
-html[dir=rtl] .al-end-9 {
-  left: 9px !important;
-}
-
-html[dir=rtl] .al-end-10 {
-  left: 10px !important;
-}
-
-html[dir=rtl] .al-end-12 {
-  left: 12px !important;
-}
-
-html[dir=rtl] .al-end-14 {
-  left: 14px !important;
-}
-
-html[dir=rtl] .al-end-15 {
-  left: 15px !important;
-}
-
-html[dir=rtl] .al-end-16 {
-  left: 16px !important;
-}
-
-html[dir=rtl] .al-end-20 {
-  left: 20px !important;
-}
-
-html[dir=rtl] .al-end-24 {
-  left: 24px !important;
-}
-
-html[dir=rtl] .al-end-32 {
-  left: 32px !important;
-}
-
-html[dir=rtl] .al-end-48 {
-  left: 48px !important;
-}
-
-html[dir=rtl] .al-end-64 {
-  left: 64px !important;
-}
-
-html[dir=rtl] .al-start-n-0 {
-  right: 0px !important;
-  left: inherit !important;
+html[dir=rtl] .al-start-1 {
+  right: 1px !important;
 }
 
 html[dir=rtl] .al-start-n-1 {
@@ -12579,99 +12440,8 @@ html[dir=rtl] .al-start-n-1 {
   left: inherit !important;
 }
 
-html[dir=rtl] .al-start-n-2 {
-  right: -2px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-3 {
-  right: -3px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-4 {
-  right: -4px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-5 {
-  right: -5px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-6 {
-  right: -6px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-7 {
-  right: -7px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-8 {
-  right: -8px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-9 {
-  right: -9px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-10 {
-  right: -10px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-12 {
-  right: -12px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-14 {
-  right: -14px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-15 {
-  right: -15px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-16 {
-  right: -16px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-20 {
-  right: -20px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-24 {
-  right: -24px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-32 {
-  right: -32px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-48 {
-  right: -48px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-start-n-64 {
-  right: -64px !important;
-  left: inherit !important;
-}
-
-html[dir=rtl] .al-end-n-0 {
-  left: 0px !important;
-  right: inherit !important;
+html[dir=rtl] .al-end-1 {
+  left: 1px !important;
 }
 
 html[dir=rtl] .al-end-n-1 {
@@ -12679,9 +12449,35 @@ html[dir=rtl] .al-end-n-1 {
   right: inherit !important;
 }
 
+html[dir=rtl] .al-start-2 {
+  right: 2px !important;
+}
+
+html[dir=rtl] .al-start-n-2 {
+  right: -2px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-2 {
+  left: 2px !important;
+}
+
 html[dir=rtl] .al-end-n-2 {
   left: -2px !important;
   right: inherit !important;
+}
+
+html[dir=rtl] .al-start-3 {
+  right: 3px !important;
+}
+
+html[dir=rtl] .al-start-n-3 {
+  right: -3px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-3 {
+  left: 3px !important;
 }
 
 html[dir=rtl] .al-end-n-3 {
@@ -12689,9 +12485,35 @@ html[dir=rtl] .al-end-n-3 {
   right: inherit !important;
 }
 
+html[dir=rtl] .al-start-4 {
+  right: 4px !important;
+}
+
+html[dir=rtl] .al-start-n-4 {
+  right: -4px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-4 {
+  left: 4px !important;
+}
+
 html[dir=rtl] .al-end-n-4 {
   left: -4px !important;
   right: inherit !important;
+}
+
+html[dir=rtl] .al-start-5 {
+  right: 5px !important;
+}
+
+html[dir=rtl] .al-start-n-5 {
+  right: -5px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-5 {
+  left: 5px !important;
 }
 
 html[dir=rtl] .al-end-n-5 {
@@ -12699,9 +12521,35 @@ html[dir=rtl] .al-end-n-5 {
   right: inherit !important;
 }
 
+html[dir=rtl] .al-start-6 {
+  right: 6px !important;
+}
+
+html[dir=rtl] .al-start-n-6 {
+  right: -6px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-6 {
+  left: 6px !important;
+}
+
 html[dir=rtl] .al-end-n-6 {
   left: -6px !important;
   right: inherit !important;
+}
+
+html[dir=rtl] .al-start-7 {
+  right: 7px !important;
+}
+
+html[dir=rtl] .al-start-n-7 {
+  right: -7px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-7 {
+  left: 7px !important;
 }
 
 html[dir=rtl] .al-end-n-7 {
@@ -12709,9 +12557,35 @@ html[dir=rtl] .al-end-n-7 {
   right: inherit !important;
 }
 
+html[dir=rtl] .al-start-8 {
+  right: 8px !important;
+}
+
+html[dir=rtl] .al-start-n-8 {
+  right: -8px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-8 {
+  left: 8px !important;
+}
+
 html[dir=rtl] .al-end-n-8 {
   left: -8px !important;
   right: inherit !important;
+}
+
+html[dir=rtl] .al-start-9 {
+  right: 9px !important;
+}
+
+html[dir=rtl] .al-start-n-9 {
+  right: -9px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-9 {
+  left: 9px !important;
 }
 
 html[dir=rtl] .al-end-n-9 {
@@ -12719,9 +12593,35 @@ html[dir=rtl] .al-end-n-9 {
   right: inherit !important;
 }
 
+html[dir=rtl] .al-start-10 {
+  right: 10px !important;
+}
+
+html[dir=rtl] .al-start-n-10 {
+  right: -10px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-10 {
+  left: 10px !important;
+}
+
 html[dir=rtl] .al-end-n-10 {
   left: -10px !important;
   right: inherit !important;
+}
+
+html[dir=rtl] .al-start-12 {
+  right: 12px !important;
+}
+
+html[dir=rtl] .al-start-n-12 {
+  right: -12px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-12 {
+  left: 12px !important;
 }
 
 html[dir=rtl] .al-end-n-12 {
@@ -12729,9 +12629,35 @@ html[dir=rtl] .al-end-n-12 {
   right: inherit !important;
 }
 
+html[dir=rtl] .al-start-14 {
+  right: 14px !important;
+}
+
+html[dir=rtl] .al-start-n-14 {
+  right: -14px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-14 {
+  left: 14px !important;
+}
+
 html[dir=rtl] .al-end-n-14 {
   left: -14px !important;
   right: inherit !important;
+}
+
+html[dir=rtl] .al-start-15 {
+  right: 15px !important;
+}
+
+html[dir=rtl] .al-start-n-15 {
+  right: -15px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-15 {
+  left: 15px !important;
 }
 
 html[dir=rtl] .al-end-n-15 {
@@ -12739,9 +12665,35 @@ html[dir=rtl] .al-end-n-15 {
   right: inherit !important;
 }
 
+html[dir=rtl] .al-start-16 {
+  right: 16px !important;
+}
+
+html[dir=rtl] .al-start-n-16 {
+  right: -16px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-16 {
+  left: 16px !important;
+}
+
 html[dir=rtl] .al-end-n-16 {
   left: -16px !important;
   right: inherit !important;
+}
+
+html[dir=rtl] .al-start-20 {
+  right: 20px !important;
+}
+
+html[dir=rtl] .al-start-n-20 {
+  right: -20px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-20 {
+  left: 20px !important;
 }
 
 html[dir=rtl] .al-end-n-20 {
@@ -12749,9 +12701,35 @@ html[dir=rtl] .al-end-n-20 {
   right: inherit !important;
 }
 
+html[dir=rtl] .al-start-24 {
+  right: 24px !important;
+}
+
+html[dir=rtl] .al-start-n-24 {
+  right: -24px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-24 {
+  left: 24px !important;
+}
+
 html[dir=rtl] .al-end-n-24 {
   left: -24px !important;
   right: inherit !important;
+}
+
+html[dir=rtl] .al-start-32 {
+  right: 32px !important;
+}
+
+html[dir=rtl] .al-start-n-32 {
+  right: -32px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-32 {
+  left: 32px !important;
 }
 
 html[dir=rtl] .al-end-n-32 {
@@ -12759,9 +12737,35 @@ html[dir=rtl] .al-end-n-32 {
   right: inherit !important;
 }
 
+html[dir=rtl] .al-start-48 {
+  right: 48px !important;
+}
+
+html[dir=rtl] .al-start-n-48 {
+  right: -48px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-48 {
+  left: 48px !important;
+}
+
 html[dir=rtl] .al-end-n-48 {
   left: -48px !important;
   right: inherit !important;
+}
+
+html[dir=rtl] .al-start-64 {
+  right: 64px !important;
+}
+
+html[dir=rtl] .al-start-n-64 {
+  right: -64px !important;
+  left: inherit !important;
+}
+
+html[dir=rtl] .al-end-64 {
+  left: 64px !important;
 }
 
 html[dir=rtl] .al-end-n-64 {
@@ -12769,6 +12773,10 @@ html[dir=rtl] .al-end-n-64 {
   right: inherit !important;
 }
 
+/*========================
+  Responsive position utilities
+=========================*/
+/* Generate responsive classes */
 @media (min-width: 1400px) {
   .al-position-xxl-fixed {
     position: fixed !important;
@@ -13081,6 +13089,7 @@ html[dir=rtl] .al-end-n-64 {
 
 .al-no-focus:focus {
   outline: 0 !important;
+  box-shadow: unset !important;
 }
 
 .al-hover-text-primary:hover {
@@ -18469,1179 +18478,1179 @@ html[dir=rtl] .al-end-n-64 {
 }
 
 /* ===== Spacing RTL & LTR ===== */
-html[dir=ltr] .al-ps-0 {
+html:not([dir]) .al-ps-0, html[dir=""] .al-ps-0, html[dir=ltr] .al-ps-0 {
   padding-left: 0rem !important;
 }
 
-html[dir=ltr] .al-pe-0 {
+html:not([dir]) .al-pe-0, html[dir=""] .al-pe-0, html[dir=ltr] .al-pe-0 {
   padding-right: 0rem !important;
 }
 
-html[dir=ltr] .al-ms-0 {
+html:not([dir]) .al-ms-0, html[dir=""] .al-ms-0, html[dir=ltr] .al-ms-0 {
   margin-left: 0rem !important;
 }
 
-html[dir=ltr] .al-me-0 {
+html:not([dir]) .al-me-0, html[dir=""] .al-me-0, html[dir=ltr] .al-me-0 {
   margin-right: 0rem !important;
 }
 
-html[dir=ltr] .al-ms-n-0 {
+html:not([dir]) .al-ms-n-0, html[dir=""] .al-ms-n-0, html[dir=ltr] .al-ms-n-0 {
   margin-left: 0rem !important;
 }
 
-html[dir=ltr] .al-me-n-0 {
+html:not([dir]) .al-me-n-0, html[dir=""] .al-me-n-0, html[dir=ltr] .al-me-n-0 {
   margin-right: 0rem !important;
 }
 
-html[dir=ltr] .al-ps-1 {
+html:not([dir]) .al-ps-1, html[dir=""] .al-ps-1, html[dir=ltr] .al-ps-1 {
   padding-left: 0.063rem !important;
 }
 
-html[dir=ltr] .al-pe-1 {
+html:not([dir]) .al-pe-1, html[dir=""] .al-pe-1, html[dir=ltr] .al-pe-1 {
   padding-right: 0.063rem !important;
 }
 
-html[dir=ltr] .al-ms-1 {
+html:not([dir]) .al-ms-1, html[dir=""] .al-ms-1, html[dir=ltr] .al-ms-1 {
   margin-left: 0.063rem !important;
 }
 
-html[dir=ltr] .al-me-1 {
+html:not([dir]) .al-me-1, html[dir=""] .al-me-1, html[dir=ltr] .al-me-1 {
   margin-right: 0.063rem !important;
 }
 
-html[dir=ltr] .al-ms-n-1 {
+html:not([dir]) .al-ms-n-1, html[dir=""] .al-ms-n-1, html[dir=ltr] .al-ms-n-1 {
   margin-left: -0.063rem !important;
 }
 
-html[dir=ltr] .al-me-n-1 {
+html:not([dir]) .al-me-n-1, html[dir=""] .al-me-n-1, html[dir=ltr] .al-me-n-1 {
   margin-right: -0.063rem !important;
 }
 
-html[dir=ltr] .al-ps-2 {
+html:not([dir]) .al-ps-2, html[dir=""] .al-ps-2, html[dir=ltr] .al-ps-2 {
   padding-left: 0.125rem !important;
 }
 
-html[dir=ltr] .al-pe-2 {
+html:not([dir]) .al-pe-2, html[dir=""] .al-pe-2, html[dir=ltr] .al-pe-2 {
   padding-right: 0.125rem !important;
 }
 
-html[dir=ltr] .al-ms-2 {
+html:not([dir]) .al-ms-2, html[dir=""] .al-ms-2, html[dir=ltr] .al-ms-2 {
   margin-left: 0.125rem !important;
 }
 
-html[dir=ltr] .al-me-2 {
+html:not([dir]) .al-me-2, html[dir=""] .al-me-2, html[dir=ltr] .al-me-2 {
   margin-right: 0.125rem !important;
 }
 
-html[dir=ltr] .al-ms-n-2 {
+html:not([dir]) .al-ms-n-2, html[dir=""] .al-ms-n-2, html[dir=ltr] .al-ms-n-2 {
   margin-left: -0.125rem !important;
 }
 
-html[dir=ltr] .al-me-n-2 {
+html:not([dir]) .al-me-n-2, html[dir=""] .al-me-n-2, html[dir=ltr] .al-me-n-2 {
   margin-right: -0.125rem !important;
 }
 
-html[dir=ltr] .al-ps-3 {
+html:not([dir]) .al-ps-3, html[dir=""] .al-ps-3, html[dir=ltr] .al-ps-3 {
   padding-left: 0.188rem !important;
 }
 
-html[dir=ltr] .al-pe-3 {
+html:not([dir]) .al-pe-3, html[dir=""] .al-pe-3, html[dir=ltr] .al-pe-3 {
   padding-right: 0.188rem !important;
 }
 
-html[dir=ltr] .al-ms-3 {
+html:not([dir]) .al-ms-3, html[dir=""] .al-ms-3, html[dir=ltr] .al-ms-3 {
   margin-left: 0.188rem !important;
 }
 
-html[dir=ltr] .al-me-3 {
+html:not([dir]) .al-me-3, html[dir=""] .al-me-3, html[dir=ltr] .al-me-3 {
   margin-right: 0.188rem !important;
 }
 
-html[dir=ltr] .al-ms-n-3 {
+html:not([dir]) .al-ms-n-3, html[dir=""] .al-ms-n-3, html[dir=ltr] .al-ms-n-3 {
   margin-left: -0.188rem !important;
 }
 
-html[dir=ltr] .al-me-n-3 {
+html:not([dir]) .al-me-n-3, html[dir=""] .al-me-n-3, html[dir=ltr] .al-me-n-3 {
   margin-right: -0.188rem !important;
 }
 
-html[dir=ltr] .al-ps-4 {
+html:not([dir]) .al-ps-4, html[dir=""] .al-ps-4, html[dir=ltr] .al-ps-4 {
   padding-left: 0.25rem !important;
 }
 
-html[dir=ltr] .al-pe-4 {
+html:not([dir]) .al-pe-4, html[dir=""] .al-pe-4, html[dir=ltr] .al-pe-4 {
   padding-right: 0.25rem !important;
 }
 
-html[dir=ltr] .al-ms-4 {
+html:not([dir]) .al-ms-4, html[dir=""] .al-ms-4, html[dir=ltr] .al-ms-4 {
   margin-left: 0.25rem !important;
 }
 
-html[dir=ltr] .al-me-4 {
+html:not([dir]) .al-me-4, html[dir=""] .al-me-4, html[dir=ltr] .al-me-4 {
   margin-right: 0.25rem !important;
 }
 
-html[dir=ltr] .al-ms-n-4 {
+html:not([dir]) .al-ms-n-4, html[dir=""] .al-ms-n-4, html[dir=ltr] .al-ms-n-4 {
   margin-left: -0.25rem !important;
 }
 
-html[dir=ltr] .al-me-n-4 {
+html:not([dir]) .al-me-n-4, html[dir=""] .al-me-n-4, html[dir=ltr] .al-me-n-4 {
   margin-right: -0.25rem !important;
 }
 
-html[dir=ltr] .al-ps-5 {
+html:not([dir]) .al-ps-5, html[dir=""] .al-ps-5, html[dir=ltr] .al-ps-5 {
   padding-left: 0.313rem !important;
 }
 
-html[dir=ltr] .al-pe-5 {
+html:not([dir]) .al-pe-5, html[dir=""] .al-pe-5, html[dir=ltr] .al-pe-5 {
   padding-right: 0.313rem !important;
 }
 
-html[dir=ltr] .al-ms-5 {
+html:not([dir]) .al-ms-5, html[dir=""] .al-ms-5, html[dir=ltr] .al-ms-5 {
   margin-left: 0.313rem !important;
 }
 
-html[dir=ltr] .al-me-5 {
+html:not([dir]) .al-me-5, html[dir=""] .al-me-5, html[dir=ltr] .al-me-5 {
   margin-right: 0.313rem !important;
 }
 
-html[dir=ltr] .al-ms-n-5 {
+html:not([dir]) .al-ms-n-5, html[dir=""] .al-ms-n-5, html[dir=ltr] .al-ms-n-5 {
   margin-left: -0.313rem !important;
 }
 
-html[dir=ltr] .al-me-n-5 {
+html:not([dir]) .al-me-n-5, html[dir=""] .al-me-n-5, html[dir=ltr] .al-me-n-5 {
   margin-right: -0.313rem !important;
 }
 
-html[dir=ltr] .al-ps-6 {
+html:not([dir]) .al-ps-6, html[dir=""] .al-ps-6, html[dir=ltr] .al-ps-6 {
   padding-left: 0.375rem !important;
 }
 
-html[dir=ltr] .al-pe-6 {
+html:not([dir]) .al-pe-6, html[dir=""] .al-pe-6, html[dir=ltr] .al-pe-6 {
   padding-right: 0.375rem !important;
 }
 
-html[dir=ltr] .al-ms-6 {
+html:not([dir]) .al-ms-6, html[dir=""] .al-ms-6, html[dir=ltr] .al-ms-6 {
   margin-left: 0.375rem !important;
 }
 
-html[dir=ltr] .al-me-6 {
+html:not([dir]) .al-me-6, html[dir=""] .al-me-6, html[dir=ltr] .al-me-6 {
   margin-right: 0.375rem !important;
 }
 
-html[dir=ltr] .al-ms-n-6 {
+html:not([dir]) .al-ms-n-6, html[dir=""] .al-ms-n-6, html[dir=ltr] .al-ms-n-6 {
   margin-left: -0.375rem !important;
 }
 
-html[dir=ltr] .al-me-n-6 {
+html:not([dir]) .al-me-n-6, html[dir=""] .al-me-n-6, html[dir=ltr] .al-me-n-6 {
   margin-right: -0.375rem !important;
 }
 
-html[dir=ltr] .al-ps-7 {
+html:not([dir]) .al-ps-7, html[dir=""] .al-ps-7, html[dir=ltr] .al-ps-7 {
   padding-left: 0.438rem !important;
 }
 
-html[dir=ltr] .al-pe-7 {
+html:not([dir]) .al-pe-7, html[dir=""] .al-pe-7, html[dir=ltr] .al-pe-7 {
   padding-right: 0.438rem !important;
 }
 
-html[dir=ltr] .al-ms-7 {
+html:not([dir]) .al-ms-7, html[dir=""] .al-ms-7, html[dir=ltr] .al-ms-7 {
   margin-left: 0.438rem !important;
 }
 
-html[dir=ltr] .al-me-7 {
+html:not([dir]) .al-me-7, html[dir=""] .al-me-7, html[dir=ltr] .al-me-7 {
   margin-right: 0.438rem !important;
 }
 
-html[dir=ltr] .al-ms-n-7 {
+html:not([dir]) .al-ms-n-7, html[dir=""] .al-ms-n-7, html[dir=ltr] .al-ms-n-7 {
   margin-left: -0.438rem !important;
 }
 
-html[dir=ltr] .al-me-n-7 {
+html:not([dir]) .al-me-n-7, html[dir=""] .al-me-n-7, html[dir=ltr] .al-me-n-7 {
   margin-right: -0.438rem !important;
 }
 
-html[dir=ltr] .al-ps-8 {
+html:not([dir]) .al-ps-8, html[dir=""] .al-ps-8, html[dir=ltr] .al-ps-8 {
   padding-left: 0.5rem !important;
 }
 
-html[dir=ltr] .al-pe-8 {
+html:not([dir]) .al-pe-8, html[dir=""] .al-pe-8, html[dir=ltr] .al-pe-8 {
   padding-right: 0.5rem !important;
 }
 
-html[dir=ltr] .al-ms-8 {
+html:not([dir]) .al-ms-8, html[dir=""] .al-ms-8, html[dir=ltr] .al-ms-8 {
   margin-left: 0.5rem !important;
 }
 
-html[dir=ltr] .al-me-8 {
+html:not([dir]) .al-me-8, html[dir=""] .al-me-8, html[dir=ltr] .al-me-8 {
   margin-right: 0.5rem !important;
 }
 
-html[dir=ltr] .al-ms-n-8 {
+html:not([dir]) .al-ms-n-8, html[dir=""] .al-ms-n-8, html[dir=ltr] .al-ms-n-8 {
   margin-left: -0.5rem !important;
 }
 
-html[dir=ltr] .al-me-n-8 {
+html:not([dir]) .al-me-n-8, html[dir=""] .al-me-n-8, html[dir=ltr] .al-me-n-8 {
   margin-right: -0.5rem !important;
 }
 
-html[dir=ltr] .al-ps-9 {
+html:not([dir]) .al-ps-9, html[dir=""] .al-ps-9, html[dir=ltr] .al-ps-9 {
   padding-left: 0.563rem !important;
 }
 
-html[dir=ltr] .al-pe-9 {
+html:not([dir]) .al-pe-9, html[dir=""] .al-pe-9, html[dir=ltr] .al-pe-9 {
   padding-right: 0.563rem !important;
 }
 
-html[dir=ltr] .al-ms-9 {
+html:not([dir]) .al-ms-9, html[dir=""] .al-ms-9, html[dir=ltr] .al-ms-9 {
   margin-left: 0.563rem !important;
 }
 
-html[dir=ltr] .al-me-9 {
+html:not([dir]) .al-me-9, html[dir=""] .al-me-9, html[dir=ltr] .al-me-9 {
   margin-right: 0.563rem !important;
 }
 
-html[dir=ltr] .al-ms-n-9 {
+html:not([dir]) .al-ms-n-9, html[dir=""] .al-ms-n-9, html[dir=ltr] .al-ms-n-9 {
   margin-left: -0.563rem !important;
 }
 
-html[dir=ltr] .al-me-n-9 {
+html:not([dir]) .al-me-n-9, html[dir=""] .al-me-n-9, html[dir=ltr] .al-me-n-9 {
   margin-right: -0.563rem !important;
 }
 
-html[dir=ltr] .al-ps-10 {
+html:not([dir]) .al-ps-10, html[dir=""] .al-ps-10, html[dir=ltr] .al-ps-10 {
   padding-left: 0.625rem !important;
 }
 
-html[dir=ltr] .al-pe-10 {
+html:not([dir]) .al-pe-10, html[dir=""] .al-pe-10, html[dir=ltr] .al-pe-10 {
   padding-right: 0.625rem !important;
 }
 
-html[dir=ltr] .al-ms-10 {
+html:not([dir]) .al-ms-10, html[dir=""] .al-ms-10, html[dir=ltr] .al-ms-10 {
   margin-left: 0.625rem !important;
 }
 
-html[dir=ltr] .al-me-10 {
+html:not([dir]) .al-me-10, html[dir=""] .al-me-10, html[dir=ltr] .al-me-10 {
   margin-right: 0.625rem !important;
 }
 
-html[dir=ltr] .al-ms-n-10 {
+html:not([dir]) .al-ms-n-10, html[dir=""] .al-ms-n-10, html[dir=ltr] .al-ms-n-10 {
   margin-left: -0.625rem !important;
 }
 
-html[dir=ltr] .al-me-n-10 {
+html:not([dir]) .al-me-n-10, html[dir=""] .al-me-n-10, html[dir=ltr] .al-me-n-10 {
   margin-right: -0.625rem !important;
 }
 
-html[dir=ltr] .al-ps-12 {
+html:not([dir]) .al-ps-12, html[dir=""] .al-ps-12, html[dir=ltr] .al-ps-12 {
   padding-left: 0.75rem !important;
 }
 
-html[dir=ltr] .al-pe-12 {
+html:not([dir]) .al-pe-12, html[dir=""] .al-pe-12, html[dir=ltr] .al-pe-12 {
   padding-right: 0.75rem !important;
 }
 
-html[dir=ltr] .al-ms-12 {
+html:not([dir]) .al-ms-12, html[dir=""] .al-ms-12, html[dir=ltr] .al-ms-12 {
   margin-left: 0.75rem !important;
 }
 
-html[dir=ltr] .al-me-12 {
+html:not([dir]) .al-me-12, html[dir=""] .al-me-12, html[dir=ltr] .al-me-12 {
   margin-right: 0.75rem !important;
 }
 
-html[dir=ltr] .al-ms-n-12 {
+html:not([dir]) .al-ms-n-12, html[dir=""] .al-ms-n-12, html[dir=ltr] .al-ms-n-12 {
   margin-left: -0.75rem !important;
 }
 
-html[dir=ltr] .al-me-n-12 {
+html:not([dir]) .al-me-n-12, html[dir=""] .al-me-n-12, html[dir=ltr] .al-me-n-12 {
   margin-right: -0.75rem !important;
 }
 
-html[dir=ltr] .al-ps-16 {
+html:not([dir]) .al-ps-16, html[dir=""] .al-ps-16, html[dir=ltr] .al-ps-16 {
   padding-left: 1rem !important;
 }
 
-html[dir=ltr] .al-pe-16 {
+html:not([dir]) .al-pe-16, html[dir=""] .al-pe-16, html[dir=ltr] .al-pe-16 {
   padding-right: 1rem !important;
 }
 
-html[dir=ltr] .al-ms-16 {
+html:not([dir]) .al-ms-16, html[dir=""] .al-ms-16, html[dir=ltr] .al-ms-16 {
   margin-left: 1rem !important;
 }
 
-html[dir=ltr] .al-me-16 {
+html:not([dir]) .al-me-16, html[dir=""] .al-me-16, html[dir=ltr] .al-me-16 {
   margin-right: 1rem !important;
 }
 
-html[dir=ltr] .al-ms-n-16 {
+html:not([dir]) .al-ms-n-16, html[dir=""] .al-ms-n-16, html[dir=ltr] .al-ms-n-16 {
   margin-left: -1rem !important;
 }
 
-html[dir=ltr] .al-me-n-16 {
+html:not([dir]) .al-me-n-16, html[dir=""] .al-me-n-16, html[dir=ltr] .al-me-n-16 {
   margin-right: -1rem !important;
 }
 
-html[dir=ltr] .al-ps-18 {
+html:not([dir]) .al-ps-18, html[dir=""] .al-ps-18, html[dir=ltr] .al-ps-18 {
   padding-left: 1.125rem !important;
 }
 
-html[dir=ltr] .al-pe-18 {
+html:not([dir]) .al-pe-18, html[dir=""] .al-pe-18, html[dir=ltr] .al-pe-18 {
   padding-right: 1.125rem !important;
 }
 
-html[dir=ltr] .al-ms-18 {
+html:not([dir]) .al-ms-18, html[dir=""] .al-ms-18, html[dir=ltr] .al-ms-18 {
   margin-left: 1.125rem !important;
 }
 
-html[dir=ltr] .al-me-18 {
+html:not([dir]) .al-me-18, html[dir=""] .al-me-18, html[dir=ltr] .al-me-18 {
   margin-right: 1.125rem !important;
 }
 
-html[dir=ltr] .al-ms-n-18 {
+html:not([dir]) .al-ms-n-18, html[dir=""] .al-ms-n-18, html[dir=ltr] .al-ms-n-18 {
   margin-left: -1.125rem !important;
 }
 
-html[dir=ltr] .al-me-n-18 {
+html:not([dir]) .al-me-n-18, html[dir=""] .al-me-n-18, html[dir=ltr] .al-me-n-18 {
   margin-right: -1.125rem !important;
 }
 
-html[dir=ltr] .al-ps-20 {
+html:not([dir]) .al-ps-20, html[dir=""] .al-ps-20, html[dir=ltr] .al-ps-20 {
   padding-left: 1.25rem !important;
 }
 
-html[dir=ltr] .al-pe-20 {
+html:not([dir]) .al-pe-20, html[dir=""] .al-pe-20, html[dir=ltr] .al-pe-20 {
   padding-right: 1.25rem !important;
 }
 
-html[dir=ltr] .al-ms-20 {
+html:not([dir]) .al-ms-20, html[dir=""] .al-ms-20, html[dir=ltr] .al-ms-20 {
   margin-left: 1.25rem !important;
 }
 
-html[dir=ltr] .al-me-20 {
+html:not([dir]) .al-me-20, html[dir=""] .al-me-20, html[dir=ltr] .al-me-20 {
   margin-right: 1.25rem !important;
 }
 
-html[dir=ltr] .al-ms-n-20 {
+html:not([dir]) .al-ms-n-20, html[dir=""] .al-ms-n-20, html[dir=ltr] .al-ms-n-20 {
   margin-left: -1.25rem !important;
 }
 
-html[dir=ltr] .al-me-n-20 {
+html:not([dir]) .al-me-n-20, html[dir=""] .al-me-n-20, html[dir=ltr] .al-me-n-20 {
   margin-right: -1.25rem !important;
 }
 
-html[dir=ltr] .al-ps-22 {
+html:not([dir]) .al-ps-22, html[dir=""] .al-ps-22, html[dir=ltr] .al-ps-22 {
   padding-left: 1.375rem !important;
 }
 
-html[dir=ltr] .al-pe-22 {
+html:not([dir]) .al-pe-22, html[dir=""] .al-pe-22, html[dir=ltr] .al-pe-22 {
   padding-right: 1.375rem !important;
 }
 
-html[dir=ltr] .al-ms-22 {
+html:not([dir]) .al-ms-22, html[dir=""] .al-ms-22, html[dir=ltr] .al-ms-22 {
   margin-left: 1.375rem !important;
 }
 
-html[dir=ltr] .al-me-22 {
+html:not([dir]) .al-me-22, html[dir=""] .al-me-22, html[dir=ltr] .al-me-22 {
   margin-right: 1.375rem !important;
 }
 
-html[dir=ltr] .al-ms-n-22 {
+html:not([dir]) .al-ms-n-22, html[dir=""] .al-ms-n-22, html[dir=ltr] .al-ms-n-22 {
   margin-left: -1.375rem !important;
 }
 
-html[dir=ltr] .al-me-n-22 {
+html:not([dir]) .al-me-n-22, html[dir=""] .al-me-n-22, html[dir=ltr] .al-me-n-22 {
   margin-right: -1.375rem !important;
 }
 
-html[dir=ltr] .al-ps-24 {
+html:not([dir]) .al-ps-24, html[dir=""] .al-ps-24, html[dir=ltr] .al-ps-24 {
   padding-left: 1.5rem !important;
 }
 
-html[dir=ltr] .al-pe-24 {
+html:not([dir]) .al-pe-24, html[dir=""] .al-pe-24, html[dir=ltr] .al-pe-24 {
   padding-right: 1.5rem !important;
 }
 
-html[dir=ltr] .al-ms-24 {
+html:not([dir]) .al-ms-24, html[dir=""] .al-ms-24, html[dir=ltr] .al-ms-24 {
   margin-left: 1.5rem !important;
 }
 
-html[dir=ltr] .al-me-24 {
+html:not([dir]) .al-me-24, html[dir=""] .al-me-24, html[dir=ltr] .al-me-24 {
   margin-right: 1.5rem !important;
 }
 
-html[dir=ltr] .al-ms-n-24 {
+html:not([dir]) .al-ms-n-24, html[dir=""] .al-ms-n-24, html[dir=ltr] .al-ms-n-24 {
   margin-left: -1.5rem !important;
 }
 
-html[dir=ltr] .al-me-n-24 {
+html:not([dir]) .al-me-n-24, html[dir=""] .al-me-n-24, html[dir=ltr] .al-me-n-24 {
   margin-right: -1.5rem !important;
 }
 
-html[dir=ltr] .al-ps-25 {
+html:not([dir]) .al-ps-25, html[dir=""] .al-ps-25, html[dir=ltr] .al-ps-25 {
   padding-left: 1.563rem !important;
 }
 
-html[dir=ltr] .al-pe-25 {
+html:not([dir]) .al-pe-25, html[dir=""] .al-pe-25, html[dir=ltr] .al-pe-25 {
   padding-right: 1.563rem !important;
 }
 
-html[dir=ltr] .al-ms-25 {
+html:not([dir]) .al-ms-25, html[dir=""] .al-ms-25, html[dir=ltr] .al-ms-25 {
   margin-left: 1.563rem !important;
 }
 
-html[dir=ltr] .al-me-25 {
+html:not([dir]) .al-me-25, html[dir=""] .al-me-25, html[dir=ltr] .al-me-25 {
   margin-right: 1.563rem !important;
 }
 
-html[dir=ltr] .al-ms-n-25 {
+html:not([dir]) .al-ms-n-25, html[dir=""] .al-ms-n-25, html[dir=ltr] .al-ms-n-25 {
   margin-left: -1.563rem !important;
 }
 
-html[dir=ltr] .al-me-n-25 {
+html:not([dir]) .al-me-n-25, html[dir=""] .al-me-n-25, html[dir=ltr] .al-me-n-25 {
   margin-right: -1.563rem !important;
 }
 
-html[dir=ltr] .al-ps-26 {
+html:not([dir]) .al-ps-26, html[dir=""] .al-ps-26, html[dir=ltr] .al-ps-26 {
   padding-left: 1.625rem !important;
 }
 
-html[dir=ltr] .al-pe-26 {
+html:not([dir]) .al-pe-26, html[dir=""] .al-pe-26, html[dir=ltr] .al-pe-26 {
   padding-right: 1.625rem !important;
 }
 
-html[dir=ltr] .al-ms-26 {
+html:not([dir]) .al-ms-26, html[dir=""] .al-ms-26, html[dir=ltr] .al-ms-26 {
   margin-left: 1.625rem !important;
 }
 
-html[dir=ltr] .al-me-26 {
+html:not([dir]) .al-me-26, html[dir=""] .al-me-26, html[dir=ltr] .al-me-26 {
   margin-right: 1.625rem !important;
 }
 
-html[dir=ltr] .al-ms-n-26 {
+html:not([dir]) .al-ms-n-26, html[dir=""] .al-ms-n-26, html[dir=ltr] .al-ms-n-26 {
   margin-left: -1.625rem !important;
 }
 
-html[dir=ltr] .al-me-n-26 {
+html:not([dir]) .al-me-n-26, html[dir=""] .al-me-n-26, html[dir=ltr] .al-me-n-26 {
   margin-right: -1.625rem !important;
 }
 
-html[dir=ltr] .al-ps-28 {
+html:not([dir]) .al-ps-28, html[dir=""] .al-ps-28, html[dir=ltr] .al-ps-28 {
   padding-left: 1.75rem !important;
 }
 
-html[dir=ltr] .al-pe-28 {
+html:not([dir]) .al-pe-28, html[dir=""] .al-pe-28, html[dir=ltr] .al-pe-28 {
   padding-right: 1.75rem !important;
 }
 
-html[dir=ltr] .al-ms-28 {
+html:not([dir]) .al-ms-28, html[dir=""] .al-ms-28, html[dir=ltr] .al-ms-28 {
   margin-left: 1.75rem !important;
 }
 
-html[dir=ltr] .al-me-28 {
+html:not([dir]) .al-me-28, html[dir=""] .al-me-28, html[dir=ltr] .al-me-28 {
   margin-right: 1.75rem !important;
 }
 
-html[dir=ltr] .al-ms-n-28 {
+html:not([dir]) .al-ms-n-28, html[dir=""] .al-ms-n-28, html[dir=ltr] .al-ms-n-28 {
   margin-left: -1.75rem !important;
 }
 
-html[dir=ltr] .al-me-n-28 {
+html:not([dir]) .al-me-n-28, html[dir=""] .al-me-n-28, html[dir=ltr] .al-me-n-28 {
   margin-right: -1.75rem !important;
 }
 
-html[dir=ltr] .al-ps-30 {
+html:not([dir]) .al-ps-30, html[dir=""] .al-ps-30, html[dir=ltr] .al-ps-30 {
   padding-left: 1.875rem !important;
 }
 
-html[dir=ltr] .al-pe-30 {
+html:not([dir]) .al-pe-30, html[dir=""] .al-pe-30, html[dir=ltr] .al-pe-30 {
   padding-right: 1.875rem !important;
 }
 
-html[dir=ltr] .al-ms-30 {
+html:not([dir]) .al-ms-30, html[dir=""] .al-ms-30, html[dir=ltr] .al-ms-30 {
   margin-left: 1.875rem !important;
 }
 
-html[dir=ltr] .al-me-30 {
+html:not([dir]) .al-me-30, html[dir=""] .al-me-30, html[dir=ltr] .al-me-30 {
   margin-right: 1.875rem !important;
 }
 
-html[dir=ltr] .al-ms-n-30 {
+html:not([dir]) .al-ms-n-30, html[dir=""] .al-ms-n-30, html[dir=ltr] .al-ms-n-30 {
   margin-left: -1.875rem !important;
 }
 
-html[dir=ltr] .al-me-n-30 {
+html:not([dir]) .al-me-n-30, html[dir=""] .al-me-n-30, html[dir=ltr] .al-me-n-30 {
   margin-right: -1.875rem !important;
 }
 
-html[dir=ltr] .al-ps-32 {
+html:not([dir]) .al-ps-32, html[dir=""] .al-ps-32, html[dir=ltr] .al-ps-32 {
   padding-left: 2rem !important;
 }
 
-html[dir=ltr] .al-pe-32 {
+html:not([dir]) .al-pe-32, html[dir=""] .al-pe-32, html[dir=ltr] .al-pe-32 {
   padding-right: 2rem !important;
 }
 
-html[dir=ltr] .al-ms-32 {
+html:not([dir]) .al-ms-32, html[dir=""] .al-ms-32, html[dir=ltr] .al-ms-32 {
   margin-left: 2rem !important;
 }
 
-html[dir=ltr] .al-me-32 {
+html:not([dir]) .al-me-32, html[dir=""] .al-me-32, html[dir=ltr] .al-me-32 {
   margin-right: 2rem !important;
 }
 
-html[dir=ltr] .al-ms-n-32 {
+html:not([dir]) .al-ms-n-32, html[dir=""] .al-ms-n-32, html[dir=ltr] .al-ms-n-32 {
   margin-left: -2rem !important;
 }
 
-html[dir=ltr] .al-me-n-32 {
+html:not([dir]) .al-me-n-32, html[dir=""] .al-me-n-32, html[dir=ltr] .al-me-n-32 {
   margin-right: -2rem !important;
 }
 
-html[dir=ltr] .al-ps-35 {
+html:not([dir]) .al-ps-35, html[dir=""] .al-ps-35, html[dir=ltr] .al-ps-35 {
   padding-left: 2.188rem !important;
 }
 
-html[dir=ltr] .al-pe-35 {
+html:not([dir]) .al-pe-35, html[dir=""] .al-pe-35, html[dir=ltr] .al-pe-35 {
   padding-right: 2.188rem !important;
 }
 
-html[dir=ltr] .al-ms-35 {
+html:not([dir]) .al-ms-35, html[dir=""] .al-ms-35, html[dir=ltr] .al-ms-35 {
   margin-left: 2.188rem !important;
 }
 
-html[dir=ltr] .al-me-35 {
+html:not([dir]) .al-me-35, html[dir=""] .al-me-35, html[dir=ltr] .al-me-35 {
   margin-right: 2.188rem !important;
 }
 
-html[dir=ltr] .al-ms-n-35 {
+html:not([dir]) .al-ms-n-35, html[dir=""] .al-ms-n-35, html[dir=ltr] .al-ms-n-35 {
   margin-left: -2.188rem !important;
 }
 
-html[dir=ltr] .al-me-n-35 {
+html:not([dir]) .al-me-n-35, html[dir=""] .al-me-n-35, html[dir=ltr] .al-me-n-35 {
   margin-right: -2.188rem !important;
 }
 
-html[dir=ltr] .al-ps-36 {
+html:not([dir]) .al-ps-36, html[dir=""] .al-ps-36, html[dir=ltr] .al-ps-36 {
   padding-left: 2.25rem !important;
 }
 
-html[dir=ltr] .al-pe-36 {
+html:not([dir]) .al-pe-36, html[dir=""] .al-pe-36, html[dir=ltr] .al-pe-36 {
   padding-right: 2.25rem !important;
 }
 
-html[dir=ltr] .al-ms-36 {
+html:not([dir]) .al-ms-36, html[dir=""] .al-ms-36, html[dir=ltr] .al-ms-36 {
   margin-left: 2.25rem !important;
 }
 
-html[dir=ltr] .al-me-36 {
+html:not([dir]) .al-me-36, html[dir=""] .al-me-36, html[dir=ltr] .al-me-36 {
   margin-right: 2.25rem !important;
 }
 
-html[dir=ltr] .al-ms-n-36 {
+html:not([dir]) .al-ms-n-36, html[dir=""] .al-ms-n-36, html[dir=ltr] .al-ms-n-36 {
   margin-left: -2.25rem !important;
 }
 
-html[dir=ltr] .al-me-n-36 {
+html:not([dir]) .al-me-n-36, html[dir=""] .al-me-n-36, html[dir=ltr] .al-me-n-36 {
   margin-right: -2.25rem !important;
 }
 
-html[dir=ltr] .al-ps-40 {
+html:not([dir]) .al-ps-40, html[dir=""] .al-ps-40, html[dir=ltr] .al-ps-40 {
   padding-left: 2.5rem !important;
 }
 
-html[dir=ltr] .al-pe-40 {
+html:not([dir]) .al-pe-40, html[dir=""] .al-pe-40, html[dir=ltr] .al-pe-40 {
   padding-right: 2.5rem !important;
 }
 
-html[dir=ltr] .al-ms-40 {
+html:not([dir]) .al-ms-40, html[dir=""] .al-ms-40, html[dir=ltr] .al-ms-40 {
   margin-left: 2.5rem !important;
 }
 
-html[dir=ltr] .al-me-40 {
+html:not([dir]) .al-me-40, html[dir=""] .al-me-40, html[dir=ltr] .al-me-40 {
   margin-right: 2.5rem !important;
 }
 
-html[dir=ltr] .al-ms-n-40 {
+html:not([dir]) .al-ms-n-40, html[dir=""] .al-ms-n-40, html[dir=ltr] .al-ms-n-40 {
   margin-left: -2.5rem !important;
 }
 
-html[dir=ltr] .al-me-n-40 {
+html:not([dir]) .al-me-n-40, html[dir=""] .al-me-n-40, html[dir=ltr] .al-me-n-40 {
   margin-right: -2.5rem !important;
 }
 
-html[dir=ltr] .al-ps-45 {
+html:not([dir]) .al-ps-45, html[dir=""] .al-ps-45, html[dir=ltr] .al-ps-45 {
   padding-left: 2.813rem !important;
 }
 
-html[dir=ltr] .al-pe-45 {
+html:not([dir]) .al-pe-45, html[dir=""] .al-pe-45, html[dir=ltr] .al-pe-45 {
   padding-right: 2.813rem !important;
 }
 
-html[dir=ltr] .al-ms-45 {
+html:not([dir]) .al-ms-45, html[dir=""] .al-ms-45, html[dir=ltr] .al-ms-45 {
   margin-left: 2.813rem !important;
 }
 
-html[dir=ltr] .al-me-45 {
+html:not([dir]) .al-me-45, html[dir=""] .al-me-45, html[dir=ltr] .al-me-45 {
   margin-right: 2.813rem !important;
 }
 
-html[dir=ltr] .al-ms-n-45 {
+html:not([dir]) .al-ms-n-45, html[dir=""] .al-ms-n-45, html[dir=ltr] .al-ms-n-45 {
   margin-left: -2.813rem !important;
 }
 
-html[dir=ltr] .al-me-n-45 {
+html:not([dir]) .al-me-n-45, html[dir=""] .al-me-n-45, html[dir=ltr] .al-me-n-45 {
   margin-right: -2.813rem !important;
 }
 
-html[dir=ltr] .al-ps-48 {
+html:not([dir]) .al-ps-48, html[dir=""] .al-ps-48, html[dir=ltr] .al-ps-48 {
   padding-left: 3rem !important;
 }
 
-html[dir=ltr] .al-pe-48 {
+html:not([dir]) .al-pe-48, html[dir=""] .al-pe-48, html[dir=ltr] .al-pe-48 {
   padding-right: 3rem !important;
 }
 
-html[dir=ltr] .al-ms-48 {
+html:not([dir]) .al-ms-48, html[dir=""] .al-ms-48, html[dir=ltr] .al-ms-48 {
   margin-left: 3rem !important;
 }
 
-html[dir=ltr] .al-me-48 {
+html:not([dir]) .al-me-48, html[dir=""] .al-me-48, html[dir=ltr] .al-me-48 {
   margin-right: 3rem !important;
 }
 
-html[dir=ltr] .al-ms-n-48 {
+html:not([dir]) .al-ms-n-48, html[dir=""] .al-ms-n-48, html[dir=ltr] .al-ms-n-48 {
   margin-left: -3rem !important;
 }
 
-html[dir=ltr] .al-me-n-48 {
+html:not([dir]) .al-me-n-48, html[dir=""] .al-me-n-48, html[dir=ltr] .al-me-n-48 {
   margin-right: -3rem !important;
 }
 
-html[dir=ltr] .al-ps-50 {
+html:not([dir]) .al-ps-50, html[dir=""] .al-ps-50, html[dir=ltr] .al-ps-50 {
   padding-left: 3.125rem !important;
 }
 
-html[dir=ltr] .al-pe-50 {
+html:not([dir]) .al-pe-50, html[dir=""] .al-pe-50, html[dir=ltr] .al-pe-50 {
   padding-right: 3.125rem !important;
 }
 
-html[dir=ltr] .al-ms-50 {
+html:not([dir]) .al-ms-50, html[dir=""] .al-ms-50, html[dir=ltr] .al-ms-50 {
   margin-left: 3.125rem !important;
 }
 
-html[dir=ltr] .al-me-50 {
+html:not([dir]) .al-me-50, html[dir=""] .al-me-50, html[dir=ltr] .al-me-50 {
   margin-right: 3.125rem !important;
 }
 
-html[dir=ltr] .al-ms-n-50 {
+html:not([dir]) .al-ms-n-50, html[dir=""] .al-ms-n-50, html[dir=ltr] .al-ms-n-50 {
   margin-left: -3.125rem !important;
 }
 
-html[dir=ltr] .al-me-n-50 {
+html:not([dir]) .al-me-n-50, html[dir=""] .al-me-n-50, html[dir=ltr] .al-me-n-50 {
   margin-right: -3.125rem !important;
 }
 
-html[dir=ltr] .al-ps-55 {
+html:not([dir]) .al-ps-55, html[dir=""] .al-ps-55, html[dir=ltr] .al-ps-55 {
   padding-left: 3.438rem !important;
 }
 
-html[dir=ltr] .al-pe-55 {
+html:not([dir]) .al-pe-55, html[dir=""] .al-pe-55, html[dir=ltr] .al-pe-55 {
   padding-right: 3.438rem !important;
 }
 
-html[dir=ltr] .al-ms-55 {
+html:not([dir]) .al-ms-55, html[dir=""] .al-ms-55, html[dir=ltr] .al-ms-55 {
   margin-left: 3.438rem !important;
 }
 
-html[dir=ltr] .al-me-55 {
+html:not([dir]) .al-me-55, html[dir=""] .al-me-55, html[dir=ltr] .al-me-55 {
   margin-right: 3.438rem !important;
 }
 
-html[dir=ltr] .al-ms-n-55 {
+html:not([dir]) .al-ms-n-55, html[dir=""] .al-ms-n-55, html[dir=ltr] .al-ms-n-55 {
   margin-left: -3.438rem !important;
 }
 
-html[dir=ltr] .al-me-n-55 {
+html:not([dir]) .al-me-n-55, html[dir=""] .al-me-n-55, html[dir=ltr] .al-me-n-55 {
   margin-right: -3.438rem !important;
 }
 
-html[dir=ltr] .al-ps-56 {
+html:not([dir]) .al-ps-56, html[dir=""] .al-ps-56, html[dir=ltr] .al-ps-56 {
   padding-left: 3.5rem !important;
 }
 
-html[dir=ltr] .al-pe-56 {
+html:not([dir]) .al-pe-56, html[dir=""] .al-pe-56, html[dir=ltr] .al-pe-56 {
   padding-right: 3.5rem !important;
 }
 
-html[dir=ltr] .al-ms-56 {
+html:not([dir]) .al-ms-56, html[dir=""] .al-ms-56, html[dir=ltr] .al-ms-56 {
   margin-left: 3.5rem !important;
 }
 
-html[dir=ltr] .al-me-56 {
+html:not([dir]) .al-me-56, html[dir=""] .al-me-56, html[dir=ltr] .al-me-56 {
   margin-right: 3.5rem !important;
 }
 
-html[dir=ltr] .al-ms-n-56 {
+html:not([dir]) .al-ms-n-56, html[dir=""] .al-ms-n-56, html[dir=ltr] .al-ms-n-56 {
   margin-left: -3.5rem !important;
 }
 
-html[dir=ltr] .al-me-n-56 {
+html:not([dir]) .al-me-n-56, html[dir=""] .al-me-n-56, html[dir=ltr] .al-me-n-56 {
   margin-right: -3.5rem !important;
 }
 
-html[dir=ltr] .al-ps-60 {
+html:not([dir]) .al-ps-60, html[dir=""] .al-ps-60, html[dir=ltr] .al-ps-60 {
   padding-left: 3.75rem !important;
 }
 
-html[dir=ltr] .al-pe-60 {
+html:not([dir]) .al-pe-60, html[dir=""] .al-pe-60, html[dir=ltr] .al-pe-60 {
   padding-right: 3.75rem !important;
 }
 
-html[dir=ltr] .al-ms-60 {
+html:not([dir]) .al-ms-60, html[dir=""] .al-ms-60, html[dir=ltr] .al-ms-60 {
   margin-left: 3.75rem !important;
 }
 
-html[dir=ltr] .al-me-60 {
+html:not([dir]) .al-me-60, html[dir=""] .al-me-60, html[dir=ltr] .al-me-60 {
   margin-right: 3.75rem !important;
 }
 
-html[dir=ltr] .al-ms-n-60 {
+html:not([dir]) .al-ms-n-60, html[dir=""] .al-ms-n-60, html[dir=ltr] .al-ms-n-60 {
   margin-left: -3.75rem !important;
 }
 
-html[dir=ltr] .al-me-n-60 {
+html:not([dir]) .al-me-n-60, html[dir=""] .al-me-n-60, html[dir=ltr] .al-me-n-60 {
   margin-right: -3.75rem !important;
 }
 
-html[dir=ltr] .al-ps-64 {
+html:not([dir]) .al-ps-64, html[dir=""] .al-ps-64, html[dir=ltr] .al-ps-64 {
   padding-left: 4rem !important;
 }
 
-html[dir=ltr] .al-pe-64 {
+html:not([dir]) .al-pe-64, html[dir=""] .al-pe-64, html[dir=ltr] .al-pe-64 {
   padding-right: 4rem !important;
 }
 
-html[dir=ltr] .al-ms-64 {
+html:not([dir]) .al-ms-64, html[dir=""] .al-ms-64, html[dir=ltr] .al-ms-64 {
   margin-left: 4rem !important;
 }
 
-html[dir=ltr] .al-me-64 {
+html:not([dir]) .al-me-64, html[dir=""] .al-me-64, html[dir=ltr] .al-me-64 {
   margin-right: 4rem !important;
 }
 
-html[dir=ltr] .al-ms-n-64 {
+html:not([dir]) .al-ms-n-64, html[dir=""] .al-ms-n-64, html[dir=ltr] .al-ms-n-64 {
   margin-left: -4rem !important;
 }
 
-html[dir=ltr] .al-me-n-64 {
+html:not([dir]) .al-me-n-64, html[dir=""] .al-me-n-64, html[dir=ltr] .al-me-n-64 {
   margin-right: -4rem !important;
 }
 
-html[dir=ltr] .al-ps-65 {
+html:not([dir]) .al-ps-65, html[dir=""] .al-ps-65, html[dir=ltr] .al-ps-65 {
   padding-left: 4.063rem !important;
 }
 
-html[dir=ltr] .al-pe-65 {
+html:not([dir]) .al-pe-65, html[dir=""] .al-pe-65, html[dir=ltr] .al-pe-65 {
   padding-right: 4.063rem !important;
 }
 
-html[dir=ltr] .al-ms-65 {
+html:not([dir]) .al-ms-65, html[dir=""] .al-ms-65, html[dir=ltr] .al-ms-65 {
   margin-left: 4.063rem !important;
 }
 
-html[dir=ltr] .al-me-65 {
+html:not([dir]) .al-me-65, html[dir=""] .al-me-65, html[dir=ltr] .al-me-65 {
   margin-right: 4.063rem !important;
 }
 
-html[dir=ltr] .al-ms-n-65 {
+html:not([dir]) .al-ms-n-65, html[dir=""] .al-ms-n-65, html[dir=ltr] .al-ms-n-65 {
   margin-left: -4.063rem !important;
 }
 
-html[dir=ltr] .al-me-n-65 {
+html:not([dir]) .al-me-n-65, html[dir=""] .al-me-n-65, html[dir=ltr] .al-me-n-65 {
   margin-right: -4.063rem !important;
 }
 
-html[dir=ltr] .al-ps-70 {
+html:not([dir]) .al-ps-70, html[dir=""] .al-ps-70, html[dir=ltr] .al-ps-70 {
   padding-left: 4.375rem !important;
 }
 
-html[dir=ltr] .al-pe-70 {
+html:not([dir]) .al-pe-70, html[dir=""] .al-pe-70, html[dir=ltr] .al-pe-70 {
   padding-right: 4.375rem !important;
 }
 
-html[dir=ltr] .al-ms-70 {
+html:not([dir]) .al-ms-70, html[dir=""] .al-ms-70, html[dir=ltr] .al-ms-70 {
   margin-left: 4.375rem !important;
 }
 
-html[dir=ltr] .al-me-70 {
+html:not([dir]) .al-me-70, html[dir=""] .al-me-70, html[dir=ltr] .al-me-70 {
   margin-right: 4.375rem !important;
 }
 
-html[dir=ltr] .al-ms-n-70 {
+html:not([dir]) .al-ms-n-70, html[dir=""] .al-ms-n-70, html[dir=ltr] .al-ms-n-70 {
   margin-left: -4.375rem !important;
 }
 
-html[dir=ltr] .al-me-n-70 {
+html:not([dir]) .al-me-n-70, html[dir=""] .al-me-n-70, html[dir=ltr] .al-me-n-70 {
   margin-right: -4.375rem !important;
 }
 
-html[dir=ltr] .al-ps-75 {
+html:not([dir]) .al-ps-75, html[dir=""] .al-ps-75, html[dir=ltr] .al-ps-75 {
   padding-left: 4.688rem !important;
 }
 
-html[dir=ltr] .al-pe-75 {
+html:not([dir]) .al-pe-75, html[dir=""] .al-pe-75, html[dir=ltr] .al-pe-75 {
   padding-right: 4.688rem !important;
 }
 
-html[dir=ltr] .al-ms-75 {
+html:not([dir]) .al-ms-75, html[dir=""] .al-ms-75, html[dir=ltr] .al-ms-75 {
   margin-left: 4.688rem !important;
 }
 
-html[dir=ltr] .al-me-75 {
+html:not([dir]) .al-me-75, html[dir=""] .al-me-75, html[dir=ltr] .al-me-75 {
   margin-right: 4.688rem !important;
 }
 
-html[dir=ltr] .al-ms-n-75 {
+html:not([dir]) .al-ms-n-75, html[dir=""] .al-ms-n-75, html[dir=ltr] .al-ms-n-75 {
   margin-left: -4.688rem !important;
 }
 
-html[dir=ltr] .al-me-n-75 {
+html:not([dir]) .al-me-n-75, html[dir=""] .al-me-n-75, html[dir=ltr] .al-me-n-75 {
   margin-right: -4.688rem !important;
 }
 
-html[dir=ltr] .al-ps-80 {
+html:not([dir]) .al-ps-80, html[dir=""] .al-ps-80, html[dir=ltr] .al-ps-80 {
   padding-left: 5rem !important;
 }
 
-html[dir=ltr] .al-pe-80 {
+html:not([dir]) .al-pe-80, html[dir=""] .al-pe-80, html[dir=ltr] .al-pe-80 {
   padding-right: 5rem !important;
 }
 
-html[dir=ltr] .al-ms-80 {
+html:not([dir]) .al-ms-80, html[dir=""] .al-ms-80, html[dir=ltr] .al-ms-80 {
   margin-left: 5rem !important;
 }
 
-html[dir=ltr] .al-me-80 {
+html:not([dir]) .al-me-80, html[dir=""] .al-me-80, html[dir=ltr] .al-me-80 {
   margin-right: 5rem !important;
 }
 
-html[dir=ltr] .al-ms-n-80 {
+html:not([dir]) .al-ms-n-80, html[dir=""] .al-ms-n-80, html[dir=ltr] .al-ms-n-80 {
   margin-left: -5rem !important;
 }
 
-html[dir=ltr] .al-me-n-80 {
+html:not([dir]) .al-me-n-80, html[dir=""] .al-me-n-80, html[dir=ltr] .al-me-n-80 {
   margin-right: -5rem !important;
 }
 
-html[dir=ltr] .al-ps-85 {
+html:not([dir]) .al-ps-85, html[dir=""] .al-ps-85, html[dir=ltr] .al-ps-85 {
   padding-left: 5.313rem !important;
 }
 
-html[dir=ltr] .al-pe-85 {
+html:not([dir]) .al-pe-85, html[dir=""] .al-pe-85, html[dir=ltr] .al-pe-85 {
   padding-right: 5.313rem !important;
 }
 
-html[dir=ltr] .al-ms-85 {
+html:not([dir]) .al-ms-85, html[dir=""] .al-ms-85, html[dir=ltr] .al-ms-85 {
   margin-left: 5.313rem !important;
 }
 
-html[dir=ltr] .al-me-85 {
+html:not([dir]) .al-me-85, html[dir=""] .al-me-85, html[dir=ltr] .al-me-85 {
   margin-right: 5.313rem !important;
 }
 
-html[dir=ltr] .al-ms-n-85 {
+html:not([dir]) .al-ms-n-85, html[dir=""] .al-ms-n-85, html[dir=ltr] .al-ms-n-85 {
   margin-left: -5.313rem !important;
 }
 
-html[dir=ltr] .al-me-n-85 {
+html:not([dir]) .al-me-n-85, html[dir=""] .al-me-n-85, html[dir=ltr] .al-me-n-85 {
   margin-right: -5.313rem !important;
 }
 
-html[dir=ltr] .al-ps-90 {
+html:not([dir]) .al-ps-90, html[dir=""] .al-ps-90, html[dir=ltr] .al-ps-90 {
   padding-left: 5.625rem !important;
 }
 
-html[dir=ltr] .al-pe-90 {
+html:not([dir]) .al-pe-90, html[dir=""] .al-pe-90, html[dir=ltr] .al-pe-90 {
   padding-right: 5.625rem !important;
 }
 
-html[dir=ltr] .al-ms-90 {
+html:not([dir]) .al-ms-90, html[dir=""] .al-ms-90, html[dir=ltr] .al-ms-90 {
   margin-left: 5.625rem !important;
 }
 
-html[dir=ltr] .al-me-90 {
+html:not([dir]) .al-me-90, html[dir=""] .al-me-90, html[dir=ltr] .al-me-90 {
   margin-right: 5.625rem !important;
 }
 
-html[dir=ltr] .al-ms-n-90 {
+html:not([dir]) .al-ms-n-90, html[dir=""] .al-ms-n-90, html[dir=ltr] .al-ms-n-90 {
   margin-left: -5.625rem !important;
 }
 
-html[dir=ltr] .al-me-n-90 {
+html:not([dir]) .al-me-n-90, html[dir=""] .al-me-n-90, html[dir=ltr] .al-me-n-90 {
   margin-right: -5.625rem !important;
 }
 
-html[dir=ltr] .al-ps-95 {
+html:not([dir]) .al-ps-95, html[dir=""] .al-ps-95, html[dir=ltr] .al-ps-95 {
   padding-left: 5.938rem !important;
 }
 
-html[dir=ltr] .al-pe-95 {
+html:not([dir]) .al-pe-95, html[dir=""] .al-pe-95, html[dir=ltr] .al-pe-95 {
   padding-right: 5.938rem !important;
 }
 
-html[dir=ltr] .al-ms-95 {
+html:not([dir]) .al-ms-95, html[dir=""] .al-ms-95, html[dir=ltr] .al-ms-95 {
   margin-left: 5.938rem !important;
 }
 
-html[dir=ltr] .al-me-95 {
+html:not([dir]) .al-me-95, html[dir=""] .al-me-95, html[dir=ltr] .al-me-95 {
   margin-right: 5.938rem !important;
 }
 
-html[dir=ltr] .al-ms-n-95 {
+html:not([dir]) .al-ms-n-95, html[dir=""] .al-ms-n-95, html[dir=ltr] .al-ms-n-95 {
   margin-left: -5.938rem !important;
 }
 
-html[dir=ltr] .al-me-n-95 {
+html:not([dir]) .al-me-n-95, html[dir=""] .al-me-n-95, html[dir=ltr] .al-me-n-95 {
   margin-right: -5.938rem !important;
 }
 
-html[dir=ltr] .al-ps-100 {
+html:not([dir]) .al-ps-100, html[dir=""] .al-ps-100, html[dir=ltr] .al-ps-100 {
   padding-left: 6.25rem !important;
 }
 
-html[dir=ltr] .al-pe-100 {
+html:not([dir]) .al-pe-100, html[dir=""] .al-pe-100, html[dir=ltr] .al-pe-100 {
   padding-right: 6.25rem !important;
 }
 
-html[dir=ltr] .al-ms-100 {
+html:not([dir]) .al-ms-100, html[dir=""] .al-ms-100, html[dir=ltr] .al-ms-100 {
   margin-left: 6.25rem !important;
 }
 
-html[dir=ltr] .al-me-100 {
+html:not([dir]) .al-me-100, html[dir=""] .al-me-100, html[dir=ltr] .al-me-100 {
   margin-right: 6.25rem !important;
 }
 
-html[dir=ltr] .al-ms-n-100 {
+html:not([dir]) .al-ms-n-100, html[dir=""] .al-ms-n-100, html[dir=ltr] .al-ms-n-100 {
   margin-left: -6.25rem !important;
 }
 
-html[dir=ltr] .al-me-n-100 {
+html:not([dir]) .al-me-n-100, html[dir=""] .al-me-n-100, html[dir=ltr] .al-me-n-100 {
   margin-right: -6.25rem !important;
 }
 
-html[dir=ltr] .al-ps-110 {
+html:not([dir]) .al-ps-110, html[dir=""] .al-ps-110, html[dir=ltr] .al-ps-110 {
   padding-left: 6.875rem !important;
 }
 
-html[dir=ltr] .al-pe-110 {
+html:not([dir]) .al-pe-110, html[dir=""] .al-pe-110, html[dir=ltr] .al-pe-110 {
   padding-right: 6.875rem !important;
 }
 
-html[dir=ltr] .al-ms-110 {
+html:not([dir]) .al-ms-110, html[dir=""] .al-ms-110, html[dir=ltr] .al-ms-110 {
   margin-left: 6.875rem !important;
 }
 
-html[dir=ltr] .al-me-110 {
+html:not([dir]) .al-me-110, html[dir=""] .al-me-110, html[dir=ltr] .al-me-110 {
   margin-right: 6.875rem !important;
 }
 
-html[dir=ltr] .al-ms-n-110 {
+html:not([dir]) .al-ms-n-110, html[dir=""] .al-ms-n-110, html[dir=ltr] .al-ms-n-110 {
   margin-left: -6.875rem !important;
 }
 
-html[dir=ltr] .al-me-n-110 {
+html:not([dir]) .al-me-n-110, html[dir=""] .al-me-n-110, html[dir=ltr] .al-me-n-110 {
   margin-right: -6.875rem !important;
 }
 
-html[dir=ltr] .al-ps-120 {
+html:not([dir]) .al-ps-120, html[dir=""] .al-ps-120, html[dir=ltr] .al-ps-120 {
   padding-left: 7.5rem !important;
 }
 
-html[dir=ltr] .al-pe-120 {
+html:not([dir]) .al-pe-120, html[dir=""] .al-pe-120, html[dir=ltr] .al-pe-120 {
   padding-right: 7.5rem !important;
 }
 
-html[dir=ltr] .al-ms-120 {
+html:not([dir]) .al-ms-120, html[dir=""] .al-ms-120, html[dir=ltr] .al-ms-120 {
   margin-left: 7.5rem !important;
 }
 
-html[dir=ltr] .al-me-120 {
+html:not([dir]) .al-me-120, html[dir=""] .al-me-120, html[dir=ltr] .al-me-120 {
   margin-right: 7.5rem !important;
 }
 
-html[dir=ltr] .al-ms-n-120 {
+html:not([dir]) .al-ms-n-120, html[dir=""] .al-ms-n-120, html[dir=ltr] .al-ms-n-120 {
   margin-left: -7.5rem !important;
 }
 
-html[dir=ltr] .al-me-n-120 {
+html:not([dir]) .al-me-n-120, html[dir=""] .al-me-n-120, html[dir=ltr] .al-me-n-120 {
   margin-right: -7.5rem !important;
 }
 
-html[dir=ltr] .al-ps-130 {
+html:not([dir]) .al-ps-130, html[dir=""] .al-ps-130, html[dir=ltr] .al-ps-130 {
   padding-left: 8.125rem !important;
 }
 
-html[dir=ltr] .al-pe-130 {
+html:not([dir]) .al-pe-130, html[dir=""] .al-pe-130, html[dir=ltr] .al-pe-130 {
   padding-right: 8.125rem !important;
 }
 
-html[dir=ltr] .al-ms-130 {
+html:not([dir]) .al-ms-130, html[dir=""] .al-ms-130, html[dir=ltr] .al-ms-130 {
   margin-left: 8.125rem !important;
 }
 
-html[dir=ltr] .al-me-130 {
+html:not([dir]) .al-me-130, html[dir=""] .al-me-130, html[dir=ltr] .al-me-130 {
   margin-right: 8.125rem !important;
 }
 
-html[dir=ltr] .al-ms-n-130 {
+html:not([dir]) .al-ms-n-130, html[dir=""] .al-ms-n-130, html[dir=ltr] .al-ms-n-130 {
   margin-left: -8.125rem !important;
 }
 
-html[dir=ltr] .al-me-n-130 {
+html:not([dir]) .al-me-n-130, html[dir=""] .al-me-n-130, html[dir=ltr] .al-me-n-130 {
   margin-right: -8.125rem !important;
 }
 
-html[dir=ltr] .al-ps-140 {
+html:not([dir]) .al-ps-140, html[dir=""] .al-ps-140, html[dir=ltr] .al-ps-140 {
   padding-left: 8.75rem !important;
 }
 
-html[dir=ltr] .al-pe-140 {
+html:not([dir]) .al-pe-140, html[dir=""] .al-pe-140, html[dir=ltr] .al-pe-140 {
   padding-right: 8.75rem !important;
 }
 
-html[dir=ltr] .al-ms-140 {
+html:not([dir]) .al-ms-140, html[dir=""] .al-ms-140, html[dir=ltr] .al-ms-140 {
   margin-left: 8.75rem !important;
 }
 
-html[dir=ltr] .al-me-140 {
+html:not([dir]) .al-me-140, html[dir=""] .al-me-140, html[dir=ltr] .al-me-140 {
   margin-right: 8.75rem !important;
 }
 
-html[dir=ltr] .al-ms-n-140 {
+html:not([dir]) .al-ms-n-140, html[dir=""] .al-ms-n-140, html[dir=ltr] .al-ms-n-140 {
   margin-left: -8.75rem !important;
 }
 
-html[dir=ltr] .al-me-n-140 {
+html:not([dir]) .al-me-n-140, html[dir=""] .al-me-n-140, html[dir=ltr] .al-me-n-140 {
   margin-right: -8.75rem !important;
 }
 
-html[dir=ltr] .al-ps-150 {
+html:not([dir]) .al-ps-150, html[dir=""] .al-ps-150, html[dir=ltr] .al-ps-150 {
   padding-left: 9.375rem !important;
 }
 
-html[dir=ltr] .al-pe-150 {
+html:not([dir]) .al-pe-150, html[dir=""] .al-pe-150, html[dir=ltr] .al-pe-150 {
   padding-right: 9.375rem !important;
 }
 
-html[dir=ltr] .al-ms-150 {
+html:not([dir]) .al-ms-150, html[dir=""] .al-ms-150, html[dir=ltr] .al-ms-150 {
   margin-left: 9.375rem !important;
 }
 
-html[dir=ltr] .al-me-150 {
+html:not([dir]) .al-me-150, html[dir=""] .al-me-150, html[dir=ltr] .al-me-150 {
   margin-right: 9.375rem !important;
 }
 
-html[dir=ltr] .al-ms-n-150 {
+html:not([dir]) .al-ms-n-150, html[dir=""] .al-ms-n-150, html[dir=ltr] .al-ms-n-150 {
   margin-left: -9.375rem !important;
 }
 
-html[dir=ltr] .al-me-n-150 {
+html:not([dir]) .al-me-n-150, html[dir=""] .al-me-n-150, html[dir=ltr] .al-me-n-150 {
   margin-right: -9.375rem !important;
 }
 
-html[dir=ltr] .al-ps-170 {
+html:not([dir]) .al-ps-170, html[dir=""] .al-ps-170, html[dir=ltr] .al-ps-170 {
   padding-left: 10.625rem !important;
 }
 
-html[dir=ltr] .al-pe-170 {
+html:not([dir]) .al-pe-170, html[dir=""] .al-pe-170, html[dir=ltr] .al-pe-170 {
   padding-right: 10.625rem !important;
 }
 
-html[dir=ltr] .al-ms-170 {
+html:not([dir]) .al-ms-170, html[dir=""] .al-ms-170, html[dir=ltr] .al-ms-170 {
   margin-left: 10.625rem !important;
 }
 
-html[dir=ltr] .al-me-170 {
+html:not([dir]) .al-me-170, html[dir=""] .al-me-170, html[dir=ltr] .al-me-170 {
   margin-right: 10.625rem !important;
 }
 
-html[dir=ltr] .al-ms-n-170 {
+html:not([dir]) .al-ms-n-170, html[dir=""] .al-ms-n-170, html[dir=ltr] .al-ms-n-170 {
   margin-left: -10.625rem !important;
 }
 
-html[dir=ltr] .al-me-n-170 {
+html:not([dir]) .al-me-n-170, html[dir=""] .al-me-n-170, html[dir=ltr] .al-me-n-170 {
   margin-right: -10.625rem !important;
 }
 
-html[dir=ltr] .al-ps-200 {
+html:not([dir]) .al-ps-200, html[dir=""] .al-ps-200, html[dir=ltr] .al-ps-200 {
   padding-left: 12.5rem !important;
 }
 
-html[dir=ltr] .al-pe-200 {
+html:not([dir]) .al-pe-200, html[dir=""] .al-pe-200, html[dir=ltr] .al-pe-200 {
   padding-right: 12.5rem !important;
 }
 
-html[dir=ltr] .al-ms-200 {
+html:not([dir]) .al-ms-200, html[dir=""] .al-ms-200, html[dir=ltr] .al-ms-200 {
   margin-left: 12.5rem !important;
 }
 
-html[dir=ltr] .al-me-200 {
+html:not([dir]) .al-me-200, html[dir=""] .al-me-200, html[dir=ltr] .al-me-200 {
   margin-right: 12.5rem !important;
 }
 
-html[dir=ltr] .al-ms-n-200 {
+html:not([dir]) .al-ms-n-200, html[dir=""] .al-ms-n-200, html[dir=ltr] .al-ms-n-200 {
   margin-left: -12.5rem !important;
 }
 
-html[dir=ltr] .al-me-n-200 {
+html:not([dir]) .al-me-n-200, html[dir=""] .al-me-n-200, html[dir=ltr] .al-me-n-200 {
   margin-right: -12.5rem !important;
 }
 
-html[dir=ltr] .al-ps-250 {
+html:not([dir]) .al-ps-250, html[dir=""] .al-ps-250, html[dir=ltr] .al-ps-250 {
   padding-left: 15.625rem !important;
 }
 
-html[dir=ltr] .al-pe-250 {
+html:not([dir]) .al-pe-250, html[dir=""] .al-pe-250, html[dir=ltr] .al-pe-250 {
   padding-right: 15.625rem !important;
 }
 
-html[dir=ltr] .al-ms-250 {
+html:not([dir]) .al-ms-250, html[dir=""] .al-ms-250, html[dir=ltr] .al-ms-250 {
   margin-left: 15.625rem !important;
 }
 
-html[dir=ltr] .al-me-250 {
+html:not([dir]) .al-me-250, html[dir=""] .al-me-250, html[dir=ltr] .al-me-250 {
   margin-right: 15.625rem !important;
 }
 
-html[dir=ltr] .al-ms-n-250 {
+html:not([dir]) .al-ms-n-250, html[dir=""] .al-ms-n-250, html[dir=ltr] .al-ms-n-250 {
   margin-left: -15.625rem !important;
 }
 
-html[dir=ltr] .al-me-n-250 {
+html:not([dir]) .al-me-n-250, html[dir=""] .al-me-n-250, html[dir=ltr] .al-me-n-250 {
   margin-right: -15.625rem !important;
 }
 
-html[dir=ltr] .al-ps-300 {
+html:not([dir]) .al-ps-300, html[dir=""] .al-ps-300, html[dir=ltr] .al-ps-300 {
   padding-left: 18.75rem !important;
 }
 
-html[dir=ltr] .al-pe-300 {
+html:not([dir]) .al-pe-300, html[dir=""] .al-pe-300, html[dir=ltr] .al-pe-300 {
   padding-right: 18.75rem !important;
 }
 
-html[dir=ltr] .al-ms-300 {
+html:not([dir]) .al-ms-300, html[dir=""] .al-ms-300, html[dir=ltr] .al-ms-300 {
   margin-left: 18.75rem !important;
 }
 
-html[dir=ltr] .al-me-300 {
+html:not([dir]) .al-me-300, html[dir=""] .al-me-300, html[dir=ltr] .al-me-300 {
   margin-right: 18.75rem !important;
 }
 
-html[dir=ltr] .al-ms-n-300 {
+html:not([dir]) .al-ms-n-300, html[dir=""] .al-ms-n-300, html[dir=ltr] .al-ms-n-300 {
   margin-left: -18.75rem !important;
 }
 
-html[dir=ltr] .al-me-n-300 {
+html:not([dir]) .al-me-n-300, html[dir=""] .al-me-n-300, html[dir=ltr] .al-me-n-300 {
   margin-right: -18.75rem !important;
 }
 
@@ -20829,10 +20838,10 @@ html[dir=rtl] .al-me-n-300 {
     margin-bottom: 0px !important;
   }
   /* ===== Spacing RTL & LTR ===== */
-  html[dir=ltr] .al-ms-xxl-0 {
+  html:not([dir]) .al-ms-xxl-0, html[dir=""] .al-ms-xxl-0, html[dir=ltr] .al-ms-xxl-0 {
     margin-left: 0px !important;
   }
-  html[dir=ltr] .al-me-xxl-0 {
+  html:not([dir]) .al-me-xxl-0, html[dir=""] .al-me-xxl-0, html[dir=ltr] .al-me-xxl-0 {
     margin-right: 0px !important;
   }
   html[dir=rtl] .al-ms-xxl-0 {
@@ -20850,10 +20859,10 @@ html[dir=rtl] .al-me-n-300 {
     margin-bottom: 0px !important;
   }
   /* ===== Spacing RTL & LTR ===== */
-  html[dir=ltr] .al-ms-xl-0 {
+  html:not([dir]) .al-ms-xl-0, html[dir=""] .al-ms-xl-0, html[dir=ltr] .al-ms-xl-0 {
     margin-left: 0px !important;
   }
-  html[dir=ltr] .al-me-xl-0 {
+  html:not([dir]) .al-me-xl-0, html[dir=""] .al-me-xl-0, html[dir=ltr] .al-me-xl-0 {
     margin-right: 0px !important;
   }
   html[dir=rtl] .al-ms-xl-0 {
@@ -20871,10 +20880,10 @@ html[dir=rtl] .al-me-n-300 {
     margin-bottom: 0px !important;
   }
   /* ===== Spacing RTL & LTR ===== */
-  html[dir=ltr] .al-ms-lg-0 {
+  html:not([dir]) .al-ms-lg-0, html[dir=""] .al-ms-lg-0, html[dir=ltr] .al-ms-lg-0 {
     margin-left: 0px !important;
   }
-  html[dir=ltr] .al-me-lg-0 {
+  html:not([dir]) .al-me-lg-0, html[dir=""] .al-me-lg-0, html[dir=ltr] .al-me-lg-0 {
     margin-right: 0px !important;
   }
   html[dir=rtl] .al-ms-lg-0 {
@@ -20892,10 +20901,10 @@ html[dir=rtl] .al-me-n-300 {
     margin-bottom: 0px !important;
   }
   /* ===== Spacing RTL & LTR ===== */
-  html[dir=ltr] .al-ms-md-0 {
+  html:not([dir]) .al-ms-md-0, html[dir=""] .al-ms-md-0, html[dir=ltr] .al-ms-md-0 {
     margin-left: 0px !important;
   }
-  html[dir=ltr] .al-me-md-0 {
+  html:not([dir]) .al-me-md-0, html[dir=""] .al-me-md-0, html[dir=ltr] .al-me-md-0 {
     margin-right: 0px !important;
   }
   html[dir=rtl] .al-ms-md-0 {
@@ -20913,10 +20922,10 @@ html[dir=rtl] .al-me-n-300 {
     margin-bottom: 0px !important;
   }
   /* ===== Spacing RTL & LTR ===== */
-  html[dir=ltr] .al-ms-sm-0 {
+  html:not([dir]) .al-ms-sm-0, html[dir=""] .al-ms-sm-0, html[dir=ltr] .al-ms-sm-0 {
     margin-left: 0px !important;
   }
-  html[dir=ltr] .al-me-sm-0 {
+  html:not([dir]) .al-me-sm-0, html[dir=""] .al-me-sm-0, html[dir=ltr] .al-me-sm-0 {
     margin-right: 0px !important;
   }
   html[dir=rtl] .al-ms-sm-0 {
@@ -21238,11 +21247,6 @@ html[lang=ar] body {
 }
 
 /*====== Varibles start =====*/
-.animate__animated {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
 .al-animate-cursor {
   background-color: var(--bs-gray-500);
   animation: blink 1s infinite;
