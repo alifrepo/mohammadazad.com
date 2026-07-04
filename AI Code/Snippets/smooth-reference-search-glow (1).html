@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Smooth Glow Search</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.scene {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  display: grid;
+  place-items: center;
+}
+
+/* left and right light rays */
+.ray {
+  position: absolute;
+  top: 50%;
+  width: 390px;
+  height: 20px;
+  opacity: 0;
+  transform: translate3d(0, -50%, 0) scaleX(.92);
+  filter: blur(3px);
+  transition:
+    opacity 900ms cubic-bezier(.22, 1, .36, 1),
+    transform 900ms cubic-bezier(.22, 1, .36, 1);
+  will-change: opacity, transform;
+  pointer-events: none;
+}
+
+.ray.left {
+  right: calc(50% + 226px);
+  transform-origin: right center;
+  background: linear-gradient(
+    to left,
+    rgba(255,255,255,.95),
+    rgba(156,115,255,.72) 17%,
+    rgba(90,75,255,.38) 42%,
+    rgba(255,255,255,.16) 70%,
+    transparent
+  );
+}
+
+.ray.right {
+  left: calc(50% + 226px);
+  transform-origin: left center;
+  background: linear-gradient(
+    to right,
+    rgba(255,255,255,.95),
+    rgba(82,226,255,.70) 17%,
+    rgba(120,82,255,.34) 42%,
+    rgba(255,255,255,.14) 70%,
+    transparent
+  );
+}
+
+.search-shell {
+  position: relative;
+  width: 460px;
+  height: 58px;
+  border-radius: 999px;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* soft outer bloom */
+.bloom {
+  position: absolute;
+  inset: -28px -55px;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 15% 50%, rgba(255,255,255,.78), transparent 12%),
+    radial-gradient(circle at 30% 50%, rgba(118,83,255,.95), transparent 25%),
+    radial-gradient(circle at 68% 50%, rgba(54,220,255,.68), transparent 28%),
+    linear-gradient(90deg, rgba(105,74,255,.58), rgba(64,220,255,.52));
+  filter: blur(24px);
+  opacity: 0;
+  transform: scale(.96);
+  transition:
+    opacity 900ms cubic-bezier(.22, 1, .36, 1),
+    transform 900ms cubic-bezier(.22, 1, .36, 1);
+  will-change: opacity, transform;
+  z-index: 0;
+}
+
+/* static gradient border */
+.border {
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,.95) 0%,
+    rgba(126,87,255,1) 20%,
+    rgba(159,90,255,1) 45%,
+    rgba(62,218,255,1) 78%,
+    rgba(255,255,255,.96) 100%
+  );
+  opacity: 0;
+  transition:
+    opacity 700ms cubic-bezier(.22, 1, .36, 1),
+    box-shadow 900ms cubic-bezier(.22, 1, .36, 1);
+  will-change: opacity, box-shadow;
+  z-index: 1;
+  box-shadow:
+    0 0 8px rgba(139, 93, 255, .65),
+    0 0 18px rgba(62, 218, 255, .32);
+}
+
+.search {
+  position: absolute;
+  inset: 2px;
+  z-index: 2;
+  border-radius: inherit;
+  background: #08080d;
+  overflow: hidden;
+}
+
+.search::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.10), transparent 46%),
+    radial-gradient(circle at 28% -25%, rgba(139,80,255,.23), transparent 43%),
+    radial-gradient(circle at 76% -20%, rgba(60,220,255,.17), transparent 42%);
+  pointer-events: none;
+}
+
+.search input {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #fff;
+  padding: 0 60px 0 28px;
+  font-size: 14px;
+}
+
+.search input::placeholder {
+  color: rgba(225,225,235,.48);
+}
+
+.icon {
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  width: 19px;
+  height: 19px;
+  transform: translateY(-50%);
+  color: rgba(235,235,245,.62);
+  z-index: 4;
+}
+
+/* Active state */
+.scene.active .ray {
+  opacity: 1;
+  transform: translate3d(0, -50%, 0) scaleX(1);
+}
+
+.search-shell.active .bloom {
+  opacity: .95;
+  transform: scale(1);
+  animation: smoothBreath 4.8s cubic-bezier(.45, 0, .2, 1) infinite;
+}
+
+.search-shell.active .border {
+  opacity: 1;
+  box-shadow:
+    0 0 12px rgba(139, 93, 255, .92),
+    0 0 28px rgba(62, 218, 255, .55),
+    0 0 46px rgba(139, 93, 255, .32);
+}
+
+@keyframes smoothBreath {
+  0%, 100% {
+    opacity: .78;
+    transform: scale(.985);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.015);
+  }
+}
+</style>
+</head>
+
+<body>
+  <div class="scene">
+    <div class="ray left"></div>
+    <div class="ray right"></div>
+
+    <div class="search-shell">
+      <div class="bloom"></div>
+      <div class="border"></div>
+
+      <div class="search">
+        <input placeholder="What do you need a tool for?" />
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 1 1-14 0a7 7 0 0 1 14 0z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+<script>
+const input = document.querySelector("input");
+const scene = document.querySelector(".scene");
+const shell = document.querySelector(".search-shell");
+
+function activate() {
+  scene.classList.add("active");
+  shell.classList.add("active");
+}
+
+function deactivate() {
+  scene.classList.remove("active");
+  shell.classList.remove("active");
+}
+
+input.addEventListener("focus", activate);
+input.addEventListener("blur", deactivate);
+</script>
+</body>
+</html>

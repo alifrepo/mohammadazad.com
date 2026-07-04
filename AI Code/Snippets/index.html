@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jordan Cole — Product Designer &amp; Developer</title>
+<meta name="description" content="Jordan Cole. Design and front-end for ambitious founders.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0a0a; --bg-raised:#121212; --line:#242424;
+    --ink:#f4f3ef; --ink-dim:#8f8c85; --ink-faint:#4c4a44;
+    --accent:#d9a15b; --accent-dim:#8a6c3f;
+    --display:'Space Grotesk', sans-serif;
+    --sans:'Inter', -apple-system, sans-serif;
+    --mono:'IBM Plex Mono', monospace;
+    --wrap:1280px; --pad:clamp(20px,5vw,64px);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;} *{animation-duration:.01ms!important;transition-duration:.01ms!important;}}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  ::selection{background:var(--accent);color:#0a0a0a;}
+  a{color:inherit;text-decoration:none;} img{max-width:100%;display:block;} button{font-family:inherit;cursor:pointer;} ul{list-style:none;}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad);}
+  .label{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim);}
+
+  /* NAV */
+  header{position:fixed;top:0;left:0;right:0;z-index:100;padding:22px var(--pad);display:flex;align-items:center;justify-content:space-between;background:linear-gradient(to bottom, rgba(10,10,10,.9), rgba(10,10,10,0));transition:background .3s ease,border-color .3s ease;border-bottom:1px solid transparent;}
+  header.scrolled{background:rgba(10,10,10,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  .logo{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:-0.01em;}
+  .logo em{font-style:normal;color:var(--accent);}
+  nav.desktop-nav{display:flex;gap:34px;}
+  nav.desktop-nav a{font-family:var(--sans);font-size:13px;font-weight:500;letter-spacing:.02em;text-transform:uppercase;color:var(--ink-dim);transition:color .2s ease;}
+  nav.desktop-nav a:hover{color:var(--ink);}
+  .nav-cta{font-family:var(--sans);font-weight:600;font-size:12px;letter-spacing:.04em;text-transform:uppercase;padding:11px 20px;border:1px solid var(--ink-faint);border-radius:100px;transition:border-color .25s ease,background .25s ease;}
+  .nav-cta:hover{border-color:var(--accent);background:rgba(217,161,91,.08);}
+  .menu-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;z-index:110;}
+  .menu-toggle span{width:22px;height:1px;background:var(--ink);}
+  @media(max-width:860px){nav.desktop-nav,.nav-cta{display:none;} .menu-toggle{display:flex;}}
+  .mobile-nav{position:fixed;inset:0;background:var(--bg);z-index:105;display:flex;flex-direction:column;justify-content:center;gap:26px;padding:0 var(--pad);transform:translateY(-100%);transition:transform .5s cubic-bezier(.2,.8,.2,1);}
+  .mobile-nav.open{transform:translateY(0);}
+  .mobile-nav a{font-family:var(--display);font-size:32px;font-weight:600;}
+  @media(min-width:861px){.mobile-nav{display:none;}}
+
+  /* HERO */
+  .hero{min-height:100svh;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding-top:140px;padding-bottom:0;overflow:hidden;}
+  .hero-reel{position:absolute;inset:0;z-index:0;}
+  .reel-panel{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease;background-size:cover;}
+  .reel-panel.active{opacity:1;}
+  .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg, rgba(10,10,10,.55) 0%, rgba(10,10,10,.75) 55%, var(--bg) 100%);z-index:1;}
+  .hero-inner{position:relative;z-index:2;padding-bottom:64px;}
+  .hero h1{font-family:var(--display);font-weight:700;font-size:clamp(38px,7vw,96px);line-height:1.0;letter-spacing:-0.02em;max-width:18ch;}
+  .hero h1 em{font-style:normal;color:var(--accent);}
+  .hero-sub{margin-top:26px;max-width:520px;color:var(--ink-dim);font-size:16px;line-height:1.6;}
+  .hero-actions{margin-top:36px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+  .btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--bg);padding:15px 26px;border-radius:100px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;transition:transform .3s cubic-bezier(.2,.8,.2,1),background .3s ease;}
+  .btn-primary:hover{transform:translateY(-3px);background:var(--accent);}
+  .btn-outline{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border:1px solid var(--ink-faint);border-radius:100px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ink);transition:border-color .25s ease,background .25s ease;}
+  .btn-outline:hover{border-color:var(--accent);background:rgba(217,161,91,.08);}
+  .hero-tags{margin-top:52px;display:flex;flex-wrap:wrap;gap:10px 28px;padding-top:28px;border-top:1px solid rgba(255,255,255,.08);}
+  .tag-group{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .tag-group .label{color:var(--ink-faint);}
+  .tag-group span.chip{font-family:var(--mono);font-size:12px;color:var(--ink-dim);}
+  .tag-group span.chip:not(:last-child)::after{content:'·';margin-left:12px;color:var(--ink-faint);}
+
+  /* MARQUEE */
+  .marquee-band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 0;overflow:hidden;white-space:nowrap;position:relative;}
+  .marquee-band .label{position:absolute;left:var(--pad);top:50%;transform:translateY(-50%);background:var(--bg);padding-right:20px;z-index:2;}
+  .marquee-track{display:inline-flex;animation:marquee 28s linear infinite;padding-left:220px;}
+  .marquee-band:hover .marquee-track{animation-play-state:paused;}
+  @keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  .marquee-track span{font-family:var(--display);font-weight:600;font-size:22px;color:var(--ink-faint);padding:0 34px;letter-spacing:-0.01em;}
+
+  section{position:relative;padding:120px 0;z-index:2;}
+  .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:56px;flex-wrap:wrap;}
+  .section-title{font-family:var(--display);font-weight:700;font-size:clamp(30px,4.2vw,50px);line-height:1.05;letter-spacing:-0.01em;max-width:14ch;margin-top:14px;}
+  .section-note{max-width:340px;color:var(--ink-dim);font-size:14px;line-height:1.6;}
+
+  /* WORK GRID */
+  .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line);}
+  @media(max-width:900px){.work-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:600px){.work-grid{grid-template-columns:1fr;}}
+  .work-card{background:var(--bg-raised);aspect-ratio:4/5;padding:26px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;}
+  .work-card::before{content:'';position:absolute;inset:0;background:linear-gradient(150deg,var(--tile-a,#1a1a1a),var(--tile-b,#0a0a0a));opacity:.7;transition:opacity .4s ease,transform .5s ease;z-index:0;}
+  .work-card:hover::before{opacity:1;transform:scale(1.06);}
+  .work-card>*{position:relative;z-index:1;}
+  .work-top{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--ink-dim);}
+  .work-card h3{font-family:var(--display);font-weight:700;font-size:22px;letter-spacing:-0.01em;}
+  .work-card p{font-family:var(--mono);font-size:11px;color:var(--ink-dim);margin-top:6px;text-transform:uppercase;letter-spacing:.05em;}
+  .work-more{text-align:center;margin-top:44px;}
+
+  /* WHY ME — stacked list like the reference */
+  .why-list{border-top:1px solid var(--line);}
+  .why-row{display:grid;grid-template-columns:48px 1fr 1fr;gap:32px;padding:44px 0;border-bottom:1px solid var(--line);align-items:baseline;}
+  @media(max-width:800px){.why-row{grid-template-columns:32px 1fr;} .why-row h3{grid-column:2;}}
+  .why-num{font-family:var(--mono);font-size:13px;color:var(--accent-dim);}
+  .why-row h3{font-family:var(--display);font-weight:700;font-size:clamp(20px,2.6vw,28px);letter-spacing:-0.01em;}
+  .why-row p{color:var(--ink-dim);font-size:14.5px;line-height:1.65;max-width:48ch;}
+  @media(max-width:800px){.why-row p{grid-column:1/-1;}}
+
+  /* HOW I WORK — pricing style cards */
+  .work-cards{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line);border:1px solid var(--line);}
+  @media(max-width:760px){.work-cards{grid-template-columns:1fr;}}
+  .pcard{background:var(--bg);padding:44px 40px;display:flex;flex-direction:column;}
+  .pcard.highlight{background:var(--bg-raised);}
+  .pcard .label{color:var(--accent);}
+  .pcard h3{font-family:var(--display);font-weight:700;font-size:30px;margin-top:16px;letter-spacing:-0.01em;}
+  .pcard ul{margin-top:28px;display:flex;flex-direction:column;gap:14px;flex:1;}
+  .pcard li{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-dim);padding-left:18px;position:relative;}
+  .pcard li::before{content:'—';position:absolute;left:0;color:var(--accent-dim);}
+  .pcard .btn-outline{margin-top:36px;align-self:flex-start;}
+
+  /* FAQ */
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:26px 0;background:none;border:none;color:var(--ink);text-align:left;font-family:var(--display);font-size:clamp(16px,2vw,20px);font-weight:600;}
+  .faq-icon{width:26px;height:26px;flex:none;border:1px solid var(--ink-faint);border-radius:50%;position:relative;transition:transform .3s ease,border-color .3s ease;}
+  .faq-icon::before,.faq-icon::after{content:'';position:absolute;top:50%;left:50%;background:var(--ink-dim);}
+  .faq-icon::before{width:10px;height:1px;transform:translate(-50%,-50%);}
+  .faq-icon::after{width:1px;height:10px;transform:translate(-50%,-50%);transition:transform .3s ease;}
+  .faq-item.open .faq-icon::after{transform:translate(-50%,-50%) scaleY(0);}
+  .faq-item.open .faq-icon{border-color:var(--accent);transform:rotate(180deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease;}
+  .faq-a p{color:var(--ink-dim);font-size:14.5px;line-height:1.7;padding-bottom:26px;max-width:62ch;}
+
+  /* CONTACT / FOOTER */
+  .contact{padding-top:100px;padding-bottom:0;text-align:center;}
+  .contact h2{font-family:var(--display);font-weight:700;font-size:clamp(32px,7vw,80px);line-height:1.0;letter-spacing:-0.02em;margin-top:20px;}
+  .contact h2 em{font-style:normal;color:var(--accent);}
+  .contact-sub{color:var(--ink-dim);margin-top:20px;font-size:15px;}
+  .contact-actions{margin-top:40px;display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
+
+  .foot-mark{margin-top:90px;overflow:hidden;border-top:1px solid var(--line);}
+  .foot-mark-track{display:inline-flex;white-space:nowrap;animation:marquee 22s linear infinite;}
+  .foot-mark-track span{font-family:var(--display);font-weight:700;font-size:clamp(60px,14vw,180px);letter-spacing:-0.03em;color:var(--bg-raised);-webkit-text-stroke:1px var(--line);padding:0 30px;}
+  footer{border-top:1px solid var(--line);padding:28px var(--pad);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;font-family:var(--mono);font-size:11px;color:var(--ink-faint);letter-spacing:.04em;text-transform:uppercase;}
+  footer .foot-links{display:flex;gap:22px;}
+  footer .foot-links a{transition:color .2s ease;}
+  footer .foot-links a:hover{color:var(--accent);}
+
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <a href="#top" class="logo">Jordan<em>Cole</em></a>
+  <nav class="desktop-nav">
+    <a href="#work">Work</a>
+    <a href="#why">Why me</a>
+    <a href="#how">How I work</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a href="#contact" class="nav-cta">Get in touch</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span></button>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#work">Work</a>
+  <a href="#why">Why me</a>
+  <a href="#how">How I work</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact" class="btn-primary" style="width:fit-content;">Get in touch</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-reel" id="heroReel"></div>
+    <div class="wrap hero-inner">
+      <p class="label" style="margin-bottom:20px;">Available for new projects — Q3 2026</p>
+      <h1>The quiet force behind products people <em>actually</em> enjoy using.</h1>
+      <p class="hero-sub">I'm Jordan Cole. I help founders, builders, and small teams craft thoughtful brands and digital products — from first sketch to shipped code.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Book a call →</a>
+        <a href="#contact" class="btn-outline">Get in touch</a>
+      </div>
+      <div class="hero-tags">
+        <div class="tag-group">
+          <span class="label">Services</span>
+          <span class="chip">Product Design</span><span class="chip">Web Design</span><span class="chip">Brand &amp; Decks</span><span class="chip">Development</span>
+        </div>
+        <div class="tag-group">
+          <span class="label">Industries</span>
+          <span class="chip">SaaS</span><span class="chip">AI</span><span class="chip">Fintech</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-band">
+    <span class="label">Worked with teams at</span>
+    <div class="marquee-track">
+      <span>Northlane</span><span>Fieldnote</span><span>Studio Marl</span><span>Ledgerly</span><span>Groundwork</span><span>Pipeline</span>
+      <span>Northlane</span><span>Fieldnote</span><span>Studio Marl</span><span>Ledgerly</span><span>Groundwork</span><span>Pipeline</span>
+    </div>
+  </div>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><p class="label">Selected work</p><h2 class="section-title">A few projects worth a closer look</h2></div>
+        <p class="section-note">Six products across fintech, climate, and developer tooling — from first sketch to production build.</p>
+      </div>
+      <div class="work-grid reveal">
+        <a href="#" class="work-card" style="--tile-a:#33291b;--tile-b:#0a0a0a;"><div class="work-top"><span>01</span><span>FINTECH</span></div><div><h3>Ledgerly</h3><p>Product · Web app</p></div></a>
+        <a href="#" class="work-card" style="--tile-a:#1c2b1c;--tile-b:#0a0a0a;"><div class="work-top"><span>02</span><span>CLIMATE</span></div><div><h3>Groundwork</h3><p>Brand · Web</p></div></a>
+        <a href="#" class="work-card" style="--tile-a:#231c2e;--tile-b:#0a0a0a;"><div class="work-top"><span>03</span><span>DEV TOOLS</span></div><div><h3>Pipeline</h3><p>Design system</p></div></a>
+        <a href="#" class="work-card" style="--tile-a:#182530;--tile-b:#0a0a0a;"><div class="work-top"><span>04</span><span>HEALTHCARE</span></div><div><h3>Nearby Care</h3><p>Product · Mobile</p></div></a>
+        <a href="#" class="work-card" style="--tile-a:#301c1c;--tile-b:#0a0a0a;"><div class="work-top"><span>05</span><span>AI</span></div><div><h3>Signalwell</h3><p>Brand · Pitch deck</p></div></a>
+        <a href="#" class="work-card" style="--tile-a:#2b2b18;--tile-b:#0a0a0a;"><div class="work-top"><span>06</span><span>WEB3</span></div><div><h3>Vaultframe</h3><p>Product · Web app</p></div></a>
+      </div>
+      <div class="work-more reveal"><a href="#" class="btn-outline">See all work →</a></div>
+    </div>
+  </section>
+
+  <!-- WHY ME -->
+  <section id="why" style="background:var(--bg-raised);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><p class="label">Why work with me</p><h2 class="section-title">A world-class partner, on your side</h2></div>
+        <p class="section-note">The kind of help founders look for after they've raised — or wish they had before.</p>
+      </div>
+      <div class="why-list reveal">
+        <div class="why-row"><span class="why-num">01</span><h3>Designed to feel in-house</h3><p>I work like I'm part of your founding team — fast decisions, deep context, and zero friction. You'll feel the difference on day one.</p></div>
+        <div class="why-row"><span class="why-num">02</span><h3>Speed without the stress</h3><p>No wasted time, no waiting around. Smart thinking and clean execution, always on schedule.</p></div>
+        <div class="why-row"><span class="why-num">03</span><h3>Built with developers in mind</h3><p>I think in systems, speak dev, and keep design consistent all the way through to implementation.</p></div>
+        <div class="why-row"><span class="why-num">04</span><h3>Always in sync</h3><p>You'll never wonder where things stand. Responsive, aligned, and in rhythm with your team.</p></div>
+        <div class="why-row"><span class="why-num">05</span><h3>Easy to work with, hard to live without</h3><p>Things keep moving with minimal lift on your side — thoughtful, dependable, built around momentum.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW I WORK -->
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><p class="label">How I work</p><h2 class="section-title">Two ways to work together</h2></div>
+        <p class="section-note">Flexible collaboration that matches your needs — from ongoing partnerships to focused, one-off projects.</p>
+      </div>
+      <div class="work-cards reveal">
+        <div class="pcard">
+          <p class="label">Ongoing partnership</p>
+          <h3>Monthly retainer</h3>
+          <ul>
+            <li>Ongoing design &amp; front-end help</li>
+            <li>Senior-level output</li>
+            <li>Fast-paced weekly cycles</li>
+            <li>Embedded with your team</li>
+          </ul>
+          <a href="#contact" class="btn-outline">Contact me →</a>
+        </div>
+        <div class="pcard highlight">
+          <p class="label">One-off project</p>
+          <h3>Fixed-scope project</h3>
+          <ul>
+            <li>Clear scope &amp; proposal</li>
+            <li>Milestone-based delivery</li>
+            <li>Defined budget upfront</li>
+            <li>End-to-end execution</li>
+          </ul>
+          <a href="#contact" class="btn-outline">Contact me →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:var(--bg-raised);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap" style="max-width:820px;">
+      <div class="reveal" style="margin-bottom:48px;">
+        <p class="label">FAQs</p>
+        <h2 class="section-title" style="max-width:none;">Got questions? I've got answers.</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item open"><button class="faq-q">What kinds of companies do you work with?<span class="faq-icon"></span></button><div class="faq-a"><p>Founders and small teams building ambitious products — from pre-seed and seed startups to more established Series A/B companies, mostly in SaaS, AI, and fintech.</p></div></div>
+        <div class="faq-item"><button class="faq-q">What's it like working with you?<span class="faq-icon"></span></button><div class="faq-a"><p>Close and direct. Sometimes I'm the only design help you have, sometimes I plug in alongside your team. Either way, I move in your flow.</p></div></div>
+        <div class="faq-item"><button class="faq-q">What makes you different from an agency?<span class="faq-icon"></span></button><div class="faq-a"><p>I only take on a few projects at a time, so each one gets founder-level attention — one point of contact, no account manager in between.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Do you take on one-off projects?<span class="faq-icon"></span></button><div class="faq-a"><p>Yes, if the scope is clear — a new feature, a site build, a defined brand project, or the whole journey from zero to one.</p></div></div>
+        <div class="faq-item"><button class="faq-q">How do we get started?<span class="faq-icon"></span></button><div class="faq-a"><p>We hop on a short call, I map priorities against your timeline, and I follow up with scope and next steps within a couple of days.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Why not just hire in-house?<span class="faq-icon"></span></button><div class="faq-a"><p>An in-house hire is a branch. I plug in the way a senior generalist would, without the ramp-up time or long-term overhead.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <p class="label">Get in touch</p>
+      <h2>Let's build something <em>worth</em> shipping.</h2>
+      <p class="contact-sub">Currently open for new projects starting this quarter.</p>
+      <div class="contact-actions">
+        <a href="mailto:hello@jordancole.design" class="btn-primary">Book a call →</a>
+        <a href="mailto:hello@jordancole.design" class="btn-outline">hello@jordancole.design</a>
+      </div>
+    </div>
+    <div class="foot-mark">
+      <div class="foot-mark-track"><span>JORDAN COLE</span><span>JORDAN COLE</span><span>JORDAN COLE</span><span>JORDAN COLE</span></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>// Working remotely, worldwide — © Jordan Cole 2026</span>
+  <div class="foot-links"><a href="#">LinkedIn</a><a href="#">GitHub</a><a href="#">Twitter / X</a></div>
+</footer>
+
+<script>
+  const header=document.getElementById('siteHeader');
+  window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>30));
+
+  const menuToggle=document.getElementById('menuToggle'), mobileNav=document.getElementById('mobileNav');
+  menuToggle.addEventListener('click',()=>mobileNav.classList.toggle('open'));
+  mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileNav.classList.remove('open')));
+
+  // hero reel — cycling gradient panels standing in for the video reel
+  const reel=document.getElementById('heroReel');
+  const gradients=[
+    'linear-gradient(140deg,#241c12,#0a0a0a)',
+    'linear-gradient(140deg,#12241c,#0a0a0a)',
+    'linear-gradient(140deg,#1c1524,#0a0a0a)',
+    'linear-gradient(140deg,#142230,#0a0a0a)'
+  ];
+  gradients.forEach((g,i)=>{
+    const p=document.createElement('div');
+    p.className='reel-panel'+(i===0?' active':'');
+    p.style.background=g;
+    reel.appendChild(p);
+  });
+  let reelIndex=0;
+  const panels=reel.querySelectorAll('.reel-panel');
+  setInterval(()=>{
+    panels[reelIndex].classList.remove('active');
+    reelIndex=(reelIndex+1)%panels.length;
+    panels[reelIndex].classList.add('active');
+  },4000);
+
+  document.querySelectorAll('.faq-item').forEach(item=>{
+    const q=item.querySelector('.faq-q'), a=item.querySelector('.faq-a');
+    if(item.classList.contains('open')) a.style.maxHeight=a.scrollHeight+'px';
+    q.addEventListener('click',()=>{
+      const isOpen=item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(o=>{o.classList.remove('open');o.querySelector('.faq-a').style.maxHeight=null;});
+      if(!isOpen){item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';}
+    });
+  });
+
+  const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>

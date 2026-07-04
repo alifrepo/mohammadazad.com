@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Component Sphere</title>
+<style>
+:root{
+  --bg:#05090c; --emerald:#34e0a1; --cyan:#3fe6d4; --glow:#2effb0;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;width:100%;background:var(--bg);overflow:hidden}
+
+.bg-layers{position:fixed;inset:0;z-index:0;pointer-events:none}
+.grid-bg{position:absolute;inset:0;
+  background-image:linear-gradient(rgba(52,224,161,0.04) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(52,224,161,0.04) 1px,transparent 1px);
+  background-size:clamp(34px,4vw,54px) clamp(34px,4vw,54px);
+  mask-image:radial-gradient(ellipse 75% 75% at 50% 50%,#000 25%,transparent 82%);
+  -webkit-mask-image:radial-gradient(ellipse 75% 75% at 50% 50%,#000 25%,transparent 82%)}
+.radial-glow{position:absolute;top:0;left:0;width:min(80vmin,720px);height:min(80vmin,720px);transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(31,174,140,0.18) 0%,rgba(31,174,140,0.06) 34%,transparent 66%);filter:blur(20px)}
+.vignette{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,transparent 44%,rgba(0,0,0,0.6) 100%)}
+#particles{position:absolute;inset:0;width:100%;height:100%}
+
+.stage{position:relative;z-index:2;width:100vw;height:100vh;overflow:hidden}
+#sphere{position:absolute;inset:0;width:100%;height:100%}
+.layer{position:absolute;inset:0;pointer-events:none}
+
+.sweep{position:absolute;top:0;left:0;width:min(70vmin,600px);height:min(70vmin,600px);transform:translate(-50%,-50%);border-radius:50%;
+  background:conic-gradient(from 0deg,transparent 0deg,rgba(52,224,161,0.10) 16deg,transparent 32deg);
+  animation:sweep 7s linear infinite;
+  mask-image:radial-gradient(circle,transparent 40%,#000 42%,#000 49%,transparent 51%);
+  -webkit-mask-image:radial-gradient(circle,transparent 40%,#000 42%,#000 49%,transparent 51%)}
+
+.core{position:absolute;top:0;left:0;transform:translate(-50%,-50%);z-index:5;pointer-events:none}
+.core svg{width:clamp(28px,4vmin,40px);height:clamp(28px,4vmin,40px);filter:drop-shadow(0 0 16px var(--glow))}
+
+/* grab cursor over the sphere */
+#sphere{cursor:grab}
+#sphere.dragging{cursor:grabbing}
+
+/* mounted component IMAGE (anchor wrapper) */
+.node-img{position:absolute;top:0;left:0;
+  width:clamp(76px,9vmin,128px);height:auto;display:block;
+  border-radius:10px;cursor:pointer;text-decoration:none;
+  box-shadow:0 8px 26px rgba(0,0,0,0.5),0 0 0 1px rgba(64,200,160,0.2);
+  will-change:transform,opacity;
+  transition:box-shadow .3s, filter .3s;
+  -webkit-user-drag:none;user-select:none}
+.node-img img{display:block;width:100%;height:auto;border-radius:10px;-webkit-user-drag:none;pointer-events:none}
+.node-img:hover{box-shadow:0 12px 40px rgba(46,255,176,0.25),0 0 0 1px rgba(52,224,161,0.6);filter:brightness(1.15)}
+
+@keyframes sweep{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.sweep{animation:none}}
+</style>
+</head>
+<body>
+
+<div class="bg-layers">
+  <div class="grid-bg"></div>
+  <div class="radial-glow"></div>
+  <canvas id="particles"></canvas>
+  <div class="vignette"></div>
+</div>
+
+<div class="stage" id="stage">
+  <canvas id="sphere"></canvas>
+  <div class="sweep"></div>
+  <div class="core">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#34e0a1" stroke-width="1.6">
+      <path d="M12 3 3 8l9 5 9-5-9-5Z" fill="rgba(52,224,161,0.28)"/>
+      <path d="M3 13l9 5 9-5M3 18l9 5 9-5" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <div class="layer" id="imgLayer"></div>
+</div>
+
+<script>
+/* ============================================================
+   IMAGE LIST — replace these paths with your own component images.
+   Add or remove freely; the sphere auto-distributes them on nodes.
+============================================================ */
+// w / h are each image's own pixel size (optional — omit to use the default).
+const COMPONENT_IMAGES = [
+  {src:'components/comp-01.png', link:'https://example.com/component-01', w:130, h:90},
+  {src:'components/comp-02.png', link:'https://example.com/component-02', w:96,  h:96},
+  {src:'components/comp-03.png', link:'https://example.com/component-03', w:150, h:80},
+  {src:'components/comp-04.png', link:'https://example.com/component-04', w:110, h:110},
+  {src:'components/comp-05.png', link:'https://example.com/component-05', w:140, h:70},
+  {src:'components/comp-06.png', link:'https://example.com/component-06', w:100, h:130},
+  {src:'components/comp-07.png', link:'https://example.com/component-07', w:120, h:84},
+  {src:'components/comp-08.png', link:'https://example.com/component-08', w:88,  h:120},
+  {src:'components/comp-09.png', link:'https://example.com/component-09', w:160, h:90},
+  {src:'components/comp-10.png', link:'https://example.com/component-10', w:104, h:104},
+  {src:'components/comp-11.png', link:'https://example.com/component-11', w:128, h:72},
+  {src:'components/comp-12.png', link:'https://example.com/component-12', w:115, h:140}
+];
+
+/* ---------- Atmospheric particles ---------- */
+(() => {
+  const cv=document.getElementById('particles'),ctx=cv.getContext('2d');
+  let dpr=Math.min(devicePixelRatio||1,2),p=[],w,h;
+  function rs(){w=cv.width=innerWidth*dpr;h=cv.height=innerHeight*dpr;cv.style.width=innerWidth+'px';cv.style.height=innerHeight+'px';}
+  function init(){rs();p=[];const n=Math.floor(innerWidth/20);for(let i=0;i<n;i++)p.push({x:Math.random()*w,y:Math.random()*h,r:(Math.random()*1.1+.3)*dpr,vy:(Math.random()*.12+.04)*dpr,a:Math.random()*.4+.08});}
+  function fr(){ctx.clearRect(0,0,w,h);for(const q of p){q.y-=q.vy;if(q.y<-4)q.y=h+4;ctx.beginPath();ctx.arc(q.x,q.y,q.r,0,7);ctx.fillStyle=`rgba(70,210,165,${q.a})`;ctx.fill();}requestAnimationFrame(fr);}
+  addEventListener('resize',init);init();fr();
+})();
+
+/* ============================================================
+   Sphere engine — images mounted to nodes, depth-scaled & faded
+============================================================ */
+const App = (() => {
+  const cv=document.getElementById('sphere'), ctx=cv.getContext('2d');
+  const stage=document.getElementById('stage');
+  const layer=document.getElementById('imgLayer');
+  let dpr=Math.min(devicePixelRatio||1,2), W,H,cx,cy,R;
+  let nodes=[], edges=[];
+  let rotY=0, curRX=0, curRY=0, tRX=0, tRY=0, t=0, scan=0;
+  // ---- drag-rotation state ----
+  let dragRotY=0, dragRotX=0;     // accumulated manual rotation
+  let velY=0, velX=0;             // momentum after release
+  let dragging=false;
+  let imgs=[]; // {el, ni, w, h}
+
+  function build(){
+    nodes=[];edges=[];
+    // scale node count to viewport so it stays clean on mobile
+    const N = innerWidth<640 ? 40 : 54;
+    const phi=Math.PI*(3-Math.sqrt(5));
+    for(let i=0;i<N;i++){
+      const y=1-i/(N-1)*2, r2=Math.sqrt(1-y*y), th=phi*i;
+      nodes.push({x:Math.cos(th)*r2,y,z:Math.sin(th)*r2,pulse:Math.random()*Math.PI*2});
+    }
+    for(let i=0;i<N;i++)for(let j=i+1;j<N;j++){
+      const d=Math.hypot(nodes[i].x-nodes[j].x,nodes[i].y-nodes[j].y,nodes[i].z-nodes[j].z);
+      if(d<0.64)edges.push([i,j]);
+    }
+    // mount images on spread-out nodes
+    imgs=[]; layer.innerHTML='';
+    const count=Math.min(COMPONENT_IMAGES.length, N);
+    const step=Math.max(1,Math.floor(N/count));
+    for(let k=0;k<count;k++){
+      const ni=(k*step+2)%N;
+      const item=COMPONENT_IMAGES[k];
+      const a=document.createElement('a');
+      a.href=item.link||'#';
+      a.target='_blank';
+      a.rel='noopener noreferrer';
+      a.className='node-img';
+      a.style.pointerEvents='auto';
+      // per-image size, scaled down a touch on small screens for responsiveness
+      const vf=Math.min(1, innerWidth/1280);
+      const rspScale=0.62+0.38*vf;
+      if(item.w){a.style.width=(item.w*rspScale).toFixed(0)+'px';}
+      const el=document.createElement('img');
+      el.src=item.src;
+      el.alt='component '+(k+1);
+      if(item.w){el.style.width='100%';}
+      if(item.h&&item.w){el.style.height=(item.h*rspScale).toFixed(0)+'px';el.style.objectFit='cover';}
+      el.draggable=false;
+      a.appendChild(el);
+      layer.appendChild(a);
+      imgs.push({el:a,ni,w:0,h:0});
+    }
+  }
+
+  function resize(){
+    const r=stage.getBoundingClientRect();
+    W=cv.width=r.width*dpr;H=cv.height=r.height*dpr;
+    cv.style.width=r.width+'px';cv.style.height=r.height+'px';
+    R=Math.min(W,H)*0.30;
+    // shift the whole composition toward the bottom-right corner,
+    // but keep it fully on-screen. margin = sphere radius + rings + image room.
+    const margin=R*1.30 + 110*dpr;
+    cx=Math.min(W*0.66, W-margin);
+    cy=Math.min(H*0.64, H-margin);
+    // move CSS overlays to the same center (cx/cy are in device px)
+    const cssX=cx/dpr, cssY=cy/dpr;
+    const glow=document.querySelector('.radial-glow');
+    const swp=document.querySelector('.sweep');
+    const core=document.querySelector('.core');
+    if(glow){glow.style.left=cssX+'px';glow.style.top=cssY+'px';}
+    if(swp){swp.style.left=cssX+'px';swp.style.top=cssY+'px';}
+    if(core){core.style.left=cssX+'px';core.style.top=cssY+'px';}
+    imgs.forEach(o=>{o.w=o.el.offsetWidth;o.h=o.el.offsetHeight;});
+  }
+
+  // ---- two flat orbital circles, rotating on their own (no mouse interaction) ----
+  // ringAngle advances every frame independently of parallax tilt.
+  let ringAngle=0;
+  function drawRings(){
+    const ccx=cx, ccy=cy;
+    // CIRCLE 1 — dashed, rotating dashes
+    const r1=R*1.36;
+    ctx.save();
+    ctx.translate(ccx,ccy);
+    ctx.rotate(ringAngle);                 // continuous 360° spin
+    ctx.setLineDash([8*dpr,40*dpr]);
+    ctx.lineDashOffset=-(t*40*dpr)%((8+10)*dpr);
+    ctx.lineWidth=2*dpr;
+    ctx.strokeStyle='rgba(63,230,212,0.2)';
+    ctx.beginPath();ctx.arc(0,0,r1,0,Math.PI*2);ctx.stroke();
+    ctx.restore();
+
+    // CIRCLE 2 — solid line, with a glowing dot travelling around it
+    const r2=R*1.30;
+    ctx.save();
+    ctx.translate(ccx,ccy);
+    ctx.setLineDash([]);
+    ctx.lineWidth=1*dpr;
+    ctx.strokeStyle='rgba(52,224,161,0.28)';
+    ctx.beginPath();ctx.arc(0,0,r2,0,Math.PI*2);ctx.stroke();
+    // travelling dot (opposite direction for contrast)
+    const da=-ringAngle*1.6;
+    const dx=Math.cos(da)*r2, dy=Math.sin(da)*r2;
+    // glow
+    ctx.beginPath();ctx.arc(dx,dy,7*dpr,0,Math.PI*2);
+    ctx.fillStyle='rgba(46,255,176,0.18)';ctx.fill();
+    // core dot
+    ctx.beginPath();ctx.arc(dx,dy,3*dpr,0,Math.PI*2);
+    ctx.fillStyle='rgba(150,255,210,0.95)';ctx.fill();
+    // short trailing comet
+    for(let i=1;i<=10;i++){
+      const ta=da+i*0.05;
+      const tx=Math.cos(ta)*r2, ty=Math.sin(ta)*r2;
+      ctx.beginPath();ctx.arc(tx,ty,(3-i*0.25)*dpr,0,Math.PI*2);
+      ctx.fillStyle=`rgba(120,255,200,${0.5*(1-i/10)})`;ctx.fill();
+    }
+    ctx.restore();
+  }
+
+  function project(n){
+    // total Y rotation = auto-spin + manual drag + parallax tilt
+    const ry=rotY+dragRotY+curRY;
+    const rx=dragRotX+curRX;
+    const sy=Math.sin(ry),cyy=Math.cos(ry);
+    let x=n.x*cyy+n.z*sy, z=-n.x*sy+n.z*cyy;
+    const sx=Math.sin(rx),cxx=Math.cos(rx);
+    let y=n.y*cxx-z*sx; z=n.y*sx+z*cxx;
+    const persp=1.9, sc=persp/(persp+z);
+    return {sx:cx+x*R*sc, sy:cy+y*R*sc, z, sc};
+  }
+
+  function frame(){
+    t+=0.016;
+    // auto-spin pauses while dragging, resumes after
+    if(!dragging) rotY+=0.0024;
+    ringAngle+=0.006;
+
+    // apply momentum when not actively dragging
+    if(!dragging){
+      dragRotY+=velY; dragRotX+=velX;
+      velY*=0.94; velX*=0.94;            // friction
+      if(Math.abs(velY)<0.00002) velY=0;
+      if(Math.abs(velX)<0.00002) velX=0;
+    }
+    // clamp vertical drag so the sphere can't flip past the poles
+    const lim=Math.PI/2*0.92;
+    if(dragRotX> lim){dragRotX= lim; velX=0;}
+    if(dragRotX<-lim){dragRotX=-lim; velX=0;}
+
+    curRX+=(tRX-curRX)*0.05; curRY+=(tRY-curRY)*0.05;
+    scan=(scan+0.004)%1;
+
+    ctx.clearRect(0,0,W,H);
+    const proj=nodes.map(n=>({...project(n),n}));
+
+    // ---- dashed orbital rings around the sphere ----
+    drawRings();
+
+    for(const [a,b] of edges){
+      const pa=proj[a],pb=proj[b],avgZ=(pa.z+pb.z)/2,depth=Math.max(0,(1-avgZ)/2);
+      let alpha=0.05+depth*0.30;
+      const band=Math.abs(((avgZ+1)/2)-scan);
+      if(band<0.06)alpha=Math.min(0.9,alpha+(0.06-band)*9);
+      ctx.beginPath();ctx.moveTo(pa.sx,pa.sy);ctx.lineTo(pb.sx,pb.sy);
+      ctx.strokeStyle=`rgba(52,224,161,${alpha})`;ctx.lineWidth=(0.5+depth*0.7)*dpr;ctx.stroke();
+    }
+    // ---- connector line: node → its mounted image ----
+    for(const o of imgs){
+      const pj=proj[o.ni];
+      const depth=Math.max(0,(1-pj.z)/2);
+      const sx=pj.sx/dpr, sy=pj.sy/dpr;
+      // image anchor = same offset math used when positioning the image
+      const ox=(sx-cx/dpr),oy=(sy-cy/dpr),len=Math.hypot(ox,oy)||1;
+      const scale=0.55+depth*0.6;
+      const push=12;
+      const ix=sx+(ox/len)*push;   // image centre x (css px)
+      const iy=sy+(oy/len)*push;   // image centre y (css px)
+      // attach point on the image: pull back toward the node by ~half the image radius
+      const imgR=(Math.max(o.w,o.h)*scale)/2;
+      const ax=ix-(ox/len)*imgR*0.55;
+      const ay=iy-(oy/len)*imgR*0.55;
+      const x1=pj.sx, y1=pj.sy, x2=ax*dpr, y2=ay*dpr;
+      const lineA=(0.18+depth*0.42)*Math.max(0,Math.min(1,(depth-0.16)*1.7));
+      // base line
+      ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);
+      ctx.strokeStyle=`rgba(63,230,212,${lineA})`;ctx.lineWidth=1*dpr;ctx.stroke();
+      // travelling energy pulse along the line
+      const tp=((t*0.5+o.ni*0.21)%1);
+      const px=x1+(x2-x1)*tp, py=y1+(y2-y1)*tp;
+      ctx.beginPath();ctx.arc(px,py,1.8*dpr,0,7);
+      ctx.fillStyle=`rgba(120,255,200,${lineA*1.6})`;ctx.fill();
+      // little glowing endpoint where it meets the image
+      ctx.beginPath();ctx.arc(x2,y2,2.2*dpr,0,7);
+      ctx.fillStyle=`rgba(46,255,176,${lineA})`;ctx.fill();
+    }
+    for(const p of proj){
+      const depth=Math.max(0.15,(1-p.z)/2);
+      const pulse=Math.sin(t*1.6+p.n.pulse)*0.4+0.6;
+      const r=(1.1+depth*2.0)*dpr*(0.7+pulse*0.5);
+      ctx.beginPath();ctx.arc(p.sx,p.sy,r,0,7);
+      ctx.fillStyle=`rgba(${110+depth*60|0},255,${190+depth*30|0},${0.35+depth*0.55})`;ctx.fill();
+      if(depth>0.7){ctx.beginPath();ctx.arc(p.sx,p.sy,r*2.6,0,7);ctx.fillStyle=`rgba(46,255,176,${0.06*pulse})`;ctx.fill();}
+    }
+
+    // ---- mount images to nodes ----
+    for(const o of imgs){
+      const pj=proj[o.ni];
+      const sx=pj.sx/dpr, sy=pj.sy/dpr;
+      const depth=(1-pj.z)/2;
+      const scale=0.55+depth*0.6;
+      const opacity=Math.max(0,Math.min(1,(depth-0.16)*1.7));
+      const ox=(sx-cx/dpr),oy=(sy-cy/dpr),len=Math.hypot(ox,oy)||1,push=12;
+      const tx=sx+(ox/len)*push-(o.w*scale)/2;
+      const ty=sy+(oy/len)*push-(o.h*scale)/2;
+      o.el.style.transform=`translate3d(${tx}px,${ty}px,0) scale(${scale.toFixed(3)})`;
+      o.el.style.opacity=opacity.toFixed(2);
+      o.el.style.zIndex=String(1000+Math.round(depth*1000));
+      o.el.style.pointerEvents=opacity>0.5?'auto':'none';
+    }
+
+    requestAnimationFrame(frame);
+  }
+
+  function setTilt(rx,ry){tRX=rx;tRY=ry;}
+
+  /* ---- click & drag to rotate ---- */
+  let lastX=0,lastY=0,activeId=null;
+  function isOverSphere(clientX,clientY){
+    // only start a drag if the press is reasonably near the sphere
+    const sx=cx/dpr, sy=cy/dpr, rad=(R/dpr)*1.5;
+    return Math.hypot(clientX-sx, clientY-sy) < rad;
+  }
+  cv.addEventListener('pointerdown',e=>{
+    if(!isOverSphere(e.clientX,e.clientY)) return;
+    dragging=true; activeId=e.pointerId;
+    lastX=e.clientX; lastY=e.clientY;
+    velX=0; velY=0;
+    cv.classList.add('dragging');
+    try{cv.setPointerCapture(e.pointerId);}catch(_){}
+  });
+  cv.addEventListener('pointermove',e=>{
+    if(!dragging || e.pointerId!==activeId) return;
+    const dx=e.clientX-lastX, dy=e.clientY-lastY;
+    lastX=e.clientX; lastY=e.clientY;
+    const k=0.006;                 // drag sensitivity
+    dragRotY+=dx*k;
+    dragRotX+=dy*k;
+    velY=dx*k; velX=dy*k;          // store for momentum
+  });
+  function endDrag(){
+    if(!dragging) return;
+    dragging=false; activeId=null;
+    cv.classList.remove('dragging');
+  }
+  cv.addEventListener('pointerup',endDrag);
+  cv.addEventListener('pointercancel',endDrag);
+  cv.addEventListener('pointerleave',endDrag);
+
+  let rt;
+  addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{build();resize();},150);});
+  build();resize();
+  // recompute image sizes once images have loaded
+  window.addEventListener('load',resize);
+  requestAnimationFrame(()=>{resize();frame();});
+  return {setTilt};
+})();
+
+/* ============================================================
+   Parallax + touch — smooth lerp tilt
+============================================================ */
+(() => {
+  const stage=document.getElementById('stage');
+  let tx=0,ty=0,cxv=0,cyv=0;
+  function set(cxp,cyp){
+    const r=stage.getBoundingClientRect();
+    tx=Math.max(-1,Math.min(1,(cxp-(r.left+r.width/2))/(r.width/2)));
+    ty=Math.max(-1,Math.min(1,(cyp-(r.top+r.height/2))/(r.height/2)));
+  }
+  addEventListener('mousemove',e=>set(e.clientX,e.clientY));
+  addEventListener('touchmove',e=>{if(e.touches[0])set(e.touches[0].clientX,e.touches[0].clientY);},{passive:true});
+
+  // suppress link clicks that were really a drag
+  let downX=0,downY=0,moved=false;
+  addEventListener('pointerdown',e=>{downX=e.clientX;downY=e.clientY;moved=false;});
+  addEventListener('pointermove',e=>{if(Math.hypot(e.clientX-downX,e.clientY-downY)>6)moved=true;});
+  document.getElementById('imgLayer').addEventListener('click',e=>{
+    if(moved){e.preventDefault();e.stopPropagation();}
+  },true);
+
+  (function loop(){
+    cxv+=(tx-cxv)*0.06;cyv+=(ty-cyv)*0.06;
+    App.setTilt(cyv*0.4,cxv*0.6);
+    requestAnimationFrame(loop);
+  })();
+})();
+</script>
+</body>
+</html>
