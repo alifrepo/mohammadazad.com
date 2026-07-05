@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Mohammad Azad - UI/UX Designer</title>
+
+    <!-- description -->
+    <meta name="description" content="">
+   
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/icon.svg">
+
+    <!-- animate style -->
+    <link rel="stylesheet" href="assets/dist/plugins/animate.style/animate.min.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/dist/css/bootstrap/bootstrap.css">
+
+    <!-- alfuix -->
+    <link rel="stylesheet" href="assets/dist/css/alfuix/alfuix.min.css">
+
+    <!-- alif -->
+    <link rel="stylesheet" href="assets/dist/css/style.css">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="assets/dist/css/bootstrap/bootstrap-icons.css">
+
+
+    <style>
+      :root {
+  --bg: #050505;
+  --card: #111111;
+  --border: rgba(255, 255, 255, .08);
+  --acid: #C7FF00;
+  --purple: #8A2EFF;
+  --white: #ffffff;
+  --muted: rgba(255, 255, 255, .65);
+  --font-display: 'Rajdhani', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* ---------- Base ---------- */
+html, body { margin: 0; padding: 0; background: var(--bg); }
+body {
+  color: var(--white);
+  font-family: var(--font-display);
+  font-weight: 500;
+  overflow-x: clip;
+}
+::selection { background: var(--acid); color: var(--bg); }
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #1c1c1c; border-radius: 8px; }
+
+.mono {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: 11px;
+}
+.text-acid { color: var(--acid) !important; }
+.text-purple { color: var(--purple) !important; }
+
+.shell { position: relative; max-width: 1720px; margin: 0 auto; }
+
+/* ---------- Ambient FX ---------- */
+.cursor-glow {
+  position: fixed; left: 0; top: 0;
+  width: 560px; height: 560px; margin: -280px 0 0 -280px;
+  border-radius: 50%; pointer-events: none; z-index: 3;
+  background: radial-gradient(circle, rgba(138,46,255,.13) 0%, rgba(138,46,255,0) 65%);
+  will-change: transform;
+}
+.grain {
+  position: fixed; inset: -60px; z-index: 60;
+  pointer-events: none; opacity: .05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain-shift 1.2s steps(6) infinite;
+  will-change: transform;
+}
+@keyframes grain-shift {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(-4%, 3%); }
+  40% { transform: translate(3%, -5%); }
+  60% { transform: translate(-5%, -2%); }
+  80% { transform: translate(4%, 4%); }
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  position: fixed; top: 0; left: 50%; transform: translateX(-50%);
+  width: 100%; max-width: 1720px; z-index: 40;
+  padding: 16px 28px;
+  background: linear-gradient(180deg, rgba(5,5,5,.92) 0%, rgba(5,5,5,0) 100%);
+  pointer-events: none;
+}
+.site-header > * { pointer-events: auto; }
+.site-logo { height: 30px; width: auto; display: block; }
+.site-meta { gap: 40px; color: var(--muted); }
+.sound-btn {
+  background: none; border: 0; padding: 0;
+  color: var(--white); font-size: 15px; line-height: 1; cursor: pointer;
+}
+
+/* ---------- Hero (left column) ---------- */
+.hero {
+  position: sticky; top: 0;
+  height: 100vh; min-height: 720px;
+  padding: 96px 28px 20px 56px;
+}
+.hero-logo { margin-bottom: 40px; }
+.hero-logo img { height: 64px; width: auto; }
+.eyebrow { color: var(--acid); font-weight: 700; margin-bottom: 16px; }
+.hero-title {
+  font-size: clamp(42px, 3.6vw, 66px);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: .005em;
+  margin: 0 0 20px;
+  max-width: 20ch;
+  text-wrap: balance;
+}
+.hero-sub {
+  font-size: 18px; font-weight: 500;
+  color: var(--muted);
+  max-width: 52ch; margin: 0 0 32px;
+}
+.list-title { color: var(--muted); font-weight: 700; letter-spacing: .18em; margin-bottom: 16px; }
+.link-icon, .hero li > i { color: rgba(255,255,255,.4); font-size: 13px; }
+.list-link { color: rgba(255,255,255,.85); font-size: 12px; transition: color .25s; }
+.list-link:hover { color: var(--acid); }
+.social-link { color: var(--muted); transition: color .25s; }
+.social-link:hover { color: var(--white); }
+
+/* ---------- Buttons ---------- */
+.btn-acid, .btn-ghost {
+  font-size: 12px; font-weight: 700;
+  padding: 15px 26px; border-radius: 999px;
+  text-decoration: none;
+  transition: box-shadow .3s, transform .3s, border-color .3s;
+  will-change: transform;
+}
+.btn-acid { background: var(--acid); color: #0a0a0a; }
+.btn-acid:hover { color: #0a0a0a; box-shadow: 0 0 34px rgba(199,255,0,.35); scale: 1.04; }
+.btn-ghost { background: #161616; color: var(--white); border: 1px solid var(--border); font-weight: 500; }
+.btn-ghost:hover { color: var(--white); border-color: rgba(138,46,255,.6); box-shadow: 0 0 30px rgba(138,46,255,.25); scale: 1.04; }
+
+/* ---------- Panel shell ---------- */
+.panelwrap { padding: 64px 16px 16px; }
+.panel {
+  flex: 1 1 auto; min-height: 0;
+  background: #0a0a0a;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: clip;
+}
+.panel-scroll { flex: 1 1 auto; min-height: 0; }
+
+/* ---------- Tabs ---------- */
+.tabs { flex-shrink: 0; border-bottom: 1px solid var(--border); }
+.tab {
+  position: relative;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 19px 10px;
+  background: transparent; border: 0;
+  border-right: 1px solid var(--border);
+  color: rgba(255,255,255,.4);
+  font-size: 12px; cursor: pointer;
+  transition: background .25s, color .25s;
+}
+.tab:last-child { border-right: 0; }
+.tab i { font-size: 14px; }
+.tab-bar {
+  position: absolute; left: 0; right: 0; top: 0; height: 2px;
+  background: var(--acid); opacity: 0; transition: opacity .25s;
+}
+.tab:hover:not(.is-active) { color: var(--white); background: #101010; }
+.tab.is-active { background: #141414; color: var(--white); font-weight: 700; }
+.tab.is-active .tab-bar { opacity: 1; }
+
+/* ---------- Tab panels ---------- */
+.tab-panel { display: none; }
+.tab-panel.is-active { display: block; }
+.panel-pad { padding: 40px 32px; }
+.panel-pad.lg { padding: 48px 32px; }
+.max-copy { max-width: 62ch; }
+.h2-title {
+  font-size: clamp(30px, 2.6vw, 50px);
+  font-weight: 700; line-height: 1.06; letter-spacing: .005em;
+  margin: 0 0 14px;
+}
+.lead-copy { font-size: 17px; color: var(--muted); margin: 0; }
+
+
+
+/* ---------- Why / How / Contact ---------- */
+
+
+
+/* ---------- Marquee footer ---------- */
+.marquee {
+  flex-shrink: 0;
+  border-top: 1px solid var(--border);
+  padding: 16px 24px;
+  overflow: clip;
+  background: rgba(10,10,10,.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.marquee-title { font-weight: 700; letter-spacing: .16em; white-space: nowrap; }
+.marquee-mask {
+  overflow: clip;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.marquee-track {
+  gap: 56px; width: max-content;
+  color: rgba(255,255,255,.55);
+  animation: marquee-scroll 26s linear infinite;
+}
+.brand { font-size: 17px; font-weight: 600; white-space: nowrap; }
+.brand.bold { font-weight: 700; letter-spacing: -.02em; }
+.brand.mono { font-size: 15px; font-weight: 700; }
+@keyframes marquee-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* ---------- Glitch effect ---------- */
+.is-glitching {
+  animation: glitch-skew .25s steps(2) infinite;
+  text-shadow: 1px 0 rgba(199,255,0,.8), -1px 0 rgba(138,46,255,.8);
+}
+@keyframes glitch-skew {
+  0% { transform: translate(0); }
+  25% { transform: translate(-1px, 1px) skewX(3deg); }
+  50% { transform: translate(1px, -1px); }
+  75% { transform: translate(-1px, -1px) skewX(-3deg); }
+  100% { transform: translate(0); }
+}
+
+/* ---------- Desktop app-shell scrolling ---------- */
+@media (min-width: 992px) {
+  .shell { height: 100vh; overflow: hidden; }
+  .panelwrap { height: 100vh; }
+  .panel-scroll { overflow-y: auto; scrollbar-width: none; }
+  .panel-scroll::-webkit-scrollbar { display: none; }
+}
+
+/* ---------- Mobile / tablet ---------- */
+@media (max-width: 991.98px) {
+  .hero { position: static; height: auto; min-height: 0; padding: 96px 24px 40px; }
+  .hero .row { row-gap: 32px; }
+  .site-meta { display: none; }
+  .tabs { display: none !important; }
+  .tab-panel { display: block !important; }
+  .panelwrap { padding: 0 16px 16px; }
+}
+
+    </style>
+</head>
+<body>
+  <div class="shell" id="top">
+
+    <!-- Cursor glow + grain -->
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- ============ FIXED HEADER ============ -->
+    <header class="site-header d-flex align-items-center justify-content-between" data-hero-nav>
+      <a href="#top" class="d-inline-flex align-items-center">
+        <img src="assets/img/logo.svg" alt="FUIStudio" class="site-logo">
+      </a>
+      <div class="site-meta d-flex align-items-center mono">
+        <span id="clock" aria-live="off"></span>
+        <span><span class="text-purple">//</span> Globally distributed team</span>
+        <span><span class="text-acid">&#9702;</span> FUIStudio 2026</span>
+        <button id="soundToggle" class="sound-btn" aria-label="Toggle sound"><i class="bi bi-volume-mute"></i></button>
+      </div>
+    </header>
+
+    <!-- ============ MAIN SPLIT ============ -->
+    <main class="container-fluid g-0">
+      <div class="row g-0">
+
+        <!-- ======== LEFT / HERO ======== -->
+        <div class="col-lg-5">
+          <section class="hero d-flex flex-column justify-content-between" data-screen-label="Hero">
+            <div>
+              <div class="hero-logo" data-hero="logo">
+                <img src="assets/img/logo.svg" alt="" aria-hidden="true">
+              </div>
+
+              <p class="eyebrow mono" data-hero="sub">B2B SaaS & Dashboard Specialist</p>
+
+              <h1 class="hero-title">
+                <span class="d-block" data-hero="line">Senior</span>
+                <span class="d-block" data-hero="line">Product Designer</span>
+              </h1>
+
+              <p class="hero-sub" data-hero="sub">Bridging the gap between complex data
+& human-centric experiences.</p>
+
+              <div class="d-flex flex-wrap gap-3">
+                <a href="#contact" class="btn-acid mono d-inline-flex align-items-center gap-2" data-hero="btn" data-magnetic data-goto-tab="contact"><i class="bi bi-calendar2-week"></i> Book a call</a>
+                <a href="#contact" class="btn-ghost mono d-inline-flex align-items-center gap-2" data-hero="btn" data-magnetic data-goto-tab="contact"><i class="bi bi-send"></i> Get in touch</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="row" data-hero="foot">
+                <div class="col-6">
+                  <p class="list-title mono">Services</p>
+                  <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                    <li class="d-flex align-items-center gap-2"><i class="bi bi-window"></i><a href="#work" class="list-link mono text-decoration-none" data-glitch data-goto-tab="work">UI/UX design</a></li>
+                    <li class="d-flex align-items-center gap-2"><i class="bi bi-grid-1x2"></i><a href="#work" class="list-link mono text-decoration-none" data-glitch data-goto-tab="work">Operational dashboards</a></li>
+                    <li class="d-flex align-items-center gap-2"><i class="bi bi-shield-lock"></i><a href="#work" class="list-link mono text-decoration-none" data-glitch data-goto-tab="work">Security monitoring UI</a></li>
+                    <li class="d-flex align-items-center gap-2"><i class="bi bi-bounding-box"></i><a href="#work" class="list-link mono text-decoration-none" data-glitch data-goto-tab="work">Design systems</a></li>
+                    <li class="d-flex align-items-center gap-2"><i class="bi bi-code-slash"></i><a href="#work" class="list-link mono text-decoration-none" data-glitch data-goto-tab="work">Development</a></li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <p class="list-title mono">Industries</p>
+                  <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                    <li class="d-flex align-items-center gap-2"><i class="bi bi-buildings"></i><a href="#work" class="list-link mono text-decoration-none" data-glitch data-goto-tab="work">B2B SaaS</a></li>
+                    <li class="d-flex align-items-center gap-2"><i class="bi bi-shield-shaded"></i><a href="#work" class="list-link mono text-decoration-none" data-glitch data-goto-tab="work">Cybersecurity</a></li>
+                    <li class="d-flex align-items-center gap-2"><i class="bi bi-cpu"></i><a href="#work" class="list-link mono text-decoration-none" data-glitch data-goto-tab="work">AI &amp; data</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-4 mt-4" data-hero="foot">
+                <a href="#top" class="social-link mono text-decoration-none" data-glitch>Twitter [X]</a>
+                <a href="#top" class="social-link mono text-decoration-none" data-glitch>LinkedIn</a>
+                <a href="#top" class="social-link mono text-decoration-none" data-glitch>Dribbble</a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ======== RIGHT / TABBED PANEL ======== -->
+        <div class="col-lg-7">
+          <div class="panelwrap d-flex flex-column" id="work" data-screen-label="Portfolio panel">
+            <div class="panel d-flex flex-column">
+
+              <!-- Tabs -->
+              <nav class="tabs d-flex" aria-label="Studio sections" data-hero="tabs">
+                <button type="button" class="tab mono flex-fill is-active" data-tab-btn="work"><i class="bi bi-folder2-open"></i> <span class="tab-label" data-glitch-label>Our work</span><span class="tab-bar"></span></button>
+                <button type="button" class="tab mono flex-fill" data-tab-btn="why"><i class="bi bi-stars"></i> <span class="tab-label" data-glitch-label>Why FUIStudio</span><span class="tab-bar"></span></button>
+                <button type="button" class="tab mono flex-fill" data-tab-btn="how"><i class="bi bi-list-task"></i> <span class="tab-label" data-glitch-label>How we work</span><span class="tab-bar"></span></button>
+                <button type="button" class="tab mono flex-fill" data-tab-btn="contact"><i class="bi bi-chat-square-text"></i> <span class="tab-label" data-glitch-label>Contact</span><span class="tab-bar"></span></button>
+              </nav>
+
+              <!-- Scrollable content -->
+              <div class="panel-scroll">
+                <div>
+
+                  <!-- ==== TAB · OUR WORK ==== -->
+                  <section class="tab-panel is-active" data-tab-panel="work" data-screen-label="Tab: Our work">
+                    <div class="work-stack d-flex flex-column">
+
+                      <!-- 01 · SELLIX -->
+                      <article class="card-item" data-card>
+                        <div class="card-media ratio-16x10 scene-sellix" data-parallax="12">
+                          <div class="globe"><div class="globe-dots"></div></div>
+                          <div class="stars"></div>
+                          <div class="snav d-flex align-items-center justify-content-between">
+                            <span class="snav-brand">Sellix</span>
+                            <div class="snav-links d-none d-md-flex"><span>Products</span><span>Pricing</span><span>Developers</span><span>Resources</span><span>Contact sales</span></div>
+                            <span class="pill-white">Get started &rarr;</span>
+                          </div>
+                          <div class="sellix-copy text-center">
+                            <div class="sellix-h">Cross&#8209;border<br>finance</div>
+                            <p class="sellix-sub mx-auto">Accept payments, manage and custody your assets with ease, with seamless on/off&#8209;ramping between crypto and fiat.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                              <span class="pill-white">Get started &rarr;</span>
+                              <span class="pill-glass">Contact sales &rarr;</span>
+                            </div>
+                          </div>
+                          <div class="chip d-flex align-items-center gap-2">
+                            <span class="chip-swatch"></span>
+                            <span class="chip-text">Product bought<br><small>1.2 SOL &middot; $192</small></span>
+                          </div>
+                          <div class="fade-bottom"></div>
+                        </div>
+                        <div class="card-cap d-flex align-items-center justify-content-between">
+                          <span class="cap-title" data-card-title>Sellix &mdash; Cross&#8209;border finance</span>
+                          <span class="cap-meta mono">Web3 &middot; Fintech &middot; 2026</span>
+                        </div>
+                      </article>
+
+                      <!-- 02 · LUNA -->
+                      <article class="card-item" data-card>
+                        <div class="card-media ratio-16x10 scene-luna" data-parallax="10">
+                          <div class="collage d-flex align-items-center justify-content-center">
+                            <div class="d-flex collage-row">
+                              <div class="app-card lift-a">
+                                <div class="notch"></div>
+                                <div class="shot shot-a"><span class="tag">Remix</span></div>
+                                <div class="app-foot d-flex align-items-center justify-content-between"><span>9:41</span><span class="d-flex gap-2"><i class="bi bi-heart-fill heart"></i><i class="bi bi-arrow-90deg-right"></i></span></div>
+                              </div>
+                              <div class="app-card lift-b">
+                                <div class="notch"></div>
+                                <div class="shot shot-b"><div class="shot-dots"></div><span class="tag tag-purple">Dreaming&hellip;</span></div>
+                                <div class="app-foot d-flex align-items-center justify-content-between"><span>Activity</span><span>9:41</span></div>
+                              </div>
+                              <div class="app-card lift-c d-none d-md-block">
+                                <div class="notch"></div>
+                                <div class="shot shot-c"></div>
+                                <div class="app-foot d-flex align-items-center justify-content-between"><span>Discover</span><i class="bi bi-plus-circle-fill"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="fade-bottom fade-soft"></div>
+                        </div>
+                        <div class="card-cap d-flex align-items-center justify-content-between">
+                          <span class="cap-title" data-card-title>Luna &mdash; AI imaging, reimagined</span>
+                          <span class="cap-meta mono">AI &middot; Mobile &middot; 2025</span>
+                        </div>
+                      </article>
+
+                      <!-- 03 + 04 -->
+                      <div class="row g-4">
+                        <div class="col-md-6">
+                          <article class="card-item hover-acid h-100" data-card>
+                            <div class="card-media ratio-1x1 scene-wai" data-parallax="8">
+                              <div class="dash-top d-flex align-items-center justify-content-between">
+                                <span class="dash-brand">W.AI</span>
+                                <span class="live mono"><span class="pulse">&#9679;</span> Live inference</span>
+                              </div>
+                              <div class="stats d-flex gap-2">
+                                <div class="stat"><div class="stat-label">Tokens / s</div><div class="stat-val">48.2k</div></div>
+                                <div class="stat"><div class="stat-label">Latency</div><div class="stat-val text-acid">86ms</div></div>
+                              </div>
+                              <div class="bars d-flex align-items-end gap-2">
+                                <div></div><div></div><div></div><div class="hot"></div><div></div><div class="hot glow"></div><div></div><div></div>
+                              </div>
+                              <div class="wai-tint"></div>
+                            </div>
+                            <div class="card-cap d-flex align-items-center justify-content-between">
+                              <span class="cap-title sm" data-card-title>W.AI &mdash; Inference console</span>
+                              <span class="cap-meta mono">AI &middot; SaaS</span>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="col-md-6">
+                          <article class="card-item h-100" data-card>
+                            <div class="card-media ratio-1x1 scene-holo" data-parallax="8">
+                              <div class="phone">
+                                <div class="phone-notch"></div>
+                                <div class="phone-label">Total balance</div>
+                                <div class="phone-balance">$128,540</div>
+                                <div class="token-card">
+                                  <div class="d-flex justify-content-between"><span>ETH</span><span class="text-acid">+4.6%</span></div>
+                                  <div class="token-amt">24.18 &Xi;</div>
+                                </div>
+                                <div class="token-row d-flex justify-content-between"><span>SOL &middot; 812.4</span><span>$96,110</span></div>
+                              </div>
+                              <div class="fade-bottom"></div>
+                            </div>
+                            <div class="card-cap d-flex align-items-center justify-content-between">
+                              <span class="cap-title sm" data-card-title>Hologram &mdash; Self&#8209;custody wallet</span>
+                              <span class="cap-meta mono">Web3 &middot; Mobile</span>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+
+                      <!-- 05 · DUNE -->
+                      <article class="card-item hover-acid" data-card>
+                        <div class="card-media ratio-16x9 scene-dune" data-parallax="10">
+                          <div class="dune-top d-flex align-items-center justify-content-between">
+                            <span class="dash-brand"><i class="bi bi-hexagon-half"></i> Dune Analytics</span>
+                            <div class="dune-links d-none d-sm-flex gap-3"><span>Queries</span><span>Dashboards</span><span class="text-acid">New query +</span></div>
+                          </div>
+                          <div class="dune-body d-flex gap-3">
+                            <div class="dune-side d-none d-sm-flex flex-column gap-2">
+                              <div class="kpi">DEX volume (7d)<div class="kpi-val">$41.2B</div><div class="kpi-delta up">&#9650; 12.4%</div></div>
+                              <div class="kpi">Active wallets<div class="kpi-val">2.84M</div><div class="kpi-delta down">&#9660; 1.1%</div></div>
+                            </div>
+                            <div class="chart flex-fill">
+                              <div class="chart-label">Net flows &middot; hourly</div>
+                              <div class="cbars d-flex align-items-end gap-1">
+                                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="peak"></div><div></div><div></div>
+                              </div>
+                              <div class="dune-tint"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-cap d-flex align-items-center justify-content-between">
+                          <span class="cap-title" data-card-title>Dune &mdash; On&#8209;chain intelligence</span>
+                          <span class="cap-meta mono">Web3 &middot; Data &middot; 2025</span>
+                        </div>
+                      </article>
+
+                      <!-- 06 · BITGPT -->
+                      <article class="card-item" data-card>
+                        <div class="card-media ratio-16x9 scene-bitgpt" data-parallax="10">
+                          <div class="orb"></div>
+                          <div class="bg-nav d-flex align-items-center justify-content-between">
+                            <span class="dash-brand">BitGPT</span>
+                            <span class="pill-glass">Join the beta</span>
+                          </div>
+                          <div class="bg-copy text-center">
+                            <p class="bg-eyebrow mono">Autonomous trading agents</p>
+                            <div class="bg-h">Ship AI agents<br>in minutes</div>
+                          </div>
+                          <div class="fade-bottom"></div>
+                        </div>
+                        <div class="card-cap d-flex align-items-center justify-content-between">
+                          <span class="cap-title" data-card-title>BitGPT &mdash; Agent platform</span>
+                          <span class="cap-meta mono">AI &middot; Brand &middot; Web &middot; 2026</span>
+                        </div>
+                      </article>
+
+                    </div>
+                  </section>
+
+                  <!-- ==== TAB · WHY ==== -->
+                  <section class="tab-panel" data-tab-panel="why" id="why" data-screen-label="Tab: Why FUIStudio">
+                    <div class="panel-pad">
+                      <div class="max-copy" data-reveal>
+                        <p class="eyebrow mono">Why FUIStudio</p>
+                        <h2 class="h2-title">High&#8209;density interfaces, engineered for clarity.</h2>
+                        <p class="lead-copy">We design the screens operators live in &mdash; B2B SaaS, security monitoring, and multi&#8209;role enterprise platforms where every pixel has a job.</p>
+                      </div>
+
+                      <div class="row g-3 mt-4" data-reveal>
+                        <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-num">40+</div><div class="stat-tag mono">Products shipped</div></div></div>
+                        <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-num text-acid">$310M</div><div class="stat-tag mono">Raised by clients</div></div></div>
+                        <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-num">6 yrs</div><div class="stat-tag mono">SaaS &middot; Security &middot; AI</div></div></div>
+                        <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-num text-purple">12</div><div class="stat-tag mono">Countries, one team</div></div></div>
+                      </div>
+
+                      <div class="d-flex flex-column mt-4" data-reveal>
+                        <div class="principle d-flex align-items-start gap-4">
+                          <span class="p-num mono">01</span>
+                          <div><div class="p-title">Senior&#8209;only team</div><p class="p-desc mb-0">No account managers, no juniors learning on your dime. You work directly with the people doing the work.</p></div>
+                        </div>
+                        <div class="principle d-flex align-items-start gap-4">
+                          <span class="p-num mono">02</span>
+                          <div><div class="p-title">Weekly drops</div><p class="p-desc mb-0">Something real to react to every week &mdash; live prototypes, not slideware.</p></div>
+                        </div>
+                        <div class="principle last d-flex align-items-start gap-4">
+                          <span class="p-num mono">03</span>
+                          <div><div class="p-title">Built to ship</div><p class="p-desc mb-0">Design and engineering under one roof &mdash; what we design is what goes to production.</p></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <!-- ==== TAB · HOW ==== -->
+                  <section class="tab-panel" data-tab-panel="how" id="how" data-screen-label="Tab: How we work">
+                    <div class="panel-pad">
+                      <div class="max-copy" data-reveal>
+                        <p class="eyebrow mono">How we work</p>
+                        <h2 class="h2-title">Four phases. Zero hand&#8209;offs.</h2>
+                        <p class="lead-copy">One senior pod carries your project from first workshop to production deploy.</p>
+                      </div>
+
+                      <div class="d-flex flex-column gap-3 mt-4" data-reveal>
+                        <div class="step d-flex flex-wrap align-items-center gap-3">
+                          <span class="step-num mono">01</span>
+                          <div class="flex-fill step-body"><div class="p-title">Discover</div><p class="p-desc mb-0">Positioning workshop, audits, competitive teardown &mdash; we find the sharpest possible angle.</p></div>
+                          <span class="dur mono">1 week</span>
+                        </div>
+                        <div class="step d-flex flex-wrap align-items-center gap-3">
+                          <span class="step-num mono">02</span>
+                          <div class="flex-fill step-body"><div class="p-title">Design</div><p class="p-desc mb-0">Brand system, product UX, and site design run in parallel &mdash; reviewed live, every week.</p></div>
+                          <span class="dur mono">2&ndash;4 weeks</span>
+                        </div>
+                        <div class="step d-flex flex-wrap align-items-center gap-3">
+                          <span class="step-num mono">03</span>
+                          <div class="flex-fill step-body"><div class="p-title">Build</div><p class="p-desc mb-0">Production&#8209;grade front&#8209;end, motion, and 3D &mdash; performance&#8209;budgeted from day one.</p></div>
+                          <span class="dur mono">2&ndash;6 weeks</span>
+                        </div>
+                        <div class="step acid d-flex flex-wrap align-items-center gap-3">
+                          <span class="step-num mono text-acid">04</span>
+                          <div class="flex-fill step-body"><div class="p-title">Launch &amp; iterate</div><p class="p-desc mb-0">Ship, measure, refine. We stay on for the first growth cycle &mdash; not just the launch tweet.</p></div>
+                          <span class="dur acid mono">Ongoing</span>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-wrap align-items-center gap-2 mt-4" data-reveal>
+                        <span class="list-title mono mb-0 me-2">Engagements</span>
+                        <span class="chip-pill mono">Sprint</span>
+                        <span class="chip-pill mono">Retainer</span>
+                        <span class="chip-pill mono">Embedded team</span>
+                      </div>
+                    </div>
+                  </section>
+
+                  <!-- ==== TAB · CONTACT ==== -->
+                  <section class="tab-panel" data-tab-panel="contact" id="contact" data-screen-label="Tab: Contact">
+                    <div class="panel-pad lg">
+                      <div data-reveal>
+                        <p class="eyebrow mono">New project</p>
+                        <h2 class="contact-title">Let&rsquo;s build the next big thing.</h2>
+                        <a href="mailto:hello@fuistudio.com" class="contact-email text-decoration-none">hello@fuistudio.com</a>
+                      </div>
+
+                      <div class="d-flex flex-wrap gap-3 mt-4" data-reveal>
+                        <a href="mailto:hello@fuistudio.com" class="btn-acid mono d-inline-flex align-items-center gap-2" data-magnetic><i class="bi bi-calendar2-week"></i> Book a call</a>
+                        <a href="mailto:hello@fuistudio.com" class="btn-ghost mono d-inline-flex align-items-center gap-2" data-magnetic><i class="bi bi-send"></i> Send a brief</a>
+                      </div>
+
+                      <div class="row g-3 mt-4" data-reveal>
+                        <div class="col-md-4"><div class="info-cell"><div class="info-label mono">Studios</div><div class="info-val">New York &middot; Lisbon &middot; Singapore</div></div></div>
+                        <div class="col-md-4"><div class="info-cell"><div class="info-label mono">Response</div><div class="info-val">Within 24 hours, any timezone</div></div></div>
+                        <div class="col-md-4"><div class="info-cell"><div class="info-label mono">Socials</div><div class="d-flex gap-3 info-val"><a href="#contact" class="social-inline text-decoration-none" data-glitch>X</a><a href="#contact" class="social-inline text-decoration-none" data-glitch>LinkedIn</a><a href="#contact" class="social-inline text-decoration-none" data-glitch>Dribbble</a></div></div></div>
+                      </div>
+                    </div>
+                  </section>
+
+                </div>
+              </div>
+
+              <!-- Fixed footer marquee -->
+              <footer class="marquee d-flex align-items-center gap-4" data-hero="marquee">
+                <span class="marquee-title mono">Trusted by the best</span>
+                <div class="marquee-mask flex-fill">
+                  <div class="marquee-track d-flex align-items-center">
+                    <span class="brand mono">:23</span><span class="brand">&#10589; Vercetti</span><span class="brand">&#9789; Luna</span><span class="brand bold">W.AI</span><span class="brand">Sellix</span><span class="brand">&#11042; Hologram</span><span class="brand">&#9679; Dune Analytics</span><span class="brand">&#10070; BitGPT</span>
+                    <span class="brand mono">:23</span><span class="brand">&#10589; Vercetti</span><span class="brand">&#9789; Luna</span><span class="brand bold">W.AI</span><span class="brand">Sellix</span><span class="brand">&#11042; Hologram</span><span class="brand">&#9679; Dune Analytics</span><span class="brand">&#10070; BitGPT</span>
+                  </div>
+                </div>
+              </footer>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+
+  <!--js & css library-->
+
+  <!-- bootstrap bundel -->
+  <script src="assets/dist/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+
+  <!-- Motion libs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+
+  <!-- App scripts -->
+  <script src="assets/dist/js/main.js" defer></script>
+  <script src="assets/dist/js/animation.js" defer></script>
+</body>
+</html>

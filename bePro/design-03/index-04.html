@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>myBio - Creative Personal Portfolio Template</title>
+
+    <!-- description -->
+    <meta name="description" content="beProfessional is a highly creative, modern, visually stunning and Personal portfolio template with ready to use pages."/>
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/img/icon.svg">
+
+    <!-- animate style -->
+    <link rel="stylesheet" href="../assets/dist/plugins/animate.style/animate.min.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap/bootstrap.css">
+
+    <!-- alfuix -->
+    <link rel="stylesheet" href="../assets/dist/css/alfuix/alfuix.min.css">
+
+    <!-- alif -->
+    <link rel="stylesheet" href="../assets/dist/css/style.min.css">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap/bootstrap-icons.css">
+</head>
+<body class="overflow-x-hidden" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
+  <!-- start header -->
+  <header id="home" class="position-relative z-3 vh-100 text-center al-bg-primary-both">
+    <div id="particles-js" class="vh-100"><canvas class="particles-js-canvas-el vh-100 w-100"></canvas></div>
+
+    <div class="d-inline-flex align-items-center gap-2 position-absolute top-0 end-0 m-3 animate__animated animate__backInDown">
+      <!-- start light / dark mode button -->
+      <span id="toggleThemeBtn" class="d-inline-flex al-flex-center al-size-36 rounded-circle bg-primary bg-opacity-25 al-text-white-both al-animate-cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dark Mode">
+        <i id="themeIcon" class="bi bi-moon-fill"></i>
+        <!-- <span id="themeText">Light Mode</span> -->
+      </span>
+
+      <a href="index-ar-04.html" class="d-inline-flex al-flex-center gap-2 al-h-36 rounded-pill bg-primary bg-opacity-25 al-text-white-both al-animate-cursor-pointer px-3 text-decoration-none">
+        <i class="bi bi-translate"></i>
+        <span class="al-fs-13 al-ff-cairo">العربية</span>
+      </a>
+    </div>
+
+    <div class="position-absolute top-50 start-50 translate-middle pb-5 min-w-50">
+      <div class="animate__animated animate__zoomIn">
+        <h6 class="fs-5 al-text-white-both">Hi There,</h6>
+        <h1 class="fs-1 al-text-white-both">I'm Abu Bilal A.</h1>
+
+        <!-- typing text -->
+
+        <h2 class="al-text-white-both fs-5">
+          An
+          <span class="al-typed-text text-warning">
+            <span>UI designer</span>
+            <span>UX designer</span>
+            <span>UI developer</span>
+          </span>
+          <span class="al-animate-cursor position-relative d-inline-block al-w-2 ms-1">&nbsp;</span>
+        </h2>
+
+        <a href="../assets/img/resume.pdf" target="_blank" class="btn btn-outline-primary px-5 py-2 rounded-pill text-nowrap mt-5 animate__animated animate__jackInTheBox animate__delay-1s">
+          <i class="bi bi-cloud-download me-2"></i> 
+          Download CV
+        </a>
+      </div>
+    </div>
+    
+    <!-- start mouse scroll down -->
+    <a href="#aboutMe" class="al-animate-scroll-down text-decoration-none text-center animate__animated animate__zoomIn">
+      <span class="al-mouse">
+        <span class="al-mouse-scroll"></span>
+      </span>
+      <span class="d-block mt-2 text-white text-opacity-50">Scroll Down</span>
+    </a>
+    <!-- end mouse scroll down -->
+
+    <!-- start navigation -->
+    <nav id="navbar" class="flex-column align-items-stretch pe-3 position-fixed al-object-center-y end-0">
+      <nav class="nav nav-pills flex-column gap-3">
+        <a class="nav-link rounded-circle al-size-45 fs-5 p-0 d-inline-flex al-flex-center border border-primary border-opacity-50" href="#home" data-bs-toggle="tooltip" data-bs-placement="left" title="Home">
+          <i class="bi bi-house"></i>
+        </a>
+        <a class="nav-link rounded-circle al-size-45 fs-5 p-0 d-inline-flex al-flex-center border border-primary border-opacity-50" href="#aboutMe" data-bs-toggle="tooltip" data-bs-placement="left" title="About me">
+          <i class="bi bi-person"></i>
+        </a>
+        <a class="nav-link rounded-circle al-size-45 fs-5 p-0 d-inline-flex al-flex-center border border-primary border-opacity-50" href="#resume" data-bs-toggle="tooltip" data-bs-placement="left" title="Resume">
+          <i class="bi bi-file-earmark-medical"></i>
+        </a>
+        <a class="nav-link rounded-circle al-size-45 fs-5 p-0 d-inline-flex al-flex-center border border-primary border-opacity-50" href="#portfolio" data-bs-toggle="tooltip" data-bs-placement="left" title="Works">
+          <i class="bi bi-image"></i>
+        </a>
+        <a class="nav-link rounded-circle al-size-45 fs-5 p-0 d-inline-flex al-flex-center border border-primary border-opacity-50" href="#blog" data-bs-toggle="tooltip" data-bs-placement="left" title="Blogs">
+          <i class="bi bi-journal-text"></i>
+        </a>
+        <a class="nav-link rounded-circle al-size-45 fs-5 p-0 d-inline-flex al-flex-center border border-primary border-opacity-50" href="#contact" data-bs-toggle="tooltip" data-bs-placement="left" title="Contact">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </nav>
+    </nav>
+    <!-- end navigation -->
+  </header>
+  <!-- end header -->
+
+  <!-- start about me -->
+  <section id="aboutMe" class="py-5 px-2 bg-light">
+    <div class="container py-3">
+      <div class="position-relative text-center p-2 mb-5 animate__animated animate__bounce">
+        <h3 class="mb-0 al-fs-14 text-primary">Who I Am</h3>
+        <h2 class="text-dark fw-bold mb-0">
+          About Me
+        </h2>
+        <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+      </div>
+
+      <div class="row g-4 align-items-center">
+        <div class="col-md-9 pe-lg-5">
+          <h3 class="text-dark animate__animated animate__pulse">
+            Hello, I'm <span class="text-primary">Abu Bilal</span>
+          </h3>
+          <p class="mb-5 animate__animated animate__fadeIn">
+            I am a freelancer based in the India and i have been building noteworthy UX/UI designs and websites for years, which comply with the latest design trends. I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster.
+          </p>
+
+          <div class="row g-3">
+            <div class="col-md-3">
+              <div class="bg-white py-4 text-center rounded-3 h-100 animate__animated animate__zoomIn">
+                <i class="bi bi-person fs-2 text-primary"></i>
+                <span class="d-block">100+ Projects</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="bg-white py-4 text-center rounded-3 h-100 animate__animated animate__zoomIn">
+                <i class="bi bi-emoji-smile fs-2 text-primary"></i>
+                <span class="d-block">90+ Satisfied Clients</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="bg-white py-4 text-center rounded-3 h-100 animate__animated animate__zoomIn">
+                <i class="bi bi-cup fs-2 text-primary"></i>
+                <span class="d-block">1000+ Cup of coffee</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="bg-white py-4 text-center rounded-3 h-100 animate__animated animate__zoomIn">
+                <i class="bi bi-code-slash fs-2 text-primary"></i>
+                <span class="d-block">1M+ lines of code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 ps-md-0 ps-lg-3">
+          <div class="position-relative bg-white p-4 rounded-4 animate__animated animate__zoomIn">
+            <img src="../assets/img/user-01.png" alt="" class="w-100 rounded-3">
+          
+            <!-- start social media link -->
+            <div class="d-flex al-flex-center gap-2 position-absolute bottom-0 mb-5 al-object-center-x">
+              <a href="#!" title="LinkedIn" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-flex al-flex-center al-size-40 rounded-circle bg-white bg-opacity-50 al-backdrop-blur-50 text-primary al-hover-bg-primary al-hover-text-white al-transition-9">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="#!" title="YouTube" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-flex al-flex-center al-size-40 rounded-circle bg-white bg-opacity-50 al-backdrop-blur-50 text-primary al-hover-bg-primary al-hover-text-white al-transition-9">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a href="#!" title="Instagram" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-flex al-flex-center al-size-40 rounded-circle bg-white bg-opacity-50 al-backdrop-blur-50 text-primary al-hover-bg-primary al-hover-text-white al-transition-9">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#!" title="Facebook" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-flex al-flex-center al-size-40 rounded-circle bg-white bg-opacity-50 al-backdrop-blur-50 text-primary al-hover-bg-primary al-hover-text-white al-transition-9">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </div>
+            <!-- end social media link -->
+          </div>
+        </div>
+      </div>
+
+      <!-- start what i do -->
+      <div class="mt-3 pt-5 pb-5">
+        <h2 class="text-dark mb-4 animate__animated animate__pulse">
+          <small class="d-block al-fs-14 text-primary">My Services</small>
+          What we do!
+        </h2>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card border-0 p-4 animate__animated animate__zoomIn">
+              <div class="mt-2 ms-4">
+                <i class="bi bi-window-sidebar al-size-60 bg-primary fs-4 rounded-circle text-white d-inline-flex al-flex-center"></i>
+              </div>
+              <div class="card-body mt-2">
+                <h5 class="card-title">UI/UX Design</h5>
+                <p class="card-text al-fs-14">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 p-4 animate__animated animate__zoomIn">
+              <div class="mt-2 ms-4">
+                <i class="bi bi-window-sidebar al-size-60 bg-primary fs-4 rounded-circle text-white d-inline-flex al-flex-center"></i>
+              </div>
+              <div class="card-body mt-2">
+                <h5 class="card-title">Web Design</h5>
+                <p class="card-text al-fs-14">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 p-4 animate__animated animate__zoomIn">
+              <div class="mt-2 ms-4">
+                <i class="bi bi-window-sidebar al-size-60 bg-primary fs-4 rounded-circle text-white d-inline-flex al-flex-center"></i>
+              </div>
+              <div class="card-body mt-2">
+                <h5 class="card-title">App Design</h5>
+                <p class="card-text al-fs-14">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end what i do -->
+
+      <!-- start clients -->
+      <div class="mt-3 py-5">
+        <h2 class="text-dark mb-4 animate__animated animate__pulse">
+          <small class="d-block al-fs-14 text-primary">My Satisfied Clients</small>
+          Clients
+        </h2>
+
+        <div class="myClients">
+          <div>
+            <img src="../assets/img/clients/logo-white-1.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+          </div>
+          <div>
+            <img src="../assets/img/clients/logo-white-2.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+          </div>
+          <div>
+            <img src="../assets/img/clients/logo-white-3.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+          </div>
+          <div>
+            <img src="../assets/img/clients/logo-white-4.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+          </div>
+          <div>
+            <img src="../assets/img/clients/logo-white-5.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+          </div>
+          <div>
+            <img src="../assets/img/clients/logo-white-1.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+          </div>
+          <div>
+            <img src="../assets/img/clients/logo-white-2.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+          </div>
+          <div>
+            <img src="../assets/img/clients/logo-white-3.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+          </div>
+          <div>
+            <img src="../assets/img/clients/logo-white-4.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+          </div>
+          <div>
+            <img src="../assets/img/clients/logo-white-5.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- end clients -->
+    </div>
+  </section>
+  <!-- end about me -->
+
+  <!-- start resume -->
+  <section id="resume" class="py-5">
+    <div class="px-2">
+      <div class="container py-3">
+        <div class="position-relative text-center p-2 mb-5 animate__animated animate__bounce">
+          <h3 class="mb-0 al-fs-14 text-primary">I'm available for hire</h3>
+          <h2 class="text-dark fw-bold mb-0">
+            Resume
+          </h2>
+          <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+        </div>
+  
+        <div class="row g-4">
+          <!-- start education -->
+          <div class="col-md-6 pe-md-4">
+            <h2 class="text-dark mb-4 fs-3 animate__animated animate__pulse">
+              <i class="bi bi-book-half fs-5 me-2 text-primary al-size-40 bg-primary bg-opacity-10 rounded-circle d-inline-flex al-flex-center"></i> 
+              Education
+            </h2>
+  
+            <div class="position-relative">
+              <div class="position-absolute top-0 bottom-0 start-0 ms-4 al-w-3 bg-primary pe-none animate__animated animate__zoomIn"></div>
+  
+              <div class="card border-0 shadow-lg mb-5 p-2 animate__animated animate__zoomIn">
+                <div class="card-body">
+                  <small class="d-block mb-1">2017</small>
+                  <h5 class="card-title text-primary mb-1">UI / UX Design</h5>
+                  <p class="card-text al-fs-14">University name</p>
+                </div>
+              </div>
+              
+              <div class="card border-0 shadow-lg mb-5 p-2 animate__animated animate__zoomIn">
+                <div class="card-body">
+                  <small class="d-block mb-1">2013 - 2017</small>
+                  <h5 class="card-title text-primary">B.E Computer Science</h5>
+                  <p class="card-text al-fs-14">University name</p>
+                </div>
+              </div>
+              
+              <div class="card border-0 shadow-lg mb-4 p-2 animate__animated animate__zoomIn">
+                <div class="card-body">
+                  <small class="d-block mb-1">2009 - 2012</small>
+                  <h5 class="card-title text-primary">Diploma Computer Science</h5>
+                  <p class="card-text al-fs-14">University name</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end education -->
+  
+          <!-- start experience -->
+          <div class="col-md-6 ps-md-4">
+            <h2 class="text-dark mb-4 fs-3 animate__animated animate__pulse">
+              <i class="bi bi-briefcase-fill fs-5 me-2 text-primary al-size-40 bg-primary bg-opacity-10 rounded-circle d-inline-flex al-flex-center"></i> 
+              Experience
+            </h2>
+  
+            <div class="position-relative">
+              <div class="position-absolute top-0 bottom-0 start-0 ms-4 al-w-3 bg-primary pe-none animate__animated animate__zoomIn"></div>
+  
+              <div class="card border-0 shadow-lg mb-5 p-2 animate__animated animate__zoomIn">
+                <div class="card-body">
+                  <small class="d-block mb-1">2021 - Present</small>
+                  <h5 class="card-title text-primary">Lead UI/UX Designer</h5>
+                  <p class="card-text al-fs-14">Company name</p>
+                </div>
+              </div>
+  
+              <div class="card border-0 shadow-lg mb-5 p-2 animate__animated animate__zoomIn">
+                <div class="card-body">
+                  <small class="d-block mb-1">2018 - 2021</small>
+                  <h5 class="card-title text-primary">Senior UI/UX Designer</h5>
+                  <p class="card-text al-fs-14">Company name</p>
+                </div>
+              </div>
+  
+              <div class="card border-0 shadow-lg mb-4 p-2 animate__animated animate__zoomIn">
+                <div class="card-body">
+                  <small class="d-block mb-1">2017 - 2018</small>
+                  <h5 class="card-title text-primary">Junior UI/UX Designer</h5>
+                  <p class="card-text al-fs-14">Company name</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end experience -->
+        </div>
+      </div>
+    </div>
+    <div class="bg-light py-5 px-2">
+      <div class="container py-3">
+        <div class="rounded">
+          <div class="row g-4">
+            <!-- start skills -->
+            <div class="col-md-6 px-4 pt-2">
+              <h2 class="text-dark mb-4 fs-3 animate__animated animate__pulse">Skills</h2>
+              
+              <div class="bg-white py-3 px-4 rounded-3 mb-4 animate__animated animate__zoomIn">
+                <label class="mb-1">Adobe XD</label>
+                <div class="progress">
+                  <div class="progress-bar bg-secondary" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+              </div>
+              
+              <div class="bg-white py-3 px-4 rounded-3 mb-4 animate__animated animate__zoomIn">
+                <label class="mb-1">Figma</label>
+                <div class="progress">
+                  <div class="progress-bar bg-secondary" role="progressbar" aria-label="Example with label" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+              </div>
+              
+              <div class="bg-white py-3 px-4 rounded-3 mb-4 animate__animated animate__zoomIn">
+                <label class="mb-1">Photoshop</label>
+                <div class="progress">
+                  <div class="progress-bar bg-secondary" role="progressbar" aria-label="Example with label" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+              </div>
+              
+              <div class="bg-white py-3 px-4 rounded-3 mb-4 animate__animated animate__zoomIn">
+                <label class="mb-1">HTML</label>
+                <div class="progress">
+                  <div class="progress-bar bg-secondary" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+              </div>
+              
+              <div class="bg-white py-3 px-4 rounded-3 mb-3 animate__animated animate__zoomIn">
+                <label class="mb-1">CSS</label>
+                <div class="progress">
+                  <div class="progress-bar bg-secondary" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+              </div>
+            </div>
+            <!-- end skills -->
+  
+            <!-- start expertise -->
+            <div class="col-md-6 px-4 pt-2">
+              <h2 class="text-dark mb-4 fs-3 animate__animated animate__pulse">Expertise</h2>
+              
+              <div class="bg-white py-3 px-4 rounded-3 mb-4 animate__animated animate__zoomIn">
+                <label class="mb-1">UI Design</label>
+                <div class="progress">
+                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+              </div>
+              
+              <div class="bg-white py-3 px-4 rounded-3 mb-4 animate__animated animate__zoomIn">
+                <label class="mb-1">UX Design</label>
+                <div class="progress">
+                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+              </div>
+              
+              <div class="bg-white py-3 px-4 rounded-3 mb-4 animate__animated animate__zoomIn">
+                <label class="mb-1">XD Design to HTML</label>
+                <div class="progress">
+                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+              </div>
+              
+              <div class="bg-white py-3 px-4 rounded-3 mb-4 animate__animated animate__zoomIn">
+                <label class="mb-1">Figma Design to HTML</label>
+                <div class="progress">
+                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+              </div>
+              
+              <div class="bg-white py-3 px-4 rounded-3 mb-3 animate__animated animate__zoomIn">
+                <label class="mb-1">Web & mobile app design</label>
+                <div class="progress">
+                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+              </div>
+            </div>
+            <!-- end expertise -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end resume -->
+  
+  <!-- start portfolio -->
+  <section id="portfolio" class="py-5 px-2">
+    <div class="container py-3">
+      <div class="position-relative text-center p-2 mb-5 animate__animated animate__bounce">
+        <h3 class="mb-0 al-fs-14 text-primary">Showcase of my best works</h3>
+        <h2 class="text-dark fw-bold mb-0">
+          My Portfolio
+        </h2>
+        <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+      </div>
+
+      <div class="row g-4 mb-5">
+        <div class="col-md-6 col-xl-4">
+          <a href="../assets/img/portfolio/1.jpg" data-fslightbox="gallery" class="shadow-lg d-block p-4 rounded-4 text-decoration-none animate__animated animate__zoomIn">
+            <img class="img-fluid rounded-3" src="../assets/img/portfolio/1.jpg" alt="Image Description">
+
+            <div class="pt-3">
+              <small class="text-primary">UX Design</small>
+              <h2 class="text-dark fs-5 my-0">Minimal</h2>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <a href="../assets/img/portfolio/2.jpg" data-fslightbox="gallery" class="shadow-lg d-block p-4 rounded-4 text-decoration-none animate__animated animate__zoomIn">
+            <img class="img-fluid rounded-3" src="../assets/img/portfolio/2.jpg" alt="Image Description">
+
+            <div class="pt-3">
+              <small class="text-primary">UI Design</small>
+              <h2 class="text-dark fs-5 my-0">Creative</h2>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <a href="../assets/img/portfolio/3.jpg" data-fslightbox="gallery" class="shadow-lg d-block p-4 rounded-4 text-decoration-none animate__animated animate__zoomIn">
+            <img class="img-fluid rounded-3" src="../assets/img/portfolio/3.jpg" alt="Image Description">
+
+            <div class="pt-3">
+              <small class="text-primary">UI/UX Design</small>
+              <h2 class="text-dark fs-5 my-0">Classic</h2>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <a href="../assets/img/portfolio/4.jpg" data-fslightbox="gallery" class="shadow-lg d-block p-4 rounded-4 text-decoration-none animate__animated animate__zoomIn">
+            <img class="img-fluid rounded-3" src="../assets/img/portfolio/4.jpg" alt="Image Description">
+
+            <div class="pt-3">
+              <small class="text-primary">UI Development</small>
+              <h2 class="text-dark fs-5 my-0">Minimal</h2>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <a href="../assets/img/portfolio/5.jpg" data-fslightbox="gallery" class="shadow-lg d-block p-4 rounded-4 text-decoration-none animate__animated animate__zoomIn">
+            <img class="img-fluid rounded-3" src="../assets/img/portfolio/5.jpg" alt="Image Description">
+
+            <div class="pt-3">
+              <small class="text-primary">UX Desing</small>
+              <h2 class="text-dark fs-5 my-0">Professional</h2>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <a href="../assets/img/portfolio/6.jpg" data-fslightbox="gallery" class="shadow-lg d-block p-4 rounded-4 text-decoration-none animate__animated animate__zoomIn">
+            <img class="img-fluid rounded-3" src="../assets/img/portfolio/6.jpg" alt="Image Description">
+
+            <div class="pt-3">
+              <small class="text-primary">UI Design</small>
+              <h2 class="text-dark fs-5 my-0">Elegant</h2>
+            </div>
+          </a>
+        </div>
+      </div> 
+    </div>
+  </section>
+  <!-- end portfolio -->
+  
+  <!-- start blog -->
+  <section id="blog" class="py-5 px-2 bg-light">
+    <div class="container py-3">
+      <div class="position-relative text-center p-2 mb-5 animate__animated animate__bounce">
+        <h3 class="mb-0 al-fs-14 text-primary">This is my story</h3>
+        <h2 class="text-dark fw-bold mb-0">
+          My Blog
+        </h2>
+        <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+      </div>
+
+      <div class="row g-4 mb-5">
+        <div class="col-md-6 col-xl-4">
+          <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 shadow-lg p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+            <div class="card-body">
+              <img src="../assets/img/blog/3.jpg" class="card-img-top" alt="">
+              <small class="al-fs-14 text-primary bg-light mt-3 d-inline-flex px-3 py-1 rounded-2">UI / UX Design</small>
+              <small class="text-dark my-2 d-block">04 Oct 2022</small>
+              <h2 class="card-title fs-5 mb-0">How to create a website using WordPress</h2>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 shadow-lg p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+            <div class="card-body">
+              <img src="../assets/img/blog/1.jpg" class="card-img-top" alt="">
+
+              <small class="al-fs-14 text-primary bg-light mt-3 d-inline-flex px-3 py-1 rounded">UX Design</small>
+              <small class="text-dark my-2 d-block">04 Oct 2022</small>
+              <h2 class="card-title fs-5 mb-0">How to handle errors in React Javascript</h2>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 shadow-lg p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+            <div class="card-body">
+              <img src="../assets/img/blog/2.jpg" class="card-img-top" alt="">
+
+              <small class="al-fs-14 text-primary bg-light mt-3 d-inline-flex px-3 py-1 rounded">UI Design</small>
+              <small class="text-dark my-2 d-block">04 Oct 2022</small>
+              <h2 class="card-title fs-5 mb-0">Angular team streamlines requests</h2>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 shadow-lg p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+            <div class="card-body">
+              <img src="../assets/img/blog/2.jpg" class="card-img-top" alt="">
+
+              <small class="al-fs-14 text-primary bg-light mt-3 d-inline-flex px-3 py-1 rounded">UI Development</small>
+              <small class="text-dark my-2 d-block">04 Oct 2022</small>
+              <h2 class="card-title fs-5 mb-0">How to create a website using WordPress</h2>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 shadow-lg p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+            <div class="card-body">
+              <img src="../assets/img/blog/3.jpg" class="card-img-top" alt="">
+
+              <small class="al-fs-14 text-primary bg-light mt-3 d-inline-flex px-3 py-1 rounded">UI / UX Design</small>
+              <small class="text-dark my-2 d-block">04 Oct 2022</small>
+              <h2 class="card-title fs-5 mb-0">How to handle errors in React Javascript</h2>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 shadow-lg p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+            <div class="card-body">
+              <img src="../assets/img/blog/1.jpg" class="card-img-top" alt="">
+
+              <small class="al-fs-14 text-primary bg-light mt-3 d-inline-flex px-3 py-1 rounded">UI / UX Design</small>
+              <small class="text-dark my-2 d-block">04 Oct 2022</small>
+              <h2 class="card-title fs-5 mb-0">Angular team streamlines requests</h2>
+            </div>
+          </a>
+        </div>
+      </div> 
+    </div>
+  </section>
+  <!-- end blog -->
+  
+  <!-- start contact -->
+  <section id="contact" class="py-5 px-2">
+    <div class="container py-3">
+      <div class="position-relative text-center p-2 mb-5 animate__animated animate__bounce">
+        <h3 class="mb-0 al-fs-14 text-primary">I'm available for hire</h3>
+        <h2 class="text-dark fw-bold mb-0">
+          Contact Me
+        </h2>
+        <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-5 pe-lg-4 animate__animated animate__zoomIn">
+          <p class="p-4 mb-4 bg-primary bg-opacity-10 text-primary rounded-3">
+            I'm always open to discussing product design work or partnerships. 
+            <strong class="d-block mt-2">Contact me to get your work done</strong>
+          </p>
+
+          <h2 class="text-dark fs-4 mb-3 pt-2">Contact Info.</h2>
+
+          <div class="border p-3 rounded-3 mb-4">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <i class="bi bi-phone bg-primary al-size-40 d-inline-flex al-flex-center fs-6 text-white rounded"></i>
+              </div>
+              <div class="col px-0">
+                <small class="d-block ">Phone</small>
+                <span class="fw-semibold">+91 123 456 7890</span>
+              </div>
+            </div>
+          </div>
+          <div class="border p-3 rounded-3 mb-4">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <i class="bi bi-envelope-open bg-secondary al-size-40 d-inline-flex al-flex-center fs-6 text-white rounded"></i>
+              </div>
+              <div class="col px-0">
+                <small class="d-block">Email</small>
+                <span class="fw-semibold">your-name@domain.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="border p-3 rounded-3">
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <i class="bi bi-geo-alt bg-warning al-size-40 d-inline-flex al-flex-center fs-6 text-white rounded"></i>
+              </div>
+              <div class="col px-0">
+                <small class="d-block">Location</small>
+                <span class="fw-semibold">Delhi, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 ps-lg-4 animate__animated animate__zoomIn">
+          <!-- start form -->
+          <div class="shadow-lg p-4 rounded-4 contact-form">
+            <form id="contactForm" class="needs-validation" novalidate>
+              <div class="row g-3 m-1">
+                <div class="col-12">
+                  <h2 class="text-dark fs-4 mb-2">Contact Form</h2>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="name" placeholder="Your Name" class="form-control py-3 px-4" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" name="email" placeholder="Your Email" class="form-control py-3 px-4" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="tel" name="phone" placeholder="Your Phone" class="form-control py-3 px-4" pattern="^[0-9]{10,15}$" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="subject" placeholder="Subject" class="form-control py-3 px-4" required>
+                </div>
+                <div class="col-md-12">
+                  <textarea name="message" rows="3" placeholder="Your message here" class="form-control p-3 px-3" required></textarea>
+                </div>
+                <div class="col-xl-6">
+                  <button type="submit" class="btn btn-primary text-white py-2 fs-5 w-100">Send Message <i class="bi bi-arrow-right ms-2 d-none d-md-inline-block"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- end form -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact -->
+  
+  <!-- start footer -->
+  <footer class="bg-light py-4 ps-2 pe-5 mb-md-0">
+    <div class="text-center al-fs-14">
+      Designed with <i class="bi bi-heart-fill text-danger"></i> &copy; <a href="" class="text-decoration-none">Mohammad Azad</a>
+    </div>
+
+    <!-- back to top button -->
+    <button id="backToTopBtn" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 me-4 mb-4 al-flex-center al-size-40 d-none" title="Go to top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+    </button>
+  </footer>
+  <!-- end footer -->
+
+  <!-- start blog details modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="blogDetailsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="blogDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body pb-5">
+          <div class="text-end">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 border p-5 rounded-5 blog-details">
+                <img src="../assets/img/blog/blog.jpg" class="w-100 rounded-4" alt="">
+            
+                <div class="my-4">
+                  <small class="al-fs-14 text-primary bg-light mb-2 d-inline-flex px-3 py-1 rounded-2">UI / UX Design</small>
+                  <small class="d-block mb-2 opacity-75">30 September 2020</small>
+                  <h2 id="blogDetailsModalLabel" class="fs-3 text-dark">How to create a website using WordPress</h2>
+                </div>
+      
+                <p>
+                  Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                </p>
+      
+                <p>
+                  Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+      
+                <p>
+                  Proin eget tortor risus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget felis porttitor volutpat. Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh.
+                </p>
+      
+                <p>
+                  Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end blog details modal -->
+
+  <!-- start choosing mail app modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="mailChoiceModal" tabindex="-1" aria-labelledby="mailChoiceLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body bg-light">
+          <div class="text-end">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="container">
+            <div class="position-relative text-center p-2 animate__animated animate__bounce">
+              <h3 class="mb-0 al-fs-14 text-primary">Contact Me</h3>
+              <h2 id="mailChoiceLabel" class="text-dark fw-bold mb-0">
+                Choose How to Send Message
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+
+            <div class="row justify-content-center mb-5 mt-4">
+              <div class="col-lg-7 animate__animated animate__zoomIn">
+                <!-- start form -->
+                <div class="bg-white p-5 rounded-5">
+                  <p class="mb-4 text-center">Select your preferred app to send your message:</p>
+
+                  <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
+                    <div class="col">
+                      <button class="btn btn-success w-100" id="openWhatsApp">
+                        <i class="bi bi-whatsapp"></i> Send via WhatsApp
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-danger w-100" id="openGmail">
+                        <i class="bi bi-google"></i> Open Gmail
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-info text-white w-100" id="openOutlook">
+                        <i class="bi bi-envelope-fill"></i> Open Outlook
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-secondary w-100" id="openMailApp">
+                        <i class="bi bi-envelope-open-fill"></i> Default Mail App
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="text-center mt-4">Your message will open pre-filled — you just need to press Send 💌</p>
+                <!-- end form -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end choosing mail app modal -->
+
+  <!-- start mouse effect -->
+  <div class="al-cursor text-primary" aria-hidden="true"></div>
+  <div class="al-cursor-dot text-primary" aria-hidden="true"></div>
+
+  <!--js & css library-->
+
+  <!--jquery-->
+  <script src="../assets/dist/plugins/jquery/jquery.min.js"></script>
+
+  <!-- waypoints -->
+  <script src="../assets/dist/plugins/waypoints/lib/jquery.waypoints.min.js"></script>
+
+  <!-- bootstrap bundel -->
+  <script src="../assets/dist/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+
+  <!-- particles js -->
+  <script src="../assets/dist/plugins/particles/particles.js"></script>
+  <script src="../assets/dist/plugins/particles/app.js"></script>
+
+  <!-- slick slider -->
+  <script src="../assets/dist/plugins/slick-carousel/slick/slick.min.js"></script>
+  <script>
+      $('.myClients').slick({
+          arrows:false,
+          dots: false,
+          infinite: true,
+          autoplay:true,
+          speed: 300,
+          autoplaySpeed:2500,
+          pauseOnHover:true,
+          centerMode:false,
+          slidesToShow: 4.8,
+          slidesToScroll: 1,
+          responsive: [
+              {
+              breakpoint: 1399,
+              settings: {
+                  slidesToShow: 4,
+              }
+              },
+              {
+              breakpoint: 1199,
+              settings: {
+                  slidesToShow: 3,
+              }
+              },
+              {
+              breakpoint: 767,
+              slidesToScroll: 1,
+              settings: {
+                  slidesToShow: 2
+              }
+              },
+              {
+              breakpoint: 520,
+              settings: {
+                  slidesToShow: 1.4
+              }
+              }
+          ]
+      });
+  </script>
+
+  <!-- fullscreen lightbox -->
+  <script src="../assets/dist/plugins/fslightbox/index.js"></script>
+
+  <!--alif js-->
+  <script src="../assets/dist/js/theme.min.js"></script>
+  <script src="../assets/dist/js/theme-mode.min.js"></script>
+  <script src="../assets/dist/js/contact-forms.min.js"></script>
+  <script src="../assets/dist/js/animation.min.js"></script>
+</body>
+</html>

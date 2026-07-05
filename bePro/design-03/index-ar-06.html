@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>myBio - Creative Personal Portfolio Template</title>
+
+    <!-- description -->
+    <meta name="description" content="beProfessional is a highly creative, modern, visually stunning and Bootstrap portfolio template with ready to use pages.">
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/img/icon.svg">
+
+    <!-- animate style -->
+    <link rel="stylesheet" href="../assets/dist/plugins/animate.style/animate.min.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap/bootstrap.css">
+
+    <!-- alfuix -->
+    <link rel="stylesheet" href="../assets/dist/css/alfuix/alfuix.min.css">
+
+    <!-- alif -->
+    <link rel="stylesheet" href="../assets/dist/css/style.min.css">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap/bootstrap-icons.css">
+</head>
+<body class="overflow-hidden">
+  <!-- start header -->
+  <header id="home" class="position-relative vh-100 text-center al-bg-primary-both">
+    <div id="particles-js" class="vh-100"><canvas class="particles-js-canvas-el vh-100 w-100"></canvas></div>
+
+    <div class="d-inline-flex align-items-center gap-2 position-absolute top-0 start-0 m-3 animate__animated animate__backInDown">
+      <!-- start light / dark mode button -->
+      <span id="toggleThemeBtn" class="d-inline-flex al-flex-center al-size-36 rounded-circle bg-primary bg-opacity-25 al-text-white-both al-animate-cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dark Mode">
+        <i id="themeIcon" class="bi bi-moon-fill"></i>
+        <!-- <span id="themeText">Light Mode</span> -->
+      </span>
+
+      <a href="index-06.html" class="d-inline-flex al-flex-center gap-2 al-h-36 rounded-pill bg-primary bg-opacity-25 al-text-white-both al-animate-cursor-pointer px-3 text-decoration-none">
+        <i class="bi bi-translate"></i>
+        <span class="al-fs-13 al-ff-roboto">English</span>
+      </a>
+    </div>
+
+    <div class="position-absolute top-50 start-50 translate-middle pb-5 min-w-50">
+      <div class="animate__animated animate__zoomIn">
+        <h6 class="fs-5 al-text-white-both">أهلاً،</h6>
+        <h1 class="fs-1 al-text-white-both">أنا أبو بلال أ.</h1>
+
+        <!-- typing text -->
+        <h2 class="al-text-white-both fs-5">
+          ان
+          <span class="al-typed-text text-warning">
+            <span>مصمم واجهة المستخدم</span>
+            <span>مصمم تجربة المستخدم</span>
+            <span>مطور واجهة المستخدم</span>
+          </span>
+          <span class="al-animate-cursor position-relative d-inline-block al-w-2 ms-1">&nbsp;</span>
+        </h2>
+
+        <a href="../assets/img/resume.pdf" target="_blank" class="btn btn-outline-primary text-white px-5 py-2 rounded-pill mt-5 animate__animated animate__jackInTheBox animate__delay-1s">
+          <i class="bi bi-cloud-download me-2"></i> 
+          تحميل السيرة الذاتية
+        </a>
+      </div>
+    </div>
+
+    <!-- start navigation -->
+    <nav id="navbar" class="flex-column align-items-stretch ps-4 position-fixed al-object-center-y start-0">
+      <nav class="nav nav-pills flex-column gap-3">
+        <a class="nav-link p-0" href="#aboutModal" data-bs-toggle="modal">
+          <span class="rounded-circle al-size-45 fs-5 p-0 d-inline-flex al-flex-center bg-primary text-white al-hover-scale-1 al-transition-5" data-bs-toggle="tooltip" data-bs-placement="left" title="ْعَنِّي">
+            <i class="bi bi-person"></i>
+          </span>
+        </a>
+        <a class="nav-link p-0" href="#resumeModal" data-bs-toggle="modal">
+          <span class="rounded-circle al-size-45 fs-5 p-0 d-inline-flex al-flex-center bg-primary text-white al-hover-scale-1 al-transition-5" data-bs-toggle="tooltip" data-bs-placement="left" title="سيرة ذاتية">
+            <i class="bi bi-file-earmark-medical"></i>
+          </span>
+        </a>
+        <a class="nav-link p-0" href="#portfolioModal" data-bs-toggle="modal">
+          <span class="rounded-circle al-size-45 fs-5 p-0 d-inline-flex al-flex-center bg-primary text-white al-hover-scale-1 al-transition-5" data-bs-toggle="tooltip" data-bs-placement="left" title="يعمل">
+            <i class="bi bi-image"></i>
+          </span>
+        </a>
+        <a class="nav-link p-0" href="#blogModal" data-bs-toggle="modal">
+          <span class="rounded-circle al-size-45 fs-5 p-0 d-inline-flex al-flex-center bg-primary text-white al-hover-scale-1 al-transition-5" data-bs-toggle="tooltip" data-bs-placement="left" title="مدونات">
+            <i class="bi bi-journal-text"></i>
+          </span>
+        </a>
+        <a class="nav-link p-0" href="#projectRequestModal" data-bs-toggle="modal">
+          <span class="rounded-circle al-size-45 fs-5 p-0 d-inline-flex al-flex-center bg-primary text-white al-hover-scale-1 al-transition-5" data-bs-toggle="tooltip" data-bs-placement="left" title="ابدأ مشروعًا">
+            <i class="bi bi-briefcase"></i>
+          </span>
+        </a>
+        <a class="nav-link p-0" href="#contactModal" data-bs-toggle="modal">
+          <span class="rounded-circle al-size-45 fs-5 p-0 d-inline-flex al-flex-center bg-primary text-white al-hover-scale-1 al-transition-5" data-bs-toggle="tooltip" data-bs-placement="left" title="اتصال">
+            <i class="bi bi-envelope"></i>
+          </span>
+        </a>
+      </nav>
+    </nav>
+    <!-- end navigation -->
+  </header>
+  <!-- end header -->
+
+  <!-- start about me modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body bg-light">
+          <div class="text-start">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="container mb-4">
+            <div class="position-relative text-center p-2 mb-5 animate__animated animate__bounce">
+              <h3 class="mb-2 al-fs-14 text-primary">من أكون</h3>
+              <h2 class="text-dark fw-bold mb-0">
+                ْعَنِّي
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+      
+            <div class="row g-4 align-items-center">
+              <div class="col-md-9 ps-lg-5">
+                <h3 class="text-dark animate__animated animate__pulse">مرحبا، أنا <span class="text-primary">أبو بلال</span></h3>
+                <p class="mb-5 animate__animated animate__fadeIn">
+                  أنا مستقل مقيم في الهند، وأُنشئ منذ سنوات تصاميم مميزة لتجربة المستخدم وواجهة المستخدم ومواقع إلكترونية، تتوافق مع أحدث صيحات التصميم. أساعد في تحويل الرؤية والفكرة إلى منتجات قيّمة ومفيدة. رؤيتي الثاقبة لتطور المنتجات تُساعدني على تحديد أولويات المهام، وتكرار العمل بسرعة، وتسليم العمل في أسرع وقت.
+                </p>
+      
+                <div class="row g-3">
+                  <div class="col-md-3">
+                    <div class="bg-white py-4 text-center rounded-3 h-100 animate__animated animate__zoomIn">
+                      <i class="bi bi-person fs-2 text-primary"></i>
+                      <span class="d-block">100+ المشاريع</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="bg-white py-4 text-center rounded-3 h-100 animate__animated animate__zoomIn">
+                      <i class="bi bi-emoji-smile fs-2 text-primary"></i>
+                      <span class="d-block">90+ عملاء راضون</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="bg-white py-4 text-center rounded-3 h-100 animate__animated animate__zoomIn">
+                      <i class="bi bi-cup fs-2 text-primary"></i>
+                      <span class="d-block">1000+ كوب من القهوة</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="bg-white py-4 text-center rounded-3 h-100 animate__animated animate__zoomIn">
+                      <i class="bi bi-code-slash fs-2 text-primary"></i>
+                      <span class="d-block">1M+ خطوط من التعليمات البرمجية</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 ps-md-0 ps-lg-3">
+                <div class="position-relative bg-light pe-5 pb-5">
+                  <span class="d-block text-primary animate__animated animate__zoomIn animate__delay-1s" style="font-size: 8rem;">8+</span>
+                  <span class="fs-6 animate__animated animate__zoomIn animate__delay-1s">سنين <br> خبرة <br> عمل</span>
+                  <div class="position-absolute top-0 end-0 bottom-0 al-w-150 rounded-4 border border-2 border-primary border-start-0 pe-none animate__animated animate__zoomIn"></div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- start what i do -->
+            <div class="mt-3 pt-5 pb-5">
+              <h2 class="text-dark mb-4 animate__animated animate__pulse">
+                <small class="d-block al-fs-14 text-primary">خدماتي</small>
+                ماذا نفعل!
+              </h2>
+      
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="card border-0 p-4 animate__animated animate__zoomIn">
+                    <div class="mt-2 ms-4">
+                      <i class="bi bi-window-sidebar al-size-60 bg-primary fs-4 rounded-circle text-white d-inline-flex al-flex-center"></i>
+                    </div>
+                    <div class="card-body mt-2">
+                      <h5 class="card-title">تصميم واجهة المستخدم</h5>
+                      <p class="card-text al-fs-14">لقد حان وقت العلاج، وهو أمر ضروري وقابل للنقل في حد ذاته. لا توجد طبقة برتغالية من الصبغة.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card border-0 p-4 animate__animated animate__zoomIn">
+                    <div class="mt-2 ms-4">
+                      <i class="bi bi-window-sidebar al-size-60 bg-primary fs-4 rounded-circle text-white d-inline-flex al-flex-center"></i>
+                    </div>
+                    <div class="card-body mt-2">
+                      <h5 class="card-title">تصميم الويب</h5>
+                      <p class="card-text al-fs-14">لقد حان وقت العلاج، وهو أمر ضروري وقابل للنقل في حد ذاته. لا توجد طبقة برتغالية من الصبغة.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card border-0 p-4 animate__animated animate__zoomIn">
+                    <div class="mt-2 ms-4">
+                      <i class="bi bi-window-sidebar al-size-60 bg-primary fs-4 rounded-circle text-white d-inline-flex al-flex-center"></i>
+                    </div>
+                    <div class="card-body mt-2">
+                      <h5 class="card-title">تصميم التطبيق</h5>
+                      <p class="card-text al-fs-14">لقد حان وقت العلاج، وهو أمر ضروري وقابل للنقل في حد ذاته. لا توجد طبقة برتغالية من الصبغة.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end what i do -->
+      
+            <!-- start clients -->
+            <div class="mt-3 p-5 bg-white rounded-4">
+              <h2 class="text-dark mb-4 animate__animated animate__pulse">
+                <small class="d-block al-fs-14 text-primary">عملائي الراضون</small>
+                العملاء
+              </h2>
+      
+              <div class="myClients al-ltr">
+                <div>
+                  <img src="../assets/img/clients/logo-white-1.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-2.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-3.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-4.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-5.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-1.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-2.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-3.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-4.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-5.png" class="img-fluid rounded-3 bg-primary animate__animated animate__zoomIn" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- end clients -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end about me modal -->
+
+  <!-- start resume modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="text-start">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="container py-3">
+            <div class="position-relative text-center p-2 mb-5 animate__animated animate__bounce">
+              <h3 class="mb-0 al-fs-14 text-primary">أنا متاح للتأجير</h3>
+              <h2 class="text-dark fw-bold mb-0">
+                سيرة ذاتية
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+      
+            <div class="row g-4">
+              <!-- start education -->
+              <div class="col-md-6 pe-md-4">
+                <h2 class="text-dark mb-4 fs-3 animate__animated animate__pulse">
+                  <i class="bi bi-book-half fs-5 me-2 text-primary al-size-40 bg-primary bg-opacity-10 rounded-circle d-inline-flex al-flex-center"></i> 
+                  تعليم
+                </h2>
+      
+                <div class="position-relative">
+                  <div class="position-absolute top-0 bottom-0 end-0 me-4 al-w-3 bg-primary pe-none animate__animated animate__zoomIn"></div>
+      
+                  <div class="card border-0 shadow-lg mb-5 p-2 animate__animated animate__zoomIn">
+                    <div class="card-body">
+                      <small class="d-block mb-1">2017</small>
+                      <h5 class="card-title text-primary mb-1">تصميم واجهة المستخدم / تجربة المستخدم</h5>
+                      <p class="card-text al-fs-14">اسم الجامعة</p>
+                    </div>
+                  </div>
+                  
+                  <div class="card border-0 shadow-lg mb-5 p-2 animate__animated animate__zoomIn">
+                    <div class="card-body">
+                      <small class="d-block mb-1">2013 - 2017</small>
+                      <h5 class="card-title text-primary">بكالوريوس علوم الحاسوب</h5>
+                      <p class="card-text al-fs-14">اسم الجامعة</p>
+                    </div>
+                  </div>
+                  
+                  <div class="card border-0 shadow-lg mb-4 p-2 animate__animated animate__zoomIn">
+                    <div class="card-body">
+                      <small class="d-block mb-1">2009 - 2012</small>
+                      <h5 class="card-title text-primary">دبلوم علوم الحاسب الآلي</h5>
+                      <p class="card-text al-fs-14">اسم الجامعة</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end education -->
+      
+              <!-- start experience -->
+              <div class="col-md-6 ps-md-4">
+                <h2 class="text-dark mb-4 fs-3 animate__animated animate__pulse">
+                  <i class="bi bi-briefcase-fill fs-5 me-2 text-primary al-size-40 bg-primary bg-opacity-10 rounded-circle d-inline-flex al-flex-center"></i> 
+                  خبرة
+                </h2>
+      
+                <div class="position-relative">
+                  <div class="position-absolute top-0 bottom-0 end-0 me-4 al-w-3 bg-primary pe-none animate__animated animate__zoomIn"></div>
+      
+                  <div class="card border-0 shadow-lg mb-5 p-2 animate__animated animate__zoomIn">
+                    <div class="card-body">
+                      <small class="d-block mb-1">2021 - حتى الآن</small>
+                      <h5 class="card-title text-primary">مصمم واجهة المستخدم وتجربة المستخدم الرئيسي</h5>
+                      <p class="card-text al-fs-14">اسم الشركة</p>
+                    </div>
+                  </div>
+      
+                  <div class="card border-0 shadow-lg mb-5 p-2 animate__animated animate__zoomIn">
+                    <div class="card-body">
+                      <small class="d-block mb-1">2018 - 2021</small>
+                      <h5 class="card-title text-primary">مصمم واجهة المستخدم وتجربة المستخدم الأول</h5>
+                      <p class="card-text al-fs-14">اسم الشركة</p>
+                    </div>
+                  </div>
+      
+                  <div class="card border-0 shadow-lg mb-4 p-2 animate__animated animate__zoomIn">
+                    <div class="card-body">
+                      <small class="d-block mb-1">2017 - 2018</small>
+                      <h5 class="card-title text-primary">مصمم واجهة مستخدم وتجربة مستخدم مبتدئ</h5>
+                      <p class="card-text al-fs-14">اسم الشركة</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end experience -->
+            </div>
+          </div>
+          <div class="bg-light py-5 rounded-5">
+            <div class="container py-3">
+              <div class="rounded">
+                <div class="row g-4">
+                  <!-- start skills -->
+                  <div class="col-md-6 px-4 pt-2">
+                    <h2 class="text-dark mb-4 fs-3 animate__animated animate__pulse">مهارات</h2>
+                    
+                    <div class="bg-white py-3 px-4 rounded-3 mb-4 animate__animated animate__zoomIn">
+                      <label class="mb-1">أدوبي اكس دي</label>
+                      <div class="progress">
+                        <div class="progress-bar bg-secondary" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                      </div>
+                    </div>
+                    
+                    <div class="bg-white py-3 px-4 rounded-3 mb-4 animate__animated animate__zoomIn">
+                      <label class="mb-1">فيجما</label>
+                      <div class="progress">
+                        <div class="progress-bar bg-secondary" role="progressbar" aria-label="Example with label" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                      </div>
+                    </div>
+                    
+                    <div class="bg-white py-3 px-4 rounded-3 mb-4 animate__animated animate__zoomIn">
+                      <label class="mb-1">فوتوشوب</label>
+                      <div class="progress">
+                        <div class="progress-bar bg-secondary" role="progressbar" aria-label="Example with label" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                      </div>
+                    </div>
+                    
+                    <div class="bg-white py-3 px-4 rounded-3 mb-4 animate__animated animate__zoomIn">
+                      <label class="mb-1">HTML</label>
+                      <div class="progress">
+                        <div class="progress-bar bg-secondary" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                      </div>
+                    </div>
+                    
+                    <div class="bg-white py-3 px-4 rounded-3 mb-3 animate__animated animate__zoomIn">
+                      <label class="mb-1">CSS</label>
+                      <div class="progress">
+                        <div class="progress-bar bg-secondary" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end skills -->
+        
+                  <!-- start expertise -->
+                  <div class="col-md-6 px-4 pt-2">
+                    <h2 class="text-dark mb-4 fs-3 animate__animated animate__pulse">خبرة</h2>
+                    
+                    <div class="bg-white py-3 px-4 rounded-3 mb-4 animate__animated animate__zoomIn">
+                      <label class="mb-1">تصميم واجهة المستخدم</label>
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                      </div>
+                    </div>
+                    
+                    <div class="bg-white py-3 px-4 rounded-3 mb-4 animate__animated animate__zoomIn">
+                      <label class="mb-1">تصميم تجربة المستخدم</label>
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">95%</div>
+                      </div>
+                    </div>
+                    
+                    <div class="bg-white py-3 px-4 rounded-3 mb-4 animate__animated animate__zoomIn">
+                      <label class="mb-1">تصميم XD إلى HTML</label>
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">95%</div>
+                      </div>
+                    </div>
+                    
+                    <div class="bg-white py-3 px-4 rounded-3 mb-4 animate__animated animate__zoomIn">
+                      <label class="mb-1">تصميم Figma إلى HTML</label>
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                      </div>
+                    </div>
+                    
+                    <div class="bg-white py-3 px-4 rounded-3 mb-3 animate__animated animate__zoomIn">
+                      <label class="mb-1">تصميم تطبيقات الويب والهواتف المحمولة</label>
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end expertise -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end resume modal -->
+
+  <!-- start portfolio modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="text-start">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="container">
+            <div class="position-relative text-center p-2 mb-5 animate__animated animate__bounce">
+              <h3 class="mb-0 al-fs-14 text-primary">معرض لأفضل أعمالي</h3>
+              <h2 class="text-dark fw-bold mb-0">
+                محفظتي
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+      
+            <div class="row g-4 mb-5">
+              <div class="col-md-6 col-xl-4">
+                <a href="../assets/img/portfolio/1.jpg" data-fslightbox="gallery" class="shadow-lg d-block p-4 rounded-4 text-decoration-none animate__animated animate__zoomIn">
+                  <img class="img-fluid rounded-3" src="../assets/img/portfolio/1.jpg" alt="Image Description">
+      
+                  <div class="pt-3">
+                    <small class="text-primary">تصميم تجربة المستخدم</small>
+                    <h2 class="text-dark fs-5 my-0">الحد الأدنى</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="../assets/img/portfolio/2.jpg" data-fslightbox="gallery" class="shadow-lg d-block p-4 rounded-4 text-decoration-none animate__animated animate__zoomIn">
+                  <img class="img-fluid rounded-3" src="../assets/img/portfolio/2.jpg" alt="Image Description">
+      
+                  <div class="pt-3">
+                    <small class="text-primary">تصميم واجهة المستخدم</small>
+                    <h2 class="text-dark fs-5 my-0">مبدع</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="../assets/img/portfolio/3.jpg" data-fslightbox="gallery" class="shadow-lg d-block p-4 rounded-4 text-decoration-none animate__animated animate__zoomIn">
+                  <img class="img-fluid rounded-3" src="../assets/img/portfolio/3.jpg" alt="Image Description">
+      
+                  <div class="pt-3">
+                    <small class="text-primary">تصميم واجهة المستخدم</small>
+                    <h2 class="text-dark fs-5 my-0">كلاسيكي</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="../assets/img/portfolio/4.jpg" data-fslightbox="gallery" class="shadow-lg d-block p-4 rounded-4 text-decoration-none animate__animated animate__zoomIn">
+                  <img class="img-fluid rounded-3" src="../assets/img/portfolio/4.jpg" alt="Image Description">
+      
+                  <div class="pt-3">
+                    <small class="text-primary">تطوير واجهة المستخدم</small>
+                    <h2 class="text-dark fs-5 my-0">الحد الأدنى</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="../assets/img/portfolio/5.jpg" data-fslightbox="gallery" class="shadow-lg d-block p-4 rounded-4 text-decoration-none animate__animated animate__zoomIn">
+                  <img class="img-fluid rounded-3" src="../assets/img/portfolio/5.jpg" alt="Image Description">
+      
+                  <div class="pt-3">
+                    <small class="text-primary">تصميم تجربة المستخدم</small>
+                    <h2 class="text-dark fs-5 my-0">احترافي</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="../assets/img/portfolio/6.jpg" data-fslightbox="gallery" class="shadow-lg d-block p-4 rounded-4 text-decoration-none animate__animated animate__zoomIn">
+                  <img class="img-fluid rounded-3" src="../assets/img/portfolio/6.jpg" alt="Image Description">
+      
+                  <div class="pt-3">
+                    <small class="text-primary">تصميم واجهة المستخدم</small>
+                    <h2 class="text-dark fs-5 my-0">رائع</h2>
+                  </div>
+                </a>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end portfolio modal -->
+
+  <!-- start blog modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="blogModal" tabindex="-1" aria-labelledby="blogModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="text-start">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="container">
+            <div class="position-relative text-center p-2 mb-5 animate__animated animate__bounce">
+              <h3 class="mb-0 al-fs-14 text-primary">هذه هي قصتي</h3>
+              <h2 class="text-dark fw-bold mb-0">
+                مدونتي
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+      
+            <div class="row g-4 mb-5">
+              <div class="col-md-6 col-xl-4">
+                <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 shadow-lg p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+                  <div class="card-body">
+                    <img src="../assets/img/blog/3.jpg" class="card-img-top" alt="">
+                    <small class="al-fs-14 text-primary bg-light mt-3 d-inline-flex px-3 py-1 rounded-2">تجربة المستخدم</small>
+                    <small class="text-dark my-2 d-block">04 أكتوبر 2022</small>
+                    <h2 class="card-title fs-5 mb-0">كيفية إنشاء موقع ويب باستخدام ووردبريس</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 shadow-lg p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+                  <div class="card-body">
+                    <img src="../assets/img/blog/1.jpg" class="card-img-top" alt="">
+      
+                    <small class="al-fs-14 text-primary bg-light mt-3 d-inline-flex px-3 py-1 rounded">تصميم تجربة المستخدم</small>
+                    <small class="text-dark my-2 d-block">04 أكتوبر 2022</small>
+                    <h2 class="card-title fs-5 mb-0">كيفية التعامل مع الأخطاء في React Javascript</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 shadow-lg p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+                  <div class="card-body">
+                    <img src="../assets/img/blog/2.jpg" class="card-img-top" alt="">
+      
+                    <small class="al-fs-14 text-primary bg-light mt-3 d-inline-flex px-3 py-1 rounded">تصميم واجهة المستخدم</small>
+                    <small class="text-dark my-2 d-block">04 أكتوبر 2022</small>
+                    <h2 class="card-title fs-5 mb-0">يقوم فريق Angular بتبسيط الطلبات</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 shadow-lg p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+                  <div class="card-body">
+                    <img src="../assets/img/blog/2.jpg" class="card-img-top" alt="">
+      
+                    <small class="al-fs-14 text-primary bg-light mt-3 d-inline-flex px-3 py-1 rounded">تطوير واجهة المستخدم</small>
+                    <small class="text-dark my-2 d-block">04 أكتوبر 2022</small>
+                    <h2 class="card-title fs-5 mb-0">كيفية إنشاء موقع ويب باستخدام ووردبريس</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 shadow-lg p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+                  <div class="card-body">
+                    <img src="../assets/img/blog/3.jpg" class="card-img-top" alt="">
+      
+                    <small class="al-fs-14 text-primary bg-light mt-3 d-inline-flex px-3 py-1 rounded">تصميم تجربة المستخدم</small>
+                    <small class="text-dark my-2 d-block">04 أكتوبر 2022</small>
+                    <h2 class="card-title fs-5 mb-0">كيفية التعامل مع الأخطاء في React Javascript</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 shadow-lg p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+                  <div class="card-body">
+                    <img src="../assets/img/blog/1.jpg" class="card-img-top" alt="">
+      
+                    <small class="al-fs-14 text-primary bg-light mt-3 d-inline-flex px-3 py-1 rounded">تصميم تجربة المستخدم</small>
+                    <small class="text-dark my-2 d-block">04 أكتوبر 2022</small>
+                    <h2 class="card-title fs-5 mb-0">يقوم فريق Angular بتبسيط الطلبات</h2>
+                  </div>
+                </a>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end blog modal -->
+
+  <!-- start blog details modal -->
+  <div class="modal fade animate__animated animate__zoomIn" id="blogDetailsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="blogDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body pb-5">
+          <div class="text-start">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 border p-5 rounded-5 blog-details">
+                <img src="../assets/img/blog/blog.jpg" class="w-100 rounded-4" alt="">
+            
+                <div class="my-4">
+                  <small class="al-fs-14 text-primary bg-light mb-2 d-inline-flex px-3 py-1 rounded-2">تصميم واجهة المستخدم</small>
+                  <small class="d-block mb-2 opacity-75">30 سبتمبر 2020</small>
+                  <h2 id="blogDetailsModalLabel" class="fs-3 text-dark">كيفية إنشاء موقع ويب باستخدام ووردبريس</h2>
+                </div>
+      
+                <p>
+                  نحن نعيش من أجل استقبال المعذب، نحتاج إلى قطة، وحامل، ومساعد. غدا يوم كبير، لكن الباب كبير. لا يوجد أحد حر كما هو الحال مع malesuada. حتى تكوين الأسد يحتاج إلى malesuada. هناك كتلة حكيمة، وادي من الأطفال ولا، الفقر ليس إلا. Curabitur ليس nulla sit amet nisl tempus vallis quis ac lectus. Pellentesque في ipsum id orci porta dapibus. هناك كتلة حكيمة، وادي من الأطفال ولا، الفقر ليس إلا. لوريم إيبسوم دولور سيت أميت، consectetur adipiscing إيليت. الدهليز والقطر هما أهم عناصر المركبة، ولكنهما أهم عناصر المركبة.
+                </p>
+      
+                <p>
+                  حتى تنتهي مشكلة القلق. Pellentesque في ipsum id orci porta dapibus. حتى تنتهي مشكلة القلق. إن الفصل الدراسي ممل ومكلف للغاية. Curabitur ليس nulla sit amet nisl tempus vallis quis ac lectus. نحن نعيش في مساحة واسعة، والتنورة تحتاج إلى قطع، ولكن الوادي يقع على الأرض. الجميع يريد ذلك العنصر، إلا السعر، كما هو الحال مع التنورة. الدهليز والقطر هما أهم عناصر المركبة، ولكنهما أهم عناصر المركبة. حتى تكوين الأسد يحتاج إلى malesuada. لوريم إيبسوم دولور سيت أميت، consectetur adipiscing إيليت.
+                </p>
+      
+                <p>
+                  يحتاج الميكروويف إلى معذب لكي يضحك. Curabitur ليس nulla sit amet nisl tempus vallis quis ac lectus. إن الفصل الدراسي ممل ومكلف للغاية. نحن نعيش من أجل استقبال المعذب، نحتاج إلى قطة، وحامل، ومساعد. حتى تنتهي مشكلة القلق. نحن نعيش من أجل استقبال المعذب، نحتاج إلى قطة، وحامل، ومساعد. غدا يوم كبير، لكن الباب كبير. لا توجد طبقة برتغالية من الصبغة. حتى تكوين الأسد يحتاج إلى malesuada. ولكن البواب هو سرير من ذهب.
+                </p>
+      
+                <p>
+                  لا يوجد أحد حر كما هو الحال مع malesuada. لوريم إيبسوم دولور سيت أميت، consectetur adipiscing إيليت. لا يوجد أحد حر كما هو الحال مع malesuada. الجميع يريد ذلك العنصر، إلا السعر، كما هو الحال مع التنورة. حتى تكوين الأسد يحتاج إلى malesuada. الجميع يريد ذلك العنصر، إلا السعر، كما هو الحال مع التنورة. الدهليز قبل ipsum primis في faucibus orci luctus et ultrices posuere cubilia Curae؛ حتى يريد أو، المؤلف هو عاشق لبعض أو، أولامكوربر هو عاشق لليجوللا. هناك كتلة حكيمة، وادي من الأطفال ولا، الفقر ليس إلا. الجميع يريد ذلك العنصر، إلا السعر، كما هو الحال مع التنورة. حتى تكوين الأسد يحتاج إلى .
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end blog details modal -->
+
+  <!-- start contact modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="text-start">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="container">
+            <div class="position-relative text-center p-2 mb-5 animate__animated animate__bounce">
+              <h3 class="mb-0 al-fs-14 text-primary">أنا متاح للتأجير</h3>
+              <h2 class="text-dark fw-bold mb-0">
+                اتصل بي
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+      
+            <div class="row g-4">
+              <div class="col-lg-5 pe-lg-4 animate__animated animate__zoomIn">
+                <p class="p-4 mb-5 bg-primary bg-opacity-10 text-primary rounded-3">
+                  أنا دائمًا منفتح لمناقشة أعمال تصميم المنتج أو الشراكات.
+                  <strong class="d-block mt-2">اتصل بي لإنجاز عملك</strong>
+                </p>
+      
+                <h2 class="text-dark fs-4 mb-3">معلومات الاتصال.</h2>
+      
+                <div class="border p-3 rounded-3 mb-4">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <i class="bi bi-phone bg-primary al-size-40 d-inline-flex al-flex-center fs-6 text-white rounded"></i>
+                    </div>
+                    <div class="col px-0">
+                      <small class="d-block ">هاتف</small>
+                      <span class="fw-semibold">+91 123 456 7890</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="border p-3 rounded-3 mb-4">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <i class="bi bi-envelope-open bg-secondary al-size-40 d-inline-flex al-flex-center fs-6 text-white rounded"></i>
+                    </div>
+                    <div class="col px-0">
+                      <small class="d-block">بريد إلكتروني</small>
+                      <span class="fw-semibold">your-name@domain.com</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="border p-3 rounded-3">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <i class="bi bi-geo-alt bg-warning al-size-40 d-inline-flex al-flex-center fs-6 text-white rounded"></i>
+                    </div>
+                    <div class="col px-0">
+                      <small class="d-block">موقع</small>
+                      <span class="fw-semibold">دلهي، الهند</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 ps-lg-4 animate__animated animate__zoomIn">
+                <!-- start form -->
+                <div class="shadow-lg p-4 rounded-4 contact-form">
+                  <form id="contactForm" class="needs-validation" novalidate>
+                    <div class="row g-3 m-1">
+                      <div class="col-12">
+                        <h2 class="text-dark fs-4 mb-2">نموذج الاتصال</h2>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" name="name" placeholder="اسمك" class="form-control py-3 ps-4 pe-5" required>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="email" name="email" placeholder="البريد الإلكتروني الخاص بك" class="form-control py-3 ps-4 pe-5" required>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="tel" name="phone" placeholder="هاتفك" class="form-control py-3 ps-4 pe-5 text-end" pattern="^[0-9]{10,15}$" required>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" name="subject" placeholder="موضوع" class="form-control py-3 ps-4 pe-5" required>
+                      </div>
+                      <div class="col-md-12">
+                        <textarea name="message" rows="3" placeholder="رسالتك هنا" class="form-control p-3 ps-3 pe-5" required></textarea>
+                      </div>
+                      <div class="col-xl-6">
+                        <button class="btn btn-primary text-white py-2 fs-5 w-100">أرسل رسالة <i class="bi bi-arrow-left me-2 d-none d-md-inline-block"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- end form -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- start choosing mail app modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="mailChoiceModal" tabindex="-1" aria-labelledby="mailChoiceLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body bg-light">
+          <div class="text-end">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="container">
+            <div class="position-relative text-center p-2 animate__animated animate__bounce">
+              <h3 class="mb-0 al-fs-14 text-primary">اتصل بي</h3>
+              <h2 id="mailChoiceLabel" class="text-dark fw-bold mb-0">
+                اختر كيفية إرسال الرسالة
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+
+            <div class="row justify-content-center mb-5 mt-4">
+              <div class="col-lg-7 animate__animated animate__zoomIn">
+                <!-- start form -->
+                <div class="bg-white p-5 rounded-5">
+                  <p class="mb-4 text-center">حدد التطبيق المفضل لديك لإرسال رسالتك:</p>
+
+                  <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
+                    <div class="col">
+                      <button class="btn btn-success w-100" id="openWhatsApp">
+                        <i class="bi bi-whatsapp"></i> إرسال عبر الواتساب
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-danger w-100" id="openGmail">
+                        <i class="bi bi-google"></i> افتح بريد جوجل
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-info text-white w-100" id="openOutlook">
+                        <i class="bi bi-envelope-fill"></i> افتح برنامج أوتلوك
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-secondary w-100" id="openMailApp">
+                        <i class="bi bi-envelope-open-fill"></i> تطبيق البريد الافتراضي
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="text-center mt-4">سيتم فتح رسالتك معبأة مسبقًا - ما عليك سوى الضغط على زر الإرسال 💌</p>
+                <!-- end form -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end contact modal -->
+
+  <!-- start project request modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="projectRequestModal" tabindex="-1" aria-labelledby="projectRequestModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body bg-light">
+          <div class="text-start">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="container">
+            <div class="position-relative text-center p-2 animate__animated animate__bounce">
+              <h3 class="mb-0 al-fs-14 text-primary">مرحبًا، هل أنت مهتم بالعمل معًا؟</h3>
+              <h2 id="projectRequestModalLabel" class="text-dark fw-bold mb-0">
+                بدء طلب المشروع
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+
+            <div class="row justify-content-center mb-5 mt-4">
+              <div class="col-lg-7 animate__animated animate__zoomIn">
+                <!-- start form -->
+                <div class="bg-white p-4 rounded-5">
+                  <form id="quoteForm" class="row g-4 m-1 needs-validation" novalidate>
+                    <div class="col-12">
+                      <div class="border p-3 rounded-3 bg-white">
+                        <label class="d-block mb-2">ما هي الخدمات التي تحتاجها؟ <span class="text-danger">*</span></label>
+                        <div class="form-check form-check-inline">
+                          <input name="services[]" value="UI/UX Design" class="form-check-input" type="checkbox" id="1">
+                          <label class="form-check-label fs-7" for="1">تصميم واجهة المستخدم وتجربة المستخدم</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input name="services[]" value="XD / Figma to HTML" class="form-check-input" type="checkbox" id="2">
+                          <label class="form-check-label fs-7" for="2">XD / Figma إلى HTML</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input name="services[]" value="XD / Figma to Ionic Framework" class="form-check-input" type="checkbox" id="3">
+                          <label class="form-check-label fs-7" for="3">XD / Figma إلى Ionic Framework</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input name="services[]" value="WordPress Website Design" class="form-check-input" type="checkbox" id="4">
+                          <label class="form-check-label fs-7" for="4">تصميم موقع ووردبريس</label>
+                        </div>
+                        
+                        <div id="serviceError" class="invalid-feedback mt-2 border-top text-danger pt-2" style="display:none;">
+                          الرجاء تحديد خدمة واحدة على الأقل.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" name="timeline" placeholder="هل لديك جدول زمني؟ (اختياري)" class="form-control py-3 ps-4 pe-5">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" name="budget" placeholder="ما هو نطاق ميزانيتك؟ (اختياري)" class="form-control py-3 ps-4 pe-5">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" name="company_name" placeholder="اسم الشركة *" class="form-control py-3 ps-4 pe-5" required>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" name="website" placeholder="عنوان URL للموقع الإلكتروني (اختياري)" class="form-control py-3 ps-4 pe-5">
+                    </div>
+                    <div class="col-md-12">
+                      <textarea rows="3" name="project_description" placeholder="ما هو المشروع؟ *" class="form-control p-3 ps-3 pe-5"></textarea>
+                    </div>
+                    <div class="col-md-12">
+                      <input type="text" name="name" placeholder="اسمك *" class="form-control py-3 ps-4 pe-5" required>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="email" name="email" placeholder="البريد الإلكتروني الخاص بك *" class="form-control py-3 ps-4 pe-5" required>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="number" name="phone" placeholder="هاتفك *" class="form-control py-3 ps-4 pe-5" required>
+                    </div>
+                    <div class="col-xl-12 mb-3">
+                      <button type="submit" class="btn btn-primary text-white py-2 fs-5 w-100">طلب اقتباس <i class="bi bi-arrow-left ms-2 d-none d-md-inline-block"></i></button>
+                    </div>
+                  </form>
+                </div>
+                <!-- end form -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- start choosing mail app modal -->
+  <div class="modal animate__animated animate__zoomIn" id="projectChoiceModal" tabindex="-1" aria-labelledby="projectChoiceLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body bg-light">
+          <div class="text-end">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="container">
+            <div class="position-relative text-center p-2">
+              <h3 class="mb-0 al-fs-14 text-primary">بدء طلب المشروع</h3>
+              <h2 class="text-dark fw-bold mb-0">
+                اختر كيفية إرسال طلب عرض الأسعار
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+
+            <div class="row justify-content-center mb-5 mt-4">
+              <div class="col-lg-7">
+                <div class="bg-white p-5 rounded-5">
+                  <p class="mb-4 text-center">حدد المكان الذي تريد إرسال تفاصيل مشروعك إليه:</p>
+
+                  <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
+                    <div class="col">
+                      <button class="btn btn-success w-100" id="projectWhatsApp">
+                        <i class="bi bi-whatsapp"></i> إرسال عبر الواتساب
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-danger w-100" id="projectGmail">
+                        <i class="bi bi-google"></i> افتح بريد جوجل
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-info text-white w-100" id="projectOutlook">
+                        <i class="bi bi-envelope-fill"></i> افتح برنامج أوتلوك
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-secondary w-100" id="projectMailApp">
+                        <i class="bi bi-envelope-open-fill"></i> تطبيق البريد الافتراضي
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="text-center mt-4">سيتم فتح رسالتك معبأة مسبقًا - ما عليك سوى الضغط على زر الإرسال 💌</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end project request modal -->
+
+  <!-- start mouse effect -->
+  <div class="al-cursor text-primary" aria-hidden="true"></div>
+  <div class="al-cursor-dot text-primary" aria-hidden="true"></div>
+
+  <!--js & css library-->
+
+  <!--jquery-->
+  <script src="../assets/dist/plugins/jquery/jquery.min.js"></script>
+
+  <!-- waypoints -->
+  <script src="../assets/dist/plugins/waypoints/lib/jquery.waypoints.min.js"></script>
+
+  <!-- bootstrap bundel -->
+  <script src="../assets/dist/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+
+  <!-- particles js -->
+  <script src="../assets/dist/plugins/particles/particles.js"></script>
+  <script src="../assets/dist/plugins/particles/app.js"></script>
+
+  <!-- slick slider -->
+  <script src="../assets/dist/plugins/slick-carousel/slick/slick.min.js"></script>
+  <script>
+      $('.myClients').slick({
+          arrows:false,
+          dots: false,
+          infinite: true,
+          autoplay:true,
+          speed: 300,
+          autoplaySpeed:2500,
+          pauseOnHover:true,
+          centerMode:false,
+          slidesToShow: 4.8,
+          slidesToScroll: 1,
+          responsive: [
+              {
+              breakpoint: 1399,
+              settings: {
+                  slidesToShow: 4,
+              }
+              },
+              {
+              breakpoint: 1199,
+              settings: {
+                  slidesToShow: 3,
+              }
+              },
+              {
+              breakpoint: 767,
+              slidesToScroll: 1,
+              settings: {
+                  slidesToShow: 2
+              }
+              },
+              {
+              breakpoint: 520,
+              settings: {
+                  slidesToShow: 1.4
+              }
+              }
+          ]
+      });
+  </script>
+
+  <!-- fullscreen lightbox -->
+  <script src="../assets/dist/plugins/fslightbox/index.js"></script>
+
+  <!--alif js-->
+  <script src="../assets/dist/js/theme.min.js"></script>
+  <script src="../assets/dist/js/theme-mode.min.js"></script>
+  <script src="../assets/dist/js/contact-forms.min.js"></script>
+  <script src="../assets/dist/js/project-forms.min.js"></script>
+  <script src="../assets/dist/js/animation.min.js"></script>
+</body>
+</html>

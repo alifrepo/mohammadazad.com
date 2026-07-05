@@ -9,6 +9,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "npm-run-all --parallel watch:scss watch:js",
+    "compile:sass": "sass --watch assets/scss:assets/dist/css",
     "build": "npm run css:build && npm run js:build && npm run add:banners",
     "css:build": "npm run css:expanded && node scripts/minify-css.js",
     "css:expanded": "npx mkdirp assets/dist/css && npx sass assets/scss/style.scss assets/dist/css/style.css --style=expanded && npx mkdirp assets/dist/css/alfuix && npx sass assets/scss/alfuix/alfuix.scss assets/dist/css/alfuix/alfuix.css --style=expanded && npx mkdirp assets/dist/css/bootstrap && npx sass assets/scss/bootstrap/bootstrap.scss assets/dist/css/bootstrap/bootstrap.css --style=expanded && npx sass assets/scss/bootstrap/bootstrap-icons.scss assets/dist/css/bootstrap/bootstrap-icons.css --style=expanded",

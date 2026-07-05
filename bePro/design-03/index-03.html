@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="al-dark-blue">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>myBio - Creative Personal Portfolio Template</title>
+
+    <!-- description -->
+    <meta name="description" content="beProfessional is a highly creative, modern, visually stunning and Bootstrap portfolio template with ready to use pages.">
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/img/icon.svg">
+
+    <!-- animate style -->
+    <link rel="stylesheet" href="../assets/dist/plugins/animate.style/animate.min.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap/bootstrap.css">
+
+    <!-- alfuix -->
+    <link rel="stylesheet" href="../assets/dist/css/alfuix/alfuix.min.css">
+
+    <!-- alif -->
+    <link rel="stylesheet" href="../assets/dist/css/style.min.css">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap/bootstrap-icons.css">
+</head>
+<body class="overflow-hidden">
+  <!-- start header -->
+  <header id="home" class="position-relative vh-100 text-center">
+    <div id="particles-js" class="vh-100 opacity-50"><canvas class="particles-js-canvas-el vh-100 w-100"></canvas></div>
+
+    <div class="d-inline-flex align-items-center gap-2 position-absolute top-0 end-0 m-3 animate__animated animate__backInDown">
+      <!-- language switcher -->
+      <a href="index-ar-03.html" title="العربية" data-bs-toggle="tooltip" data-bs-placement="left" class="d-inline-flex al-flex-center al-w-50 al-hexa al-hexa-inlay al-inlay-5 al-inlay-bg-primary-50 al-hexa-border al-border-2 al-border-primary-25 text-white al-cursor-pointer">
+        <i class="bi bi-translate"></i>
+      </a>
+    </div>
+
+    <div class="position-absolute top-50 start-50 translate-middle pb-5 min-w-50">
+      <div class="animate__animated animate__zoomIn">
+        <h6 class="fs-5 al-text-white-both">Hi There,</h6>
+        <h1 class="fs-1 al-text-white-both">I'm Abu Bilal A.</h1>
+
+        <!-- typing text -->
+        <h2 class="al-text-white-both fs-5">
+          An
+          <span class="al-typed-text text-warning">
+            <span>UI designer</span>
+            <span>UX designer</span>
+            <span>UI developer</span>
+          </span>
+          <span class="al-animate-cursor position-relative d-inline-block al-w-2 ms-1">&nbsp;</span>
+        </h2>
+
+        <!-- start download btn-->
+        <div class="position-relative d-inline-flex al-magnet al-magnet-strong mt-4">
+            <span class="position-absolute z-1 top-0 start-0 al-size-10 border border-2 border-white border-end-0 border-bottom-0 pe-none"></span>
+            <span class="position-absolute z-1 top-0 end-0 al-size-10 border border-2 border-white border-start-0 border-bottom-0 pe-none"></span>
+            <a href="../assets/img/resume.pdf" class="btn bg-primary bg-opacity-10 al-hover-bg-primary-75 px-5 border-0 rounded-0 al-clip-border al-border-1 al-border-primary al-b-clip-x al-extend-b-35 al-b-7 text-white text-nowrap">
+                <span class="d-inline-flex pb-2 text-uppercase al-fs-16">Download CV</span>
+                <i class="bi bi-download ms-2"></i> 
+            </a>
+            <span class="al-trapezoid-t-4 al-trapezoid-w-64px text-white position-absolute bottom-0 start-50 translate-middle-x"></span>
+            <span class="position-absolute z-1 bottom-0 start-0 al-size-10 border border-2 border-white border-end-0 border-top-0 pe-none"></span>
+            <span class="position-absolute z-1 bottom-0 end-0 al-size-10 border border-2 border-white border-start-0 border-top-0 pe-none"></span>
+        </div>
+        <!-- end download btn-->
+      </div>
+    </div>
+
+    <!-- start navigation -->
+    <nav id="navbar" class="flex-column align-items-stretch pe-4 position-fixed al-object-center-y end-0">
+      <nav class="nav nav-pills flex-column gap-3">
+        <a class="nav-link p-0" href="#aboutModal" data-bs-toggle="modal">
+          <span class="al-w-45 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-primary al-hexa-alt-border al-border-2 al-border-primary-50 fs-5 p-0 d-inline-flex al-flex-center text-white al-hover-scale-1 al-transition-5" data-bs-toggle="tooltip" data-bs-placement="right" title="About me">
+            <i class="bi bi-person"></i>
+          </span>
+        </a>
+        <a class="nav-link p-0" href="#resumeModal" data-bs-toggle="modal">
+          <span class="al-w-45 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-primary al-hexa-alt-border al-border-2 al-border-primary-50 fs-5 p-0 d-inline-flex al-flex-center text-white al-hover-scale-1 al-transition-5" data-bs-toggle="tooltip" data-bs-placement="right" title="Resume">
+            <i class="bi bi-file-earmark-medical"></i>
+          </span>
+        </a>
+        <a class="nav-link p-0" href="#portfolioModal" data-bs-toggle="modal">
+          <span class="al-w-45 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-primary al-hexa-alt-border al-border-2 al-border-primary-50 fs-5 p-0 d-inline-flex al-flex-center text-white al-hover-scale-1 al-transition-5" data-bs-toggle="tooltip" data-bs-placement="right" title="Works">
+            <i class="bi bi-image"></i>
+          </span>
+        </a>
+        <a class="nav-link p-0" href="#blogModal" data-bs-toggle="modal">
+          <span class="al-w-45 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-primary al-hexa-alt-border al-border-2 al-border-primary-50 fs-5 p-0 d-inline-flex al-flex-center text-white al-hover-scale-1 al-transition-5" data-bs-toggle="tooltip" data-bs-placement="right" title="Blogs">
+            <i class="bi bi-journal-text"></i>
+          </span>
+        </a>
+        <a class="nav-link p-0" href="#projectRequestModal" data-bs-toggle="modal">
+          <span class="al-w-45 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-primary al-hexa-alt-border al-border-2 al-border-primary-50 fs-5 p-0 d-inline-flex al-flex-center text-white al-hover-scale-1 al-transition-5" data-bs-toggle="tooltip" data-bs-placement="right" title="Start a Project">
+            <i class="bi bi-briefcase"></i>
+          </span>
+        </a>
+        <a class="nav-link p-0" href="#contactModal" data-bs-toggle="modal">
+          <span class="al-w-45 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-primary al-hexa-alt-border al-border-2 al-border-primary-50 fs-5 p-0 d-inline-flex al-flex-center text-white al-hover-scale-1 al-transition-5" data-bs-toggle="tooltip" data-bs-placement="right" title="Contact">
+            <i class="bi bi-envelope"></i>
+          </span>
+        </a>
+      </nav>
+    </nav>
+    <!-- end navigation -->
+  </header>
+  <!-- end header -->
+
+  <!-- start about me modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body al-pattern-grid-dark-blue al-pattern-grid-double al-pattern-white-2">
+          <div class="text-end">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 bg-transparent rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="container mb-4">
+            <div class="position-relative text-center p-2 mb-5 animate__animated animate__bounce">
+              <h3 class="mb-0 al-fs-14 text-primary">Who I Am</h3>
+              <h2 class="fw-bold mb-0">
+                About Me
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+      
+            <div class="row g-4 align-items-top">
+              <div class="col-md-8 col-lg-9 pe-lg-5">
+                <h3 class="animate__animated animate__pulse">
+                  Hello, I'm <span class="text-primary">Abu Bilal</span>
+                </h3>
+                <p class="mb-5 animate__animated animate__fadeIn animate__delay-1s">
+                  I am a freelancer based in the India and i have been building noteworthy UX/UI designs and websites for years, which comply with the latest design trends. I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster.
+                </p>
+
+                <div class="row g-3">
+                  <div class="col-md-6 col-lg-3">
+                    <div class="al-corner al-border al-corner-all-10 al-border-1 al-border-primary-75 py-4 text-center h-100 animate__animated animate__zoomIn">
+                      <i class="bi bi-person fs-2 text-primary"></i>
+                      <span class="d-block">100+ Projects</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="al-corner al-border al-corner-all-10 al-border-1 al-border-primary-75 py-4 text-center h-100 animate__animated animate__zoomIn">
+                      <i class="bi bi-emoji-smile fs-2 text-primary"></i>
+                      <span class="d-block">90+ Satisfied Clients</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="al-corner al-border al-corner-all-10 al-border-1 al-border-primary-75 py-4 text-center h-100 animate__animated animate__zoomIn">
+                      <i class="bi bi-cup fs-2 text-primary"></i>
+                      <span class="d-block">1000+ Cup of coffee</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="al-corner al-border al-corner-all-10 al-border-1 al-border-primary-75 py-4 text-center h-100 animate__animated animate__zoomIn">
+                      <i class="bi bi-code-slash fs-2 text-primary"></i>
+                      <span class="d-block">1M+ lines of code</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3 ps-md-0 ps-lg-3">
+                <div class="position-relative bg-primary bg-opacity-25 p-3 al-corner al-corner-all-16 animate__animated animate__zoomIn">
+                  <img src="../assets/img/user-01.png" alt="" class="w-100 al-corner al-corner-all-12">
+                
+                  <!-- start social media link -->
+                  <div class="d-flex al-flex-center gap-2 position-absolute bottom-0 mb-4 pb-2 al-object-center-x">
+                    <a href="#!" title="LinkedIn" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-flex al-flex-center al-w-36 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-white-75 al-hexa-alt-border al-border-2 al-border-white text-primary al-cursor-pointer">
+                      <i class="bi bi-linkedin al-fs-13"></i>
+                    </a>
+                    <a href="#!" title="YouTube" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-flex al-flex-center al-w-36 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-white-75 al-hexa-alt-border al-border-2 al-border-white text-primary al-cursor-pointer">
+                      <i class="bi bi-youtube al-fs-13"></i>
+                    </a>
+                    <a href="#!" title="Instagram" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-flex al-flex-center al-w-36 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-white-75 al-hexa-alt-border al-border-2 al-border-white text-primary al-cursor-pointer">
+                      <i class="bi bi-instagram al-fs-13"></i>
+                    </a>
+                    <a href="#!" title="Facebook" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-flex al-flex-center al-w-36 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-white-75 al-hexa-alt-border al-border-2 al-border-white text-primary al-cursor-pointer">
+                      <i class="bi bi-facebook al-fs-13"></i>
+                    </a>
+                  </div>
+                  <!-- end social media link -->
+                </div>
+              </div>
+            </div>
+
+            <!-- start what i do -->
+            <div class="mt-3 pt-5 pb-5">
+              <h2 class="mb-4 animate__animated animate__pulse">
+                <small class="d-block al-fs-14 text-primary">My Services</small>
+                What we do!
+              </h2>
+
+              <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                  <div class="position-relative h-100 animate__animated animate__zoomIn">
+                    <span class="position-absolute al-top-n-2 al-end-n-2 al-size-24 border border-2 border-primary border-start-0 border-bottom-0 pe-none"></span>
+                    <div class="bg-primary bg-opacity-10 p-4 al-corner al-ts-14 al-be-14 h-100">
+                      <div class="p-2">
+                        <div class="d-flex align-items-center gap-3 mb-3 pb-1">
+                          <span class="d-inline-flex align-items-center justify-content-center al-size-55 rounded-circle bg-primary bg-opacity-25 al-outline al-outline-5 al-outline-primary-10">
+                            <i class="bi bi-window-sidebar fs-4"></i>
+                          </span>
+                          <h2 class="al-fs-18 mb-0">
+                            UX Design
+                          </h2>
+                        </div>
+                        <p class="mb-0 al-fs-14">
+                          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.
+                        </p>
+                      </div>
+                    </div>
+                    <span class="position-absolute al-bottom-n-2 al-start-n-2 al-size-24 border border-2 border-primary border-end-0 border-top-0 pe-none"></span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="position-relative h-100 animate__animated animate__zoomIn">
+                    <span class="position-absolute al-top-n-2 al-end-n-2 al-size-24 border border-2 border-primary border-start-0 border-bottom-0 pe-none"></span>
+                    <div class="bg-primary bg-opacity-10 p-4 al-corner al-ts-14 al-be-14 h-100">
+                      <div class="p-2">
+                        <div class="d-flex align-items-center gap-3 mb-3 pb-1">
+                          <span class="d-inline-flex align-items-center justify-content-center al-size-55 rounded-circle bg-primary bg-opacity-25 al-outline al-outline-5 al-outline-primary-10">
+                            <i class="bi bi-window-sidebar fs-4"></i>
+                          </span>
+                          <h2 class="al-fs-18 mb-0">
+                            UI Design
+                          </h2>
+                        </div>
+                        <p class="mb-0 al-fs-14">
+                          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.
+                        </p>
+                      </div>
+                    </div>
+                    <span class="position-absolute al-bottom-n-2 al-start-n-2 al-size-24 border border-2 border-primary border-end-0 border-top-0 pe-none"></span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="position-relative h-100 animate__animated animate__zoomIn">
+                    <span class="position-absolute al-top-n-2 al-end-n-2 al-size-24 border border-2 border-primary border-start-0 border-bottom-0 pe-none"></span>
+                    <div class="bg-primary bg-opacity-10 p-4 al-corner al-ts-14 al-be-14 h-100">
+                      <div class="p-2">
+                        <div class="d-flex align-items-center gap-3 mb-3 pb-1">
+                          <span class="d-inline-flex align-items-center justify-content-center al-size-55 rounded-circle bg-primary bg-opacity-25 al-outline al-outline-5 al-outline-primary-10">
+                            <i class="bi bi-window-sidebar fs-4"></i>
+                          </span>
+                          <h2 class="al-fs-18 mb-0">
+                            Web Design
+                          </h2>
+                        </div>
+                        <p class="mb-0 al-fs-14">
+                          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.
+                        </p>
+                      </div>
+                    </div>
+                    <span class="position-absolute al-bottom-n-2 al-start-n-2 al-size-24 border border-2 border-primary border-end-0 border-top-0 pe-none"></span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="position-relative h-100 animate__animated animate__zoomIn">
+                    <span class="position-absolute al-top-n-2 al-end-n-2 al-size-24 border border-2 border-primary border-start-0 border-bottom-0 pe-none"></span>
+                    <div class="bg-primary bg-opacity-10 p-4 al-corner al-ts-14 al-be-14 h-100">
+                      <div class="p-2">
+                        <div class="d-flex align-items-center gap-3 mb-3 pb-1">
+                          <span class="d-inline-flex align-items-center justify-content-center al-size-55 rounded-circle bg-primary bg-opacity-25 al-outline al-outline-5 al-outline-primary-10">
+                            <i class="bi bi-window-sidebar fs-4"></i>
+                          </span>
+                          <h2 class="al-fs-18 mb-0">
+                            App Design
+                          </h2>
+                        </div>
+                        <p class="mb-0 al-fs-14">
+                          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.
+                        </p>
+                      </div>
+                    </div>
+                    <span class="position-absolute al-bottom-n-2 al-start-n-2 al-size-24 border border-2 border-primary border-end-0 border-top-0 pe-none"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end what i do -->
+
+            <!-- start clients -->
+            <div class="mt-3 py-5">
+              <h2 class="mb-4 animate__animated animate__pulse">
+                <small class="d-block al-fs-14 text-primary">My Satisfied Clients</small>
+                Clients
+              </h2>
+
+              <div class="myClients">
+                <div>
+                  <img src="../assets/img/clients/logo-white-1.png" class="img-fluid al-corner al-corner-all-12 bg-primary bg-opacity-10 animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-2.png" class="img-fluid al-corner al-corner-all-12 bg-primary bg-opacity-10 animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-3.png" class="img-fluid al-corner al-corner-all-12 bg-primary bg-opacity-10 animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-4.png" class="img-fluid al-corner al-corner-all-12 bg-primary bg-opacity-10 animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-5.png" class="img-fluid al-corner al-corner-all-12 bg-primary bg-opacity-10 animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-1.png" class="img-fluid al-corner al-corner-all-12 bg-primary bg-opacity-10 animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-2.png" class="img-fluid al-corner al-corner-all-12 bg-primary bg-opacity-10 animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-3.png" class="img-fluid al-corner al-corner-all-12 bg-primary bg-opacity-10 animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-4.png" class="img-fluid al-corner al-corner-all-12 bg-primary bg-opacity-10 animate__animated animate__zoomIn" alt="">
+                </div>
+                <div>
+                  <img src="../assets/img/clients/logo-white-5.png" class="img-fluid al-corner al-corner-all-12 bg-primary bg-opacity-10 animate__animated animate__zoomIn" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- end clients -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end about me modal -->
+
+  <!-- start resume modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body al-pattern-grid-dark-blue al-pattern-grid-double al-pattern-white-2">
+          <div class="text-end">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 bg-transparent rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="container py-3">
+            <div class="position-relative text-center p-2 mb-5 animate__animated animate__bounce">
+              <h3 class="mb-0 al-fs-14 text-primary">I'm available for hire</h3>
+              <h2 class="fw-bold mb-0">
+                Resume
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+      
+            <div class="row g-4">
+              <!-- start education -->
+              <div class="col-md-6 pe-md-4">
+                <h2 class="mb-4 fs-3 animate__animated animate__pulse">
+                  <i class="bi bi-book-half fs-5 me-2 text-primary al-size-40 bg-primary bg-opacity-10 rounded-circle d-inline-flex al-flex-center"></i> 
+                  Education
+                </h2>
+      
+                <div class="position-relative">
+                  <div class="position-absolute top-0 bottom-0 start-0 ms-4 al-w-3 bg-primary pe-none animate__animated animate__zoomIn"></div>
+      
+                  <div class="card rounded-0 border-0 al-corner al-ts-14 al-be-14 bg-primary bg-opacity-10 al-backdrop-blur-32 mb-5 p-2 animate__animated animate__zoomIn">
+                    <div class="card-body">
+                      <small class="d-block mb-1">2017</small>
+                      <h5 class="card-title text-primary mb-1">UI / UX Design</h5>
+                      <p class="card-text al-fs-14">University name</p>
+                    </div>
+                  </div>
+                  
+                  <div class="card rounded-0 border-0 al-corner al-ts-14 al-be-14 bg-primary bg-opacity-10 al-backdrop-blur-32 mb-5 p-2 animate__animated animate__zoomIn">
+                    <div class="card-body">
+                      <small class="d-block mb-1">2013 - 2017</small>
+                      <h5 class="card-title text-primary">B.E Computer Science</h5>
+                      <p class="card-text al-fs-14">University name</p>
+                    </div>
+                  </div>
+                  
+                  <div class="card rounded-0 border-0 al-corner al-ts-14 al-be-14 bg-primary bg-opacity-10 al-backdrop-blur-32 mb-5 p-2 animate__animated animate__zoomIn">
+                    <div class="card-body">
+                      <small class="d-block mb-1">2009 - 2012</small>
+                      <h5 class="card-title text-primary">Diploma Computer Science</h5>
+                      <p class="card-text al-fs-14">University name</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end education -->
+      
+              <!-- start experience -->
+              <div class="col-md-6 ps-md-4">
+                <h2 class="mb-4 fs-3 animate__animated animate__pulse">
+                  <i class="bi bi-briefcase-fill fs-5 me-2 text-primary al-size-40 bg-primary bg-opacity-10 rounded-circle d-inline-flex al-flex-center"></i> 
+                  Experience
+                </h2>
+      
+                <div class="position-relative">
+                  <div class="position-absolute top-0 bottom-0 start-0 ms-4 al-w-3 bg-primary pe-none animate__animated animate__zoomIn"></div>
+      
+                  <div class="card rounded-0 border-0 al-corner al-ts-14 al-be-14 bg-primary bg-opacity-10 al-backdrop-blur-32 mb-5 p-2 animate__animated animate__zoomIn">
+                    <div class="card-body">
+                      <small class="d-block mb-1">2021 - Present</small>
+                      <h5 class="card-title text-primary">Lead UI/UX Designer</h5>
+                      <p class="card-text al-fs-14">Company name</p>
+                    </div>
+                  </div>
+      
+                  <div class="card rounded-0 border-0 al-corner al-ts-14 al-be-14 bg-primary bg-opacity-10 al-backdrop-blur-32 mb-5 p-2 animate__animated animate__zoomIn">
+                    <div class="card-body">
+                      <small class="d-block mb-1">2018 - 2021</small>
+                      <h5 class="card-title text-primary">Senior UI/UX Designer</h5>
+                      <p class="card-text al-fs-14">Company name</p>
+                    </div>
+                  </div>
+      
+                  <div class="card rounded-0 border-0 al-corner al-ts-14 al-be-14 bg-primary bg-opacity-10 al-backdrop-blur-32 mb-5 p-2 animate__animated animate__zoomIn">
+                    <div class="card-body">
+                      <small class="d-block mb-1">2017 - 2018</small>
+                      <h5 class="card-title text-primary">Junior UI/UX Designer</h5>
+                      <p class="card-text al-fs-14">Company name</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end experience -->
+            </div>
+          </div>
+          <div class="bg-primary bg-opacity-10 py-5 al-corner al-corner-all-20">
+            <div class="container py-3">
+              <div class="row g-4">
+                <!-- start skills -->
+                <div class="col-md-6 px-4 pt-2">
+                  <h2 class="mb-4 fs-3 animate__animated animate__pulse">Skills</h2>
+                  
+                  <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                    <label class="mb-1">Adobe XD</label>
+                    <div class="progress bg-warning bg-opacity-10">
+                      <div class="progress-bar bg-warning bg-opacity-50" role="progressbar" aria-label="Adobe XD" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                    </div>
+                  </div>
+                  
+                  <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                    <label class="mb-1">Figma</label>
+                    <div class="progress bg-warning bg-opacity-10">
+                      <div class="progress-bar bg-warning bg-opacity-50" role="progressbar" aria-label="Figma" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                  </div>
+                  
+                  <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                    <label class="mb-1">Photoshop</label>
+                    <div class="progress bg-warning bg-opacity-10">
+                      <div class="progress-bar bg-warning bg-opacity-50" role="progressbar" aria-label="Photoshop" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                  </div>
+                  
+                  <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                    <label class="mb-1">HTML</label>
+                    <div class="progress bg-warning bg-opacity-10">
+                      <div class="progress-bar bg-warning bg-opacity-50" role="progressbar" aria-label="HTML" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                    </div>
+                  </div>
+                  
+                  <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                    <label class="mb-1">CSS</label>
+                    <div class="progress bg-warning bg-opacity-10">
+                      <div class="progress-bar bg-warning bg-opacity-50" role="progressbar" aria-label="CSS" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end skills -->
+      
+                <!-- start expertise -->
+                <div class="col-md-6 px-4 pt-2">
+                  <h2 class="mb-4 fs-3 animate__animated animate__pulse">Expertise</h2>
+                  
+                  <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                    <label class="mb-1">UI Design</label>
+                    <div class="progress bg-primary bg-opacity-10">
+                      <div class="progress-bar bg-primary bg-opacity-50" role="progressbar" aria-label="UI Design" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                    </div>
+                  </div>
+                  
+                  <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                    <label class="mb-1">UX Design</label>
+                    <div class="progress bg-primary bg-opacity-10">
+                      <div class="progress-bar bg-primary bg-opacity-50" role="progressbar" aria-label="UX Design" style="width: 95%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">95%</div>
+                    </div>
+                  </div>
+                  
+                  <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                    <label class="mb-1">XD Design to HTML</label>
+                    <div class="progress bg-primary bg-opacity-10">
+                      <div class="progress-bar bg-primary bg-opacity-50" role="progressbar" aria-label="XD Design to HTML" style="width: 95%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">95%</div>
+                    </div>
+                  </div>
+                  
+                  <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                    <label class="mb-1">Figma Design to HTML</label>
+                    <div class="progress bg-primary bg-opacity-10">
+                      <div class="progress-bar bg-primary bg-opacity-50" role="progressbar" aria-label="Figma Design to HTML" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                    </div>
+                  </div>
+                  
+                  <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                    <label class="mb-1">Web & mobile app design</label>
+                    <div class="progress bg-primary bg-opacity-10">
+                      <div class="progress-bar bg-primary bg-opacity-50" role="progressbar" aria-label="Web & mobile app design" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end expertise -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end resume modal -->
+
+  <!-- start portfolio modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body al-pattern-grid-dark-blue al-pattern-grid-double al-pattern-white-2">
+          <div class="text-end">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 bg-transparent rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="container">
+            <div class="position-relative text-center p-2 mb-5 animate__animated animate__bounce">
+              <h3 class="mb-0 al-fs-14 text-primary">Showcase of my best works</h3>
+              <h2 class="text-white fw-bold mb-0">
+                My Portfolio
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+
+            <div class="row g-4 mb-5">
+              <div class="col-md-6 col-xl-4">
+                <a href="../assets/img/portfolio/1.jpg" data-fslightbox="gallery" class="al-corner al-border al-corner-all-20 al-border-1 al-border-primary-25 d-block p-4 text-decoration-none animate__animated animate__zoomIn">
+                  <img class="img-fluid al-corner al-corner-all-8" src="../assets/img/portfolio/1.jpg" alt="Image Description">
+
+                  <div class="pt-3">
+                    <small class="text-primary">UX Design</small>
+                    <h2 class="text-white fs-5 my-0">Minimal</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="../assets/img/portfolio/2.jpg" data-fslightbox="gallery" class="al-corner al-border al-corner-all-20 al-border-1 al-border-primary-25 d-block p-4 text-decoration-none animate__animated animate__zoomIn">
+                  <img class="img-fluid al-corner al-corner-all-8" src="../assets/img/portfolio/2.jpg" alt="Image Description">
+
+                  <div class="pt-3">
+                    <small class="text-primary">UI Design</small>
+                    <h2 class="text-white fs-5 my-0">Creative</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="../assets/img/portfolio/3.jpg" data-fslightbox="gallery" class="al-corner al-border al-corner-all-20 al-border-1 al-border-primary-25 d-block p-4 text-decoration-none animate__animated animate__zoomIn">
+                  <img class="img-fluid al-corner al-corner-all-8" src="../assets/img/portfolio/3.jpg" alt="Image Description">
+
+                  <div class="pt-3">
+                    <small class="text-primary">UI/UX Design</small>
+                    <h2 class="text-white fs-5 my-0">Classic</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="../assets/img/portfolio/4.jpg" data-fslightbox="gallery" class="al-corner al-border al-corner-all-20 al-border-1 al-border-primary-25 d-block p-4 text-decoration-none animate__animated animate__zoomIn">
+                  <img class="img-fluid al-corner al-corner-all-8" src="../assets/img/portfolio/4.jpg" alt="Image Description">
+
+                  <div class="pt-3">
+                    <small class="text-primary">UI Development</small>
+                    <h2 class="text-white fs-5 my-0">Minimal</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="../assets/img/portfolio/5.jpg" data-fslightbox="gallery" class="al-corner al-border al-corner-all-20 al-border-1 al-border-primary-25 d-block p-4 text-decoration-none animate__animated animate__zoomIn">
+                  <img class="img-fluid al-corner al-corner-all-8" src="../assets/img/portfolio/5.jpg" alt="Image Description">
+
+                  <div class="pt-3">
+                    <small class="text-primary">UX Desing</small>
+                    <h2 class="text-white fs-5 my-0">Professional</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="../assets/img/portfolio/6.jpg" data-fslightbox="gallery" class="al-corner al-border al-corner-all-20 al-border-1 al-border-primary-25 d-block p-4 text-decoration-none animate__animated animate__zoomIn">
+                  <img class="img-fluid al-corner al-corner-all-8" src="../assets/img/portfolio/6.jpg" alt="Image Description">
+
+                  <div class="pt-3">
+                    <small class="text-primary">UI Design</small>
+                    <h2 class="text-white fs-5 my-0">Elegant</h2>
+                  </div>
+                </a>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end portfolio modal -->
+
+  <!-- start blog modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="blogModal" tabindex="-1" aria-labelledby="blogModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body al-pattern-grid-dark-blue al-pattern-grid-double al-pattern-white-2">
+          <div class="text-end">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 bg-transparent rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          
+          <div class="container">
+            <div class="position-relative text-center p-2 mb-5 animate__animated animate__bounce">
+              <h3 class="mb-0 al-fs-14 text-primary">This is my story</h3>
+              <h2 class="fw-bold mb-0">
+                My Blog
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+
+            <div class="row g-4 mb-5">
+              <div class="col-md-6 col-xl-4">
+                <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 al-corner al-ts-16 al-be-16 rounded-0 bg-primary bg-opacity-10 p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+                  <div class="card-body">
+                    <img src="../assets/img/blog/3.jpg" class="card-img-top rounded-0 al-corner al-ts-14 al-be-14" alt="">
+                    <small class="al-fs-14 text-primary bg-primary bg-opacity-10 mt-3 d-inline-flex px-3 py-1 rounded-2">UI / UX Design</small>
+                    <small class="text-white text-opacity-50 my-2 d-block">04 Oct 2022</small>
+                    <h2 class="card-title fs-5 mb-0">How to create a website using WordPress</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 al-corner al-ts-16 al-be-16 rounded-0 bg-primary bg-opacity-10 p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+                  <div class="card-body">
+                    <img src="../assets/img/blog/1.jpg" class="card-img-top rounded-0 al-corner al-ts-14 al-be-14" alt="">
+
+                    <small class="al-fs-14 text-primary bg-primary bg-opacity-10 mt-3 d-inline-flex px-3 py-1 rounded">UX Design</small>
+                    <small class="text-white text-opacity-50 my-2 d-block">04 Oct 2022</small>
+                    <h2 class="card-title fs-5 mb-0">How to handle errors in React Javascript</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 al-corner al-ts-16 al-be-16 rounded-0 bg-primary bg-opacity-10 p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+                  <div class="card-body">
+                    <img src="../assets/img/blog/2.jpg" class="card-img-top rounded-0 al-corner al-ts-14 al-be-14" alt="">
+
+                    <small class="al-fs-14 text-primary bg-primary bg-opacity-10 mt-3 d-inline-flex px-3 py-1 rounded">UI Design</small>
+                    <small class="text-white text-opacity-50 my-2 d-block">04 Oct 2022</small>
+                    <h2 class="card-title fs-5 mb-0">Angular team streamlines requests</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 al-corner al-ts-16 al-be-16 rounded-0 bg-primary bg-opacity-10 p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+                  <div class="card-body">
+                    <img src="../assets/img/blog/2.jpg" class="card-img-top rounded-0 al-corner al-ts-14 al-be-14" alt="">
+
+                    <small class="al-fs-14 text-primary bg-primary bg-opacity-10 mt-3 d-inline-flex px-3 py-1 rounded">UI Development</small>
+                    <small class="text-white text-opacity-50 my-2 d-block">04 Oct 2022</small>
+                    <h2 class="card-title fs-5 mb-0">How to create a website using WordPress</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 al-corner al-ts-16 al-be-16 rounded-0 bg-primary bg-opacity-10 p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+                  <div class="card-body">
+                    <img src="../assets/img/blog/3.jpg" class="card-img-top rounded-0 al-corner al-ts-14 al-be-14" alt="">
+
+                    <small class="al-fs-14 text-primary bg-primary bg-opacity-10 mt-3 d-inline-flex px-3 py-1 rounded">UI / UX Design</small>
+                    <small class="text-white text-opacity-50 my-2 d-block">04 Oct 2022</small>
+                    <h2 class="card-title fs-5 mb-0">How to handle errors in React Javascript</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <a href="#blogDetailsModal" data-bs-toggle="modal" class="card border-0 al-corner al-ts-16 al-be-16 rounded-0 bg-primary bg-opacity-10 p-2 h-100 text-decoration-none animate__animated animate__zoomIn">
+                  <div class="card-body">
+                    <img src="../assets/img/blog/1.jpg" class="card-img-top rounded-0 al-corner al-ts-14 al-be-14" alt="">
+
+                    <small class="al-fs-14 text-primary bg-primary bg-opacity-10 mt-3 d-inline-flex px-3 py-1 rounded">UI / UX Design</small>
+                    <small class="text-white text-opacity-50 my-2 d-block">04 Oct 2022</small>
+                    <h2 class="card-title fs-5 mb-0">Angular team streamlines requests</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end blog modal -->
+
+  <!-- start blog details modal -->
+  <div class="modal fade animate__animated animate__zoomIn" id="blogDetailsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="blogDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body pb-5 al-pattern-grid-dark-blue al-pattern-grid-double al-pattern-white-2">
+          <div class="text-end">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 bg-transparent rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 al-corner al-border al-corner-all-24 al-border-2 al-border-primary-25 p-5 blog-details">
+                <img src="../assets/img/blog/blog.jpg" class="w-100 al-corner al-corner-all-10" alt="">
+            
+                <div class="my-4">
+                  <small class="al-fs-14 text-primary bg-primary bg-opacity-10 mb-2 d-inline-flex px-3 py-1 rounded-2">UI / UX Design</small>
+                  <small class="d-block mb-2 opacity-75">30 September 2020</small>
+                  <h2 id="blogDetailsModalLabel" class="fs-3">How to create a website using WordPress</h2>
+                </div>
+      
+                <p>
+                  Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                </p>
+      
+                <p>
+                  Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+      
+                <p>
+                  Proin eget tortor risus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget felis porttitor volutpat. Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh.
+                </p>
+      
+                <p>
+                  Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end blog details modal -->
+
+  <!-- start contact modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body al-pattern-grid-dark-blue al-pattern-grid-double al-pattern-white-2">
+          <div class="text-end">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 bg-transparent rounded-circle p-2 border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          
+          <div class="container">
+            <div class="position-relative text-center p-2 mb-5 animate__animated animate__bounce">
+              <h3 class="mb-0 al-fs-14 text-primary">I'm available for hire</h3>
+              <h2 class="fw-bold mb-0">
+                Contact Me
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+
+            <div class="row g-4">
+              <div class="col-lg-5 pe-lg-4 animate__animated animate__zoomIn">
+                <p class="p-4 mb-4 bg-primary bg-opacity-10 text-primary rounded-3 al-corner al-corner-all-12">
+                  I'm always open to discussing product design work or partnerships. 
+                  <strong class="d-block mt-2">Contact me to get your work done</strong>
+                </p>
+
+                <h2 class="fs-4 mb-3 pt-3">Contact Info.</h2>
+
+                <div class="al-corner al-border al-corner-all-10 al-border-1 al-border-primary-25 p-3 mb-4">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <span class="al-w-36 al-hexa-alt bg-primary bg-opacity-50 d-inline-flex al-flex-center al-cursor-pointer">
+                        <i class="bi bi-phone"></i>
+                      </span>
+                    </div>
+                    <div class="col px-0">
+                      <small class="d-block ">Phone</small>
+                      <span class="fw-semibold">+91 123 456 7890</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="al-corner al-border al-corner-all-10 al-border-1 al-border-primary-25 p-3 mb-4">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <span class="al-w-36 al-hexa-alt bg-success bg-opacity-50 d-inline-flex al-flex-center al-cursor-pointer">
+                        <i class="bi bi-envelope-open"></i>
+                      </span>
+                    </div>
+                    <div class="col px-0">
+                      <small class="d-block">Email</small>
+                      <span class="fw-semibold">your-name@domain.com</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="al-corner al-border al-corner-all-10 al-border-1 al-border-primary-25 p-3 mb-4">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <span class="al-w-36 al-hexa-alt bg-warning bg-opacity-50 d-inline-flex al-flex-center al-cursor-pointer">
+                        <i class="bi bi-geo-alt"></i>
+                      </span>
+                    </div>
+                    <div class="col px-0">
+                      <small class="d-block">Location</small>
+                      <span class="fw-semibold">Delhi, India</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 ps-lg-4 animate__animated animate__zoomIn">
+                <!-- start form -->
+                <div class="bg-primary bg-opacity-25 p-4 al-corner al-border al-corner-all-14 al-border-1 al-border-primary-25 contact-form">
+                  <form id="contactForm" class="needs-validation" novalidate>
+                    <div class="row g-4 m-1">
+                      <div class="col-12 m-0">
+                        <h2 class="fs-4 mb-2">Contact Form</h2>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" name="name" placeholder="Your Name" class="form-control py-3 px-4 al-placeholder-white-75" required>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="email" name="email" placeholder="Your Email" class="form-control py-3 px-4 al-placeholder-white-75" required>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="tel" name="phone" placeholder="Your Phone" class="form-control py-3 px-4 al-placeholder-white-75" pattern="^[0-9]{10,15}$" required>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" name="subject" placeholder="Subject" class="form-control py-3 px-4 al-placeholder-white-75" required>
+                      </div>
+                      <div class="col-md-12">
+                        <textarea name="message" rows="3" placeholder="Your message here" class="form-control p-3 px-3 al-placeholder-white-75" required></textarea>
+                      </div>
+                      <div class="col-xl-6 pt-2">
+                        <div class="position-relative d-flex">
+                            <span class="position-absolute z-1 top-0 start-0 al-size-8 border border-2 border-white border-opacity-75 border-end-0 border-bottom-0 pe-none"></span>
+                            <span class="position-absolute z-1 top-0 end-0 al-size-8 border border-2 border-white border-opacity-75 border-start-0 border-bottom-0 pe-none"></span>
+                            <button type="submit" class="btn btn-lg btn-primary px-5 border-0 rounded-0 al-clip-border al-border-1 al-border-white-50 al-b-clip-x al-extend-b-35 al-b-7 text-white fw-bold w-100">
+                                <span class="d-inline-flex pb-2 text-uppercase al-fs-16">Submit</span>
+                                <i class="bi bi-arrow-right ms-2 d-none d-md-inline-block"></i>
+                                <span class="al-on-click-ripple" aria-hidden="true"></span>
+                            </button>
+                            <span class="al-trapezoid-t-4 al-trapezoid-w-64px text-warning position-absolute bottom-0 start-50 translate-middle-x"></span>
+                            <span class="position-absolute z-1 bottom-0 start-0 al-size-8 border border-2 border-white border-opacity-75 border-end-0 border-top-0 pe-none"></span>
+                            <span class="position-absolute z-1 bottom-0 end-0 al-size-8 border border-2 border-white border-opacity-75 border-start-0 border-top-0 pe-none"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- end form -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- start choosing mail app modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="mailChoiceModal" tabindex="-1" aria-labelledby="mailChoiceLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body al-pattern-grid-dark-blue al-pattern-grid-double al-pattern-white-2">
+          <div class="text-end">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 rounded-circle p-2 bg-transparent border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          
+          <div class="container">
+            <div class="position-relative text-center p-2 animate__animated animate__bounce">
+              <h3 class="mb-0 al-fs-14 text-primary">Contact Me</h3>
+              <h2 id="mailChoiceLabel" class="fw-bold mb-0">
+                Choose How to Send Message
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+
+            <div class="row justify-content-center mb-5 mt-4">
+              <div class="col-lg-7 animate__animated animate__zoomIn">
+                <div class="bg-primary bg-opacity-25 p-5 al-corner al-corner-all-14">
+                  <p class="mb-4 text-center">Select your preferred app to send your message:</p>
+
+                  <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
+                    <div class="col">
+                      <button class="btn btn-success w-100" id="openWhatsApp">
+                        <i class="bi bi-whatsapp"></i> Send via WhatsApp
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-danger w-100" id="openGmail">
+                        <i class="bi bi-google"></i> Open Gmail
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-info text-white w-100" id="openOutlook">
+                        <i class="bi bi-envelope-fill"></i> Open Outlook
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-secondary w-100" id="openMailApp">
+                        <i class="bi bi-envelope-open-fill"></i> Default Mail App
+                      </button>
+                    </div>
+                  </div>
+                </div>
+        
+                <p class="text-center mt-4">Your message will open pre-filled — you just need to press Send 💌</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end contact modal -->
+
+  <!-- start project request modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="projectRequestModal" tabindex="-1" aria-labelledby="projectRequestModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body al-pattern-grid-dark-blue al-pattern-grid-double al-pattern-white-2">
+          <div class="text-end">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 rounded-circle p-2 bg-transparent border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          
+          <div class="container">
+            <div class="position-relative text-center p-2 animate__animated animate__bounce">
+              <h3 class="mb-0 al-fs-14 text-primary">Hey, Interested in working together?</h3>
+              <h2 id="projectRequestModalLabel" class="fw-bold mb-0">
+                Start a project request
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+
+            <div class="row justify-content-center mb-5 mt-4">
+              <div class="col-lg-7 animate__animated animate__zoomIn">
+                <!-- start form -->
+                <div class="bg-primary bg-opacity-25 p-4 al-corner al-corner-all-14">
+                  <form id="quoteForm" class="row g-4 m-1 needs-validation" novalidate>
+                    <div class="col-12">
+                      <div class="p-3 rounded-3 border border-primary border-opacity-25">
+                        <label class="d-block mb-2">Which services do you need? <span class="text-danger">*</span></label>
+                        <div class="form-check form-check-inline">
+                          <input name="services[]" value="UI/UX Design" class="form-check-input" type="checkbox" id="1">
+                          <label class="form-check-label fs-7" for="1">UI/UX Design</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input name="services[]" value="XD / Figma to HTML" class="form-check-input" type="checkbox" id="2">
+                          <label class="form-check-label fs-7" for="2">XD / Figma to HTML</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input name="services[]" value="XD / Figma to Ionic Framework" class="form-check-input" type="checkbox" id="3">
+                          <label class="form-check-label fs-7" for="3">XD / Figma to Ionic Framework</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input name="services[]" value="WordPress Website Design" class="form-check-input" type="checkbox" id="4">
+                          <label class="form-check-label fs-7" for="4">WordPress Website Design</label>
+                        </div>
+
+                        <div id="serviceError" class="invalid-feedback mt-2 border-top border-primary border-opacity-25 text-danger pt-2" style="display:none;">
+                          Please select at least one service.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" name="timeline" placeholder="Do you have a timeline? (optional)" class="form-control py-3 px-4 al-placeholder-white-75">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" name="budget" placeholder="What is your budget range? (optional)" class="form-control py-3 px-4 al-placeholder-white-75">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" name="company_name" placeholder="Company Name *" class="form-control py-3 px-4 al-placeholder-white-75" required>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" name="website" placeholder="Website URL (optional)" class="form-control py-3 px-4 al-placeholder-white-75">
+                    </div>
+                    <div class="col-md-12">
+                      <textarea rows="3" name="project_description" placeholder="What is the project about? *" class="form-control p-3 px-3 al-placeholder-white-75" required></textarea>
+                    </div>
+                    <div class="col-md-12">
+                      <input type="text" name="name" placeholder="Your Name *" class="form-control py-3 px-4 al-placeholder-white-75" required>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="email" name="email" placeholder="Your Email *" class="form-control py-3 px-4 al-placeholder-white-75" required>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="number" name="phone" placeholder="Your Phone *" class="form-control py-3 px-4 al-placeholder-white-75" required>
+                    </div>
+                    <div class="col-xl-12 mb-3 pt-3">
+                      <button type="submit" class="btn btn-lg btn-primary py-2 px-sm-5 rounded-0 al-fancy-border-double al-fancy-border-double-size-10 text-white fw-bold w-100">
+                          <span class="d-inline-flex text-uppercase al-fs-16">Request Quote</span>
+                          <i class="bi bi-arrow-right ms-2"></i>
+                          <span class="al-on-click-ripple" aria-hidden="true"></span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <!-- end form -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- start choosing mail app modal -->
+  <div class="modal fade animate__animated animate__fadeInUp" id="projectChoiceModal" tabindex="-1" aria-labelledby="projectChoiceLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body al-pattern-grid-dark-blue al-pattern-grid-double al-pattern-white-2">
+          <div class="text-end">
+            <button data-bs-dismiss="modal" aria-label="Close" type="button" class="d-inline-flex al-flex-center al-size-45 rounded-circle p-2 bg-transparent border border-2 al-border-dotted border-danger text-danger al-transition-7 m-3 al-hover-bg-danger al-hover-text-white al-hover-rotate-360">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          
+          <div class="container">
+            <div class="position-relative text-center p-2 animate__animated animate__bounce">
+              <h3 class="mb-0 al-fs-14 text-primary">Start a project request</h3>
+              <h2 id="mailChoiceLabel" class="fw-bold mb-0">
+                Choose How to Send Quote Request
+              </h2>
+              <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+            </div>
+
+            <div class="row justify-content-center mb-5 mt-4">
+              <div class="col-lg-7 animate__animated animate__zoomIn">
+                <div class="bg-primary bg-opacity-25 p-5 al-corner al-corner-all-14">
+                  <p class="mb-4 text-center">Select where to send your project details:</p>
+
+                  <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
+                    <div class="col">
+                      <button class="btn btn-success w-100" id="projectWhatsApp">
+                        <i class="bi bi-whatsapp"></i> Send via WhatsApp
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-danger w-100" id="projectGmail">
+                        <i class="bi bi-google"></i> Open Gmail
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-info text-white w-100" id="projectOutlook">
+                        <i class="bi bi-envelope-fill"></i> Open Outlook
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-secondary w-100" id="projectMailApp">
+                        <i class="bi bi-envelope-open-fill"></i> Default Mail App
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                
+                <p class="text-center mt-4">
+                  Your message will open pre-filled — you just need to press Send 💌
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end project request modal -->
+
+  <!-- start background grid -->  
+  <div class="al-pattern-grid-dark-blue al-pattern-grid-double al-pattern-white-2 position-fixed top-0 start-0 bottom-0 end-0 z-n1 pe-none"></div>
+  <!-- end background grid -->  
+
+  <!-- start mouse effect -->  
+  <div class="al-cursor opacity-75" aria-hidden="true"></div>
+  <div class="al-cursor-dot opacity-100" aria-hidden="true"></div>
+  <!-- end mouse effect -->  
+
+
+  <!--js & css library-->
+
+  <!--jquery-->
+  <script src="../assets/dist/plugins/jquery/jquery.min.js"></script>
+
+  <!-- waypoints -->
+  <script src="../assets/dist/plugins/waypoints/lib/jquery.waypoints.min.js"></script>
+
+  <!-- bootstrap bundel -->
+  <script src="../assets/dist/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+
+  <!-- particles js -->
+  <script src="../assets/dist/plugins/particles/particles.js"></script>
+  <script src="../assets/dist/plugins/particles/app.js"></script>
+
+  <!-- slick slider -->
+  <script src="../assets/dist/plugins/slick-carousel/slick/slick.min.js"></script>
+  <script>
+      $('.myClients').slick({
+          arrows:false,
+          dots: false,
+          infinite: true,
+          autoplay:true,
+          speed: 300,
+          autoplaySpeed:2500,
+          pauseOnHover:true,
+          centerMode:false,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          responsive: [
+              {
+              breakpoint: 1399,
+              settings: {
+                  slidesToShow: 4,
+              }
+              },
+              {
+              breakpoint: 1199,
+              settings: {
+                  slidesToShow: 3,
+              }
+              },
+              {
+              breakpoint: 767,
+              slidesToScroll: 1,
+              settings: {
+                  slidesToShow: 2
+              }
+              },
+              {
+              breakpoint: 520,
+              settings: {
+                  slidesToShow: 1.4
+              }
+              }
+          ]
+      });
+  </script>
+
+  <!-- fullscreen lightbox -->
+  <script src="../assets/dist/plugins/fslightbox/index.js"></script>
+
+  <!--alif js-->
+  <script src="../assets/dist/js/theme.min.js"></script>
+  <script src="../assets/dist/js/contact-forms.min.js"></script>
+  <script src="../assets/dist/js/project-forms.min.js"></script>
+  <script src="../assets/dist/js/animation.min.js"></script>
+</body>
+</html>
