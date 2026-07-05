@@ -1,0 +1,36 @@
+.marquee {
+  flex-shrink: 0;
+  overflow: clip;
+  &-mask {
+        overflow: clip;
+        -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+        mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    }
+    &-track {
+        gap: 24px; width: max-content;
+        color: rgba(255,255,255,.55);
+        animation: marquee-scroll 26s linear infinite;
+    }
+}
+@keyframes marquee-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+
+
+
+
+.al{
+  &-fui{
+    &-tabs{
+      &-nav{
+        max-width: 466px;
+        margin-bottom: -29px;
+      }
+      &-body{
+        --al-t-center: 179px;
+        --al-t-extend: 139px;
+        --al-t: 34px;
+      }
+    }
+  }
+}
+

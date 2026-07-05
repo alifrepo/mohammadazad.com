@@ -6,11 +6,19 @@ $danger:#D80027;
 $info: #23a6d5;
 $bg-color:#f5f8fa;
 
+$tooltip-bg:$primary;
+
 :root{
   --bs-body-color:#fff;
   --bs-body-color-rgb: 255, 255, 255;
   --bs-body-bg: #050505;
   --bs-body-bg-rgb: 5, 5, 5;
+}
+.nav{
+    --bs-nav-link-color:rgba(255, 255, 255, 0.35);
+}
+.nav-pills {
+    --bs-nav-pills-link-active-color: #050505;
 }
 
 $container-max-widths: (

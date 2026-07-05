@@ -6,7 +6,49 @@
   --bs-body-bg-rgb: 5, 5, 5;
 }
 
+.nav {
+  --bs-nav-link-color:rgba(255, 255, 255, 0.35);
+}
+
+.nav-pills {
+  --bs-nav-pills-link-active-color: #050505;
+}
+
 /* Global styles */
+.marquee {
+  flex-shrink: 0;
+  overflow: clip;
+}
+.marquee-mask {
+  overflow: clip;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.marquee-track {
+  gap: 24px;
+  width: max-content;
+  color: rgba(255, 255, 255, 0.55);
+  animation: marquee-scroll 26s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.al-fui-tabs-nav {
+  max-width: 466px;
+  margin-bottom: -29px;
+}
+.al-fui-tabs-body {
+  --al-t-center: 179px;
+  --al-t-extend: 139px;
+  --al-t: 34px;
+}
+
 /* pages */
 /* plugins */
 /* developer overrides */
