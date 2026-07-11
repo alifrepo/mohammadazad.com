@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulatory Knowledge Graph - Interactive</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --bg-color: #0b1416;
+            --panel-bg: rgba(20, 30, 34, 0.7);
+            --card-bg: #141f23;
+            --text-main: #e2e8f0;
+            --text-muted: #849ca9;
+            --teal: #2aa89b;
+            --gold: #d4b872;
+            --red: #e55c5c;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background: radial-gradient(circle at 30% 50%, #112226 0%, #080d0f 100%);
+            color: var(--text-main);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+        }
+
+        /* --- Layout --- */
+        .dashboard {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .graph-section {
+            flex: 1;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+        .panel-section {
+            width: 420px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 10;
+        }
+
+        /* --- Graph Nodes --- */
+        .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            z-index: 2;
+        }
+
+        .col-l2 {
+            gap: 12px;
+            max-height: 90vh;
+            overflow-y: visible;
+        }
+
+        .node { opacity: 0; } /* For initial GSAP load */
+
+        /* Root Node */
+        .root-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .root-label {
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .root-label span { color: var(--gold); }
+
+        .root-orb-wrapper {
+            width: 120px;
+            height: 120px;
+            background: radial-gradient(circle, rgba(42,168,155,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .root-orb {
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(circle at 30% 30%, #a78bfa, #5b21b6);
+            border-radius: 50%;
+            box-shadow: 0 0 20px #8b5cf6, inset 0 0 10px #ddd6fe;
+            position: relative;
+            z-index: 2;
+        }
+
+        .root-pulse {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 1px dashed #8b5cf6;
+            animation: spin 10s linear infinite;
+        }
+
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+
+        .gaps-badge {
+            background: rgba(255,255,255,0.1);
+            font-size: 10px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+        /* L1 Nodes (Tabs) */
+        .l1-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 12px 20px;
+            width: 220px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .l1-card:hover {
+            transform: translateX(5px);
+            border-color: rgba(42, 168, 155, 0.5);
+            background: linear-gradient(90deg, rgba(42,168,155,0.05) 0%, var(--card-bg) 100%);
+        }
+
+        .l1-card.active {
+            border-color: var(--gold);
+            background: linear-gradient(90deg, rgba(212,184,114,0.15) 0%, var(--card-bg) 100%);
+            box-shadow: -4px 0 0 var(--gold), 0 6px 20px rgba(212, 184, 114, 0.1);
+            transform: scale(1.05) translateX(10px);
+        }
+
+        .l1-icon {
+            color: var(--teal);
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .l1-card.active .l1-icon, .l1-card.active .l1-val {
+            color: var(--gold);
+        }
+
+        .l1-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .l1-val {
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .l1-label {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        /* L2 Nodes (Sub-Tabs) */
+        .l2-node {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            padding: 4px 8px;
+            border-radius: 6px;
+            background: transparent;
+            border: 1px solid transparent;
+        }
+
+        .l2-node:hover {
+            color: var(--text-main);
+            background: rgba(42, 168, 155, 0.1);
+            border-color: rgba(42, 168, 155, 0.3);
+            transform: translateX(5px);
+        }
+
+        .l2-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--gold);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--gold);
+            transition: background 0.2s;
+        }
+
+        .l2-node:hover .l2-dot {
+            background: var(--teal);
+            box-shadow: 0 0 8px var(--teal);
+        }
+
+        .l2-metrics {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.05);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 10px;
+        }
+
+        .icon-up { color: var(--teal); }
+        .icon-down { color: var(--red); }
+
+        /* --- SVG Connectors --- */
+        #connections {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .path-line {
+            fill: none;
+            stroke-width: 1.5;
+            opacity: 0.6;
+        }
+
+        /* --- Right Panel --- */
+        .info-panel {
+            background: var(--panel-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .panel-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gold);
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .panel-title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .badge-active {
+            background: rgba(42, 168, 155, 0.2);
+            color: var(--teal);
+            padding: 4px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(42, 168, 155, 0.4);
+            font-size: 11px;
+        }
+
+        /* --- POPUP MODAL --- */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-box {
+            background: #111a1e;
+            border: 1px solid var(--gold);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 20px rgba(212, 184, 114, 0.1);
+            border-radius: 16px;
+            width: 500px;
+            max-width: 90%;
+            padding: 30px;
+            transform: scale(0.9) translateY(20px);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .modal-overlay.active .modal-box {
+            transform: scale(1) translateY(0);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .modal-title {
+            font-size: 22px;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+
+        .modal-close {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            font-size: 24px;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        
+        .modal-close:hover { color: var(--red); }
+
+        .modal-body {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .modal-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+            background: rgba(255,255,255,0.03);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .m-stat {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .m-stat span:first-child { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+        .m-stat span:last-child { font-size: 18px; color: var(--teal); font-weight: 600; }
+
+        /* Stats Grid (Panel) */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1px 1fr;
+            grid-template-rows: 1fr 1px 1fr;
+            gap: 15px;
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 12px;
+        }
+        .stats-grid::before { content: ""; grid-column: 2; grid-row: 1 / span 3; background: var(--border-color); }
+        .stats-grid::after { content: ""; grid-row: 2; grid-column: 1 / span 3; background: var(--border-color); }
+        .stat-item { padding: 5px; }
+        .stat-val { font-size: 20px; font-weight: 600; display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+        .stat-label { font-size: 11px; color: var(--text-muted); line-height: 1.3; }
+
+    </style>
+</head>
+<body>
+
+    <div class="dashboard">
+        <svg id="connections">
+            <defs>
+                <linearGradient id="grad-root" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#2aa89b" stop-opacity="0.8" />
+                    <stop offset="100%" stop-color="#2aa89b" stop-opacity="0.1" />
+                </linearGradient>
+                <linearGradient id="grad-active" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#d4b872" stop-opacity="0.9" />
+                    <stop offset="100%" stop-color="#2aa89b" stop-opacity="0.4" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <div class="graph-section">
+            <div class="col col-root" id="col-root">
+                <div class="node root-container" id="node-root">
+                    <div class="root-label">Federal Decree-Law<br><span>No. 45 of 2021</span></div>
+                    <div class="root-orb-wrapper">
+                        <div class="root-pulse"></div>
+                        <div class="root-orb"></div>
+                    </div>
+                    <div class="gaps-badge">GAPS 13 📉</div>
+                </div>
+            </div>
+
+            <div class="col col-l1" id="col-l1">
+                <div class="node l1-card" data-category="Services" data-count="18">
+                    <div class="l1-icon">💼</div>
+                    <div class="l1-content"><div class="l1-val">18</div><div class="l1-label">Services</div></div>
+                </div>
+                <div class="node l1-card" data-category="Entities" data-count="3">
+                    <div class="l1-icon">🏢</div>
+                    <div class="l1-content"><div class="l1-val">3</div><div class="l1-label">Entities</div></div>
+                </div>
+                <div class="node l1-card active" data-category="Federal Laws" data-count="24">
+                    <div class="l1-icon">⚖️</div>
+                    <div class="l1-content"><div class="l1-val">24</div><div class="l1-label">Related Federal Laws</div></div>
+                </div>
+                <div class="node l1-card" data-category="KPIs" data-count="32">
+                    <div class="l1-icon">🛡️</div>
+                    <div class="l1-content"><div class="l1-val">32</div><div class="l1-label">KPIs</div></div>
+                </div>
+                <div class="node l1-card" data-category="Policies" data-count="12">
+                    <div class="l1-icon">📄</div>
+                    <div class="l1-content"><div class="l1-val">12</div><div class="l1-label">Internal Policies</div></div>
+                </div>
+            </div>
+
+            <div class="col col-l2" id="col-l2">
+                </div>
+        </div>
+
+        <div class="panel-section">
+            <div class="info-panel node" id="side-panel">
+                <div class="panel-header">⚕️ Healthcare Sector</div>
+                <div class="panel-title">Federal Decree-Law No. (42) of 2022 Promulgating the Civil Procedure Code</div>
+                
+                <div style="font-size: 11px; color: var(--text-muted);">
+                    <span class="badge-active">Active</span> &nbsp; Last updated on 01 Oct 2024
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-val">✔️ 12</div>
+                        <div class="stat-label">Public Complains</div>
+                    </div>
+                    <div class="stat-item" style="grid-column:3; grid-row:1;">
+                        <div class="stat-val">📄 2</div>
+                        <div class="stat-label">Related Regulations</div>
+                    </div>
+                    <div class="stat-item" style="grid-column:1; grid-row:3;">
+                        <div class="stat-val">🌩️ 18</div>
+                        <div class="stat-label">Total Services</div>
+                    </div>
+                    <div class="stat-item" style="grid-column:3; grid-row:3;">
+                        <div class="stat-val">🏢 12</div>
+                        <div class="stat-label">Entities Involved</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header">
+                <div>
+                    <span class="badge-active" id="modal-category">Category</span>
+                    <h3 class="modal-title" id="modal-title" style="margin-top: 10px;">Node Detail</h3>
+                </div>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>This is a detailed view of the selected sub-node. You can review specific gaps, sentiment metrics, and compliance ratings associated with this specific regulatory item.</p>
+                <div class="modal-stats">
+                    <div class="m-stat">
+                        <span>Identified Gaps</span>
+                        <span id="modal-gaps">0</span>
+                    </div>
+                    <div class="m-stat">
+                        <span>Compliance Status</span>
+                        <span style="color: var(--gold);">Moderate</span>
+                    </div>
+                    <div class="m-stat">
+                        <span>Last Audit</span>
+                        <span style="color: var(--text-main);">Nov 2023</span>
+                    </div>
+                    <div class="m-stat">
+                        <span>Risk Level</span>
+                        <span style="color: var(--red);">High</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const l2Container = document.getElementById('col-l2');
+        const svg = document.getElementById('connections');
+        const modal = document.getElementById('modal-overlay');
+        const btnCloseModal = document.getElementById('modal-close');
+
+        // Close Modal Event
+        btnCloseModal.addEventListener('click', () => modal.classList.remove('active'));
+        modal.addEventListener('click', (e) => {
+            if(e.target === modal) modal.classList.remove('active');
+        });
+
+        // 1. Generate Sub-Tabs based on active Tab
+        function generateSubTabs(category, count) {
+            l2Container.innerHTML = ''; // Clear old
+
+            // Max items to render so it doesn't overflow screen, visually simulate large numbers
+            const renderCount = Math.min(count, 14); 
+
+            for(let i=0; i<renderCount; i++) {
+                const gap = Math.floor(Math.random() * 20) + 1;
+                const isUp = Math.random() > 0.5;
+                const nodeName = `${category} Item 00${i+1}`;
+                
+                const nodeHTML = `
+                    <div class="l2-node">
+                        <div class="l2-dot"></div>
+                        ${nodeName}
+                        <div class="l2-metrics">
+                            GAPS ${gap} 
+                            <span class="${isUp ? 'icon-up' : 'icon-down'}">👍</span>
+                            <span class="${!isUp ? 'icon-up' : 'icon-down'}">👎</span>
+                        </div>
+                    </div>
+                `;
+                l2Container.innerHTML += nodeHTML;
+            }
+
+            // Attach Click Events to new Sub-Tabs to open Modal
+            const newL2Nodes = document.querySelectorAll('.l2-node');
+            newL2Nodes.forEach(node => {
+                node.addEventListener('click', function() {
+                    const title = this.childNodes[2].textContent.trim(); // Hacky way to get text
+                    const gaps = this.querySelector('.l2-metrics').innerText.match(/\d+/)[0];
+                    
+                    document.getElementById('modal-title').innerText = title;
+                    document.getElementById('modal-category').innerText = category;
+                    document.getElementById('modal-gaps').innerText = gaps;
+                    
+                    modal.classList.add('active');
+                });
+            });
+        }
+
+        // 2. Draw SVG Connectors
+        function drawConnections() {
+            // Keep definitions, remove old lines
+            const defs = svg.querySelector('defs').outerHTML;
+            svg.innerHTML = defs;
+
+            const rootNode = document.getElementById('node-root');
+            const l1Nodes = document.querySelectorAll('.l1-card');
+            const l2Nodes = document.querySelectorAll('.l2-node');
+            const activeL1 = document.querySelector('.l1-card.active');
+
+            const svgRect = svg.getBoundingClientRect();
+
+            function getRightCoords(el) {
+                const rect = el.getBoundingClientRect();
+                return { x: rect.right - svgRect.left, y: rect.top + (rect.height / 2) - svgRect.top };
+            }
+
+            function getLeftCoords(el) {
+                const rect = el.getBoundingClientRect();
+                return { x: rect.left - svgRect.left, y: rect.top + (rect.height / 2) - svgRect.top };
+            }
+
+            function createBezier(p1, p2) {
+                const midX = p1.x + (p2.x - p1.x) * 0.5;
+                return `M ${p1.x} ${p1.y} C ${midX} ${p1.y}, ${midX} ${p2.y}, ${p2.x} ${p2.y}`;
+            }
+
+            // Draw Root -> L1 (Tabs)
+            const rootCoords = getRightCoords(rootNode);
+            rootCoords.x -= 20; 
+
+            l1Nodes.forEach(l1 => {
+                const l1Coords = getLeftCoords(l1);
+                const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                path.setAttribute("d", createBezier(rootCoords, l1Coords));
+                path.setAttribute("class", "path-line root-line");
+                path.setAttribute("stroke", "url(#grad-root)");
+                
+                // Keep inactive lines visible but faint, unless requested otherwise
+                svg.appendChild(path);
+            });
+
+            // Draw Active L1 (Tab) -> L2 (Sub-Tabs)
+            if(activeL1 && l2Nodes.length > 0) {
+                const activeCoords = getRightCoords(activeL1);
+                l2Nodes.forEach(l2 => {
+                    const l2Coords = getLeftCoords(l2);
+                    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                    path.setAttribute("d", createBezier(activeCoords, l2Coords));
+                    path.setAttribute("class", "path-line active-line");
+                    path.setAttribute("stroke", "url(#grad-active)");
+                    svg.appendChild(path);
+                    
+                    // Setup path for GSAP stroke animation
+                    const length = path.getTotalLength();
+                    path.style.strokeDasharray = length;
+                    path.style.strokeDashoffset = length;
+                });
+            }
+        }
+
+        // 3. Setup Tab Click Logic
+        const tabs = document.querySelectorAll('.l1-card');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Ignore if already active
+                if(this.classList.contains('active')) return;
+
+                // Switch Active State
+                tabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+
+                // Generate new Data
+                const category = this.dataset.category;
+                const count = parseInt(this.dataset.count);
+                generateSubTabs(category, count);
+
+                // Redraw lines
+                drawConnections();
+
+                // Animate new Sub-tabs and lines
+                gsap.fromTo(".l2-node", 
+                    { opacity: 0, x: -30 }, 
+                    { opacity: 1, duration: 0.4, x: 0, stagger: 0.03, ease: "power2.out" }
+                );
+                
+                gsap.fromTo(".active-line", 
+                    { strokeDashoffset: (i, target) => target.getTotalLength() }, 
+                    { strokeDashoffset: 0, duration: 0.8, ease: "power2.inOut", stagger: 0.02 }
+                );
+            });
+        });
+
+        // 4. Initial Load Animation
+        function initialLoad() {
+            // Setup Initial Sub-Tabs
+            const initialTab = document.querySelector('.l1-card.active');
+            generateSubTabs(initialTab.dataset.category, parseInt(initialTab.dataset.count));
+            drawConnections();
+
+            const tl = gsap.timeline();
+
+            // Set strokedash on root lines for initial draw
+            document.querySelectorAll('.root-line').forEach(path => {
+                const len = path.getTotalLength();
+                path.style.strokeDasharray = len;
+                path.style.strokeDashoffset = len;
+            });
+
+            tl.to("#node-root", { opacity: 1, duration: 0.6, y: 0, ease: "power2.out" })
+              .to(".root-line", { strokeDashoffset: 0, duration: 0.8, ease: "power2.inOut", stagger: 0.1 }, "-=0.2")
+              .to(".l1-card", { opacity: 1, duration: 0.5, x: 0, stagger: 0.1, ease: "back.out(1.7)" }, "-=0.6")
+              .to(".active-line", { strokeDashoffset: 0, duration: 0.8, ease: "power2.inOut", stagger: 0.02 }, "-=0.2")
+              .fromTo(".l2-node", { opacity: 0, x: -20 }, { opacity: 1, duration: 0.4, x: 0, stagger: 0.03, ease: "power1.out" }, "-=0.8")
+              .fromTo("#side-panel", { x: 50, opacity: 0 }, { x: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, "-=0.5");
+        }
+
+        window.addEventListener('resize', drawConnections);
+        
+        // Timeout to ensure DOM fonts/layout paints before getting coordinates
+        setTimeout(initialLoad, 100);
+
+    </script>
+</body>
+</html>

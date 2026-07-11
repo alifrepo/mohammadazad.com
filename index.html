@@ -12,7 +12,7 @@
     <meta name="description" content="">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="../assets/img/icon.svg">
+    <link rel="shortcut icon" href="assets/img/mohammad-azad-logo-black.svg">
 
     <!-- animate style -->
     <link rel="stylesheet" href="assets/dist/plugins/animate.style/animate.min.css">
@@ -29,14 +29,11 @@
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="assets/dist/css/bootstrap/bootstrap-icons.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body class=" overflow-x-hidden">
-  <div class="container-xxl px-lg-5">
+  <div class="container-xxl px-4 px-lg-5 position-relative z-3">
     <!-- start header -->
-    <header class="position-sticky top-0 z-3 bg-body py-3">
+    <header class="position-sticky top-0 z-3 py-3">
       <div class="row align-items-center">
         <div class="col">
           <h1 class="al-fs-18 al-ff-Jura mb-0">
@@ -49,14 +46,24 @@
           </h1>
         </div>
         <div class="col-auto">
-          <div class="al-fs-10 d-flex align-items-center gap-4">
-            <span class="d-none d-md-inline-flex text-light text-opacity-50 opacity-75">JUL 5, 2026, 9:33:52 PM TOKYO</span>
-            <span class="d-none d-md-inline-flex text-light text-opacity-50 opacity-75">// GLOBALLY DISTIBUTED TEAM</span>
-            <span class="d-none d-md-inline-flex text-light text-opacity-50 opacity-75">&copy; mohammadazad.com</span>
+          <div class="d-flex align-items-center gap-2">
+            <div class="d-none d-sm-inline-flex al-flex-center gap-1 al-corner al-border al-corner-all-20 al-border-1 al-border-primary-10 al-h-40 al-ps-20 al-pe-7">
+              <span class="d-inline-flex text-light text-opacity-50 al-fs-12">
+                Particles: <span class="text-white opacity-75 px-1" id="pcount">0</span>
+              </span>
+              <span id="magnetToggle" class="d-inline-flex al-flex-center al-corner al-corner-all-15 px-4 text-nowrap al-fs-13 al-h-30 al-cursor-pointer bg-primary bg-opacity-10 lh-0">
+                Attract
+              </span>
+            </div>
+            
+            <span id="resetBtn" class="d-none d-sm-inline-flex al-flex-center al-w-40 al-hexa al-hexa-inlay al-inlay-5 al-inlay-bg-primary-25 al-hexa-border al-border-2 al-border-primary-25 text-white al-cursor-pointer" title="Reset Particles" data-bs-toggle="tooltip" data-bs-placement="bottom">
+              <i class="bi bi-arrow-clockwise fs-6"></i>
+            </span>
+            <!-- <span class="d-none d-md-inline-flex text-light text-opacity-50 opacity-75 al-fs-10">&copy; mohammadazad.com</span> -->
 
             <!-- start light / dark mode button -->
-            <span id="toggleThemeBtn" class="d-inline-flex al-flex-center text-primary al-cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dark Mode">
-              <i id="themeIcon" class="bi bi-moon-fill fs-6"></i>
+            <span id="toggleThemeBtn" class="d-inline-flex al-flex-center al-w-40 al-hexa al-hexa-inlay al-inlay-5 al-inlay-bg-primary-25 al-hexa-border al-border-2 al-border-primary-25 text-white al-cursor-pointer" title="Light Mode" data-bs-toggle="tooltip" data-bs-placement="bottom">
+              <i id="themeIcon" class="bi bi-moon-fill al-fs-12"></i>
               <!-- <span id="themeText">Light Mode</span> -->
             </span>
           </div>
@@ -68,15 +75,15 @@
     <!-- start main content -->
      <main>
       <div class="row g-5">
-        <div class="col-lg-5 d-flex flex-column justify-content-between gap-5 py-4">
-          <div class="position-relative">
-            <img src="assets/img/mohammad-azad-logo.png" alt="Mohammad Azad Logo" class="bg-white" />
-            <div class="w-75">
+        <div class="col-lg-5 d-flex flex-column justify-content-between gap-5 pb-4 pt-5">
+          <div class="position-relative pt-3">
+            <img src="assets/img/mohammad-azad-logo-white.svg" alt="Mohammad Azad Logo" class="al-corner al-corner-all-7 al-size-50" />
+            <div class="mt-4 pe-none">
               <h3 class="al-fs-13 text-primary fw-normal mb-0">
                  B2B SaaS & Dashboard Design Specialist
               </h3>
               <h2 class="display-5 fw-bold mb-4">
-                Senior Product Designer
+                Senior Product<br/> Designer
               </h2>
               <p class="opacity-50">
                 Transforming complex, data-rich workflows into intuitive, scalable digital experiences that empower users to make better decisions.
@@ -86,25 +93,25 @@
             <!-- start call to action button -->
             <div class="d-inline-flex align-items-center gap-3 mt-3">
               <div class="position-relative d-inline-flex">
-                <span class="position-absolute z-1 top-0 start-0 al-size-8 border border-4 border-black border-end-0 border-bottom-0 pe-none"></span>
-                <span class="position-absolute z-1 top-0 end-0 al-size-8 border border-4 border-black border-start-0 border-bottom-0 pe-none"></span>
+                <span class="position-absolute z-1 top-0 start-0 al-size-8 border border-4 border-secondary border-end-0 border-bottom-0 pe-none"></span>
+                <span class="position-absolute z-1 top-0 end-0 al-size-8 border border-4 border-secondary border-start-0 border-bottom-0 pe-none"></span>
                 <button type="button" class="btn bg-white bg-opacity-25 w-100 border-0 rounded-0 al-clip al-b-clip-x al-extend-b-35 al-b-6 fw-bold px-4 al-hover-glow">
                     <span class="d-inline-flex pb-2 al-fs-14 text-white fw-medium">Download Resume</span>
                 </button>
                 <span class="al-trapezoid-t-4 al-trapezoid-w-64px text-primary position-absolute bottom-0 start-50 translate-middle-x"></span>
-                <span class="position-absolute z-1 bottom-0 start-0 al-size-8 border border-4 border-black border-end-0 border-top-0 pe-none"></span>
-                <span class="position-absolute z-1 bottom-0 end-0 al-size-8 border border-4 border-black border-start-0 border-top-0 pe-none"></span>
+                <span class="position-absolute z-1 bottom-0 start-0 al-size-8 border border-4 border-secondary border-end-0 border-top-0 pe-none"></span>
+                <span class="position-absolute z-1 bottom-0 end-0 al-size-8 border border-4 border-secondary border-start-0 border-top-0 pe-none"></span>
               </div>
               
               <div class="position-relative d-inline-flex">
-                <span class="position-absolute z-1 top-0 start-0 al-size-8 border border-4 border-black border-end-0 border-bottom-0 pe-none"></span>
-                <span class="position-absolute z-1 top-0 end-0 al-size-8 border border-4 border-black border-start-0 border-bottom-0 pe-none"></span>
+                <span class="position-absolute z-1 top-0 start-0 al-size-8 border border-4 border-secondary border-end-0 border-bottom-0 pe-none"></span>
+                <span class="position-absolute z-1 top-0 end-0 al-size-8 border border-4 border-secondary border-start-0 border-bottom-0 pe-none"></span>
                 <button type="button" class="btn bg-primary w-100 border-0 rounded-0 al-clip al-b-clip-x al-extend-b-35 al-b-6 fw-bold px-4 al-hover-glass-shine">
                     <span class="d-inline-flex pb-2 al-fs-14 text-dark fw-medium">Get In Touch</span>
                 </button>
                 <span class="al-trapezoid-t-4 al-trapezoid-w-64px text-white position-absolute bottom-0 start-50 translate-middle-x"></span>
-                <span class="position-absolute z-1 bottom-0 start-0 al-size-8 border border-4 border-black border-end-0 border-top-0 pe-none"></span>
-                <span class="position-absolute z-1 bottom-0 end-0 al-size-8 border border-4 border-black border-start-0 border-top-0 pe-none"></span>
+                <span class="position-absolute z-1 bottom-0 start-0 al-size-8 border border-4 border-secondary border-end-0 border-top-0 pe-none"></span>
+                <span class="position-absolute z-1 bottom-0 end-0 al-size-8 border border-4 border-secondary border-start-0 border-top-0 pe-none"></span>
               </div>
             </div>
             <!-- end call to action button -->
@@ -119,15 +126,15 @@
                   <div class="position-relative">
                     <h2 class="al-fs-15 opacity-75">Featured projects</h2>
                     <ul class="al-list-none p-0">
-                      <li class="d-inline-flex align-items-center gap-2 al-fs-14 mb-2">
-                        <img src="assets/img/alfuix-logo.svg" alt="" width="20" />
-                        <a href="https://www.alfuix.com/" target="_blank" class="text-decoration-none text-white al-hover-text-primary text-opacity-75 opacity-75">
+                      <li class="d-flex align-items-center gap-2 al-fs-14 mb-2">
+                        <img src="assets/img/alfuix-logo-white.svg" alt="" width="16" class="opacity-50" />
+                        <a href="https://www.alfuix.com/" target="_blank" class="text-decoration-none text-white al-hover-text-primary text-opacity-75">
                           Alfuix (<small class="al-fs-10">Open-source CSS UI Toolkit</small>)
                         </a>
                       </li>
-                      <li class="d-inline-flex align-items-center gap-2 al-fs-14">
-                          <img src="assets/img/alif-logo.svg" alt="" width="20" />
-                        <a href="https://play.google.com/store/apps/details?id=alif.amssoftech.com&hl=en&pli=1" target="_blank" class="text-decoration-none text-white al-hover-text-primary text-opacity-75 opacity-75">
+                      <li class="d-flex align-items-center gap-2 al-fs-14">
+                        <img src="assets/img/alif-logo-white.svg" alt="" width="16" class="opacity-50" />
+                        <a href="https://play.google.com/store/apps/details?id=alif.amssoftech.com&hl=en&pli=1" target="_blank" class="text-decoration-none text-white al-hover-text-primary text-opacity-75">
                           Alif (<small class="al-fs-10">Islamic Mobile App</small>)
                         </a>
                       </li>
@@ -140,15 +147,15 @@
                   <div class="position-relative">
                     <h2 class="al-fs-15 opacity-75">My case studies</h2>
                     <ul class="al-list-none p-0">
-                      <li class="d-inline-flex align-items-center gap-2 al-fs-14 mb-1">
-                        <span class="d-inline-flex al-size-5 bg-white bg-opacity-25 opacity-50 al-rotate-1"></span>
-                        <a href="#!" class="text-decoration-none text-white al-hover-text-primary text-opacity-75 opacity-75">
+                      <li class="d-flex align-items-center gap-2 al-fs-14 mb-2">
+                        <i class="bi bi-phone opacity-50"></i>
+                        <a href="https://dribbble.com/shots/22079150-Delivery-Boy-Mobile-App-Case-Study" target="_blank" class="text-decoration-none text-white al-hover-text-primary text-opacity-75">
                           Delivery App (<small class="al-fs-10">Mobile App</small>)
                         </a>
                       </li>
-                      <li class="d-inline-flex align-items-center gap-2 al-fs-14">
-                        <span class="d-inline-flex al-size-5 bg-white bg-opacity-25 opacity-50 al-rotate-1"></span>
-                        <a href="#!" class="text-decoration-none text-white al-hover-text-primary text-opacity-75 opacity-75">
+                      <li class="d-flex align-items-center gap-2 al-fs-14">
+                        <i class="bi bi-window-sidebar opacity-50"></i>
+                        <a href="https://dribbble.com/shots/22080427-Indija-Furniture-eCommerce-website-Case-Study" target="_blank" class="text-decoration-none text-white al-hover-text-primary text-opacity-75">
                           eCommerce (<small class="al-fs-10">Website</small>)
                         </a>
                       </li>
@@ -160,23 +167,23 @@
 
             <!-- start social media -->
             <div class="al-fs-12">
-              <div class="row g-5">
+              <div class="row">
                 <div class="col-auto">
-                  <a href="" class="d-inline-flex align-items-center gap-2 text-light text-opacity-75 opacity-75 text-decoration-none al-hover-text-primary">
-                    <i class="bi bi-dribbble"></i>
-                    <span>Dribble</span> [Dr]
+                  <a href="https://dribbble.com/mohammad-azad" target="_blank" class="d-inline-flex align-items-center gap-2 text-light text-opacity-75 opacity-75 text-decoration-none al-hover-text-primary">
+                    <img src="assets/img/icon-white-dribbble-outline.svg" alt="" width="16" class="opacity-50" />
+                    <span>Dribbble</span> [Dr]
                   </a>
                 </div>
                 <div class="col-auto">
-                  <a href="" class="d-inline-flex align-items-center gap-2 text-light text-opacity-75 opacity-75 text-decoration-none al-hover-text-primary">
-                    <i class="bi bi-linkedin"></i>
+                  <a href="https://www.linkedin.com/in/mohammad-azad" target="_blank" class="d-inline-flex align-items-center gap-2 text-light text-opacity-75 opacity-75 text-decoration-none al-hover-text-primary">
+                    <img src="assets/img/icon-white-linkedIn-outline.svg" alt="" width="16" class="opacity-50" />
                     <span>LinkedIn</span> [In]
                   </a>
                 </div>
                 <div class="col-auto">
-                  <a href="" class="d-inline-flex align-items-center gap-2 text-light text-opacity-75 opacity-75 text-decoration-none al-hover-text-primary">
-                    <i class="bi bi-linkedin"></i>
-                    <span>cssbattle.dev</span> [cb]
+                  <a href="https://cssbattle.dev/player/mohammad_azad" target="_blank" class="d-inline-flex align-items-center gap-2 text-light text-opacity-75 opacity-75 text-decoration-none al-hover-text-primary">
+                    <img src="assets/img/icon-white-cssBattle-outline.svg" alt="" width="16" class="opacity-50" />
+                    <span>CSSBattle.dev</span> [cb]
                   </a>
                 </div>
               </div>
@@ -186,180 +193,566 @@
           <!-- end footer -->
         </div>
         <div class="col-lg-7">
-          <div class="position-relative pt-3">
+          <div class="position-relative pt-2">
             <div class="al-fui-tabs position-relative">
               <!-- start tab navs -->
-              <div class="al-fui-tabs-nav bg-body al-corner al-border al-corner-all-28 al-border-1 al-border-primary-25 al-backdrop-blur-32 p-2 ms-3 ms-sm-5 z-3">
-                <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link al-corner al-corner-all-20 px-4 text-nowrap active" id="pills-my-work-tab"
-                      data-bs-toggle="pill" data-bs-target="#pills-my-work">
-                        <i class="bi bi-columns-gap me-1"></i>
-                      <span>My Work</span>
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link al-corner al-corner-all-20 px-4 text-nowrap" id="pills-my-templates-tab"
-                      data-bs-toggle="pill" data-bs-target="#pills-my-templates">
-                        <i class="bi bi-cart2 me-1"></i>
-                      <span>My Templates</span>
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link al-corner al-corner-all-20 px-4 text-nowrap" id="pills-about-me-tab"
-                      data-bs-toggle="pill" data-bs-target="#pills-about-me">
-                        <i class="bi bi-person me-1"></i>
-                      <span>About Me</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
+              <nav id="desktopTab" class="desktop-nav al-fui-tabs-nav bg-body al-corner al-border al-corner-all-26 al-border-1 al-border-primary-50 al-backdrop-blur-32 al-py-8 al-px-12 ms-3 ms-sm-5 z-3 al-mb-n-26" style="max-width: 419px;">
+                  <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link al-corner al-corner-all-16 px-4 text-nowrap al-fs-13 active" id="pills-my-work-tab" data-bs-toggle="pill" data-bs-target="#pills-my-work">
+                              <i class="bi bi-columns-gap me-1"></i>
+                              <span>My Work</span>
+                          </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link al-corner al-corner-all-16 px-4 text-nowrap al-fs-13" id="pills-my-templates-tab" data-bs-toggle="pill" data-bs-target="#pills-my-templates">
+                              <i class="bi bi-cart2 me-1"></i>
+                              <span>My Templates</span>
+                          </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link al-corner al-corner-all-16 px-4 text-nowrap al-fs-13" id="pills-about-me-tab" data-bs-toggle="pill" data-bs-target="#pills-about-me">
+                              <i class="bi bi-person me-1"></i>
+                              <span>About Me</span>
+                          </button>
+                      </li>
+                  </ul>
+              </nav>
               <!-- end tab navs -->
-            
+
               <!-- start tabs content -->
-              <div class="tab-content al-fui-tabs-body p-4 pt-5 al-corner al-border al-corner-all-12 al-border-1 al-border-primary-25 bg-black"
-                id="pills-tabContent" style="height: calc(100vh - 175px);">
-                <!-- my work -->
-                <div class="tab-pane h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover fade pt-2 show active" id="pills-my-work" role="tabpanel" aria-labelledby="pills-my-work-tab" tabindex="0">
-                  <div class="row g-4">
-                    <div class="col-12">
-                      <a href="#!" target="_blank" class="position-relative d-block overflow-x-hidden al-corner al-corner-all-12">
-                        <img src="assets/img/portfolio/1.jpg" alt="" class="w-100" />
+              <div class="tab-content al-fui-tabs-body p-4 pt-5 al-corner al-border al-corner-all-12 al-border-1 al-border-primary-50 bg-body" id="pills-tabContent" style="height: calc(100vh - 180px);">
+                  <!-- my work -->
+                  <div class="tab-pane h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover fade pt-2 show active" id="pills-my-work" role="tabpanel" aria-labelledby="pills-my-work-tab" tabindex="0">
+                      <div class="row g-4">
+                        <div class="col-12">
+                          <a href="#!" target="_blank" class="position-relative d-block overflow-x-hidden al-corner al-corner-all-12">
+                            <img src="assets/img/portfolio/1.jpg" alt="" class="w-100" />
 
-                        <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
-                          <span class="bg-black bg-opacity-75 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                            Project Name
-                          </span>
-                          
-                          <div class="d-inline-flex align-items-center gap-2">
-                            <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                              Figma
-                            </span>
-                            
-                            <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                              HTML
-                            </span>
-                            
-                            <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                              SCSS
-                            </span>
-                            
-                            <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                              JS
-                            </span>
-                          </div>
+                            <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
+                              <span class="bg-black bg-opacity-75 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                Project Name
+                              </span>
+                              
+                              <div class="d-inline-flex align-items-center gap-2">
+                                <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                  Figma
+                                </span>
+                                
+                                <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                  HTML
+                                </span>
+                                
+                                <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                  SCSS
+                                </span>
+                                
+                                <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                  JS
+                                </span>
+                              </div>
+                            </div>
+                          </a>
                         </div>
-                      </a>
-                    </div>
 
-                    <div class="col-12">
-                      <a href="#!" target="_blank" class="position-relative d-block overflow-x-hidden al-corner al-corner-all-12">
-                        <img src="assets/img/portfolio/2.jpg" alt="" class="w-100" />
+                        <div class="col-12">
+                          <a href="#!" target="_blank" class="position-relative d-block overflow-x-hidden al-corner al-corner-all-12">
+                            <img src="assets/img/portfolio/2.jpg" alt="" class="w-100" />
 
-                        <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
-                          <span class="bg-black bg-opacity-75 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                            Project Name
-                          </span>
-                          
-                          <div class="d-inline-flex align-items-center gap-2">
-                            <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                              Figma
-                            </span>
-                            
-                            <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                              HTML
-                            </span>
-                            
-                            <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                              SCSS
-                            </span>
-                            
-                            <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                              JS
-                            </span>
-                          </div>
+                            <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
+                              <span class="bg-black bg-opacity-75 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                Project Name
+                              </span>
+                              
+                              <div class="d-inline-flex align-items-center gap-2">
+                                <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                  Figma
+                                </span>
+                                
+                                <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                  HTML
+                                </span>
+                                
+                                <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                  SCSS
+                                </span>
+                                
+                                <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                  JS
+                                </span>
+                              </div>
+                            </div>
+                          </a>
                         </div>
-                      </a>
-                    </div>
 
-                    <div class="col-12">
-                      <a href="#!" target="_blank" class="position-relative d-block overflow-x-hidden al-corner al-corner-all-12">
-                        <img src="assets/img/portfolio/3.jpg" alt="" class="w-100" />
+                        <div class="col-12">
+                          <a href="#!" target="_blank" class="position-relative d-block overflow-x-hidden al-corner al-corner-all-12">
+                            <img src="assets/img/portfolio/3.jpg" alt="" class="w-100" />
 
-                        <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
-                          <span class="bg-black bg-opacity-75 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                            Project Name
-                          </span>
-                          
-                          <div class="d-inline-flex align-items-center gap-2">
-                            <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                              Figma
-                            </span>
-                            
-                            <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                              HTML
-                            </span>
-                            
-                            <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                              SCSS
-                            </span>
-                            
-                            <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                              JS
-                            </span>
-                          </div>
+                            <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
+                              <span class="bg-black bg-opacity-75 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                Project Name
+                              </span>
+                              
+                              <div class="d-inline-flex align-items-center gap-2">
+                                <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                  Figma
+                                </span>
+                                
+                                <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                  HTML
+                                </span>
+                                
+                                <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                  SCSS
+                                </span>
+                                
+                                <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                  JS
+                                </span>
+                              </div>
+                            </div>
+                          </a>
                         </div>
-                      </a>
-                    </div>
 
-                    <div class="col-12">
-                      <a href="#!" target="_blank" class="position-relative d-block overflow-x-hidden al-corner al-corner-all-12">
-                        <img src="assets/img/portfolio/4.jpg" alt="" class="w-100" />
+                        <div class="col-12">
+                          <a href="#!" target="_blank" class="position-relative d-block overflow-x-hidden al-corner al-corner-all-12">
+                            <img src="assets/img/portfolio/4.jpg" alt="" class="w-100" />
 
-                        <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
-                          <span class="bg-black bg-opacity-75 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                            Project Name
-                          </span>
-                          
-                          <div class="d-inline-flex align-items-center gap-2">
-                            <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                              Figma
-                            </span>
-                            
-                            <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                              HTML
-                            </span>
-                            
-                            <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                              SCSS
-                            </span>
-                            
-                            <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
-                              JS
-                            </span>
-                          </div>
+                            <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
+                              <span class="bg-black bg-opacity-75 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                Project Name
+                              </span>
+                              
+                              <div class="d-inline-flex align-items-center gap-2">
+                                <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                  Figma
+                                </span>
+                                
+                                <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                  HTML
+                                </span>
+                                
+                                <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                  SCSS
+                                </span>
+                                
+                                <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                  JS
+                                </span>
+                              </div>
+                            </div>
+                          </a>
                         </div>
-                      </a>
+                      </div>
+                   </div>
+
+                  <!-- my templates -->
+                  <div class="tab-pane fade h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover" id="pills-my-templates" role="tabpanel" aria-labelledby="pills-my-templates-tab" tabindex="0">
+                    <div class="row g-4">
+                      <div class="col-12">
+                        <a href="#!" target="_blank" class="position-relative d-block overflow-x-hidden al-corner al-corner-all-12">
+                          <img src="assets/img/portfolio/3.jpg" alt="" class="w-100" />
+
+                          <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
+                            <span class="bg-black bg-opacity-75 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                              Project Name
+                            </span>
+                            
+                            <div class="d-inline-flex align-items-center gap-2">
+                              <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                Figma
+                              </span>
+                              
+                              <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                HTML
+                              </span>
+                              
+                              <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                SCSS
+                              </span>
+                              
+                              <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                JS
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-12">
+                        <a href="#!" target="_blank" class="position-relative d-block overflow-x-hidden al-corner al-corner-all-12">
+                          <img src="assets/img/portfolio/4.jpg" alt="" class="w-100" />
+
+                          <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
+                            <span class="bg-black bg-opacity-75 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                              Project Name
+                            </span>
+                            
+                            <div class="d-inline-flex align-items-center gap-2">
+                              <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                Figma
+                              </span>
+                              
+                              <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                HTML
+                              </span>
+                              
+                              <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                SCSS
+                              </span>
+                              
+                              <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                JS
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
                     </div>
                   </div>
-                  
-                </div>
-            
-                <!-- my templates -->
-                <div class="tab-pane fade h-100 overflow-y-auto overflow-x-hidden overflow-x-hidden al-scroll-smooth al-scroll-on-hover" id="pills-my-templates" role="tabpanel" aria-labelledby="pills-my-templates-tab"
-                  tabindex="0">
 
-                  My Templates
-                  
-                </div>
-            
-                <!-- about me -->
-                <div class="tab-pane fade h-100 overflow-y-auto overflow-x-hidden overflow-x-hidden al-scroll-smooth al-scroll-on-hover" id="pills-about-me" role="tabpanel" aria-labelledby="pills-about-me-tab"
-                  tabindex="0">
+                  <!-- about me -->
+                  <div class="tab-pane fade h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover" id="pills-about-me" role="tabpanel" aria-labelledby="pills-about-me-tab" tabindex="0">
+                      <div class="">
+                        <section class="p-2">
+                            <div class="row g-3 align-items-center">
+                              <div class="col-md-7 col-lg-8 pe-lg-5">
+                                <h3 class="animate__animated animate__pulse">
+                                  Hello, I'm <span class="text-primary">Abu Bilal</span>
+                                </h3>
+                                <p class="mb-5 animate__animated animate__fadeIn animate__delay-1s">
+                                  I am a freelancer based in the India and i have been building noteworthy UX/UI designs and websites for years, which comply with the latest design trends. I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster.
+                                </p>
+                              </div>
+                              <div class="col-md-5 col-lg-4 ps-md-0 ps-lg-3">
+                                <div class="position-relative bg-primary bg-opacity-25 al-p-12 al-corner al-corner-all-16 animate__animated animate__zoomIn">
+                                  <img src="../assets/img/user-01.png" alt="" class="w-100 al-corner al-corner-all-12">
+                                
+                                  <!-- start social media link -->
+                                  <div class="d-flex al-flex-center gap-2 position-absolute bottom-0 mb-4 pb-2 al-object-center-x">
+                                    <a href="#!" title="LinkedIn" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-flex al-flex-center al-w-36 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-white-75 al-hexa-alt-border al-border-2 al-border-white text-primary al-cursor-pointer">
+                                      <i class="bi bi-linkedin al-fs-13"></i>
+                                    </a>
+                                    <a href="#!" title="YouTube" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-flex al-flex-center al-w-36 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-white-75 al-hexa-alt-border al-border-2 al-border-white text-primary al-cursor-pointer">
+                                      <i class="bi bi-youtube al-fs-13"></i>
+                                    </a>
+                                    <a href="#!" title="Instagram" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-flex al-flex-center al-w-36 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-white-75 al-hexa-alt-border al-border-2 al-border-white text-primary al-cursor-pointer">
+                                      <i class="bi bi-instagram al-fs-13"></i>
+                                    </a>
+                                    <a href="#!" title="Facebook" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-flex al-flex-center al-w-36 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-white-75 al-hexa-alt-border al-border-2 al-border-white text-primary al-cursor-pointer">
+                                      <i class="bi bi-facebook al-fs-13"></i>
+                                    </a>
+                                  </div>
+                                  <!-- end social media link -->
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="row g-3 mt-2">
+                              <div class="col-md-6 col-lg-3">
+                                <div class="al-corner al-border al-corner-all-10 al-border-1 al-border-primary-75 py-4 text-center h-100 animate__animated animate__zoomIn">
+                                  <i class="bi bi-person fs-2 text-primary"></i>
+                                  <span class="d-block">100+ Projects</span>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-lg-3">
+                                <div class="al-corner al-border al-corner-all-10 al-border-1 al-border-primary-75 py-4 text-center h-100 animate__animated animate__zoomIn">
+                                  <i class="bi bi-emoji-smile fs-2 text-primary"></i>
+                                  <span class="d-block">90+ Satisfied Clients</span>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-lg-3">
+                                <div class="al-corner al-border al-corner-all-10 al-border-1 al-border-primary-75 py-4 text-center h-100 animate__animated animate__zoomIn">
+                                  <i class="bi bi-cup fs-2 text-primary"></i>
+                                  <span class="d-block">1000+ Cup of coffee</span>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-lg-3">
+                                <div class="al-corner al-border al-corner-all-10 al-border-1 al-border-primary-75 py-4 text-center h-100 animate__animated animate__zoomIn">
+                                  <i class="bi bi-code-slash fs-2 text-primary"></i>
+                                  <span class="d-block">1M+ lines of code</span>
+                                </div>
+                              </div>
+                            </div>
 
-                  About Me
-                  
-                </div>
+                            <!-- start what i do -->
+                            <div class="mt-3 pt-5 pb-5">
+                              <h2 class="mb-4 animate__animated animate__pulse">
+                                <small class="d-block al-fs-14 text-primary">My Services</small>
+                                What we do!
+                              </h2>
+
+                              <div class="row g-4">
+                                <div class="col-md-6 col-lg-3">
+                                  <div class="position-relative h-100 animate__animated animate__zoomIn">
+                                    <span class="position-absolute al-top-n-2 al-end-n-2 al-size-24 border border-2 border-primary border-start-0 border-bottom-0 pe-none"></span>
+                                    <div class="bg-primary bg-opacity-10 p-4 al-corner al-ts-14 al-be-14 h-100">
+                                      <div class="p-2">
+                                        <div class="d-flex align-items-center gap-3 mb-3 pb-1">
+                                          <span class="d-inline-flex align-items-center justify-content-center al-size-55 rounded-circle bg-primary bg-opacity-25 al-outline al-outline-5 al-outline-primary-10">
+                                            <i class="bi bi-window-sidebar fs-4"></i>
+                                          </span>
+                                          <h2 class="al-fs-18 mb-0">
+                                            UX Design
+                                          </h2>
+                                        </div>
+                                        <p class="mb-0 al-fs-14">
+                                          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <span class="position-absolute al-bottom-n-2 al-start-n-2 al-size-24 border border-2 border-primary border-end-0 border-top-0 pe-none"></span>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                  <div class="position-relative h-100 animate__animated animate__zoomIn">
+                                    <span class="position-absolute al-top-n-2 al-end-n-2 al-size-24 border border-2 border-primary border-start-0 border-bottom-0 pe-none"></span>
+                                    <div class="bg-primary bg-opacity-10 p-4 al-corner al-ts-14 al-be-14 h-100">
+                                      <div class="p-2">
+                                        <div class="d-flex align-items-center gap-3 mb-3 pb-1">
+                                          <span class="d-inline-flex align-items-center justify-content-center al-size-55 rounded-circle bg-primary bg-opacity-25 al-outline al-outline-5 al-outline-primary-10">
+                                            <i class="bi bi-window-sidebar fs-4"></i>
+                                          </span>
+                                          <h2 class="al-fs-18 mb-0">
+                                            UI Design
+                                          </h2>
+                                        </div>
+                                        <p class="mb-0 al-fs-14">
+                                          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <span class="position-absolute al-bottom-n-2 al-start-n-2 al-size-24 border border-2 border-primary border-end-0 border-top-0 pe-none"></span>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                  <div class="position-relative h-100 animate__animated animate__zoomIn">
+                                    <span class="position-absolute al-top-n-2 al-end-n-2 al-size-24 border border-2 border-primary border-start-0 border-bottom-0 pe-none"></span>
+                                    <div class="bg-primary bg-opacity-10 p-4 al-corner al-ts-14 al-be-14 h-100">
+                                      <div class="p-2">
+                                        <div class="d-flex align-items-center gap-3 mb-3 pb-1">
+                                          <span class="d-inline-flex align-items-center justify-content-center al-size-55 rounded-circle bg-primary bg-opacity-25 al-outline al-outline-5 al-outline-primary-10">
+                                            <i class="bi bi-window-sidebar fs-4"></i>
+                                          </span>
+                                          <h2 class="al-fs-18 mb-0">
+                                            Web Design
+                                          </h2>
+                                        </div>
+                                        <p class="mb-0 al-fs-14">
+                                          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <span class="position-absolute al-bottom-n-2 al-start-n-2 al-size-24 border border-2 border-primary border-end-0 border-top-0 pe-none"></span>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                  <div class="position-relative h-100 animate__animated animate__zoomIn">
+                                    <span class="position-absolute al-top-n-2 al-end-n-2 al-size-24 border border-2 border-primary border-start-0 border-bottom-0 pe-none"></span>
+                                    <div class="bg-primary bg-opacity-10 p-4 al-corner al-ts-14 al-be-14 h-100">
+                                      <div class="p-2">
+                                        <div class="d-flex align-items-center gap-3 mb-3 pb-1">
+                                          <span class="d-inline-flex align-items-center justify-content-center al-size-55 rounded-circle bg-primary bg-opacity-25 al-outline al-outline-5 al-outline-primary-10">
+                                            <i class="bi bi-window-sidebar fs-4"></i>
+                                          </span>
+                                          <h2 class="al-fs-18 mb-0">
+                                            App Design
+                                          </h2>
+                                        </div>
+                                        <p class="mb-0 al-fs-14">
+                                          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <span class="position-absolute al-bottom-n-2 al-start-n-2 al-size-24 border border-2 border-primary border-end-0 border-top-0 pe-none"></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- end what i do -->
+                        </section>
+
+                        <section class="pt-5">
+                          <div class="px-2">
+                            <div class="container py-3">
+                              <div class="position-relative text-center p-2 mb-5 animate__animated animate__bounce">
+                                <h3 class="mb-0 al-fs-14 text-primary">I'm available for hire</h3>
+                                <h2 class="fw-bold mb-0">
+                                  Resume
+                                </h2>
+                                <span class="d-inline-block al-w-70 al-h-4 rounded-pill bg-primary"></span>
+                              </div>
+                        
+                              <div class="row g-4">
+                                <!-- start education -->
+                                <div class="col-md-6 pe-md-4">
+                                  <h2 class="mb-4 fs-3 animate__animated animate__pulse">
+                                    <i class="bi bi-book-half fs-5 me-2 text-primary al-size-40 bg-primary bg-opacity-10 rounded-circle d-inline-flex al-flex-center"></i> 
+                                    Education
+                                  </h2>
+                        
+                                  <div class="position-relative">
+                                    <div class="position-absolute top-0 bottom-0 start-0 ms-4 al-w-3 bg-primary pe-none animate__animated animate__zoomIn"></div>
+                        
+                                    <div class="card rounded-0 border-0 al-corner al-ts-14 al-be-14 bg-primary bg-opacity-10 al-backdrop-blur-32 mb-5 p-2 animate__animated animate__zoomIn">
+                                      <div class="card-body">
+                                        <small class="d-block mb-1">2017</small>
+                                        <h5 class="card-title text-primary mb-1">UI / UX Design</h5>
+                                        <p class="card-text al-fs-14">University name</p>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="card rounded-0 border-0 al-corner al-ts-14 al-be-14 bg-primary bg-opacity-10 al-backdrop-blur-32 mb-5 p-2 animate__animated animate__zoomIn">
+                                      <div class="card-body">
+                                        <small class="d-block mb-1">2013 - 2017</small>
+                                        <h5 class="card-title text-primary">B.E Computer Science</h5>
+                                        <p class="card-text al-fs-14">University name</p>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="card rounded-0 border-0 al-corner al-ts-14 al-be-14 bg-primary bg-opacity-10 al-backdrop-blur-32 mb-5 p-2 animate__animated animate__zoomIn">
+                                      <div class="card-body">
+                                        <small class="d-block mb-1">2009 - 2012</small>
+                                        <h5 class="card-title text-primary">Diploma Computer Science</h5>
+                                        <p class="card-text al-fs-14">University name</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- end education -->
+                        
+                                <!-- start experience -->
+                                <div class="col-md-6 ps-md-4">
+                                  <h2 class="mb-4 fs-3 animate__animated animate__pulse">
+                                    <i class="bi bi-briefcase-fill fs-5 me-2 text-primary al-size-40 bg-primary bg-opacity-10 rounded-circle d-inline-flex al-flex-center"></i> 
+                                    Experience
+                                  </h2>
+                        
+                                  <div class="position-relative">
+                                    <div class="position-absolute top-0 bottom-0 start-0 ms-4 al-w-3 bg-primary pe-none animate__animated animate__zoomIn"></div>
+                        
+                                    <div class="card rounded-0 border-0 al-corner al-ts-14 al-be-14 bg-primary bg-opacity-10 al-backdrop-blur-32 mb-5 p-2 animate__animated animate__zoomIn">
+                                      <div class="card-body">
+                                        <small class="d-block mb-1">2021 - Present</small>
+                                        <h5 class="card-title text-primary">Lead UI/UX Designer</h5>
+                                        <p class="card-text al-fs-14">Company name</p>
+                                      </div>
+                                    </div>
+                        
+                                    <div class="card rounded-0 border-0 al-corner al-ts-14 al-be-14 bg-primary bg-opacity-10 al-backdrop-blur-32 mb-5 p-2 animate__animated animate__zoomIn">
+                                      <div class="card-body">
+                                        <small class="d-block mb-1">2018 - 2021</small>
+                                        <h5 class="card-title text-primary">Senior UI/UX Designer</h5>
+                                        <p class="card-text al-fs-14">Company name</p>
+                                      </div>
+                                    </div>
+                        
+                                    <div class="card rounded-0 border-0 al-corner al-ts-14 al-be-14 bg-primary bg-opacity-10 al-backdrop-blur-32 mb-5 p-2 animate__animated animate__zoomIn">
+                                      <div class="card-body">
+                                        <small class="d-block mb-1">2017 - 2018</small>
+                                        <h5 class="card-title text-primary">Junior UI/UX Designer</h5>
+                                        <p class="card-text al-fs-14">Company name</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- end experience -->
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bg-primary bg-opacity-10 px-2">
+                            <div class="container py-3">
+                              <div class="rounded">
+                                <div class="row g-4">
+                                  <!-- start skills -->
+                                  <div class="col-md-6 px-4 pt-2">
+                                    <h2 class="mb-4 fs-3 animate__animated animate__pulse">Skills</h2>
+                                    
+                                    <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                                      <label class="mb-1">Adobe XD</label>
+                                      <div class="progress bg-warning bg-opacity-10">
+                                        <div class="progress-bar bg-warning bg-opacity-50" role="progressbar" aria-label="Adobe XD" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                                      <label class="mb-1">Figma</label>
+                                      <div class="progress bg-warning bg-opacity-10">
+                                        <div class="progress-bar bg-warning bg-opacity-50" role="progressbar" aria-label="Figma" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                                      <label class="mb-1">Photoshop</label>
+                                      <div class="progress bg-warning bg-opacity-10">
+                                        <div class="progress-bar bg-warning bg-opacity-50" role="progressbar" aria-label="Photoshop" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                                      <label class="mb-1">HTML</label>
+                                      <div class="progress bg-warning bg-opacity-10">
+                                        <div class="progress-bar bg-warning bg-opacity-50" role="progressbar" aria-label="HTML" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                                      <label class="mb-1">CSS</label>
+                                      <div class="progress bg-warning bg-opacity-10">
+                                        <div class="progress-bar bg-warning bg-opacity-50" role="progressbar" aria-label="CSS" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- end skills -->
+                        
+                                  <!-- start expertise -->
+                                  <div class="col-md-6 px-4 pt-2">
+                                    <h2 class="mb-4 fs-3 animate__animated animate__pulse">Expertise</h2>
+                                    
+                                    <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                                      <label class="mb-1">UI Design</label>
+                                      <div class="progress bg-primary bg-opacity-10">
+                                        <div class="progress-bar bg-primary bg-opacity-50" role="progressbar" aria-label="UI Design" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                                      <label class="mb-1">UX Design</label>
+                                      <div class="progress bg-primary bg-opacity-10">
+                                        <div class="progress-bar bg-primary bg-opacity-50" role="progressbar" aria-label="UX Design" style="width: 95%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                                      <label class="mb-1">XD Design to HTML</label>
+                                      <div class="progress bg-primary bg-opacity-10">
+                                        <div class="progress-bar bg-primary bg-opacity-50" role="progressbar" aria-label="XD Design to HTML" style="width: 95%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                                      <label class="mb-1">Figma Design to HTML</label>
+                                      <div class="progress bg-primary bg-opacity-10">
+                                        <div class="progress-bar bg-primary bg-opacity-50" role="progressbar" aria-label="Figma Design to HTML" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="bg-primary bg-opacity-10 py-3 px-4 al-corner al-bs-14 al-te-14 mb-4 animate__animated animate__zoomIn">
+                                      <label class="mb-1">Web & mobile app design</label>
+                                      <div class="progress bg-primary bg-opacity-10">
+                                        <div class="progress-bar bg-primary bg-opacity-50" role="progressbar" aria-label="Web & mobile app design" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- end expertise -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                     </div>
+                  </div>
               </div>
               <!-- end tabs content -->
             </div>
@@ -370,34 +763,62 @@
             <span class="marquee-title text-nowrap text-uppercase al-fs-12 fw-semibold">Tools & Platforms</span>
             <div class="marquee-mask flex-fill">
               <div class="marquee-track d-flex align-items-center">
-                <img height="40" src="assets/img/tools/bootstrap-logo.png" alt="bootstrap logo" />
-                <img height="40" src="assets/img/tools/figma-logo.png" alt="figma logo" />
-                <img height="40" src="assets/img/tools/ionic-logo.png" alt="ionic logo" />
-                <img height="40" src="assets/img/tools/js-logo.png" alt="js logo" />
-                <img height="40" src="assets/img/tools/bootstrap-logo.png" alt="bootstrap logo" />
-                <img height="40" src="assets/img/tools/figma-logo.png" alt="figma logo" />
-                <img height="40" src="assets/img/tools/ionic-logo.png" alt="ionic logo" />
-                <img height="40" src="assets/img/tools/js-logo.png" alt="js logo" />
-                <img height="40" src="assets/img/tools/bootstrap-logo.png" alt="bootstrap logo" />
-                <img height="40" src="assets/img/tools/figma-logo.png" alt="figma logo" />
-                <img height="40" src="assets/img/tools/ionic-logo.png" alt="ionic logo" />
-                <img height="40" src="assets/img/tools/js-logo.png" alt="js logo" />
-                <img height="40" src="assets/img/tools/bootstrap-logo.png" alt="bootstrap logo" />
-                <img height="40" src="assets/img/tools/figma-logo.png" alt="figma logo" />
-                <img height="40" src="assets/img/tools/ionic-logo.png" alt="ionic logo" />
-                <img height="40" src="assets/img/tools/js-logo.png" alt="js logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/bootstrap-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/figma-logo.png" alt="figma logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/ionic-logo.png" alt="ionic logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/js-logo.png" alt="js logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/bootstrap-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/figma-logo.png" alt="figma logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/ionic-logo.png" alt="ionic logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/js-logo.png" alt="js logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/bootstrap-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/figma-logo.png" alt="figma logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/ionic-logo.png" alt="ionic logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/js-logo.png" alt="js logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/bootstrap-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/figma-logo.png" alt="figma logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/ionic-logo.png" alt="ionic logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/js-logo.png" alt="js logo" />
               </div>
             </div>
           </div>
           <!-- end tools & platforms -->
         </div>
       </div>
+
+
+      <!-- fixed bottom navigation for mobile -->
+      <nav class="mobile-bottom-nav position-fixed start-0 bottom-0 end-0 d-lg-none bg-black bg-body border-top border-primary border-opacity-25 shadow-lg p-2">
+        <div class="nav nav-pills w-100 justify-content-around" id="mobileTab">
+            <a class="nav-link text-center col al-corner al-corner-all-24 py-1 active" href="#pills-my-work" id="mobile-work">
+                <i class="bi bi-columns-gap al-fs-16 mb-0"></i>
+                <div class="al-fs-10">My Work</div>
+            </a>
+            <a class="nav-link text-center al-corner al-corner-all-24 py-1 col" href="#pills-my-templates" id="mobile-templates">
+                <i class="bi bi-cart2 al-fs-16 mb-0"></i>
+                <div class="al-fs-10">My Templates</div>
+            </a>
+            <a class="nav-link text-center al-corner al-corner-all-24 py-1 col" href="#pills-about-me" id="mobile-about">
+                <i class="bi bi-person al-fs-16 mb-0"></i>
+                <div class="al-fs-10">About Me</div>
+            </a>
+            <a class="nav-link text-center al-corner al-corner-all-24 py-1 col" href="#!">
+                <i class="bi bi-envelope al-fs-16 mb-0"></i>
+                <div class="al-fs-10">Let's Connect</div>
+            </a>
+        </div>
+      </nav>
      </main>
     <!-- end main content -->
   </div>
 
+
+  <div class="position-fixed top-0 start-0 bottom-0 end-0">
+    <canvas id="particle-canvas"></canvas>
+  </div>
+
   <!-- bg pattern -->
-  <div class="al-pattern-grid-double al-pattern-white-3 position-fixed top-0 start-0 bottom-0 end-0 z-n1 pe-none"></div>
+  <div class="al-pattern-grid-double al-pattern-white-2 position-fixed top-0 start-0 bottom-0 end-0 z-n1 pe-none"></div>
   
   <!--js & css library-->
 
@@ -409,5 +830,490 @@
   <script src="assets/dist/js/contact-forms.js"></script>
   <script src="assets/dist/js/animation.js"></script>
   <script src="assets/dist/js/main.js"></script>
+
+
+<script>
+    // Smooth scrolling for mobile bottom nav
+    document.querySelectorAll('.mobile-bottom-nav .nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            document.querySelectorAll('.mobile-bottom-nav .nav-link').forEach(nav => {
+                nav.classList.remove('active');
+            });
+            this.classList.add('active');
+
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Update active tab on scroll
+    function updateActiveNavOnScroll() {
+        if (window.innerWidth >= 992) return;
+
+        const sections = ['#pills-my-work', '#pills-my-templates', '#pills-about-me'];
+        let current = '#pills-my-work';
+
+        for (let id of sections) {
+            const section = document.querySelector(id);
+            if (section && window.scrollY >= section.offsetTop - 200) {
+                current = id;
+            }
+        }
+
+        document.querySelectorAll('.mobile-bottom-nav .nav-link').forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === current) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', updateActiveNavOnScroll);
+    window.addEventListener('resize', updateActiveNavOnScroll);
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+        if (window.innerWidth < 992) {
+            updateActiveNavOnScroll();
+        }
+    });
+</script>
+
+<script>
+(() => {
+  const canvas = document.getElementById('particle-canvas');
+  const ctx = canvas.getContext('2d');
+  const pcountEl = document.getElementById('pcount');
+  const magnetToggleBtn = document.getElementById('magnetToggle');
+  const resetBtn = document.getElementById('resetBtn');
+
+  // ---------------- CONFIG ----------------
+  const CONFIG = {
+    initialCount: 120,
+    bokehCount: 20,
+    bandWidth: 120,
+    spread: 560,
+    goldRatio: 0.18,
+    flowSpeed: 0.00002,
+    twinkleSpeed: 0.0006,
+
+    minSize: 0.6,
+    maxSize: 2.6,
+
+    // Magnetic mouse interaction
+    magnetRadius: 180,
+    magnetForce: 1.3,
+    springK: 0.03,
+    damping: 0.9,
+
+    // Ripple waves (emitted as mouse moves through the field)
+    rippleEnabled: true,
+    rippleInterval: 70,       // ms between auto-emitted waves while moving
+    rippleSpeed: 0.22,        // px per ms — how fast the ring expands
+    rippleMaxAge: 1800,       // ms lifetime of a wave
+    rippleWidth: 46,          // gaussian ring thickness (px)
+    rippleAmplitude: 1.8,     // particle push strength
+    rippleMaxWaves: 10,
+    clickRippleAmplitude: 7,  // stronger ripple on click
+    clickRippleWidth: 70,
+
+    // Click-to-add
+    clickBurstCount: 45,
+    maxParticles: 3500,
+
+    // Bloom
+    glowScale: 0.55,
+    blurPx: 10,
+    glowSizeMul: 2.6
+  };
+
+  let magnetMode = 1; // 1 attract, -1 repel
+
+  const BLUE = [[90,170,255],[110,200,255],[70,140,230],[140,220,255]];
+  const GOLD = [[255,190,90],[255,170,60],[255,205,120]];
+
+  let width, height, dpr;
+  let particles = [];
+  let bokehLights = [];
+  let rippleWaves = [];
+  let lastRippleSpawn = 0;
+  let lastMouse = { x: null, y: null };
+  let mouse = { x: 0, y: 0, active: false };
+  let curveCache = null;
+
+  let glowCanvas, glowCtx, glowW, glowH;
+
+  function resize() {
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
+    canvas.style.width = width + 'px';
+    canvas.style.height = height + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    glowW = Math.max(1, Math.floor(width * CONFIG.glowScale));
+    glowH = Math.max(1, Math.floor(height * CONFIG.glowScale));
+    if (!glowCanvas) {
+      glowCanvas = document.createElement('canvas');
+      glowCtx = glowCanvas.getContext('2d');
+    }
+    glowCanvas.width = glowW;
+    glowCanvas.height = glowH;
+
+    buildCurve();
+  }
+
+  function buildCurve() {
+    const p0 = { x: -width * 0.15, y: height * 1.05 };
+    const p1 = { x: width * 0.15, y: height * 0.55 };
+    const p2 = { x: width * 0.55, y: height * 0.25 };
+    const p3 = { x: width * 1.2, y: -height * 0.1 };
+    curveCache = { p0, p1, p2, p3 };
+  }
+
+  function bezier(t, p0, p1, p2, p3) {
+    const mt = 1 - t;
+    return {
+      x: mt*mt*mt*p0.x + 3*mt*mt*t*p1.x + 3*mt*t*t*p2.x + t*t*t*p3.x,
+      y: mt*mt*mt*p0.y + 3*mt*mt*t*p1.y + 3*mt*t*t*p2.y + t*t*t*p3.y
+    };
+  }
+
+  function curveNormal(t) {
+    const { p0, p1, p2, p3 } = curveCache;
+    const a = bezier(Math.max(0, t - 0.001), p0, p1, p2, p3);
+    const b = bezier(Math.min(1, t + 0.001), p0, p1, p2, p3);
+    const dx = b.x - a.x, dy = b.y - a.y;
+    const len = Math.sqrt(dx*dx + dy*dy) || 1;
+    return { x: -dy/len, y: dx/len };
+  }
+
+  function gaussianRandom() {
+    return (Math.random() + Math.random() + Math.random() - 1.5) / 1.5;
+  }
+
+  function randColor() {
+    const isGold = Math.random() < CONFIG.goldRatio;
+    const palette = isGold ? GOLD : BLUE;
+    return palette[Math.floor(Math.random() * palette.length)];
+  }
+
+  function makeCurveParticle() {
+    return {
+      type: 'curve',
+      t: Math.random(),
+      offset: gaussianRandom() * (CONFIG.bandWidth / 2 + CONFIG.spread * Math.random()),
+      size: CONFIG.minSize + Math.random() * (CONFIG.maxSize - CONFIG.minSize),
+      color: randColor(),
+      phase: Math.random() * Math.PI * 2,
+      baseAlpha: 0.35 + Math.random() * 0.65,
+      speedMul: 0.6 + Math.random() * 0.8,
+      dx: 0, dy: 0, vx: 0, vy: 0
+    };
+  }
+
+  function makeFreeParticle(x, y) {
+    const angle = Math.random() * Math.PI * 2;
+    const speed = 0.03 + Math.random() * 0.08;
+    return {
+      type: 'free',
+      x, y,
+      vxFree: Math.cos(angle) * speed,
+      vyFree: Math.sin(angle) * speed,
+      size: CONFIG.minSize + Math.random() * (CONFIG.maxSize - CONFIG.minSize) * 1.1,
+      color: randColor(),
+      phase: Math.random() * Math.PI * 2,
+      baseAlpha: 0.4 + Math.random() * 0.6,
+      spawnTime: performance.now(),
+      dx: 0, dy: 0, vx: 0, vy: 0
+    };
+  }
+
+  function makeBokeh() {
+    return {
+      t: Math.random(),
+      offset: gaussianRandom() * (CONFIG.bandWidth * 0.7),
+      radius: 14 + Math.random() * 46,
+      color: randColor(),
+      alpha: 0.04 + Math.random() * 0.1,
+      phase: Math.random() * Math.PI * 2,
+      speedMul: 0.3 + Math.random() * 0.4
+    };
+  }
+
+  function init() {
+    particles = Array.from({ length: CONFIG.initialCount }, makeCurveParticle);
+    bokehLights = Array.from({ length: CONFIG.bokehCount }, makeBokeh);
+    rippleWaves = [];
+    updateCount();
+  }
+
+  function updateCount() {
+    pcountEl.textContent = particles.length;
+  }
+
+  // function drawBackground(targetCtx, w, h) {
+  //   const grad = targetCtx.createRadialGradient(
+  //     w * 0.75, h * 0.15, 0,
+  //     w * 0.5, h * 0.5, w * 0.9
+  //   );
+  //   // grad.addColorStop(0, '#0d1a30');
+  //   // grad.addColorStop(0.4, '#071120');
+  //   // grad.addColorStop(1, '#020509');
+  //   grad.addColorStop(1, '#020509');
+  //   targetCtx.fillStyle = grad;
+  //   targetCtx.fillRect(0, 0, w, h);
+  // }
+
+  function drawBackground(targetCtx, w, h) {
+    // no fill — canvas stays transparent
+    targetCtx.clearRect(0, 0, w, h);
+  }
+
+  function basePosition(p) {
+    if (p.type === 'curve') {
+      p.t += CONFIG.flowSpeed * 16 * (p.speedMul || 1);
+      if (p.t > 1) p.t -= 1;
+      const normal = curveNormal(p.t);
+      const pt = bezier(p.t, curveCache.p0, curveCache.p1, curveCache.p2, curveCache.p3);
+      return { x: pt.x + normal.x * p.offset, y: pt.y + normal.y * p.offset };
+    } else {
+      p.x += p.vxFree;
+      p.y += p.vyFree;
+      if (p.x < -20) p.x = width + 20;
+      if (p.x > width + 20) p.x = -20;
+      if (p.y < -20) p.y = height + 20;
+      if (p.y > height + 20) p.y = -20;
+      return { x: p.x, y: p.y };
+    }
+  }
+
+  function rippleForceAt(x, y, now) {
+    let fx = 0, fy = 0;
+    if (!CONFIG.rippleEnabled) return { x: fx, y: fy };
+    for (const w of rippleWaves) {
+      const age = now - w.startTime;
+      if (age < 0 || age > CONFIG.rippleMaxAge) continue;
+      const radius = age * CONFIG.rippleSpeed;
+      const dx = x - w.x, dy = y - w.y;
+      const dist = Math.sqrt(dx*dx + dy*dy) || 0.0001;
+      const diff = dist - radius;
+      const width_ = w.width || CONFIG.rippleWidth;
+      const falloff = Math.exp(-(diff*diff) / (2 * width_ * width_));
+      const fade = 1 - age / CONFIG.rippleMaxAge;
+      const amp = (w.amplitude || CONFIG.rippleAmplitude) * falloff * fade;
+      fx += (dx / dist) * amp;
+      fy += (dy / dist) * amp;
+    }
+    return { x: fx, y: fy };
+  }
+
+  function applyForces(p, base, now) {
+    const curX = base.x + p.dx;
+    const curY = base.y + p.dy;
+    let ax = 0, ay = 0;
+
+    if (mouse.active) {
+      const mdx = mouse.x - curX;
+      const mdy = mouse.y - curY;
+      const dist = Math.sqrt(mdx*mdx + mdy*mdy) || 0.0001;
+      if (dist < CONFIG.magnetRadius) {
+        const strength = (1 - dist / CONFIG.magnetRadius) * CONFIG.magnetForce * magnetMode;
+        ax += (mdx / dist) * strength;
+        ay += (mdy / dist) * strength;
+      }
+    }
+
+    const ripple = rippleForceAt(curX, curY, now);
+    ax += ripple.x;
+    ay += ripple.y;
+
+    // spring back toward natural position
+    ax += -p.dx * CONFIG.springK;
+    ay += -p.dy * CONFIG.springK;
+
+    p.vx = (p.vx + ax) * CONFIG.damping;
+    p.vy = (p.vy + ay) * CONFIG.damping;
+    p.dx += p.vx;
+    p.dy += p.vy;
+
+    return { x: base.x + p.dx, y: base.y + p.dy };
+  }
+
+  function fadeInFactor(p, now) {
+    if (!p.spawnTime) return 1;
+    const age = now - p.spawnTime;
+    const dur = 900;
+    if (age >= dur) return 1;
+    return Math.max(0, age / dur);
+  }
+
+  function pruneRipples(now) {
+    rippleWaves = rippleWaves.filter(w => (now - w.startTime) <= CONFIG.rippleMaxAge);
+    if (rippleWaves.length > CONFIG.rippleMaxWaves) {
+      rippleWaves.splice(0, rippleWaves.length - CONFIG.rippleMaxWaves);
+    }
+  }
+
+  function render(now) {
+    pruneRipples(now);
+    drawBackground(ctx, width, height);
+
+    // ---- Glow pass (low-res buffer) ----
+    glowCtx.clearRect(0, 0, glowW, glowH);
+    drawBackground(glowCtx, glowW, glowH);
+    const s = CONFIG.glowScale;
+
+    glowCtx.globalCompositeOperation = 'lighter';
+    for (const b of bokehLights) {
+      const normal = curveNormal(b.t);
+      const pt = bezier(b.t, curveCache.p0, curveCache.p1, curveCache.p2, curveCache.p3);
+      const twinkle = 0.7 + 0.3 * Math.sin(now * CONFIG.twinkleSpeed * b.speedMul + b.phase);
+      const x = (pt.x + normal.x * b.offset) * s;
+      const y = (pt.y + normal.y * b.offset) * s;
+      const g = glowCtx.createRadialGradient(x, y, 0, x, y, b.radius * s);
+      const [r, gg, bl] = b.color;
+      g.addColorStop(0, `rgba(${r}, ${gg}, ${bl}, ${b.alpha * twinkle})`);
+      g.addColorStop(1, `rgba(${r}, ${gg}, ${bl}, 0)`);
+      glowCtx.fillStyle = g;
+      glowCtx.beginPath();
+      glowCtx.arc(x, y, b.radius * s, 0, Math.PI * 2);
+      glowCtx.fill();
+    }
+
+    const positions = new Array(particles.length);
+    for (let i = 0; i < particles.length; i++) {
+      const p = particles[i];
+      const base = basePosition(p);
+      const pos = applyForces(p, base, now);
+      positions[i] = pos;
+
+      if (pos.x < -30 || pos.x > width + 30 || pos.y < -30 || pos.y > height + 30) continue;
+
+      const twinkle = 0.4 + 0.6 * Math.abs(Math.sin(now * CONFIG.twinkleSpeed + p.phase));
+      const [r, g, b] = p.color;
+      const alpha = p.baseAlpha * twinkle * fadeInFactor(p, now);
+      const glowR = p.size * CONFIG.glowSizeMul * s;
+
+      const grad = glowCtx.createRadialGradient(pos.x*s, pos.y*s, 0, pos.x*s, pos.y*s, glowR);
+      grad.addColorStop(0, `rgba(${r}, ${g}, ${b}, ${Math.min(1, alpha*1.3)})`);
+      grad.addColorStop(1, `rgba(${r}, ${g}, ${b}, 0)`);
+      glowCtx.fillStyle = grad;
+      glowCtx.beginPath();
+      glowCtx.arc(pos.x*s, pos.y*s, glowR, 0, Math.PI * 2);
+      glowCtx.fill();
+    }
+    glowCtx.globalCompositeOperation = 'source-over';
+
+    // Composite blurred glow onto main canvas
+    ctx.save();
+    ctx.filter = `blur(${CONFIG.blurPx}px)`;
+    ctx.globalCompositeOperation = 'lighter';
+    ctx.drawImage(glowCanvas, 0, 0, width, height);
+    ctx.restore();
+
+    // ---- Sharp core pass on top ----
+    ctx.globalCompositeOperation = 'lighter';
+    for (let i = 0; i < particles.length; i++) {
+      const p = particles[i];
+      const pos = positions[i];
+      if (!pos) continue;
+      if (pos.x < -20 || pos.x > width + 20 || pos.y < -20 || pos.y > height + 20) continue;
+
+      const twinkle = 0.4 + 0.6 * Math.abs(Math.sin(now * CONFIG.twinkleSpeed + p.phase));
+      const [r, g, b] = p.color;
+      const alpha = Math.min(1, p.baseAlpha * twinkle * 1.4 * fadeInFactor(p, now));
+
+      ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${alpha})`;
+      ctx.beginPath();
+      ctx.arc(pos.x, pos.y, p.size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    ctx.globalCompositeOperation = 'source-over';
+
+    requestAnimationFrame(render);
+  }
+
+  // ---------------- Events ----------------
+  window.addEventListener('resize', resize);
+
+  window.addEventListener('mousemove', (e) => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+    mouse.active = true;
+
+    const now = performance.now();
+    if (CONFIG.rippleEnabled && now - lastRippleSpawn > CONFIG.rippleInterval) {
+      // only spawn if the mouse actually moved (avoid flooding on stationary events)
+      if (lastMouse.x === null || Math.hypot(e.clientX - lastMouse.x, e.clientY - lastMouse.y) > 4) {
+        rippleWaves.push({ x: e.clientX, y: e.clientY, startTime: now });
+        lastRippleSpawn = now;
+      }
+    }
+    lastMouse.x = e.clientX;
+    lastMouse.y = e.clientY;
+  });
+  window.addEventListener('mouseleave', () => { mouse.active = false; });
+
+  window.addEventListener('touchmove', (e) => {
+    if (e.touches.length > 0) {
+      const t = e.touches[0];
+      mouse.x = t.clientX;
+      mouse.y = t.clientY;
+      mouse.active = true;
+
+      const now = performance.now();
+      if (CONFIG.rippleEnabled && now - lastRippleSpawn > CONFIG.rippleInterval) {
+        rippleWaves.push({ x: t.clientX, y: t.clientY, startTime: now });
+        lastRippleSpawn = now;
+      }
+    }
+  }, { passive: true });
+  window.addEventListener('touchend', () => { mouse.active = false; });
+
+  canvas.addEventListener('click', (e) => {
+    const burst = [];
+    for (let i = 0; i < CONFIG.clickBurstCount; i++) {
+      burst.push(makeFreeParticle(e.clientX, e.clientY));
+    }
+    particles = particles.concat(burst);
+    if (particles.length > CONFIG.maxParticles) {
+      particles.splice(0, particles.length - CONFIG.maxParticles);
+    }
+
+    // strong ripple on click
+    rippleWaves.push({
+      x: e.clientX, y: e.clientY,
+      startTime: performance.now(),
+      amplitude: CONFIG.clickRippleAmplitude,
+      width: CONFIG.clickRippleWidth
+    });
+
+    updateCount();
+  });
+
+  magnetToggleBtn.addEventListener('click', () => {
+    magnetMode *= -1;
+    magnetToggleBtn.textContent = (magnetMode === 1 ? 'Attract' : 'Repel');
+  });
+
+  resetBtn.addEventListener('click', () => {
+    init();
+  });
+
+  resize();
+  init();
+  requestAnimationFrame(render);
+})();
+</script>
 </body>
 </html>

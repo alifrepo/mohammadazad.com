@@ -1,5 +1,5 @@
-$primary: #C7FF00;
-$secondary: #e73c7e;
+$primary: #59ffc0;
+$secondary: #000e23;
 $success:#23d5ab;
 $warning:#ee7752;
 $danger:#D80027;
@@ -11,8 +11,8 @@ $tooltip-bg:$primary;
 :root{
   --bs-body-color:#fff;
   --bs-body-color-rgb: 255, 255, 255;
-  --bs-body-bg: #050505;
-  --bs-body-bg-rgb: 5, 5, 5;
+  --bs-body-bg: #000e23;
+  --bs-body-bg-rgb: 0, 14, 35;
 }
 .nav{
     --bs-nav-link-color:rgba(255, 255, 255, 0.35);
