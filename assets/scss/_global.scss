@@ -92,11 +92,12 @@
   }
 
 
+
 .fui{
     &-root{
         &-orb{
-            background: radial-gradient(circle at 30% 30%, var(--purple-1), var(--purple-2));
-            box-shadow: 0 0 20px #8b5cf6, inset 0 0 10px #ddd6fe;
+            // background: radial-gradient(circle at 30% 30%, var(--purple-1), var(--purple-2));
+            // box-shadow: 0 0 20px #8b5cf6, inset 0 0 10px #ddd6fe;
             z-index: 2;
 
             &-wrapper {
@@ -104,7 +105,7 @@
             }
         }
         &-pulse {
-            border: 1px dashed #8b5cf6;
+            border: 3px dashed rgba($color: var(--bs-primary-rgb), $alpha: 0.35);
             animation: fui-spin 10s linear infinite;
         }
     }
@@ -121,32 +122,365 @@
             transform: scale(1.05) translateX(10px);
         }
     }
-    &-node { 
-        opacity: 0; 
+    &-node {
+        opacity: 0;
     }
-    &-path-line { 
-        fill: none; 
-        stroke-width: 1.5; 
-        opacity: .6; 
+    &-path-line {
+        fill: none;
+        stroke-width: 1.5;
+        opacity: .6;
     }
 
+    // Was `#connections` (id) -- the multi-instance setup assigns real ids
+    // dynamically per widget at runtime, so this element is only ever
+    // addressed via this class. Also carries the responsive show/hide
+    // behavior: the bezier connector lines are drawn for a left-to-right
+    // layout and are hidden below `lg`, where the widget stacks vertically.
+    &-connections {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+        display: none;
+
+        @media (min-width: 992px) {
+            display: block;
+        }
+    }
+
+    // L2 panel entrance animation, replayed every time a tab switches
+    &-l2-panel {
+        &.fui-panel-enter {
+            animation: fui-panel-in .35s ease forwards;
+        }
+    }
 }
 
 @keyframes fui-spin { 100% { transform: rotate(360deg); } }
 
+@keyframes fui-panel-in {
+    from {
+        opacity: 0;
+        transform: translateX(-16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
-#connections {
+
+// ===== Responsive layout for the graph widget =====
+// Mobile / small tablets (< lg): root -> tabs -> sub-panel stacked vertically.
+// >= lg: original side-by-side layout with connector lines (see &-connections above).
+.fui-graph-widget {
+
+    .fui-graph-row {
+        flex-direction: column;
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+        }
+    }
+
+    .fui-col-l1,
+    .fui-col-l2 {
+        width: 100%;
+
+        @media (min-width: 992px) {
+            width: 170px;
+        }
+    }
+
+    .fui-col-l2 {
+        @media (min-width: 992px) {
+            width: 200px;
+        }
+    }
+
+    .fui-l2-panel {
+        width: 100% !important;
+    }
+
+    .fui-col-l1 .fui-card-graph,
+    .fui-col-l2 .fui-l2-node {
+        width: 100% !important;
+    }
+
+    // Root avatar orb: smaller on phones, full size on desktop
+    .fui-root-orb-wrapper {
+        width: 110px;
+        height: 110px;
+
+        @media (min-width: 576px) {
+            width: 140px;
+            height: 140px;
+        }
+        @media (min-width: 992px) {
+            width: 140px;
+            height: 140px;
+        }
+    }
+    .fui-root-pulse {
+        width: 80px;
+        height: 80px;
+
+        @media (min-width: 576px) {
+            width: 100px;
+            height: 100px;
+        }
+        @media (min-width: 992px) {
+            width: 120px;
+            height: 120px;
+        }
+    }
+    .fui-root-orb {
+        width: 64px;
+        height: 64px;
+
+        @media (min-width: 576px) {
+            width: 80px;
+            height: 80px;
+        }
+        @media (min-width: 992px) {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+
+
+/* ============================================================
+   All custom selectors below are namespaced with a "fui-" prefix
+   to avoid collisions with the rest of the site's CSS/JS.
+============================================================ */
+
+[class*="fui-"], [id*="fui-"] {
+  
+  &.fui-bg-layers {
     position: absolute;
     inset: 0;
+    z-index: 0;
+    pointer-events: none;
+
+    @media (max-width: 1023px) {
+      display: none !important;
+    }
+  }
+
+  &.fui-grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image: 
+      linear-gradient(rgba(var(--bs-primary-rgb), 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(var(--bs-primary-rgb), 0.04) 1px, transparent 1px);
+    background-size: clamp(28px, 4vw, 54px) clamp(28px, 4vw, 54px);
+    mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, #000 25%, transparent 82%);
+    -webkit-mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, #000 25%, transparent 82%);
+
+    @media (max-width: 767px) {
+      background-size: 22px 22px;
+    }
+  }
+
+  &.fui-radial-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: min(80vmin, 720px);
+    height: min(80vmin, 720px);
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(var(--bs-info-rgb), 0.18) 0%, rgba(var(--bs-info-rgb), 0.06) 34%, transparent 66%);
+    filter: blur(20px);
+  }
+
+  &.fui-vignette {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 50%, transparent 44%, rgba(var(--bs-black-rgb), 0.6) 100%);
+  }
+
+  &.fui-stage {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    // Desktop Framework Constraints Bounds
+    @media (min-width: 1024px) {
+      height: 68vh;
+      min-height: clamp(380px, 65vmin, 700px); 
+    }
+
+    // Touch Responsive Screen Bounds Overrides
+    @media (max-width: 1023px) {
+      height: auto !important;
+      min-height: auto !important;
+      padding: 2rem 0;
+    }
+  }
+
+  &#fui-sphere {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    cursor: grab;
+
+    &.fui-dragging {
+      cursor: grabbing;
+    }
+
+    @media (max-width: 1023px) {
+      display: none !important;
+    }
+  }
+
+  &.fui-layer {
+    position: absolute;
+    inset: 0;
     pointer-events: none;
-    z-index: 1;
+  }
+
+  &.fui-sweep {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: min(70vmin, 600px);
+    height: min(70vmin, 600px);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, transparent 0deg, rgba(var(--bs-primary-rgb), 0.10) 16deg, transparent 32deg);
+    animation: fui-sweep 7s linear infinite;
+    mask-image: radial-gradient(circle, transparent 40%, #000 42%, #000 49%, transparent 51%);
+    -webkit-mask-image: radial-gradient(circle, transparent 40%, #000 42%, #000 49%, transparent 51%);
+
+    @media (max-width: 1023px) {
+      display: none !important;
+    }
+  }
+
+  &.fui-core {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      display: block;
+      width: clamp(36px, 6vmin, 50px);
+      height: auto;
+      filter: drop-shadow(0 0 16px var(--bs-primary));
+    }
+
+    @media (max-width: 1023px) {
+      display: none !important;
+    }
+  }
+
+  // IMAGE LAYER: Converts smoothly into a Single-Card Carousel on mobile/tablets
+  &#fui-img-layer {
+    @media (max-width: 1023px) {
+      position: relative !important;
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+      align-items: center !important;
+      
+      width: 100% !important;
+      height: max-content !important; // Shrinks to perfectly fit responsive image content
+      overflow-x: auto !important;
+      overflow-y: hidden !important;
+      pointer-events: auto !important;
+      transform: none !important;
+      
+      // CSS Swiping Snapping Optimization Handles
+      scroll-snap-type: x mandatory !important;
+      scroll-behavior: smooth !important;
+      -webkit-overflow-scrolling: touch !important;
+      padding: 1.5rem 12.5% !important;
+
+      &::-webkit-scrollbar {
+        display: none !important;
+      }
+      scrollbar-width: none !important;
+    }
+  }
+
+  &.fui-node-img {
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 8px 26px rgba(var(--bs-black-rgb), 0.5), 0 0 0 1px rgba(var(--bs-primary-rgb), 0.2);
+    -webkit-user-drag: none;
+    user-select: none;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto !important; // Breaks inline javascript pixel height overrides
+      border-radius: 10px;
+      -webkit-user-drag: none;
+      pointer-events: none;
+    }
+
+    &:hover {
+      box-shadow: 0 12px 40px rgba(var(--bs-success-rgb), 0.25), 0 0 0 1px var(--bs-primary);
+      filter: brightness(1.15);
+    }
+
+    // DESKTOP POSITIONING HOOKS
+    @media (min-width: 1024px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: clamp(60px, 9vmin, 128px);
+      will-change: transform, opacity;
+      transition: box-shadow .3s, filter .3s, transform .2s ease-out;
+    }
+
+    // TOUCHSCREEN COMPONENT CARD METRICS: Bypasses inline 3D vectors
+    @media (max-width: 1023px) {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      
+      flex: 0 0 100% !important; // Restricts slider layout viewport footprint to show one element at a time
+      width: 100% !important;
+      height: auto !important;
+      aspect-ratio: auto !important; // Preserves photograph file ratios natively
+      
+      margin-right: 1.5rem !important;
+      scroll-snap-align: center !important;
+      scroll-snap-stop: always !important;
+      
+      opacity: 1 !important;
+      transform: none !important;
+      pointer-events: auto !important;
+      z-index: auto !important;
+      transition: box-shadow .3s, filter .3s;
+
+      &:last-child {
+        margin-right: 0 !important;
+      }
+    }
+  }
 }
 
-.modal-content {
-    background-color: #111a1e;
-    border-color: var(--gold) !important;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 20px rgba(212, 184, 114, 0.1);
+@keyframes fui-sweep {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
-
