@@ -221,7 +221,7 @@
               <!-- end tab navs -->
 
               <!-- start tabs content -->
-              <div class="tab-content al-fui-tabs-body p-4 pt-5 al-corner al-border al-corner-all-12 al-border-1 al-border-primary-50 bg-body" id="pills-tabContent" style="height: calc(100vh - 180px);">
+              <div class="tab-content al-fui-tabs-body p-4 pt-5 al-corner al-border al-corner-all-12 al-border-1 al-border-primary-50" id="pills-tabContent" style="height: calc(100vh - 180px);">
                   <!-- my work -->
                   <div class="tab-pane h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover fade pt-2" id="pills-my-work" role="tabpanel" aria-labelledby="pills-my-work-tab" tabindex="0">
                       <div class="row g-4">
@@ -414,7 +414,7 @@
 
                   <!-- about me -->
                   <div class="tab-pane fade h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover show active" id="pills-about-me" role="tabpanel" aria-labelledby="pills-about-me-tab" tabindex="0">
-                    <div class="py-3 h-100">
+                    <div class="py-3 h-100 animate__animated animate__fadeInLeft">
                       <div class="d-flex w-100 h-100 gap-4 position-relative">
                         <svg id="connections">
                             <defs>
@@ -434,216 +434,238 @@
                             <!-- Root node -->
                             <div class="d-flex flex-column justify-content-center" id="col-root">
                                 <div class="fui-node d-flex flex-column align-items-center gap-2 text-center" id="node-root">
-                                    <span class="fui-gaps-badge badge rounded-2 fw-normal">Who I am</span>
+                                    <!-- <span class="fui-gaps-badge badge rounded-2 fw-normal">Who I am</span> -->
                                     <div class="fui-root-orb-wrapper al-size-170 rounded-circle d-flex align-items-center justify-content-center position-relative">
                                         <div class="fui-root-pulse al-size-120 position-absolute rounded-circle"></div>
                                         <div class="fui-root-orb d-inline-flex al-flex-center al-size-100 rounded-circle position-relative overflow-hidden">
                                             <img src="assets/img/user-01.png" alt="Mohammad Azad Image" class="al-size-80 rounded-circle" />
                                         </div>
                                     </div>
-                                    <div class="fw-semibold small">Mohammad Azad<br><span class="text-warning">Product Designer</span></div>
+                                    <!-- <div class="fw-semibold small">Mohammad Azad<br><span class="text-warning">Product Designer</span></div> -->
                                 </div>
                             </div>
 
                             <!-- L1 tabs -->
-                            <div class="d-flex flex-column justify-content-center gap-3" id="col-l1">
-                                <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer al-w-170 active" data-category="Services" data-count="18">
+                            <div class="d-flex flex-column justify-content-center gap-3 al-w-170" id="col-l1">
+                                <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary ps-3 al-pe-35 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" data-bs-toggle="modal" data-bs-target="#aboutMeModal">
+                                    <i class="bi bi-patch-check fs-5"></i>
+                                    <div class="fui-l1-val al-fs-15 fw-semibold">
+                                        <span class="d-block">Who I am</span>
+                                        <small class="d-flex fw-normal al-fs-12 text-primary">About Me</small>
+                                    </div>
+                                    <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                </div>
+                                <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" data-category="my-approach" data-count="18">
                                     <i class="bi bi-patch-check fs-5"></i>
                                     <div class="fui-l1-val al-fs-15 fw-semibold">
                                         <span class="d-block">My approach</span>
                                         <small class="d-flex fw-normal al-fs-12 text-primary">That's how i do it</small>
                                     </div>
                                 </div>
-                                
-                                <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer al-w-170" data-category="Entities" data-count="3">
-                                    <i class="bi bi-patch-check fs-5"></i>
-                                    <div class="fui-l1-val al-fs-15 fw-semibold">
-                                        <span class="d-block">Education</span>
-                                        <small class="d-flex fw-normal al-fs-12 text-primary">Certificates</small>
-                                    </div>
-                                </div>
-                                <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer al-w-170" data-category="Federal Laws" data-count="24">
+                                <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" data-category="experience" data-count="24">
                                     <i class="bi bi-patch-check fs-5"></i>
                                     <div class="fui-l1-val al-fs-15 fw-semibold">
                                         <span class="d-block">Experience</span>
                                         <small class="d-flex fw-normal al-fs-12 text-primary">I worked for</small>
                                     </div>
                                 </div>
-                                <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer al-w-170" data-category="KPIs" data-count="32">
+                                <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer active" data-category="expertise" data-count="32">
                                     <i class="bi bi-patch-check fs-5"></i>
                                     <div class="fui-l1-val al-fs-15 fw-semibold">
                                         <span class="d-block">Expertise</span>
-                                        <small class="d-flex fw-normal al-fs-12 text-primary">In which i have command</small>
+                                        <small class="d-flex fw-normal al-fs-12 text-primary">What I do best</small>
                                     </div>
                                 </div>
-                                <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer al-w-170" data-category="Policies" data-count="12">
+                                <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" data-category="skills" data-count="12">
                                     <i class="bi bi-patch-check fs-5"></i>
                                     <div class="fui-l1-val al-fs-15 fw-semibold">
                                         <span class="d-block">Skills</span>
                                         <small class="d-flex fw-normal al-fs-12 text-primary">What I Know</small>
                                     </div>
                                 </div>
+                                <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" data-category="education" data-count="3">
+                                    <i class="bi bi-patch-check fs-5"></i>
+                                    <div class="fui-l1-val al-fs-15 fw-semibold">
+                                        <span class="d-block">Education</span>
+                                        <small class="d-flex fw-normal al-fs-12 text-primary">Certificates</small>
+                                    </div>
+                                </div>
                             </div>
 
                             <!-- L2 sub-tabs: one static panel per L1 category. JS only shows/hides these -->
                             <div class="d-flex flex-column justify-content-center gap-2 overflow-visible" id="col-l2">
-                                <!-- Services -->
-                                <div class="fui-l2-panel d-none flex-column gap-3" style="width: 200px;" data-panel="Services">
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="Business licensing" data-gap="8">
+                                <!-- My approach -->
+                                <div class="fui-l2-panel d-none flex-column gap-3" style="width: 200px;" data-panel="my-approach">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="my-approach" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Context</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="Business licensing" data-gap="8">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="my-approach" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Problem Statement</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="Business licensing" data-gap="8">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="my-approach" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">User Flow, IA</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="Business licensing" data-gap="8">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="my-approach" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Sketching Ideas/ Wireframing</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="Business licensing" data-gap="8">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="my-approach" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Mood boarding</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
+                                    </div>
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="my-approach" data-gap="8">
+                                        <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                                        <span class="al-fs-14">Creating Mock-ups</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
+                                    </div>
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="my-approach" data-gap="8">
+                                        <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                                        <span class="al-fs-14">Refining the Final Version</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
+                                    </div>
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="my-approach" data-gap="8">
+                                        <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                                        <span class="al-fs-14">Don't stop until it's done</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
                                 </div>
 
-                                <!-- Entities -->
-                                <div class="fui-l2-panel d-none flex-column gap-2" style="width: 200px;" data-panel="Entities">
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                                <!-- Education -->
+                                <div class="fui-l2-panel d-none flex-column gap-2" style="width: 200px;" data-panel="education">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Certificates" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Professional Scrum Master™ I (PSM I) - Scrum.org</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Certificates" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Responsive Web Design - freeCodeCamp.org</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Certificates" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">JavaScript Algorithms & Data Structures - freeCodeCamp.org</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                </div>
-
-                                <!-- Federal Laws -->
-                                <div class="fui-l2-panel flex-column gap-2" style="width: 200px;" data-panel="Federal Laws">
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Certificates" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Bachelor in Computer Engineering - JMI</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Certificates" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
-                                    </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
-                                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
-                                    </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
-                                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
-                                    </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
-                                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
-                                    </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
-                                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
-                                    </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
-                                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
-                                    </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
-                                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Diploma in Computer Engineering - JMI</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
                                 </div>
 
-                                <!-- KPIs -->
-                                <div class="fui-l2-panel d-none flex-column gap-2" style="width: 200px;" data-panel="KPIs">
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                                <!-- Experience -->
+                                <div class="fui-l2-panel flex-column gap-2" style="width: 200px;" data-panel="experience">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="experience" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Senior Product Designer | RTA Dubai / CNS Dubai (Jan 23 - Present)</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="experience" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Team Lead - Product Design | Skymet Weather Pvt. Ltd. Aug 21 - Jan 23 </span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="experience" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
-                                    </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
-                                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">UI/UX Designer | Ams Softech Dec 13 - Aug 21</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
                                 </div>
 
-                                <!-- Policies -->
-                                <div class="fui-l2-panel d-none flex-column gap-2" style="width: 200px;" data-panel="Policies">
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                                <!-- Expertise -->
+                                <div class="fui-l2-panel d-none flex-column gap-2" style="width: 200px;" data-panel="expertise">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Expertise" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Product Strategy & Discovery</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Expertise" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Specialized Dashboard Design</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Expertise" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Specialized B2B | SaaS Design</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Expertise" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Data Architecture</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Expertise" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Data Visualization</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Expertise" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Design Systems & Governance</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Expertise" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Technical Design</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
-                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                                </div>
+
+                                <!-- Skills -->
+                                <div class="fui-l2-panel d-none flex-column gap-2" style="width: 200px;" data-panel="skills">
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Skills" data-gap="8">
                                         <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                        <span class="al-fs-14">Business licensing</span>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                        <span class="al-fs-14">Figma | Adobe XD</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
+                                    </div>
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Skills" data-gap="8">
+                                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                                        <span class="al-fs-14">Photoshop | Illustrator</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
+                                    </div>
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Skills" data-gap="8">
+                                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                                        <span class="al-fs-14">PowerPoint</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
+                                    </div>
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Skills" data-gap="8">
+                                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                                        <span class="al-fs-14">HTML5 | CSS3 | SASS</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
+                                    </div>
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Skills" data-gap="8">
+                                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                                        <span class="al-fs-14">JavaScript | JQuery | React | Angular</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
+                                    </div>
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Skills" data-gap="8">
+                                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                                        <span class="al-fs-14">Tailwind CSS | Bootstrap | Alfuix</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
+                                    </div>
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Skills" data-gap="8">
+                                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                                        <span class="al-fs-14">Ionic | LDS</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
+                                    </div>
+                                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Skills" data-gap="8">
+                                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                                        <span class="al-fs-14">WordPress | WooCommerce</span>
+                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3 d-none"></i>
                                     </div>
                                 </div>
                             </div>
@@ -998,22 +1020,23 @@
             <span class="marquee-title text-nowrap text-uppercase al-fs-12 fw-semibold">Tools & Platforms</span>
             <div class="marquee-mask flex-fill">
               <div class="marquee-track d-flex align-items-center">
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/adobe-xd-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/figma-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/ppt-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/ai-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/photoshop-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/html-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/css-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/sass-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/npm-logo.png" alt="bootstrap logo" />
                 <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/bootstrap-logo.png" alt="bootstrap logo" />
-                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/figma-logo.png" alt="figma logo" />
-                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/ionic-logo.png" alt="ionic logo" />
-                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/js-logo.png" alt="js logo" />
-                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/bootstrap-logo.png" alt="bootstrap logo" />
-                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/figma-logo.png" alt="figma logo" />
-                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/ionic-logo.png" alt="ionic logo" />
-                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/js-logo.png" alt="js logo" />
-                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/bootstrap-logo.png" alt="bootstrap logo" />
-                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/figma-logo.png" alt="figma logo" />
-                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/ionic-logo.png" alt="ionic logo" />
-                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/js-logo.png" alt="js logo" />
-                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/bootstrap-logo.png" alt="bootstrap logo" />
-                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/figma-logo.png" alt="figma logo" />
-                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/ionic-logo.png" alt="ionic logo" />
-                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/js-logo.png" alt="js logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/materializecss-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/angular-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/jquery-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/js-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/ionic-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/woocommerce-logo.png" alt="bootstrap logo" />
+                <img class="al-corner al-corner-all-6" height="40" src="assets/img/tools/wordpress-logo.png" alt="bootstrap logo" />
               </div>
             </div>
           </div>
@@ -1052,6 +1075,44 @@
     <canvas id="particle-canvas"></canvas>
   </div>
 
+  <!-- start modal about me -->
+  <div class="modal fade" id="aboutMeModal" tabindex="-1" aria-labelledby="aboutMeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border">
+            <div class="modal-header border-0 pb-0">
+                <div>
+                    <span class="badge bg-primary-subtle text-primary border border-primary-subtle" id="modal-category">Category</span>
+                    <h3 class="modal-title mt-2 fs-4" id="modal-title">Node Detail</h3>
+                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-secondary small">
+                <p>This is a detailed view of the selected sub-node. You can review specific gaps, sentiment metrics, and compliance ratings associated with this specific regulatory item.</p>
+                <div class="row row-cols-2 g-3 bg-body-secondary bg-opacity-25 rounded-3 p-3 mx-0 mt-2">
+                    <div class="col fui-m-stat d-flex flex-column gap-1">
+                        <span>Identified Gaps</span>
+                        <span id="modal-gaps">0</span>
+                    </div>
+                    <div class="col fui-m-stat d-flex flex-column gap-1">
+                        <span>Compliance Status</span>
+                        <span class="text-warning">Moderate</span>
+                    </div>
+                    <div class="col fui-m-stat d-flex flex-column gap-1">
+                        <span>Last Audit</span>
+                        <span class="text-body">Nov 2023</span>
+                    </div>
+                    <div class="col fui-m-stat d-flex flex-column gap-1">
+                        <span>Risk Level</span>
+                        <span class="text-danger">High</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- end modal about me -->
+
+  
   <div class="modal fade" id="detailModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content border">
