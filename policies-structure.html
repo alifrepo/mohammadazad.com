@@ -49,37 +49,54 @@
             <!-- Root node -->
             <div class="d-flex flex-column justify-content-center" id="col-root">
                 <div class="fui-node d-flex flex-column align-items-center gap-2 text-center" id="node-root">
-                    <div class="fw-semibold small">Federal Decree-Law<br><span class="text-warning">No. 45 of 2021</span></div>
-                    <div class="fui-root-orb-wrapper al-size-120 rounded-circle d-flex align-items-center justify-content-center position-relative">
-                        <div class="fui-root-pulse al-size-60 position-absolute rounded-circle"></div>
-                        <div class="fui-root-orb al-size-40 rounded-circle position-relative"></div>
+                    <span class="fui-gaps-badge badge rounded-2 fw-normal">Who I am</span>
+                    <div class="fui-root-orb-wrapper al-size-200 rounded-circle d-flex align-items-center justify-content-center position-relative">
+                        <div class="fui-root-pulse al-size-150 position-absolute rounded-circle"></div>
+                        <div class="fui-root-orb d-inline-flex al-flex-center al-size-130 rounded-circle position-relative overflow-hidden">
+                            <img src="assets/img/user-01.png" alt="Mohammad Azad Image" class="al-size-110 rounded-circle" />
+                        </div>
                     </div>
-                    <span class="fui-gaps-badge badge rounded-2 fw-normal">GAPS 13 📉</span>
+                    <div class="fw-semibold small">Mohammad Azad<br><span class="text-warning">Product Designer</span></div>
                 </div>
             </div>
 
             <!-- L1 tabs -->
             <div class="d-flex flex-column justify-content-center gap-3" id="col-l1">
-                <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" style="width:220px;" data-category="Services" data-count="18">
+                <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer active" style="width:220px;" data-category="Services" data-count="18">
                     <i class="bi bi-patch-check fs-5"></i>
-                    <div class="fui-l1-val al-fs-16 fw-semibold">Services (8)</div>
+                    <div class="fui-l1-val al-fs-15 fw-semibold">
+                        <span class="d-block">My approach</span>
+                        <small class="d-flex fw-normal al-fs-12 text-primary">That's how i do it</small>
+                    </div>
                 </div>
                 
                 <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" style="width:220px;" data-category="Entities" data-count="3">
                     <i class="bi bi-patch-check fs-5"></i>
-                    <div class="fui-l1-val al-fs-16 fw-semibold">Entities (3)</div>
+                    <div class="fui-l1-val al-fs-15 fw-semibold">
+                        <span class="d-block">Education</span>
+                        <small class="d-flex fw-normal al-fs-12 text-primary">Certificates</small>
+                    </div>
                 </div>
-                <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer active" style="width:220px;" data-category="Federal Laws" data-count="24">
+                <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" style="width:220px;" data-category="Federal Laws" data-count="24">
                     <i class="bi bi-patch-check fs-5"></i>
-                    <div class="fui-l1-val al-fs-16 fw-semibold">Related Federal (24)</div>
+                    <div class="fui-l1-val al-fs-15 fw-semibold">
+                        <span class="d-block">Experience</span>
+                        <small class="d-flex fw-normal al-fs-12 text-primary">I worked for</small>
+                    </div>
                 </div>
                 <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" style="width:220px;" data-category="KPIs" data-count="32">
                     <i class="bi bi-patch-check fs-5"></i>
-                    <div class="fui-l1-val al-fs-16 fw-semibold">KPIs (32)</div>
+                    <div class="fui-l1-val al-fs-15 fw-semibold">
+                        <span class="d-block">Expertise</span>
+                        <small class="d-flex fw-normal al-fs-12 text-primary">In which i have command</small>
+                    </div>
                 </div>
                 <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" style="width:220px;" data-category="Policies" data-count="12">
                     <i class="bi bi-patch-check fs-5"></i>
-                    <div class="fui-l1-val al-fs-16 fw-semibold">Internal Policies (12)</div>
+                    <div class="fui-l1-val al-fs-15 fw-semibold">
+                        <span class="d-block">Skills</span>
+                        <small class="d-flex fw-normal al-fs-12 text-primary">What I Know</small>
+                    </div>
                 </div>
             </div>
 
@@ -87,197 +104,162 @@
             <div class="d-flex flex-column justify-content-center gap-2 overflow-visible" id="col-l2">
 
                 <!-- Services -->
-                <div class="fui-l2-panel d-none flex-column gap-2" data-panel="Services">
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Business licensing" data-gap="8">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Business licensing</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 8 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
+                <div class="fui-l2-panel d-none flex-column gap-3" style="width: 250px;" data-panel="Services">
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Digital signature approvals" data-gap="3">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Digital signature approvals</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 3 <span class="fui-icon-down">👍</span><span class="fui-icon-up">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="AML advisory services" data-gap="12">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>AML advisory services</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 12 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Data protection impact assessments" data-gap="5">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Data protection impact assessments</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 5 <span class="fui-icon-down">👍</span><span class="fui-icon-up">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Cross-border payment services" data-gap="9">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Cross-border payment services</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 9 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
-                    </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Regulatory sandbox applications" data-gap="2">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Regulatory sandbox applications</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 2 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
-                    </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Consumer complaint handling" data-gap="14">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Consumer complaint handling</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 14 <span class="fui-icon-down">👍</span><span class="fui-icon-up">👎</span></div>
-                    </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="KYC verification services" data-gap="6">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>KYC verification services</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 6 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
                 </div>
 
                 <!-- Entities -->
-                <div class="fui-l2-panel d-none flex-column gap-2" data-panel="Entities">
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Central Bank of the UAE" data-gap="4">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Central Bank of the UAE</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 4 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
+                <div class="fui-l2-panel d-none flex-column gap-2" style="width: 250px;" data-panel="Entities">
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Securities and Commodities Authority" data-gap="7">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Securities and Commodities Authority</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 7 <span class="fui-icon-down">👍</span><span class="fui-icon-up">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Insurance Authority" data-gap="3">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Insurance Authority</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 3 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
                 </div>
 
                 <!-- Federal Laws -->
-                <div class="fui-l2-panel flex-column gap-2" data-panel="Federal Laws">
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Federal Decree-Law No. 20 of 2018 (AML)" data-gap="11">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Federal Decree-Law No. 20 of 2018 (AML)</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 11 <span class="fui-icon-down">👍</span><span class="fui-icon-up">👎</span></div>
+                <div class="fui-l2-panel flex-column gap-2" style="width: 250px;" data-panel="Federal Laws">
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Federal Law No. 2 of 2015 (Commercial Companies)" data-gap="6">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Federal Law No. 2 of 2015 (Commercial Companies)</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 6 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Federal Decree-Law No. 14 of 2018 (Central Bank)" data-gap="9">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Federal Decree-Law No. 14 of 2018 (Central Bank)</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 9 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Federal Decree-Law No. 19 of 2018 (Insolvency)" data-gap="4">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Federal Decree-Law No. 19 of 2018 (Insolvency)</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 4 <span class="fui-icon-down">👍</span><span class="fui-icon-up">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Federal Law No. 4 of 2002 (Sanctions)" data-gap="15">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Federal Law No. 4 of 2002 (Sanctions)</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 15 <span class="fui-icon-down">👍</span><span class="fui-icon-up">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Federal Decree-Law No. 32 of 2021 (Commercial Companies)" data-gap="7">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Federal Decree-Law No. 32 of 2021 (Commercial Companies)</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 7 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Federal Decree-Law No. 26 of 2020 (Trade Licenses)" data-gap="3">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Federal Decree-Law No. 26 of 2020 (Trade Licenses)</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 3 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Federal Law No. 8 of 2004 (Financial Free Zones)" data-gap="10">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Federal Law No. 8 of 2004 (Financial Free Zones)</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 10 <span class="fui-icon-down">👍</span><span class="fui-icon-up">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
                 </div>
 
                 <!-- KPIs -->
-                <div class="fui-l2-panel d-none flex-column gap-2" data-panel="KPIs">
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Average onboarding time" data-gap="5">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Average onboarding time</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 5 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
+                <div class="fui-l2-panel d-none flex-column gap-2" style="width: 250px;" data-panel="KPIs">
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="SAR filing turnaround" data-gap="13">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>SAR filing turnaround</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 13 <span class="fui-icon-down">👍</span><span class="fui-icon-up">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Customer complaint resolution rate" data-gap="6">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Customer complaint resolution rate</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 6 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Regulatory reporting accuracy" data-gap="2">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Regulatory reporting accuracy</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 2 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
-                    </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="AML training completion rate" data-gap="8">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>AML training completion rate</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 8 <span class="fui-icon-down">👍</span><span class="fui-icon-up">👎</span></div>
-                    </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Licensing approval SLA" data-gap="11">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Licensing approval SLA</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 11 <span class="fui-icon-down">👍</span><span class="fui-icon-up">👎</span></div>
-                    </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Sanctions screening coverage" data-gap="4">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Sanctions screening coverage</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 4 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
-                    </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Audit finding closure rate" data-gap="9">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Audit finding closure rate</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 9 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
                 </div>
 
                 <!-- Policies -->
-                <div class="fui-l2-panel d-none flex-column gap-2" data-panel="Policies">
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="AML/CFT Policy" data-gap="7">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>AML/CFT Policy</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 7 <span class="fui-icon-down">👍</span><span class="fui-icon-up">👎</span></div>
+                <div class="fui-l2-panel d-none flex-column gap-2" style="width: 250px;" data-panel="Policies">
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Data Privacy Policy" data-gap="3">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Data Privacy Policy</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 3 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Outsourcing Policy" data-gap="9">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Outsourcing Policy</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 9 <span class="fui-icon-down">👍</span><span class="fui-icon-up">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Conflicts of Interest Policy" data-gap="2">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Conflicts of Interest Policy</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 2 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Whistleblowing Policy" data-gap="5">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Whistleblowing Policy</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 5 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Business Continuity Policy" data-gap="6">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Business Continuity Policy</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 6 <span class="fui-icon-down">👍</span><span class="fui-icon-up">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Third-Party Risk Policy" data-gap="10">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Third-Party Risk Policy</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 10 <span class="fui-icon-down">👍</span><span class="fui-icon-up">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
-                    <div class="fui-node fui-l2-node d-flex align-items-center gap-2 px-2 py-1 rounded-2 border border-transparent" data-name="Record Retention Policy" data-gap="4">
-                        <div class="fui-l2-dot rounded-circle"></div>
-                        <span>Record Retention Policy</span>
-                        <div class="fui-l2-metrics d-flex align-items-center gap-1 px-2 py-1 rounded-1 ms-auto">GAPS 4 <span class="fui-icon-up">👍</span><span class="fui-icon-down">👎</span></div>
+                    <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-5 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-5" data-name="Business licensing" data-gap="8">
+                        <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                        <span class="al-fs-14">Business licensing</span>
+                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
                     </div>
                 </div>
 
@@ -288,7 +270,6 @@
         <!-- <div class="fui-info-panel rounded-4 border p-4 d-flex flex-column gap-4" style="width:420px;" id="side-panel"></div> -->
     </div>
 
-    <!-- Bootstrap Modal -->
     <div class="modal fade" id="detailModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content border">
