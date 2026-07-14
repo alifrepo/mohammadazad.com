@@ -202,7 +202,7 @@
               <nav id="desktopTab" class="desktop-nav al-fui-tabs-nav bg-body al-corner al-border al-corner-all-26 al-border-1 al-border-primary-50 al-backdrop-blur-32 al-py-8 al-px-12 ms-3 ms-sm-5 z-3 al-mb-n-26" style="max-width: 419px;">
                   <ul class="nav nav-pills" id="pills-tab" role="tablist">
                       <li class="nav-item" role="presentation">
-                          <button class="nav-link al-corner al-corner-all-16 px-4 text-nowrap al-fs-13 active" id="pills-my-work-tab" data-bs-toggle="pill" data-bs-target="#pills-my-work">
+                          <button class="nav-link al-corner al-corner-all-16 px-4 text-nowrap al-fs-13" id="pills-my-work-tab" data-bs-toggle="pill" data-bs-target="#pills-my-work">
                               <i class="bi bi-columns-gap me-1"></i>
                               <span>My Work</span>
                           </button>
@@ -214,7 +214,7 @@
                           </button>
                       </li>
                       <li class="nav-item" role="presentation">
-                          <button class="nav-link al-corner al-corner-all-16 px-4 text-nowrap al-fs-13" id="pills-about-me-tab" data-bs-toggle="pill" data-bs-target="#pills-about-me">
+                          <button class="nav-link al-corner al-corner-all-16 px-4 text-nowrap al-fs-13 active" id="pills-about-me-tab" data-bs-toggle="pill" data-bs-target="#pills-about-me">
                               <i class="bi bi-person me-1"></i>
                               <span>About Me</span>
                           </button>
@@ -226,11 +226,11 @@
               <!-- start tabs content -->
               <div class="tab-content al-fui-tabs-body pt-lg-4 al-corner al-border al-corner-all-12 al-border-1 al-border-primary-50 bg-body al-backdrop-blur-8" id="pills-tabContent" style="height: calc(100vh - 180px);">
                   <!-- my work -->
-                  <div class="tab-pane h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover fade pt-2 show active" id="pills-my-work" role="tabpanel" aria-labelledby="pills-my-work-tab" tabindex="0">
+                  <div class="tab-pane h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover fade pt-2" id="pills-my-work" role="tabpanel" aria-labelledby="pills-my-work-tab" tabindex="0">
                     <div class="px-4 pb-4 pt-3">
                       <div class="row g-4">
                         <div class="col-12">
-                          <a href="#!" target="_blank" class="position-relative d-block overflow-hidden al-corner al-corner-all-12 animate__animated animate__fadeInLeft animate__delay-1s">
+                          <a href="#!" target="_blank" class="position-relative d-block overflow-hidden al-corner al-corner-all-12 animate__animated animate__fadeInLeft">
                             <img src="assets/img/portfolio/1.jpg" alt="" class="w-100" />
 
                             <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
@@ -260,7 +260,7 @@
                         </div>
 
                         <div class="col-12">
-                          <a href="#!" target="_blank" class="position-relative d-block overflow-hidden al-corner al-corner-all-12 animate__animated animate__fadeInRight animate__delay-1s">
+                          <a href="#!" target="_blank" class="position-relative d-block overflow-hidden al-corner al-corner-all-12 animate__animated animate__fadeInRight">
                             <img src="assets/img/portfolio/2.jpg" alt="" class="w-100" />
 
                             <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
@@ -374,7 +374,7 @@
                   </div>
 
                   <!-- about me -->
-                  <div class="tab-pane fade h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover" id="pills-about-me" role="tabpanel" aria-labelledby="pills-about-me-tab" tabindex="0">
+                  <div class="tab-pane fade h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover show active" id="pills-about-me" role="tabpanel" aria-labelledby="pills-about-me-tab" tabindex="0">
                     <div class="pb-4 px-4 h-100 animate__animated animate__fadeInLeft">
                       <section class="fui-graph-widget h-100" data-graph-widget>
                         <div class="d-flex flex-column flex-lg-row w-100 h-100 gap-4 position-relative fui-graph-row">
@@ -1002,7 +1002,7 @@
   </div>
 
   <!-- start modal about me -->
-  <!-- <div class="modal fade" id="aboutMeModal" tabindex="-1" aria-labelledby="aboutMeModalLabel" aria-hidden="true">
+  <div class="modal fade" id="aboutMeModal" tabindex="-1" aria-labelledby="aboutMeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content border">
             <div class="modal-header border-0 pb-0">
@@ -1035,158 +1035,79 @@
             </div>
         </div>
     </div>
-  </div> -->
-
-  <div class="modal modal-lg fade" id="aboutMeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="aboutMeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content border-0 bg-transparent overflow-hidden">
-                <span class="d-inline-flex align-items-center justify-content-end al-w-50 al-h-22 bg-danger bg-opacity-75 al-hover-bg-danger al-cursor-pointer al-corner al-te-8 al-bs-30 pt-1 al-pe-6 al-me-n-1 position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close">
-                    <i class="bi bi-x fs-5 text-white lh-1"></i>
-                </span>
-                <div class="al-clip-border al-be-12 al-bs-12 al-ts-12 al-t-clip-x al-t-25 al-center-t-100 al-extend-t-45 al-border-2 al-border-white-25 bg-body">
-                    <div class="modal-header p-0 border-bottom-0 d-flex al-flex-center mb-4 al-pt-1">
-                        <h2 class="fs-5 text-white bg-white bg-opacity-10 px-5 py-2 al-corner al-be-50 al-bs-50">
-                            <span class="d-inline-flex al-flex-center px-4 py-1">Sign up for free</span>
-                        </h2>
-                    </div>
-                    <div class="modal-body p-5 pt-0">
-                        <form class="">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput" class="text-white">Email address</label> 
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
-                                <label class="text-white" for="floatingPassword">Password</label>
-                            </div> 
-                            <div class="position-relative">
-                                <span class="position-absolute z-1 top-0 start-0 al-size-8 border border-2 border-white border-opacity-75 border-end-0 border-bottom-0 pe-none"></span>
-                                <span class="position-absolute z-1 top-0 end-0 al-size-8 border border-2 border-white border-opacity-75 border-start-0 border-bottom-0 pe-none"></span>
-                                <button type="submit" class="btn btn-lg bg-primary bg-opacity-75 al-hover-bg-primary px-5 border-0 rounded-0 al-clip-border al-border-1 al-border-white-50 al-b-clip-x al-extend-b-35 al-b-7 text-white fw-bold al-h-50 w-100">
-                                    <span class="d-inline-flex pb-2 fw-normal al-fs-18">Sign Up</span>
-                                </button>
-                                <span class="al-trapezoid-t-4 al-trapezoid-w-64px text-warning position-absolute bottom-0 start-50 translate-middle-x"></span>
-                                <span class="position-absolute z-1 bottom-0 start-0 al-size-8 border border-2 border-white border-opacity-75 border-end-0 border-top-0 pe-none"></span>
-                                <span class="position-absolute z-1 bottom-0 end-0 al-size-8 border border-2 border-white border-opacity-75 border-start-0 border-top-0 pe-none"></span>
-                            </div>
-
-                            <small class="d-block text-center mt-3">By clicking Sign up, you agree to the terms of use.</small> 
-                            
-                            <hr class="my-4 border-primary border-opacity-50">
-                            
-                            <h2 class="fs-6 mb-3 text-center">Or use a third-party</h2> 
-
-                            <div class="position-relative">
-                                <span class="position-absolute z-1 top-0 start-0 al-size-8 border border-2 border-danger border-opacity-75 border-end-0 border-bottom-0 pe-none"></span>
-                                <span class="position-absolute z-1 top-0 end-0 al-size-8 border border-2 border-danger border-opacity-75 border-start-0 border-bottom-0 pe-none"></span>
-                                <button type="submit" class="btn btn-lg al-hover-bg-danger-25 px-5 border-0 rounded-0 al-clip-border al-border-1 al-border-danger al-b-clip-x al-extend-b-35 al-b-7 text-white fw-bold al-h-50 w-100">
-                                    <i class="bi bi-google fs-6"></i>
-                                    <span class="d-inline-flex pb-2 fw-normal al-fs-16">Sign up with Google</span>
-                                </button>
-                                <span class="al-trapezoid-t-4 al-trapezoid-w-64px text-danger text-opacity-25 position-absolute bottom-0 start-50 translate-middle-x"></span>
-                                <span class="position-absolute z-1 bottom-0 start-0 al-size-8 border border-2 border-danger border-opacity-75 border-end-0 border-top-0 pe-none"></span>
-                                <span class="position-absolute z-1 bottom-0 end-0 al-size-8 border border-2 border-danger border-opacity-75 border-start-0 border-top-0 pe-none"></span>
-                            </div>
-
-                            <div class="position-relative my-3">
-                                <span class="position-absolute z-1 top-0 start-0 al-size-8 border border-2 border-primary border-opacity-75 border-end-0 border-bottom-0 pe-none"></span>
-                                <span class="position-absolute z-1 top-0 end-0 al-size-8 border border-2 border-primary border-opacity-75 border-start-0 border-bottom-0 pe-none"></span>
-                                <button type="submit" class="btn btn-lg al-hover-bg-primary-25 px-5 border-0 rounded-0 al-clip-border al-border-1 al-border-primary al-b-clip-x al-extend-b-35 al-b-7 text-white fw-bold al-h-50 w-100">
-                                    <i class="bi bi-facebook fs-6"></i>
-                                    <span class="d-inline-flex pb-2 fw-normal al-fs-16">Sign up with Facebook</span>
-                                </button>
-                                <span class="al-trapezoid-t-4 al-trapezoid-w-64px text-primary text-opacity-25 position-absolute bottom-0 start-50 translate-middle-x"></span>
-                                <span class="position-absolute z-1 bottom-0 start-0 al-size-8 border border-2 border-primary border-opacity-75 border-end-0 border-top-0 pe-none"></span>
-                                <span class="position-absolute z-1 bottom-0 end-0 al-size-8 border border-2 border-primary border-opacity-75 border-start-0 border-top-0 pe-none"></span>
-                            </div>
-
-                            <div class="position-relative">
-                                <span class="position-absolute z-1 top-0 start-0 al-size-8 border border-2 border-white border-opacity-50 border-end-0 border-bottom-0 pe-none"></span>
-                                <span class="position-absolute z-1 top-0 end-0 al-size-8 border border-2 border-white border-opacity-50 border-start-0 border-bottom-0 pe-none"></span>
-                                <button type="submit" class="btn btn-lg al-hover-bg-white-25 px-5 border-0 rounded-0 al-clip-border al-border-1 al-border-white-50 al-b-clip-x al-extend-b-35 al-b-7 text-white fw-bold al-h-50 w-100">
-                                    <i class="bi bi-github fs-6"></i>
-                                    <span class="d-inline-flex pb-2 fw-normal al-fs-16">Sign up with GitHub</span>
-                                </button>
-                                <span class="al-trapezoid-t-4 al-trapezoid-w-64px text-white text-opacity-25 position-absolute bottom-0 start-50 translate-middle-x"></span>
-                                <span class="position-absolute z-1 bottom-0 start-0 al-size-8 border border-2 border-white border-opacity-50 border-end-0 border-top-0 pe-none"></span>
-                                <span class="position-absolute z-1 bottom-0 end-0 al-size-8 border border-2 border-white border-opacity-50 border-start-0 border-top-0 pe-none"></span>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="al-pattern-grid-dark-blue al-pattern-grid-double al-pattern-white-1 position-fixed top-0 start-0 bottom-0 end-0 z-n1 pe-none"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+  </div>
   <!-- end modal about me -->
 
 
+  <!-- ============================================================
+     HARDCODED UNIQUE BOOTSTRAP MODALS
+     Add, remove, or customize layout grids individually per node ID
+============================================================ -->
 
-  <!-- Modal 1 Structure -->
-  <div class="modal fade" id="fuiModal-1" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content text-bg-dark border-secondary">
-        <div class="modal-header border-bottom border-secondary">
-          <h5 class="modal-title text-primary font-monospace">METRIC BLUEPRINT // COMP-01</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+<!-- Modal 1 Structure -->
+<div class="modal fade" id="fuiModal-1" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content text-bg-dark border-secondary">
+      <div class="modal-header border-bottom border-secondary">
+        <h5 class="modal-title text-primary font-monospace">METRIC BLUEPRINT // COMP-01</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4 text-center">
+        <img src="components/comp-01.png" alt="Preview Blueprint" class="img-fluid rounded border border-secondary mb-4 shadow">
+        <div class="text-start">
+          <h6 class="text-secondary text-uppercase small font-monospace">B2B Enterprise Analytics Dashboard</h6>
+          <p class="text-white-50">High-density visual interface matrix architecture designed for real-time telemetry analytics processing arrays.</p>
         </div>
-        <div class="modal-body p-4 text-center">
-          <img src="components/comp-01.png" alt="Preview Blueprint" class="img-fluid rounded border border-secondary mb-4 shadow">
-          <div class="text-start">
-            <h6 class="text-secondary text-uppercase small font-monospace">B2B Enterprise Analytics Dashboard</h6>
-            <p class="text-white-50">High-density visual interface matrix architecture designed for real-time telemetry analytics processing arrays.</p>
+      </div>
+      <div class="modal-footer border-top border-secondary justify-content-between">
+        <span class="font-monospace small text-muted">TARGET NODE REf: FUI-NODE-01</span>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close Blueprint</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 Structure -->
+<div class="modal fade" id="fuiModal-3" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content text-bg-dark border-secondary">
+      <div class="modal-header border-bottom border-secondary">
+        <h5 class="modal-title text-info font-monospace">SYSTEM MATRIX // COMP-03</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <img src="components/comp-03.png" alt="Preview" class="img-fluid rounded border border-secondary shadow">
+          </div>
+          <div class="col-md-6">
+            <h6 class="text-secondary text-uppercase small font-monospace">Security Monitoring Grid</h6>
+            <p class="text-white-50 m-0">Node verification layout tracking processing performance parameters across distributed subcomponents smoothly.</p>
           </div>
         </div>
-        <div class="modal-footer border-top border-secondary justify-content-between">
-          <span class="font-monospace small text-muted">TARGET NODE REf: FUI-NODE-01</span>
-          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close Blueprint</button>
-        </div>
+      </div>
+      <div class="modal-footer border-top border-secondary">
+        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Dismiss</button>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Modal 3 Structure -->
-  <div class="modal fade" id="fuiModal-3" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content text-bg-dark border-secondary">
-        <div class="modal-header border-bottom border-secondary">
-          <h5 class="modal-title text-info font-monospace">SYSTEM MATRIX // COMP-03</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body p-4">
-          <div class="row align-items-center">
-            <div class="col-md-6 mb-3 mb-md-0">
-              <img src="components/comp-03.png" alt="Preview" class="img-fluid rounded border border-secondary shadow">
-            </div>
-            <div class="col-md-6">
-              <h6 class="text-secondary text-uppercase small font-monospace">Security Monitoring Grid</h6>
-              <p class="text-white-50 m-0">Node verification layout tracking processing performance parameters across distributed subcomponents smoothly.</p>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer border-top border-secondary">
-          <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Dismiss</button>
-        </div>
+<!-- Modal 4 Structure -->
+<div class="modal fade" id="fuiModal-4" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-bg-dark border-secondary">
+      <div class="modal-header border-bottom border-secondary">
+        <h5 class="modal-title text-success font-monospace">TOOLKIT BLUEPRINT // COMP-04</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4 text-center">
+        <img src="components/comp-04.png" alt="Preview" class="img-fluid rounded mb-3 border border-secondary">
+        <p class="text-start text-white-50 font-monospace small">Alfuix dynamic styling inputs engine showcasing complex user event tracking focus logic components natively built.</p>
       </div>
     </div>
   </div>
-
-  <!-- Modal 4 Structure -->
-  <div class="modal fade" id="fuiModal-4" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content text-bg-dark border-secondary">
-        <div class="modal-header border-bottom border-secondary">
-          <h5 class="modal-title text-success font-monospace">TOOLKIT BLUEPRINT // COMP-04</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body p-4 text-center">
-          <img src="components/comp-04.png" alt="Preview" class="img-fluid rounded mb-3 border border-secondary">
-          <p class="text-start text-white-50 font-monospace small">Alfuix dynamic styling inputs engine showcasing complex user event tracking focus logic components natively built.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 
 
   <!-- bg pattern -->
