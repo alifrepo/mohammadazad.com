@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Pixel Scatter Assembly</title>
+    <style>
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 40px;
+        }
+
+        /* Elements start completely hidden */
+        .pixel-build {
+            display: inline-block;
+            margin-bottom: 30px;
+            opacity: 0; 
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border: 1px solid #a3e635;
+            color: #a3e635;
+            text-decoration: none;
+            background: transparent;
+        }
+
+        /* Hidden SVG container holding our dynamic masks */
+        .svg-mask-holder {
+            position: absolute;
+            width: 0;
+            height: 0;
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+
+    <!-- GSAP Core CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+
+    <!-- Target Elements -->
+    <div class="pixel-build">
+        <h1>THE CREATIVE FORCE</h1>
+    </div>
+
+    <br>
+
+    <div class="pixel-build">
+        <p style="margin:0; font-size: 1.2rem;">We help founders, builders, and dreamers.</p>
+    </div>
+
+    <br>
+
+    <div class="pixel-build">
+        <a href="#" class="btn">BOOK A CAL?</a>
+    </div>
+
+    <script>
+        // Helper function to shuffle an array (for true random pixel assembly order)
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const targets = document.querySelectorAll('.pixel-build');
+
+            const svgHolder = document.createElement('div');
+            svgHolder.classList.add('svg-mask-holder');
+            document.body.appendChild(svgHolder);
+
+            targets.forEach((target, index) => {
+                const rect = target.getBoundingClientRect();
+                
+                // Pixel size (smaller = more complex block scatter)
+                const pixelSize = 10; 
+                const cols = Math.ceil(rect.width / pixelSize);
+                const rows = Math.ceil(rect.height / pixelSize);
+                const maskId = `pixel-mask-${index}`;
+
+                const svgNS = "http://www.w3.org/2000/svg";
+                const svg = document.createElementNS(svgNS, "svg");
+                const defs = document.createElementNS(svgNS, "defs");
+                const mask = document.createElementNS(svgNS, "mask");
+                
+                mask.setAttribute("id", maskId);
+                
+                // Base background (Black = Fully Hidden)
+                const maskBg = document.createElementNS(svgNS, "rect");
+                maskBg.setAttribute("width", "100%");
+                maskBg.setAttribute("height", "100%");
+                maskBg.setAttribute("fill", "black");
+                mask.appendChild(maskBg);
+
+                let pixelElements = [];
+
+                // Generate the grid of pixel blocks
+                for (let r = 0; r < rows; r++) {
+                    for (let c = 0; c < cols; c++) {
+                        const pixel = document.createElementNS(svgNS, "rect");
+                        pixel.setAttribute("x", c * pixelSize);
+                        pixel.setAttribute("y", r * pixelSize);
+                        pixel.setAttribute("width", pixelSize);
+                        pixel.setAttribute("height", pixelSize);
+                        pixel.setAttribute("fill", "white");
+                        pixel.setAttribute("opacity", "0"); // Start hidden
+
+                        mask.appendChild(pixel);
+                        pixelElements.push(pixel);
+                    }
+                }
+
+                defs.appendChild(mask);
+                svg.appendChild(defs);
+                svgHolder.appendChild(svg);
+
+                // Apply mask to HTML element
+                target.style.webkitMaskImage = `url(#${maskId})`;
+                target.style.maskImage = `url(#${maskId})`;
+                
+                // Reveal the wrapper layout
+                gsap.set(target, { opacity: 1 });
+
+                // Shuffle the pixels so they don't load in order (breaking the typing effect)
+                const shuffledPixels = shuffleArray([...pixelElements]);
+
+                // Create a timeline for this element's digital assembly
+                const tl = gsap.timeline();
+
+                // 1. The main random scatter build-up
+                tl.to(shuffledPixels, {
+                    opacity: 1,
+                    duration: 0.1, // Pixels snap in instantly
+                    stagger: {
+                        each: 0.002, // Fast, chaotic stream of pixels popping in
+                        from: "random"
+                    },
+                    ease: "power1.in"
+                });
+
+                // 2. Add a global chaotic flicker overlay to the entire element mid-way through assembly
+                tl.to(target, {
+                    opacity: 0.4,
+                    duration: 0.05,
+                    repeat: 3,
+                    yoyo: true,
+                    ease: "steps(1)" // Harsh, binary on/off flicker
+                }, "-=1.0"); // Start flickering while the pixels are still assembling
+
+                // 3. Ensure full opacity and clean up
+                tl.to(target, {
+                    opacity: 1,
+                    duration: 0.05,
+                    onComplete: () => {
+                        target.style.webkitMaskImage = "none";
+                        target.style.maskImage = "none";
+                        svg.remove();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

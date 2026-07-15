@@ -29,20 +29,11 @@
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="assets/dist/css/bootstrap/bootstrap-icons.css">
 
-<style>
-  /* Elements apply the SVG filter we define below */
-        .pixel-glitch {
-            filter: url(#pixelate-filter);
-            opacity: 0; /* Start hidden */
-            margin-bottom: 25px;
-            transform-origin: left center;
-        }
-</style>
 </head>
 <body class=" overflow-x-hidden">
-  <div class="container-xxl px-4 px-lg-5 position-relative z-3 ">
+  <div class="container-xxl px-4 px-lg-5 position-relative z-3">
     <!-- start header -->
-    <header class="position-sticky top-0 z-3 py-3 pixel-glitch">
+    <header class="position-sticky top-0 z-3 py-3 animate__animated animate__fadeInDown">
       <div class="row align-items-center">
         <div class="col">
           <h1 class="al-fs-18 al-ff-Jura mb-0">
@@ -87,7 +78,7 @@
     <!-- start main content -->
      <main>
       <div class="row g-5">
-        <div class="col-lg-5 d-flex flex-column justify-content-between gap-5 pb-4 pt-5 pixel-glitch">
+        <div class="col-lg-5 d-flex flex-column justify-content-between gap-5 pb-4 pt-5 animate__animated animate__fadeInLeft">
           <div class="position-relative pt-3">
             <img src="assets/img/mohammad-azad-logo-white.svg" alt="Mohammad Azad Logo" class="al-corner al-corner-all-7 al-size-50" />
             <div class="mt-4 pe-none">
@@ -107,20 +98,20 @@
               <div class="position-relative d-inline-flex">
                 <span class="position-absolute z-1 top-0 start-0 al-size-8 border border-4 border-secondary border-end-0 border-bottom-0 pe-none"></span>
                 <span class="position-absolute z-1 top-0 end-0 al-size-8 border border-4 border-secondary border-start-0 border-bottom-0 pe-none"></span>
-                <a href="assets/img/resume.pdf" target="_blank" class="btn bg-white bg-opacity-25 w-100 border-0 rounded-0 al-clip al-b-clip-x al-extend-b-35 al-b-6 fw-bold px-4 al-hover-glow">
+                <button type="button" class="btn bg-white bg-opacity-25 w-100 border-0 rounded-0 al-clip al-b-clip-x al-extend-b-35 al-b-6 fw-bold px-4 al-hover-glow">
                     <span class="d-inline-flex pb-2 al-fs-14 text-white fw-medium">Download Resume</span>
-                </a>
+                </button>
                 <span class="al-trapezoid-t-4 al-trapezoid-w-64px text-primary position-absolute bottom-0 start-50 translate-middle-x"></span>
                 <span class="position-absolute z-1 bottom-0 start-0 al-size-8 border border-4 border-secondary border-end-0 border-top-0 pe-none"></span>
                 <span class="position-absolute z-1 bottom-0 end-0 al-size-8 border border-4 border-secondary border-start-0 border-top-0 pe-none"></span>
               </div>
               
-              <div class="position-relative d-inline-flex">
+              <div class="position-relative d-inline-flex" data-bs-toggle="modal" data-bs-target="#modalGetInTouch">
                 <span class="position-absolute z-1 top-0 start-0 al-size-8 border border-4 border-secondary border-end-0 border-bottom-0 pe-none"></span>
                 <span class="position-absolute z-1 top-0 end-0 al-size-8 border border-4 border-secondary border-start-0 border-bottom-0 pe-none"></span>
-                <a href="mailto:iazad@outlook.com" class="btn bg-primary w-100 border-0 rounded-0 al-clip al-b-clip-x al-extend-b-35 al-b-6 fw-bold px-4 al-hover-glass-shine">
+                <button type="button" class="btn bg-primary w-100 border-0 rounded-0 al-clip al-b-clip-x al-extend-b-35 al-b-6 fw-bold px-4 al-hover-glass-shine">
                     <span class="d-inline-flex pb-2 al-fs-14 text-dark fw-medium">Get In Touch</span>
-                </a>
+                </button>
                 <span class="al-trapezoid-t-4 al-trapezoid-w-64px text-white position-absolute bottom-0 start-50 translate-middle-x"></span>
                 <span class="position-absolute z-1 bottom-0 start-0 al-size-8 border border-4 border-secondary border-end-0 border-top-0 pe-none"></span>
                 <span class="position-absolute z-1 bottom-0 end-0 al-size-8 border border-4 border-secondary border-start-0 border-top-0 pe-none"></span>
@@ -204,7 +195,7 @@
           </footer>
           <!-- end footer -->
         </div>
-        <div class="col-lg-7 pixel-glitch">
+        <div class="col-lg-7 animate__animated animate__fadeInRight">
           <div class="position-relative pt-2">
             <div class="al-fui-tabs position-relative">
               <!-- start tab navs -->
@@ -233,9 +224,9 @@
               <!-- end tab navs -->
 
               <!-- start tabs content -->
-              <div class="tab-content al-fui-tabs-body al-corner al-border al-corner-all-12 al-border-1 al-border-primary-50 bg-body al-backdrop-blur-8" id="pills-tabContent" style="height: calc(100vh - 180px);">
+              <div class="tab-content al-fui-tabs-body pt-lg-4 al-corner al-border al-corner-all-12 al-border-1 al-border-primary-50 bg-body al-backdrop-blur-8" id="pills-tabContent" style="height: calc(100vh - 180px);">
                   <!-- my work -->
-                  <div class="tab-pane h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover fade pt-2 pt-lg-4 show active" id="pills-my-work" role="tabpanel" aria-labelledby="pills-my-work-tab" tabindex="0">
+                  <div class="tab-pane h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover fade pt-2 show active" id="pills-my-work" role="tabpanel" aria-labelledby="pills-my-work-tab" tabindex="0">
                     <div class="px-4 pb-4 pt-3">
                       <div class="row g-4">
                         <div class="col-12">
@@ -362,95 +353,28 @@
                    </div>
 
                   <!-- my products -->
-                  <div class="tab-pane fade h-100 overflow-hidden al-scroll-smooth position-relative" id="pills-my-products" role="tabpanel" aria-labelledby="pills-my-products-tab" tabindex="0">
+                  <div class="tab-pane fade h-100 overflow-hidden al-scroll-smooth" id="pills-my-products" role="tabpanel" aria-labelledby="pills-my-products-tab" tabindex="0">
+                    <div class="fui-bg-layers">
+                      <div class="fui-grid-bg"></div>
+                      <div class="fui-radial-glow"></div>
+                      <div class="fui-vignette"></div>
+                    </div> 
 
-                    <!-- Unified View Switch Toggle -->
-                    <div class="fui-view-toggle position-absolute top-0 end-0 m-3">
-                      <button type="button" class="fui-view-btn" data-fui-view="globe" aria-pressed="false">
-                        <i class="bi bi-globe2"></i> Globe View
-                      </button>
-                      <button type="button" class="fui-view-btn" data-fui-view="cards" aria-pressed="false">
-                        <i class="bi bi-grid-3x3-gap"></i> Card View
-                      </button>
-                    </div>
-
-                    <!-- GLOBE VIEW PANEL -->
-                    <div data-fui-panel="globe" class="fui-view-panel-hidden animate__animated animate__pulse">
-                      <div class="fui-bg-layers">
-                        <div class="fui-grid-bg"></div>
-                        <div class="fui-radial-glow"></div>
-                        <div class="fui-vignette"></div>
+                    <div class="fui-stage" id="fui-stage">
+                      <canvas id="fui-sphere"></canvas>
+                      <div class="fui-sweep"></div>
+                      
+                      <div class="fui-core">
+                        <img src="assets/img/mohammad-azad-logo-white.svg" alt="Mohammad Azad Logo" class="al-corner al-corner-all-7 al-size-50">
                       </div>
                       
-                      <div class="fui-stage" id="fui-stage">
-                        <canvas id="fui-sphere"></canvas>
-                        <div class="fui-sweep"></div>
-                        
-                        <!-- Center Core Brand Badge -->
-                        <div class="fui-core">
-                          <img src="assets/img/mohammad-azad-logo-white.svg" alt="Mohammad Azad Logo" class="al-corner al-corner-all-7 al-size-50">
-                        </div>
-                        
-                        <!-- Floating Interactive Canvas Node Layer (Mounted programmatically by JS) -->
-                        <div class="fui-layer" id="fui-img-layer"></div>
-                      </div>
+                      <!-- Interface Dynamic Node Staging Mount Layer -->
+                      <div class="fui-layer" id="fui-img-layer"></div>
                     </div>
-
-                    <!-- CARD VIEW PANEL (Using native Bootstrap row, cols, and cards) -->
-                    <div data-fui-panel="cards" class="fui-view-panel-hidden h-100 overflow-y-auto py-3 px-3">
-                      <div class="row row-cols-1 row-cols-xl-2 g-4">
-                        
-                        <!-- Card 1 -->
-                        <div class="col animate__animated animate__zoomIn">
-                          <div class="card fui-bootstrap-card h-100" data-bs-toggle="modal" data-bs-target="#fuiModal-1">
-                            <img src="assets/img/portfolio/1.jpg" alt="Product 1" class="card-img-top fui-bootstrap-card-img">
-                            <div class="card-body">
-                              <h5 class="card-title text-white mb-2">Product One</h5>
-                              <p class="card-text text-white-50 small mb-0">Replace with a one-line description of this product.</p>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Card 2 (External Anchor Link) -->
-                        <div class="col animate__animated animate__zoomIn">
-                          <a class="card fui-bootstrap-card h-100 text-decoration-none" href="https://alfuix.com" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/img/portfolio/2.jpg" alt="Product 2" class="card-img-top fui-bootstrap-card-img">
-                            <div class="card-body">
-                              <h5 class="card-title text-white mb-2">Product Two</h5>
-                              <p class="card-text text-white-50 small mb-0">Replace with a one-line description of this product.</p>
-                            </div>
-                          </a>
-                        </div>
-
-                        <!-- Card 3 -->
-                        <div class="col animate__animated animate__zoomIn">
-                          <div class="card fui-bootstrap-card h-100" data-bs-toggle="modal" data-bs-target="#fuiModal-3">
-                            <img src="assets/img/portfolio/3.jpg" alt="Product 3" class="card-img-top fui-bootstrap-card-img">
-                            <div class="card-body">
-                              <h5 class="card-title text-white mb-2">Product Three</h5>
-                              <p class="card-text text-white-50 small mb-0">Replace with a one-line description of this product.</p>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Card 4 -->
-                        <div class="col animate__animated animate__zoomIn">
-                          <div class="card fui-bootstrap-card h-100" data-bs-toggle="modal" data-bs-target="#fuiModal-4">
-                            <img src="assets/img/portfolio/4.jpg" alt="Product 4" class="card-img-top fui-bootstrap-card-img">
-                            <div class="card-body">
-                              <h5 class="card-title text-white mb-2">Product Four</h5>
-                              <p class="card-text text-white-50 small mb-0">Replace with a one-line description of this product.</p>
-                            </div>
-                          </div>
-                        </div>
-                        
-                      </div>
-                    </div>
-
                   </div>
 
                   <!-- about me -->
-                  <div class="tab-pane fade h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover pt-lg-4" id="pills-about-me" role="tabpanel" aria-labelledby="pills-about-me-tab" tabindex="0">
+                  <div class="tab-pane fade h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover" id="pills-about-me" role="tabpanel" aria-labelledby="pills-about-me-tab" tabindex="0">
                     <div class="pb-4 px-4 h-100 animate__animated animate__fadeInLeft">
                       <section class="fui-graph-widget h-100" data-graph-widget>
                         <div class="d-flex flex-column flex-lg-row w-100 h-100 gap-4 position-relative fui-graph-row">
@@ -466,10 +390,10 @@
                                     </linearGradient>
                                 </defs>
                             </svg>
-                        
+                
                             <!-- Graph area -->
-                            <div class="flex-grow-1 position-relative d-flex flex-column flex-lg-row align-items-center align-items-lg-center justify-content-lg-between gap-4">
-                        
+                            <div class="flex-grow-1 position-relative d-flex flex-column flex-lg-row align-items-center align-items-lg-stretch justify-content-lg-between gap-4">
+                
                                 <!-- Root node -->
                                 <div class="d-flex flex-column justify-content-center fui-col-root">
                                     <div class="fui-node d-flex flex-column align-items-center gap-2 text-center fui-node-root">
@@ -481,186 +405,199 @@
                                         </div>
                                     </div>
                                 </div>
-                        
-                                <!-- L1 tabs (Horizontal Slider on Mobile, Vertical Stack on Desktop) -->
-                                <div class="fui-col-l1">
-                                  <div class="fui-l1-slider-track">
-                                    <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary ps-3 al-pe-35 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" data-bs-toggle="modal" data-bs-target="#aboutMeModal">
-                                        <i class="bi bi-patch-check fs-5"></i>
-                                        <div class="fui-l1-val al-fs-15 fw-semibold">
-                                            <span class="d-block">Who I am</span>
-                                            <small class="d-flex fw-normal al-fs-12 text-primary">About Me</small>
-                                        </div>
-                                        <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
-                                    </div>
-                                    <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" data-category="my-approach">
-                                        <i class="bi bi-patch-check fs-5"></i>
-                                        <div class="fui-l1-val al-fs-15 fw-semibold">
-                                            <span class="d-block">My approach</span>
-                                            <small class="d-flex fw-normal al-fs-12 text-primary">That's how i do it</small>
-                                        </div>
-                                    </div>
-                                    <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer active" data-category="expertise">
-                                        <i class="bi bi-patch-check fs-5"></i>
-                                        <div class="fui-l1-val al-fs-15 fw-semibold">
-                                            <span class="d-block">Expertise</span>
-                                            <small class="d-flex fw-normal al-fs-12 text-primary">What I do best</small>
-                                        </div>
-                                    </div>
-                                    <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" data-category="skills">
-                                        <i class="bi bi-patch-check fs-5"></i>
-                                        <div class="fui-l1-val al-fs-15 fw-semibold">
-                                            <span class="d-block">Skills</span>
-                                            <small class="d-flex fw-normal al-fs-12 text-primary">What I Know</small>
-                                        </div>
-                                    </div>
-                                    <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" data-category="experience">
-                                        <i class="bi bi-patch-check fs-5"></i>
-                                        <div class="fui-l1-val al-fs-15 fw-semibold">
-                                            <span class="d-block">Experience</span>
-                                            <small class="d-flex fw-normal al-fs-12 text-primary">I worked for</small>
-                                        </div>
-                                    </div>
-                                    <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" data-category="education">
-                                        <i class="bi bi-patch-check fs-5"></i>
-                                        <div class="fui-l1-val al-fs-15 fw-semibold">
-                                            <span class="d-block">Education</span>
-                                            <small class="d-flex fw-normal al-fs-12 text-primary">Certificates</small>
-                                        </div>
-                                    </div>
+                
+                                <!-- L1 tabs -->
+                                <div class="d-flex flex-column justify-content-center gap-3 fui-col-l1">
+                                  <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary ps-3 al-pe-35 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" data-bs-toggle="modal" data-bs-target="#aboutMeModal">
+                                      <i class="bi bi-patch-check fs-5"></i>
+                                      <div class="fui-l1-val al-fs-15 fw-semibold">
+                                          <span class="d-block">Who I am</span>
+                                          <small class="d-flex fw-normal al-fs-12 text-primary">About Me</small>
+                                      </div>
+                                      <i class="bi bi-chevron-right al-fs-12 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                  </div>
+                                  <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" data-category="my-approach">
+                                      <i class="bi bi-patch-check fs-5"></i>
+                                      <div class="fui-l1-val al-fs-15 fw-semibold">
+                                          <span class="d-block">My approach</span>
+                                          <small class="d-flex fw-normal al-fs-12 text-primary">That's how i do it</small>
+                                      </div>
+                                  </div>
+                                  <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer active" data-category="expertise">
+                                      <i class="bi bi-patch-check fs-5"></i>
+                                      <div class="fui-l1-val al-fs-15 fw-semibold">
+                                          <span class="d-block">Expertise</span>
+                                          <small class="d-flex fw-normal al-fs-12 text-primary">What I do best</small>
+                                      </div>
+                                  </div>
+                                  <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" data-category="skills">
+                                      <i class="bi bi-patch-check fs-5"></i>
+                                      <div class="fui-l1-val al-fs-15 fw-semibold">
+                                          <span class="d-block">Skills</span>
+                                          <small class="d-flex fw-normal al-fs-12 text-primary">What I Know</small>
+                                      </div>
+                                  </div>
+                                  <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" data-category="experience">
+                                      <i class="bi bi-patch-check fs-5"></i>
+                                      <div class="fui-l1-val al-fs-15 fw-semibold">
+                                          <span class="d-block">Experience</span>
+                                          <small class="d-flex fw-normal al-fs-12 text-primary">I worked for</small>
+                                      </div>
+                                  </div>
+                                  <div class="fui-node fui-card-graph al-corner al-border al-corner-all-8 al-border-1 al-border-primary-50 bg-secondary px-3 al-py-12 d-flex align-items-center gap-3 al-cursor-pointer" data-category="education">
+                                      <i class="bi bi-patch-check fs-5"></i>
+                                      <div class="fui-l1-val al-fs-15 fw-semibold">
+                                          <span class="d-block">Education</span>
+                                          <small class="d-flex fw-normal al-fs-12 text-primary">Certificates</small>
+                                      </div>
                                   </div>
                                 </div>
-                        
-                                <!-- L2 sub-tabs -->
+                
+                                <!-- L2 sub-tabs: one static panel per L1 category. JS only shows/hides these -->
                                 <div class="d-flex flex-column justify-content-center gap-2 overflow-visible fui-col-l2">
-                                    <!-- My Approach Panel -->
-                                    <div class="fui-l2-panel d-none flex-column gap-2" data-panel="my-approach">
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
-                                            <span class="al-fs-14">Context</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                            <span class="al-fs-14">Problem Statement</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-success"></span>
-                                            <span class="al-fs-14">User Flow, IA</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-info"></span>
-                                            <span class="al-fs-14">Wireframing</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
-                                            <span class="al-fs-14">Mood boarding</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                            <span class="al-fs-14">Creating Mock-ups</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-success"></span>
-                                            <span class="al-fs-14">Refining Version</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-info"></span>
-                                            <span class="al-fs-14">Final Handoff</span>
-                                        </div>
-                                    </div>
-                            
-                                    <!-- Experience Panel -->
-                                    <div class="fui-l2-panel d-none flex-column gap-2" data-panel="experience">
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
-                                            <span class="al-fs-14">Senior Product Designer - <small class="text-primary">RTA Dubai</small> <small>(2023 - Pres.)</small></span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                            <span class="al-fs-14">Product Design Lead - <small class="text-primary">Skymet Weather</small> <small>(2021 - 2023)</small></span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-success"></span>
-                                            <span class="al-fs-14">UI/UX Designer - <small class="text-primary">Ams Softech</small> <small>(2013 - 2021)</small></span>
-                                        </div>
-                                    </div>
-                            
-                                    <!-- Expertise Panel -->
-                                    <div class="fui-l2-panel flex-column gap-2" data-panel="expertise">
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
-                                            <span class="al-fs-14">Product Strategy & Discovery</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                            <span class="al-fs-14">Enterprise Dashboard Design</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-success"></span>
-                                            <span class="al-fs-14">B2B | SaaS Platform Design</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-info"></span>
-                                            <span class="al-fs-14">Data Architecture & Mapping</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
-                                            <span class="al-fs-14">Data Visualization Systems</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                            <span class="al-fs-14">Figma Design Systems (FUI)</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-success"></span>
-                                            <span class="al-fs-14">Frontend Engineering</span>
-                                        </div>
-                                    </div>
-                            
-                                    <!-- Skills Panel -->
-                                    <div class="fui-l2-panel d-none flex-column gap-2" data-panel="skills">
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
-                                            <span class="al-fs-14">Figma | Adobe XD</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                            <span class="al-fs-14">Photoshop | Illustrator</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-info"></span>
-                                            <span class="al-fs-14">HTML5 | CSS3 | SASS</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
-                                            <span class="al-fs-14">JavaScript | React | Angular</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                            <span class="al-fs-14">Tailwind CSS | Alfuix</span>
-                                        </div>
-                                    </div>
-                            
-                                    <!-- Education Panel -->
-                                    <div class="fui-l2-panel d-none flex-column gap-2" data-panel="education">
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
-                                            <span class="al-fs-14">Professional Scrum Master™ I</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
-                                            <span class="al-fs-14">Responsive Web Design</span>
-                                        </div>
-                                        <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
-                                            <span class="d-inline-flex al-size-6 rounded-circle bg-success"></span>
-                                            <span class="al-fs-14">Bachelor in Computer Engineering</span>
-                                        </div>
-                                    </div>
+                                  <div class="fui-l2-panel d-none flex-column gap-2" data-panel="my-approach">
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                                          <span class="al-fs-14">Context</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                                          <span class="al-fs-14">Problem Statement</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-success"></span>
+                                          <span class="al-fs-14">User Flow, IA</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-info"></span>
+                                          <span class="al-fs-14">Sketching Ideas/ Wireframing</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                                          <span class="al-fs-14">Mood boarding</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                                          <span class="al-fs-14">Creating Mock-ups</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-success"></span>
+                                          <span class="al-fs-14">Refining the Final Version</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-info"></span>
+                                          <span class="al-fs-14">Don't stop until it's done</span>
+                                      </div>
+                                  </div>
+                  
+                                  <div class="fui-l2-panel d-none flex-column gap-2" data-panel="experience">
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                                          <span class="al-fs-14">Senior Product Designer - <small class="text-primary">RTA Dubai / CNS Dubai</small> <small>(Jan 23 - Present)</small></span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                                          <span class="al-fs-14">Team Lead - Product Design - <small class="text-primary">Skymet Weather Pvt. Ltd.</small> <small>Aug 21 - Jan 23</small></span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-success"></span>
+                                          <span class="al-fs-14">UI/UX Designer - <small class="text-primary">Ams Softech</small> <small>Dec 13 - Aug 21</small></span>
+                                      </div>
+                                  </div>
+                  
+                                  <div class="fui-l2-panel flex-column gap-2" data-panel="expertise">
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                                          <span class="al-fs-14">Product Strategy & Discovery</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                                          <span class="al-fs-14">Specialized Dashboard Design</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-success"></span>
+                                          <span class="al-fs-14">Specialized B2B | SaaS Design</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-info"></span>
+                                          <span class="al-fs-14">Data Architecture</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                                          <span class="al-fs-14">Data Visualization</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                                          <span class="al-fs-14">Design Systems & Governance</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-success"></span>
+                                          <span class="al-fs-14">Technical Design</span>
+                                      </div>
+                                  </div>
+                  
+                                  <div class="fui-l2-panel d-none flex-column gap-2" data-panel="skills">
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                                          <span class="al-fs-14">Figma | Adobe XD</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                                          <span class="al-fs-14">Photoshop | Illustrator</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-success"></span>
+                                          <span class="al-fs-14">PowerPoint</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-info"></span>
+                                          <span class="al-fs-14">HTML5 | CSS3 | SASS</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                                          <span class="al-fs-14">JavaScript | JQuery | React | Angular</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                                          <span class="al-fs-14">Tailwind CSS | Bootstrap | Alfuix</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-success"></span>
+                                          <span class="al-fs-14">Ionic | LDS</span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-info"></span>
+                                          <span class="al-fs-14">WordPress | WooCommerce</span>
+                                      </div>
+                                  </div>
+                  
+                                  <div class="fui-l2-panel d-none flex-column gap-2" data-panel="education">
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                                          <span class="al-fs-14">Professional Scrum Master™ I (PSM I) - <small class="text-primary">Scrum.org</small></span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-warning"></span>
+                                          <span class="al-fs-14">Responsive Web Design - <small class="text-primary">freeCodeCamp.org</small></span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-success"></span>
+                                          <span class="al-fs-14">JavaScript Algorithms & Data Structures - <small class="text-primary">freeCodeCamp.org</small></span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-info"></span>
+                                          <span class="al-fs-14">Bachelor in Computer Engineering - <small class="text-primary">JMI</small></span>
+                                      </div>
+                                      <div class="position-relative fui-node fui-l2-node d-flex align-items-center gap-2 ps-3 pe-3 al-py-10 al-cursor-pointer al-corner al-border al-corner-all-7 al-border-1 al-border-primary-25 al-hover-bg-primary-10">
+                                          <span class="d-inline-flex al-size-6 rounded-circle bg-primary"></span>
+                                          <span class="al-fs-14">Diploma in Computer Engineering - <small class="text-primary">JMI</small></span>
+                                      </div>
+                                  </div>
                                 </div>
                             </div>
                         </div>
                       </section>
-                    </div>
+                     </div>
                   </div>
               </div>
               <!-- end tabs content -->
@@ -704,15 +641,15 @@
                 <i class="bi bi-columns-gap al-fs-16 mb-0"></i>
                 <div class="al-fs-10">My Work</div>
             </a>
-            <a class="nav-link text-center al-corner al-corner-all-24 py-1 col" href="#pills-my-products" id="mobile-templates">
+            <a class="nav-link text-center al-corner al-corner-all-24 py-1 col" href="#pills-my-templates" id="mobile-templates">
                 <i class="bi bi-cart2 al-fs-16 mb-0"></i>
-                <div class="al-fs-10">My Products</div>
+                <div class="al-fs-10">My Templates</div>
             </a>
             <a class="nav-link text-center al-corner al-corner-all-24 py-1 col" href="#pills-about-me" id="mobile-about">
                 <i class="bi bi-person al-fs-16 mb-0"></i>
                 <div class="al-fs-10">About Me</div>
             </a>
-            <a class="nav-link text-center al-corner al-corner-all-24 py-1 col" href="mailto:iazad@outlook.com">
+            <a class="nav-link text-center al-corner al-corner-all-24 py-1 col" href="#!">
                 <i class="bi bi-envelope al-fs-16 mb-0"></i>
                 <div class="al-fs-10">Let's Connect</div>
             </a>
@@ -723,7 +660,7 @@
   </div>
 
 
-  <div class="position-fixed top-0 start-0 bottom-0 end-0 z-n1 user-select-none">
+  <div class="position-fixed top-0 start-0 bottom-0 end-0">
     <canvas id="particle-canvas"></canvas>
   </div>
 
@@ -870,13 +807,97 @@
                   </section>
                 </div>
 
-                <div class="al-pattern-grid-dark-blue al-pattern-grid-double al-pattern-white-2 position-fixed top-0 start-0 bottom-0 end-0 z-n1 pe-none"></div>
+                <div class="al-pattern-grid-dark-blue al-pattern-grid-double al-pattern-white-1 position-fixed top-0 start-0 bottom-0 end-0 z-n1 pe-none"></div>
             </div>
         </div>
     </div>
    </div>
   <!-- end modal about me -->
 
+  <!-- start modal get in touch -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="modalGetInTouch" tabindex="-1" aria-labelledby="modalGetInTouchlLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-transparent overflow-hidden">
+            <span class="d-inline-flex align-items-center justify-content-end al-w-50 al-h-22 bg-danger bg-opacity-75 al-hover-bg-danger al-cursor-pointer al-corner al-te-8 al-bs-30 pt-1 al-pe-6 al-me-n-1 position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close">
+                <i class="bi bi-x fs-5 text-white lh-1"></i>
+            </span>
+            <div class="al-clip-border al-be-12 al-bs-12 al-ts-12 al-t-clip-x al-t-25 al-center-t-100 al-extend-t-45 al-border-2 al-border-white-25 bg-secondary">
+                <div class="modal-header p-0 border-bottom-0 d-flex al-flex-center mb-4 al-pt-1">
+                    <h2 class="fs-5 text-white bg-white bg-opacity-10 px-5 py-2 al-corner al-be-50 al-bs-50">
+                        <span class="d-inline-flex al-flex-center px-4 py-1">Sign up for free</span>
+                    </h2>
+                </div>
+                <div class="modal-body p-5 pt-0">
+                    <form class="">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput" class="text-white">Email address</label> 
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                            <label class="text-white" for="floatingPassword">Password</label>
+                        </div> 
+                        <div class="position-relative">
+                            <span class="position-absolute z-1 top-0 start-0 al-size-8 border border-2 border-white border-opacity-75 border-end-0 border-bottom-0 pe-none"></span>
+                            <span class="position-absolute z-1 top-0 end-0 al-size-8 border border-2 border-white border-opacity-75 border-start-0 border-bottom-0 pe-none"></span>
+                            <button type="submit" class="btn btn-lg bg-primary bg-opacity-75 al-hover-bg-primary px-5 border-0 rounded-0 al-clip-border al-border-1 al-border-white-50 al-b-clip-x al-extend-b-35 al-b-7 text-white fw-bold al-h-50 w-100">
+                                <span class="d-inline-flex pb-2 fw-normal al-fs-18">Sign Up</span>
+                            </button>
+                            <span class="al-trapezoid-t-4 al-trapezoid-w-64px text-warning position-absolute bottom-0 start-50 translate-middle-x"></span>
+                            <span class="position-absolute z-1 bottom-0 start-0 al-size-8 border border-2 border-white border-opacity-75 border-end-0 border-top-0 pe-none"></span>
+                            <span class="position-absolute z-1 bottom-0 end-0 al-size-8 border border-2 border-white border-opacity-75 border-start-0 border-top-0 pe-none"></span>
+                        </div>
+
+                        <small class="d-block text-center mt-3">By clicking Sign up, you agree to the terms of use.</small> 
+                        
+                        <hr class="my-4 border-primary border-opacity-50">
+                        
+                        <h2 class="fs-6 mb-3 text-center">Or use a third-party</h2> 
+
+                        <div class="position-relative">
+                            <span class="position-absolute z-1 top-0 start-0 al-size-8 border border-2 border-danger border-opacity-75 border-end-0 border-bottom-0 pe-none"></span>
+                            <span class="position-absolute z-1 top-0 end-0 al-size-8 border border-2 border-danger border-opacity-75 border-start-0 border-bottom-0 pe-none"></span>
+                            <button type="submit" class="btn btn-lg al-hover-bg-danger-25 px-5 border-0 rounded-0 al-clip-border al-border-1 al-border-danger al-b-clip-x al-extend-b-35 al-b-7 text-white fw-bold al-h-50 w-100">
+                                <i class="bi bi-google fs-6"></i>
+                                <span class="d-inline-flex pb-2 fw-normal al-fs-16">Sign up with Google</span>
+                            </button>
+                            <span class="al-trapezoid-t-4 al-trapezoid-w-64px text-danger text-opacity-25 position-absolute bottom-0 start-50 translate-middle-x"></span>
+                            <span class="position-absolute z-1 bottom-0 start-0 al-size-8 border border-2 border-danger border-opacity-75 border-end-0 border-top-0 pe-none"></span>
+                            <span class="position-absolute z-1 bottom-0 end-0 al-size-8 border border-2 border-danger border-opacity-75 border-start-0 border-top-0 pe-none"></span>
+                        </div>
+
+                        <div class="position-relative my-3">
+                            <span class="position-absolute z-1 top-0 start-0 al-size-8 border border-2 border-primary border-opacity-75 border-end-0 border-bottom-0 pe-none"></span>
+                            <span class="position-absolute z-1 top-0 end-0 al-size-8 border border-2 border-primary border-opacity-75 border-start-0 border-bottom-0 pe-none"></span>
+                            <button type="submit" class="btn btn-lg al-hover-bg-primary-25 px-5 border-0 rounded-0 al-clip-border al-border-1 al-border-primary al-b-clip-x al-extend-b-35 al-b-7 text-white fw-bold al-h-50 w-100">
+                                <i class="bi bi-facebook fs-6"></i>
+                                <span class="d-inline-flex pb-2 fw-normal al-fs-16">Sign up with Facebook</span>
+                            </button>
+                            <span class="al-trapezoid-t-4 al-trapezoid-w-64px text-primary text-opacity-25 position-absolute bottom-0 start-50 translate-middle-x"></span>
+                            <span class="position-absolute z-1 bottom-0 start-0 al-size-8 border border-2 border-primary border-opacity-75 border-end-0 border-top-0 pe-none"></span>
+                            <span class="position-absolute z-1 bottom-0 end-0 al-size-8 border border-2 border-primary border-opacity-75 border-start-0 border-top-0 pe-none"></span>
+                        </div>
+
+                        <div class="position-relative">
+                            <span class="position-absolute z-1 top-0 start-0 al-size-8 border border-2 border-white border-opacity-50 border-end-0 border-bottom-0 pe-none"></span>
+                            <span class="position-absolute z-1 top-0 end-0 al-size-8 border border-2 border-white border-opacity-50 border-start-0 border-bottom-0 pe-none"></span>
+                            <button type="submit" class="btn btn-lg al-hover-bg-white-25 px-5 border-0 rounded-0 al-clip-border al-border-1 al-border-white-50 al-b-clip-x al-extend-b-35 al-b-7 text-white fw-bold al-h-50 w-100">
+                                <i class="bi bi-github fs-6"></i>
+                                <span class="d-inline-flex pb-2 fw-normal al-fs-16">Sign up with GitHub</span>
+                            </button>
+                            <span class="al-trapezoid-t-4 al-trapezoid-w-64px text-white text-opacity-25 position-absolute bottom-0 start-50 translate-middle-x"></span>
+                            <span class="position-absolute z-1 bottom-0 start-0 al-size-8 border border-2 border-white border-opacity-50 border-end-0 border-top-0 pe-none"></span>
+                            <span class="position-absolute z-1 bottom-0 end-0 al-size-8 border border-2 border-white border-opacity-50 border-start-0 border-top-0 pe-none"></span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="al-pattern-grid-dark-blue al-pattern-grid-double al-pattern-white-2 position-fixed top-0 start-0 bottom-0 end-0 z-n1 pe-none"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- end modal get in touch -->
 
 
 
@@ -961,20 +982,6 @@
     </div>
   </div>
 
-  <!-- SVG FILTER: This creates the blocky, pixelated glitch textures -->
-    <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true" focusable="false">
-        <defs>
-            <filter id="pixelate-filter">
-                <!-- 1. Generate coarse, blocky digital noise -->
-                <feTurbulence type="fractalNoise" baseFrequency="0.15 0.02" numOctaves="2" result="noise" />
-                <!-- 2. Posterize the noise to force sharp, pixel-like square edges -->
-                <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -15" result="blockyNoise" />
-                <!-- 3. Displace our HTML elements using the blocky noise maps -->
-                <feDisplacementMap in="SourceGraphic" in2="blockyNoise" scale="0" xChannelSelector="R" yChannelSelector="G" id="glitch-map" />
-            </filter>
-        </defs>
-    </svg>
-    
 
   <!-- bg pattern -->
   <div class="al-pattern-grid-double al-pattern-white-2 position-fixed top-0 start-0 bottom-0 end-0 z-n1 pe-none"></div>
@@ -993,40 +1000,5 @@
   <script src="assets/dist/js/gsap.js"></script>
   <script src="assets/dist/js/structure.js"></script>
   <script src="assets/dist/js/my-product.js"></script>
-
-  <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const elements = document.querySelectorAll('.pixel-glitch');
-            const glitchMap = document.getElementById('glitch-map');
-
-            // 1. Set elements visible but heavily pixelated/displaced initially
-            gsap.set(elements, { opacity: 0 });
-            gsap.set(glitchMap, { attr: { scale: 10 } }); // Large scale = massive blocky pixels
-
-            const tl = gsap.timeline();
-
-            // 2. Animate the pixel-scale down to 0 (which makes it sharp and crisp)
-            tl.to(glitchMap, {
-                attr: { scale: 0 },
-                duration: 1.8,
-                ease: "power4.inOut"
-            });
-
-            // 3. Simultaneously trigger the rapid opacity flickering on the elements
-            elements.forEach((el, index) => {
-                const flicker = gsap.timeline();
-                
-                flicker
-                    .to(el, { opacity: 1, x: -10, duration: 0.05 })
-                    .to(el, { opacity: 0.3, x: 5, duration: 0.03 })
-                    .to(el, { opacity: 1, x: -2, duration: 0.08 })
-                    .to(el, { opacity: 0.1, duration: 0.04 })
-                    .to(el, { opacity: 1, x: 0, duration: 0.05 });
-
-                // Offset each element's load slightly for a waterfall effect
-                tl.add(flicker, index * 0.15);
-            });
-        });
-    </script>
 </body>
 </html>

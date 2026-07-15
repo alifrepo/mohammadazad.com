@@ -162,31 +162,32 @@
   }
 
   function init() {
+    // 1. Reset Physics Vectors & System Counts
     particles = Array.from({ length: CONFIG.initialCount }, makeCurveParticle);
     bokehLights = Array.from({ length: CONFIG.bokehCount }, makeBokeh);
     rippleWaves = [];
+    
+    // 2. Clear Active Mouse Vectors
+    mouse.active = false;
+    lastMouse = { x: null, y: null };
+
+    // 3. Reset Operational States to Factory Defaults
+    magnetMode = 1; 
+    if (magnetToggleBtn) {
+      magnetToggleBtn.textContent = 'Attract';
+    }
+
+    // 4. Update the Counters
     updateCount();
   }
 
   function updateCount() {
-    pcountEl.textContent = particles.length;
+    if (pcountEl) {
+      pcountEl.textContent = particles.length;
+    }
   }
 
-  // function drawBackground(targetCtx, w, h) {
-  //   const grad = targetCtx.createRadialGradient(
-  //     w * 0.75, h * 0.15, 0,
-  //     w * 0.5, h * 0.5, w * 0.9
-  //   );
-  //   // grad.addColorStop(0, '#0d1a30');
-  //   // grad.addColorStop(0.4, '#071120');
-  //   // grad.addColorStop(1, '#020509');
-  //   grad.addColorStop(1, '#020509');
-  //   targetCtx.fillStyle = grad;
-  //   targetCtx.fillRect(0, 0, w, h);
-  // }
-
   function drawBackground(targetCtx, w, h) {
-    // no fill — canvas stays transparent
     targetCtx.clearRect(0, 0, w, h);
   }
 
@@ -248,7 +249,6 @@
     ax += ripple.x;
     ay += ripple.y;
 
-    // spring back toward natural position
     ax += -p.dx * CONFIG.springK;
     ay += -p.dy * CONFIG.springK;
 
@@ -279,7 +279,6 @@
     pruneRipples(now);
     drawBackground(ctx, width, height);
 
-    // ---- Glow pass (low-res buffer) ----
     glowCtx.clearRect(0, 0, glowW, glowH);
     drawBackground(glowCtx, glowW, glowH);
     const s = CONFIG.glowScale;
@@ -325,14 +324,12 @@
     }
     glowCtx.globalCompositeOperation = 'source-over';
 
-    // Composite blurred glow onto main canvas
     ctx.save();
     ctx.filter = `blur(${CONFIG.blurPx}px)`;
     ctx.globalCompositeOperation = 'lighter';
     ctx.drawImage(glowCanvas, 0, 0, width, height);
     ctx.restore();
 
-    // ---- Sharp core pass on top ----
     ctx.globalCompositeOperation = 'lighter';
     for (let i = 0; i < particles.length; i++) {
       const p = particles[i];
@@ -354,56 +351,92 @@
     requestAnimationFrame(render);
   }
 
-  // ---------------- Events ----------------
+  // Helper to determine if an event target belongs to the interface capsule menu
+  function isTargetingUI(target) {
+    if (!target) return false;
+    return target === magnetToggleBtn || 
+           target === resetBtn || 
+           magnetToggleBtn.contains(target) || 
+           resetBtn.contains(target) ||
+           target.closest('.al-corner'); // Catches parent pill structure components
+  }
+
+  // ---------------- Global Window Events ----------------
   window.addEventListener('resize', resize);
 
   window.addEventListener('mousemove', (e) => {
-    mouse.x = e.clientX;
-    mouse.y = e.clientY;
+    if (isTargetingUI(e.target)) {
+      mouse.active = false;
+      return;
+    }
+
+    // Convert global window spacing coordinates back down to relative local coordinates
+    const rect = canvas.getBoundingClientRect();
+    mouse.x = e.clientX - rect.left;
+    mouse.y = e.clientY - rect.top;
     mouse.active = true;
 
     const now = performance.now();
     if (CONFIG.rippleEnabled && now - lastRippleSpawn > CONFIG.rippleInterval) {
-      // only spawn if the mouse actually moved (avoid flooding on stationary events)
-      if (lastMouse.x === null || Math.hypot(e.clientX - lastMouse.x, e.clientY - lastMouse.y) > 4) {
-        rippleWaves.push({ x: e.clientX, y: e.clientY, startTime: now });
+      if (lastMouse.x === null || Math.hypot(mouse.x - lastMouse.x, mouse.y - lastMouse.y) > 4) {
+        rippleWaves.push({ x: mouse.x, y: mouse.y, startTime: now });
         lastRippleSpawn = now;
       }
     }
-    lastMouse.x = e.clientX;
-    lastMouse.y = e.clientY;
+    lastMouse.x = mouse.x;
+    lastMouse.y = mouse.y;
   });
+
   window.addEventListener('mouseleave', () => { mouse.active = false; });
 
   window.addEventListener('touchmove', (e) => {
     if (e.touches.length > 0) {
       const t = e.touches[0];
-      mouse.x = t.clientX;
-      mouse.y = t.clientY;
+      if (isTargetingUI(t.target)) {
+        mouse.active = false;
+        return;
+      }
+
+      const rect = canvas.getBoundingClientRect();
+      mouse.x = t.clientX - rect.left;
+      mouse.y = t.clientY - rect.top;
       mouse.active = true;
 
       const now = performance.now();
       if (CONFIG.rippleEnabled && now - lastRippleSpawn > CONFIG.rippleInterval) {
-        rippleWaves.push({ x: t.clientX, y: t.clientY, startTime: now });
+        rippleWaves.push({ x: mouse.x, y: mouse.y, startTime: now });
         lastRippleSpawn = now;
       }
     }
   }, { passive: true });
+
   window.addEventListener('touchend', () => { mouse.active = false; });
 
-  canvas.addEventListener('click', (e) => {
+  // ---------------- Targeted Element Events ----------------
+  
+  // Use global click monitoring to track background vs button hits reliably
+  window.addEventListener('click', (e) => {
+    if (isTargetingUI(e.target)) return;
+
+    const rect = canvas.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const clickY = e.clientY - rect.top;
+
+    // Guardrail boundary check: Only burst if clicking within the display footprint
+    if (clickX < 0 || clickX > width || clickY < 0 || clickY > height) return;
+
     const burst = [];
     for (let i = 0; i < CONFIG.clickBurstCount; i++) {
-      burst.push(makeFreeParticle(e.clientX, e.clientY));
+      burst.push(makeFreeParticle(clickX, clickY));
     }
     particles = particles.concat(burst);
     if (particles.length > CONFIG.maxParticles) {
       particles.splice(0, particles.length - CONFIG.maxParticles);
     }
 
-    // strong ripple on click
     rippleWaves.push({
-      x: e.clientX, y: e.clientY,
+      x: clickX,
+      y: clickY,
       startTime: performance.now(),
       amplitude: CONFIG.clickRippleAmplitude,
       width: CONFIG.clickRippleWidth
@@ -412,15 +445,26 @@
     updateCount();
   });
 
-  magnetToggleBtn.addEventListener('click', () => {
-    magnetMode *= -1;
-    magnetToggleBtn.textContent = (magnetMode === 1 ? 'Attract' : 'Repel');
-  });
+  // Magnet Switch Control
+  if (magnetToggleBtn) {
+    magnetToggleBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      magnetMode *= -1;
+      magnetToggleBtn.textContent = (magnetMode === 1 ? 'Attract' : 'Repel');
+    });
+  }
 
-  resetBtn.addEventListener('click', () => {
-    init();
-  });
+  // Engine Reset Trigger
+  if (resetBtn) {
+    resetBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      init();
+    });
+  }
 
+  // Start System Loop
   resize();
   init();
   requestAnimationFrame(render);

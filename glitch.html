@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Pixelated & Glitch Load</title>
+    <style>
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 40px;
+            overflow-x: hidden;
+        }
+
+        /* Elements apply the SVG filter we define below */
+        .pixel-glitch {
+            filter: url(#pixelate-filter);
+            opacity: 0; /* Start hidden */
+            margin-bottom: 25px;
+            transform-origin: left center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #a3e635;
+            color: #a3e635;
+            text-decoration: none;
+            background: transparent;
+        }
+    </style>
+
+    <!-- GSAP Core CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+
+    <!-- SVG FILTER: This creates the blocky, pixelated glitch textures -->
+    <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true" focusable="false">
+        <defs>
+            <filter id="pixelate-filter">
+                <!-- 1. Generate coarse, blocky digital noise -->
+                <feTurbulence type="fractalNoise" baseFrequency="0.15 0.02" numOctaves="2" result="noise" />
+                <!-- 2. Posterize the noise to force sharp, pixel-like square edges -->
+                <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -15" result="blockyNoise" />
+                <!-- 3. Displace our HTML elements using the blocky noise maps -->
+                <feDisplacementMap in="SourceGraphic" in2="blockyNoise" scale="0" xChannelSelector="R" yChannelSelector="G" id="glitch-map" />
+            </filter>
+        </defs>
+    </svg>
+
+    <!-- HTML Elements -->
+    <h1 class="pixel-glitch">THE CREATIVE FORCE</h1>
+    <p class="pixel-glitch">We help founders, builders, and dreamers.</p>
+    <a href="#" class="btn pixel-glitch">BOOK A CAL?</a>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.pixel-glitch');
+            const glitchMap = document.getElementById('glitch-map');
+
+            // 1. Set elements visible but heavily pixelated/displaced initially
+            gsap.set(elements, { opacity: 0 });
+            gsap.set(glitchMap, { attr: { scale: 120 } }); // Large scale = massive blocky pixels
+
+            const tl = gsap.timeline();
+
+            // 2. Animate the pixel-scale down to 0 (which makes it sharp and crisp)
+            tl.to(glitchMap, {
+                attr: { scale: 0 },
+                duration: 0.8,
+                ease: "power4.inOut"
+            });
+
+            // 3. Simultaneously trigger the rapid opacity flickering on the elements
+            elements.forEach((el, index) => {
+                const flicker = gsap.timeline();
+                
+                flicker
+                    .to(el, { opacity: 1, x: -10, duration: 0.05 })
+                    .to(el, { opacity: 0.3, x: 5, duration: 0.03 })
+                    .to(el, { opacity: 1, x: -2, duration: 0.08 })
+                    .to(el, { opacity: 0.1, duration: 0.04 })
+                    .to(el, { opacity: 1, x: 0, duration: 0.05 });
+
+                // Offset each element's load slightly for a waterfall effect
+                tl.add(flicker, index * 0.15);
+            });
+        });
+    </script>
+</body>
+</html>

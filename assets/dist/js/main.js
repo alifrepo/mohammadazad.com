@@ -22,12 +22,12 @@
     function updateActiveNavOnScroll() {
         if (window.innerWidth >= 992) return;
 
-        const sections = ['#pills-my-work', '#pills-my-templates', '#pills-about-me'];
+        const sections = ['#pills-my-work', '#pills-my-products', '#pills-about-me'];
         let current = '#pills-my-work';
 
         for (let id of sections) {
             const section = document.querySelector(id);
-            if (section && window.scrollY >= section.offsetTop - 200) {
+            if (section && window.scrollY >= section.offsetTop - 0) {
                 current = id;
             }
         }

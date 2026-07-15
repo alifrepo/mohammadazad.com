@@ -71,11 +71,24 @@ const App = (() => {
         if(d < 0.64) edges.push([i, j]);
       }
     }
-    
+
+    function pickSpreadIndices(count) {
+      const candidates = nodes
+        .map((n, i) => ({ i, theta: Math.atan2(n.z, n.x) }))
+        .filter(o => Math.abs(nodes[o.i].y) < 0.35);
+      const pool = candidates.length >= count ? candidates : nodes.map((n, i) => ({ i, theta: Math.atan2(n.z, n.x) }));
+      pool.sort((a, b) => a.theta - b.theta);
+      const picks = [];
+      for(let k = 0; k < count; k++) {
+        const idx = Math.floor((k * pool.length) / count);
+        picks.push(pool[idx].i);
+      }
+      return picks;
+    }
+
     imgs = []; 
-    layer.innerHTML = '';
+    if (layer) layer.innerHTML = '';
     const count = Math.min(COMPONENT_IMAGES.length, N);
-    const step = Math.max(1, Math.floor(N / count));
     const vf = Math.min(1, window.innerWidth / 1280);
     
     let rspScale;
@@ -83,8 +96,10 @@ const App = (() => {
     else if(tier === 'tablet')  rspScale = 0.58 + 0.28 * vf;
     else                        rspScale = 0.62 + 0.38 * vf;
 
+    const nodeIndices = pickSpreadIndices(count);
+
     for(let k = 0; k < count; k++) {
-      const ni = (k * step + 2) % N;
+      const ni = nodeIndices[k];
       const item = COMPONENT_IMAGES[k];
       
       const a = document.createElement('a');
@@ -117,7 +132,7 @@ const App = (() => {
       a.addEventListener('pointerenter', () => { hovered = true; });
       a.addEventListener('pointerleave', () => { hovered = false; });
       
-      layer.appendChild(a);
+      if (layer) layer.appendChild(a);
       imgs.push({el: a, ni, w: 0, h: 0});
     }
   }
@@ -126,8 +141,8 @@ const App = (() => {
     const r = stage.getBoundingClientRect();
     if (r.width === 0 || r.height === 0) return;
 
-    W = cv.width = r.width * dpr; 
-    H = cv.height = r.height * dpr;
+    W = cv.width = Math.round(r.width * dpr);
+    H = cv.height = Math.round(r.height * dpr);
     cv.style.width = r.width + 'px'; 
     cv.style.height = r.height + 'px';
 
@@ -342,7 +357,6 @@ const App = (() => {
 
   function setTilt(rx, ry) { tRX = rx; tRY = ry; }
 
-  // Shared matrix calculation hooks used interchangeably to compute drags safely
   function handleManualDrag(clientX, clientY) {
     const dx = clientX - lastX, dy = clientY - lastY;
     lastX = clientX; lastY = clientY;
@@ -381,11 +395,18 @@ const App = (() => {
   cv.addEventListener('pointercancel', stopManualDrag);
 
   let rt;
-  window.addEventListener('resize', () => {
+  const scheduleResize = () => {
     clearTimeout(rt);
-    rt = setTimeout(() => { build(); updateThemeColors(); resize(); }, 150);
-  });
-  
+    rt = setTimeout(() => { build(); updateThemeColors(); resize(); }, 100);
+  };
+
+  window.addEventListener('resize', scheduleResize);
+
+  if (window.ResizeObserver) {
+    const ro = new ResizeObserver(() => { scheduleResize(); });
+    ro.observe(stage);
+  }
+
   document.querySelectorAll('[data-bs-toggle="tab"], [data-bs-toggle="pill"]').forEach(tabEl => {
     tabEl.addEventListener('shown.bs.tab', () => {
       build();
@@ -405,7 +426,7 @@ const App = (() => {
 })();
 
 /* ============================================================
-   Parallax Control Layer + Clean HTML Card Pointer Detection
+   Parallax Control Layer + HTML Image Node Pointer Detection
 ============================================================ */
 (() => {
   const stage = document.getElementById('fui-stage');
@@ -428,7 +449,6 @@ const App = (() => {
 
   const imgLayer = document.getElementById('fui-img-layer');
   if(imgLayer) {
-    // Pure node drag-calculation pipeline targeting element space cleanly
     imgLayer.addEventListener('pointerdown', e => {
       const targetAnchor = e.target.closest('.fui-node-img');
       if(targetAnchor) {
@@ -448,7 +468,6 @@ const App = (() => {
         const delta = Math.hypot(e.clientX - downX, e.clientY - downY);
         if (delta > 6) {
           hasDraggedNode = true;
-          // Dynamically forward event to background mesh system rotation mechanics
           App.handleManualDrag(e.clientX, e.clientY);
         }
       }
@@ -464,12 +483,11 @@ const App = (() => {
     imgLayer.addEventListener('pointerup', releaseNodeCapture);
     imgLayer.addEventListener('pointercancel', releaseNodeCapture);
 
-    // Completely unhindered standard clean click dispatch pipeline execution
     imgLayer.addEventListener('click', e => {
       if(hasDraggedNode) {
         e.preventDefault();
         e.stopPropagation();
-        return; // Terminate click sequence if a rotational drag delta was active
+        return; 
       }
 
       const targetAnchor = e.target.closest('.fui-node-img');
@@ -495,4 +513,65 @@ const App = (() => {
     App.setTilt(cyv * 0.4 * strength, cxv * 0.6 * strength);
     requestAnimationFrame(loop);
   })();
+})();
+
+/* ============================================================
+   VIEW TOGGLE — Globe view  ⇄  Plain card view
+============================================================ */
+(() => {
+  function initFuiViewToggle() {
+    const toggle = document.querySelector('.fui-view-toggle');
+    const stageEl = document.getElementById('fui-stage');
+    const bgLayersEl = document.querySelector('.fui-bg-layers');
+    
+    const globePanels = Array.from(document.querySelectorAll('[data-fui-panel="globe"]'));
+    const cardPanels = Array.from(document.querySelectorAll('[data-fui-panel="cards"]'));
+    const STORAGE_KEY = 'fuiProductView';
+
+    function activate(view) {
+      if(stageEl)    stageEl.classList.toggle('fui-active', view === 'globe');
+      if(bgLayersEl) bgLayersEl.classList.toggle('fui-active', view === 'globe');
+
+      globePanels.forEach(p => p.classList.toggle('fui-view-panel-hidden', view !== 'globe'));
+      cardPanels.forEach(p => p.classList.toggle('fui-view-panel-hidden', view !== 'cards'));
+
+      if(toggle) {
+        toggle.querySelectorAll('.fui-view-btn').forEach(b => {
+          const isActive = b.dataset.fuiView === view;
+          b.classList.toggle('active', isActive);
+          b.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        });
+      }
+      try { localStorage.setItem(STORAGE_KEY, view); } catch(_) {}
+    }
+
+    if(toggle) {
+      toggle.querySelectorAll('.fui-view-btn').forEach(btn => {
+        btn.addEventListener('click', () => activate(btn.dataset.fuiView));
+      });
+    }
+
+    let stored = null;
+    try { stored = localStorage.getItem(STORAGE_KEY); } catch(_) {}
+    const initial = stored || (fuiGetTier() === 'desktop' ? 'globe' : 'cards');
+    activate(initial);
+
+    if(!stored) {
+      let rt;
+      window.addEventListener('resize', () => {
+        clearTimeout(rt);
+        rt = setTimeout(() => {
+          let s = null;
+          try { s = localStorage.getItem(STORAGE_KEY); } catch(_) {}
+          if(!s) activate(fuiGetTier() === 'desktop' ? 'globe' : 'cards');
+        }, 150);
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initFuiViewToggle);
+  } else {
+    initFuiViewToggle();
+  }
 })();
