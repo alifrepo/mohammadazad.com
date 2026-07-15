@@ -3,38 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GSAP Pixelated & Glitch Load</title>
+    <title>Isolated Cyberpunk Effects (FUI Prefixed)</title>
+    
     <style>
+        /* --- Dark, Cyberpunk Page Setup --- */
         body {
             background-color: #050505;
             color: #ffffff;
-            font-family: 'Courier New', Courier, monospace;
-            padding: 40px;
+            font-family: monospace; /* Keeps characters perfectly aligned during scrambling */
+            margin: 0;
+            padding: 60px;
             overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
 
-        /* Elements apply the SVG filter we define below */
-        .pixel-glitch {
-            filter: url(#pixelate-filter);
-            opacity: 0; /* Start hidden */
-            margin-bottom: 25px;
-            transform-origin: left center;
-        }
-
-        h1 {
-            font-size: 3rem;
+        /* --- UI Base Styles --- */
+        .fui-title {
+            font-size: 3.5rem;
             font-weight: 900;
-            letter-spacing: -1px;
-            text-transform: uppercase;
+            margin: 0;
+            line-height: 1.1;
         }
 
-        .btn {
+        .fui-text {
+            font-size: 1.2rem;
+            margin: 0;
+            color: #cccccc;
+        }
+
+        .fui-btn {
             display: inline-block;
-            padding: 10px 20px;
-            border: 1px solid #a3e635;
+            padding: 12px 24px;
+            border: 1px solid #a3e635; /* Signature green accent */
             color: #a3e635;
             text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
             background: transparent;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .fui-btn:hover {
+            background: #a3e635;
+            color: #050505;
+        }
+
+        /* --- DECOUPLED LOAD EFFECT CLASSES --- */
+        
+        /* Starts elements hidden so they don't flash before the animations begin */
+        .fui-load-glitch,
+        .fui-load-build,
+        .fui-load-scramble {
+            display: inline-block;
+            opacity: 0; 
+        }
+
+        /* --- DECOUPLED INTERACTION STATE CLASSES --- */
+
+        /* Hover Scramble Indicator (now triggers on Hover AND Click) */
+        .fui-hover-scramble {
+            cursor: pointer;
+        }
+
+        /* Click Scramble Indicator (scrambles ONLY on click) */
+        .fui-click-scramble {
+            cursor: pointer;
+        }
+
+        /* Click Glitch Indicator (physical pixel jitter displacement) */
+        .fui-click-glitch {
+            cursor: pointer;
+        }
+
+        /* Hidden utility block for our dynamically generated SVG masks & filters */
+        .fui-svg-holder {
+            position: absolute;
+            width: 0;
+            height: 0;
+            opacity: 0;
+            pointer-events: none;
         }
     </style>
 
@@ -43,57 +93,357 @@
 </head>
 <body>
 
-    <!-- SVG FILTER: This creates the blocky, pixelated glitch textures -->
-    <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true" focusable="false">
-        <defs>
-            <filter id="pixelate-filter">
-                <!-- 1. Generate coarse, blocky digital noise -->
-                <feTurbulence type="fractalNoise" baseFrequency="0.15 0.02" numOctaves="2" result="noise" />
-                <!-- 2. Posterize the noise to force sharp, pixel-like square edges -->
-                <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -15" result="blockyNoise" />
-                <!-- 3. Displace our HTML elements using the blocky noise maps -->
-                <feDisplacementMap in="SourceGraphic" in2="blockyNoise" scale="0" xChannelSelector="R" yChannelSelector="G" id="glitch-map" />
-            </filter>
-        </defs>
-    </svg>
+    <!-- Hidden holder for dynamically generated SVG definitions (masks and click filters) -->
+    <div id="fui-dynamic-svg-holder" class="fui-svg-holder"></div>
 
-    <!-- HTML Elements -->
-    <h1 class="pixel-glitch">THE CREATIVE FORCE</h1>
-    <p class="pixel-glitch">We help founders, builders, and dreamers.</p>
-    <a href="#" class="btn pixel-glitch">BOOK A CAL?</a>
+    <!-- --- DEMO WORKSPACE --- -->
 
+    <!-- EFFECT 1: Displacement Glitch Shake on Load ONLY -->
+    <div class="fui-load-glitch">
+        <h1 class="fui-title">THE CREATIVE FORCE</h1>
+    </div>
+
+    <!-- EFFECT 2: Pixel-by-Pixel Blocky Assemble on Load ONLY -->
+    <div class="fui-load-build">
+        <p class="fui-text">We help founders, builders, and dreamers.</p>
+    </div>
+
+    <!-- EFFECT 3: Text Scramble Decipher on Load ONLY -->
+    <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px; align-items: flex-start;">
+        <div class="fui-load-scramble">⚡ WEB DESIGN</div>
+        <div class="fui-load-scramble">⚡ BRANDING & SYSTEM</div>
+        <div class="fui-load-scramble">⚡ DEVELOPMENT</div>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #1a1a1a; margin: 30px 0;">
+
+    <!-- INTERACTIVE STATES: Hover-only / Click-only Scramblers -->
+    <div style="display: flex; flex-direction: column; gap: 10px; align-items: flex-start;">
+        <p style="color: #666; margin: 0; font-size: 0.9rem;">Interact with these text blocks:</p>
+        
+        <!-- Hover Scramble (will now trigger on both hover AND click) -->
+        <div class="fui-hover-scramble" style="font-size: 1.5rem;">⚡ HOVER OR CLICK ME TO SCRAMBLE</div>
+        
+        <!-- Pure Click Scramble (triggers ONLY when clicked) -->
+        <div class="fui-click-scramble" style="font-size: 1.5rem;">⚡ CLICK ME TO SCRAMBLE ONLY</div>
+    </div>
+
+    <!-- INTERACTIVE STATES: Click-only Glitch Button & Composite Button -->
+    <div style="margin-top: 30px; display: flex; gap: 20px;">
+        
+        <!-- Button with Click Glitch ONLY -->
+        <button class="fui-btn fui-click-glitch">Click to Glitch</button>
+
+        <!-- Composite Button: Runs Scatter Build on Load + Scrambles on Hover/Click + Glitches on Click -->
+        <div class="fui-load-build">
+            <button class="fui-btn fui-hover-scramble fui-click-glitch">Composite Button</button>
+        </div>
+
+    </div>
+
+
+    <!-- --- CONSOLIDATED JAVASCRIPT --- -->
     <script>
+        const FUI_GLITCH_CHARS = "!?@#$%&*()_+[]{}|;:<>?/\\0123456789";
+        const SVG_NS = "http://www.w3.org/2000/svg";
+
+        // Shuffle utility
+        function fuiShuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        // Core Alphanumeric Scramble Function
+        function fuiScrambleElement(el, duration = 1.0) {
+            if (el.dataset.fuiAnimating === "true") return; // Prevent spamming overlapping scrambles
+            el.dataset.fuiAnimating = "true";
+
+            const targetNode = el.querySelector('a') || (el.tagName === 'BUTTON' ? el : (el.querySelector('button') || el));
+            const originalText = targetNode.textContent;
+            
+            gsap.set(el, { opacity: 1 });
+            const obj = { progress: 0 };
+
+            gsap.to(obj, {
+                progress: 1,
+                duration: duration,
+                ease: "power1.out",
+                onUpdate: () => {
+                    const solvedCount = Math.floor(obj.progress * originalText.length);
+                    let currentOutput = "";
+
+                    for (let i = 0; i < originalText.length; i++) {
+                        if (originalText[i] === " ") {
+                            currentOutput += " ";
+                        } else if (i < solvedCount) {
+                            currentOutput += originalText[i];
+                        } else {
+                            const randomChar = FUI_GLITCH_CHARS[Math.floor(Math.random() * FUI_GLITCH_CHARS.length)];
+                            currentOutput += randomChar;
+                        }
+                    }
+                    targetNode.textContent = currentOutput;
+                },
+                onComplete: () => {
+                    targetNode.textContent = originalText;
+                    el.dataset.fuiAnimating = "false";
+                }
+            });
+        }
+
+        // Helper: Generates an isolated SVG filter programmatically for click-glitch animations
+        function fuiCreateIsolatedGlitchFilter(id) {
+            const svg = document.createElementNS(SVG_NS, "svg");
+            const defs = document.createElementNS(SVG_NS, "defs");
+            const filter = document.createElementNS(SVG_NS, "filter");
+            filter.setAttribute("id", id);
+
+            const turbulence = document.createElementNS(SVG_NS, "feTurbulence");
+            turbulence.setAttribute("type", "fractalNoise");
+            turbulence.setAttribute("baseFrequency", "0.15 0.02");
+            turbulence.setAttribute("numOctaves", "2");
+            turbulence.setAttribute("result", "noise");
+
+            const colorMatrix = document.createElementNS(SVG_NS, "feColorMatrix");
+            colorMatrix.setAttribute("type", "matrix");
+            colorMatrix.setAttribute("values", "1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -15");
+            colorMatrix.setAttribute("result", "blockyNoise");
+
+            const displacement = document.createElementNS(SVG_NS, "feDisplacementMap");
+            displacement.setAttribute("in", "SourceGraphic");
+            displacement.setAttribute("in2", "blockyNoise");
+            displacement.setAttribute("scale", "0");
+            displacement.setAttribute("xChannelSelector", "R");
+            displacement.setAttribute("yChannelSelector", "G");
+            displacement.setAttribute("id", `${id}-map`);
+
+            filter.appendChild(turbulence);
+            filter.appendChild(colorMatrix);
+            filter.appendChild(displacement);
+            defs.appendChild(filter);
+            svg.appendChild(defs);
+
+            document.getElementById('fui-dynamic-svg-holder').appendChild(svg);
+
+            return {
+                svgElement: svg,
+                mapElement: displacement
+            };
+        }
+
         window.addEventListener('DOMContentLoaded', () => {
-            const elements = document.querySelectorAll('.pixel-glitch');
-            const glitchMap = document.getElementById('glitch-map');
 
-            // 1. Set elements visible but heavily pixelated/displaced initially
-            gsap.set(elements, { opacity: 0 });
-            gsap.set(glitchMap, { attr: { scale: 120 } }); // Large scale = massive blocky pixels
+            // ==========================================
+            // SEPARATE CLASS 1: .fui-load-glitch (Load displacement - Isolated per element)
+            // ==========================================
+            const fuiGlitchElements = document.querySelectorAll('.fui-load-glitch');
 
-            const tl = gsap.timeline();
+            fuiGlitchElements.forEach((el, index) => {
+                const filterId = `fui-load-filter-${index}`;
+                const { svgElement, mapElement } = fuiCreateIsolatedGlitchFilter(filterId);
 
-            // 2. Animate the pixel-scale down to 0 (which makes it sharp and crisp)
-            tl.to(glitchMap, {
-                attr: { scale: 0 },
-                duration: 0.8,
-                ease: "power4.inOut"
+                gsap.set(el, { opacity: 0 });
+                gsap.set(mapElement, { attr: { scale: 120 } });
+
+                el.style.filter = `url(#${filterId})`;
+
+                const elTimeline = gsap.timeline({
+                    onComplete: () => {
+                        el.style.filter = "none";
+                        svgElement.remove();
+                    }
+                });
+
+                elTimeline.to(mapElement, {
+                    attr: { scale: 0 },
+                    duration: 0.8,
+                    ease: "power4.inOut"
+                });
+
+                elTimeline.to(el, { opacity: 1, x: -10, duration: 0.05 }, 0)
+                          .to(el, { opacity: 0.3, x: 5, duration: 0.03 })
+                          .to(el, { opacity: 1, x: -2, duration: 0.08 })
+                          .to(el, { opacity: 0.1, duration: 0.04 })
+                          .to(el, { opacity: 1, x: 0, duration: 0.05 });
             });
 
-            // 3. Simultaneously trigger the rapid opacity flickering on the elements
-            elements.forEach((el, index) => {
-                const flicker = gsap.timeline();
-                
-                flicker
-                    .to(el, { opacity: 1, x: -10, duration: 0.05 })
-                    .to(el, { opacity: 0.3, x: 5, duration: 0.03 })
-                    .to(el, { opacity: 1, x: -2, duration: 0.08 })
-                    .to(el, { opacity: 0.1, duration: 0.04 })
-                    .to(el, { opacity: 1, x: 0, duration: 0.05 });
 
-                // Offset each element's load slightly for a waterfall effect
-                tl.add(flicker, index * 0.15);
+            // ==========================================
+            // SEPARATE CLASS 2: .fui-load-build (Load pixel scatter)
+            // ==========================================
+            const fuiBuildTargets = document.querySelectorAll('.fui-load-build');
+
+            if (fuiBuildTargets.length > 0) {
+                const fuiSvgHolder = document.getElementById('fui-dynamic-svg-holder');
+
+                fuiBuildTargets.forEach((target, index) => {
+                    const rect = target.getBoundingClientRect();
+                    const pixelSize = 10; 
+                    const cols = Math.ceil(rect.width / pixelSize);
+                    const rows = Math.ceil(rect.height / pixelSize);
+                    const fuiMaskId = `fui-pixel-mask-${index}`;
+
+                    const svg = document.createElementNS(SVG_NS, "svg");
+                    const defs = document.createElementNS(SVG_NS, "defs");
+                    const mask = document.createElementNS(SVG_NS, "mask");
+                    
+                    mask.setAttribute("id", fuiMaskId);
+                    
+                    const maskBg = document.createElementNS(SVG_NS, "rect");
+                    maskBg.setAttribute("width", "100%");
+                    maskBg.setAttribute("height", "100%");
+                    maskBg.setAttribute("fill", "black");
+                    mask.appendChild(maskBg);
+
+                    let fuiPixelElements = [];
+
+                    for (let r = 0; r < rows; r++) {
+                        for (let c = 0; c < cols; c++) {
+                            const pixel = document.createElementNS(SVG_NS, "rect");
+                            pixel.setAttribute("x", c * pixelSize);
+                            pixel.setAttribute("y", r * pixelSize);
+                            pixel.setAttribute("width", pixelSize);
+                            pixel.setAttribute("height", pixelSize);
+                            pixel.setAttribute("fill", "white");
+                            pixel.setAttribute("opacity", "0");
+
+                            mask.appendChild(pixel);
+                            fuiPixelElements.push(pixel);
+                        }
+                    }
+
+                    defs.appendChild(mask);
+                    svg.appendChild(defs);
+                    fuiSvgHolder.appendChild(svg);
+
+                    target.style.webkitMaskImage = `url(#${fuiMaskId})`;
+                    target.style.maskImage = `url(#${fuiMaskId})`;
+                    
+                    gsap.set(target, { opacity: 1 });
+
+                    const fuiShuffledPixels = fuiShuffleArray([...fuiPixelElements]);
+                    const fuiBuildTimeline = gsap.timeline();
+
+                    fuiBuildTimeline.to(fuiShuffledPixels, {
+                        opacity: 1,
+                        duration: 0.1,
+                        stagger: {
+                            each: 0.002,
+                            from: "random"
+                        },
+                        ease: "power1.in"
+                    });
+
+                    fuiBuildTimeline.to(target, {
+                        opacity: 0.4,
+                        duration: 0.05,
+                        repeat: 3,
+                        yoyo: true,
+                        ease: "steps(1)"
+                    }, "-=1.0");
+
+                    fuiBuildTimeline.to(target, {
+                        opacity: 1,
+                        duration: 0.05,
+                        onComplete: () => {
+                            target.style.webkitMaskImage = "none";
+                            target.style.maskImage = "none";
+                            svg.remove();
+                        }
+                    });
+                });
+            }
+
+
+            // ==========================================
+            // SEPARATE CLASS 3: .fui-load-scramble (Load-only text scramble)
+            // ==========================================
+            const fuiLoadScrambles = document.querySelectorAll('.fui-load-scramble');
+
+            if (fuiLoadScrambles.length > 0) {
+                fuiLoadScrambles.forEach((el, index) => {
+                    gsap.delayedCall(index * 0.15, () => {
+                        fuiScrambleElement(el, 1.0);
+                    });
+                });
+            }
+
+
+            // ==========================================
+            // SEPARATE HOVER CLASS: .fui-hover-scramble (Hover AND Click Scrambler)
+            // ==========================================
+            const fuiHoverScrambles = document.querySelectorAll('.fui-hover-scramble');
+
+            if (fuiHoverScrambles.length > 0) {
+                fuiHoverScrambles.forEach(el => {
+                    gsap.set(el, { opacity: 1 });
+
+                    // Trigger on hover
+                    el.addEventListener('mouseenter', () => {
+                        fuiScrambleElement(el, 0.4);
+                    });
+
+                    // Trigger on click
+                    el.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        fuiScrambleElement(el, 0.6);
+                    });
+                });
+            }
+
+
+            // ==========================================
+            // SEPARATE CLICK SCRAMBLE CLASS: .fui-click-scramble (Click-ONLY Scrambler)
+            // ==========================================
+            const fuiClickScrambles = document.querySelectorAll('.fui-click-scramble');
+
+            if (fuiClickScrambles.length > 0) {
+                fuiClickScrambles.forEach(el => {
+                    gsap.set(el, { opacity: 1 });
+
+                    el.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        fuiScrambleElement(el, 0.6); // Runs satisfying scramble when clicked
+                    });
+                });
+            }
+
+
+            // ==========================================
+            // SEPARATE CLICK CLASS: .fui-click-glitch (Click-only Glitch - ISOLATED EFFECT)
+            // ==========================================
+            const fuiClickGlitches = document.querySelectorAll('.fui-click-glitch');
+            
+            fuiClickGlitches.forEach((element, index) => {
+                element.addEventListener('click', (e) => {
+                    e.preventDefault(); 
+                    
+                    if (element.dataset.fuiClicking === "true") return; 
+                    element.dataset.fuiClicking = "true";
+
+                    const clickFilterId = `fui-click-filter-${index}`;
+                    const { svgElement, mapElement } = fuiCreateIsolatedGlitchFilter(clickFilterId);
+                    
+                    element.style.filter = `url(#${clickFilterId})`;
+                    
+                    const clickTimeline = gsap.timeline({
+                        onComplete: () => {
+                            element.style.filter = "none";
+                            svgElement.remove();
+                            element.dataset.fuiClicking = "false";
+                        }
+                    });
+                    
+                    clickTimeline.set(mapElement, { attr: { scale: 80 } })
+                        .to(element, { x: gsap.utils.random(-15, 15), y: gsap.utils.random(-5, 5), opacity: 0.5, duration: 0.05 })
+                        .to(mapElement, { attr: { scale: 0 }, duration: 0.15, ease: "power2.out" })
+                        .to(element, { x: 0, y: 0, opacity: 1, duration: 0.05 }, "-=0.05");
+                });
             });
+
         });
     </script>
 </body>
