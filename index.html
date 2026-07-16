@@ -28,21 +28,52 @@
 
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="assets/dist/css/bootstrap/bootstrap-icons.css">
-
-<style>
-  /* Elements apply the SVG filter we define below */
-        .pixel-glitch {
-            filter: url(#pixelate-filter);
-            opacity: 0; /* Start hidden */
-            margin-bottom: 25px;
-            transform-origin: left center;
-        }
-</style>
 </head>
 <body class=" overflow-x-hidden">
+  <!-- start loader -->
+  <div id="fui-global-loader" role="status" aria-live="polite" aria-busy="true">
+    <div class="fui-hud-loader">
+      <!-- Futuristic SVG Icon with Custom Center Graphic -->
+      <svg class="fui-sci-fi-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <!-- Outer Dashed Orbit -->
+        <!-- <circle class="fui-spin-slow" cx="50" cy="50" r="44" fill="none" stroke="#59ffc0" stroke-width="2" stroke-dasharray="12 6 4 6" /> -->
+        
+        <!-- Inner Tech Ring -->
+        <circle class="fui-spin-reverse-fast" cx="50" cy="50" r="32" fill="none" stroke="#59ffc0" stroke-width="1.5" stroke-dasharray="2 8" />
+        
+        <!-- Central Hexagon Core -->
+        <polygon class="fui-pulse-core" points="50,28 69,39 69,61 50,72 31,61 31,39" fill="rgba(0, 255, 65, 0.15)" stroke="#59ffc0" stroke-width="2" />
+        
+        <!-- Center Energy Icon (Pulsing Core) -->
+        <g class="fui-pulse-core">
+          <g transform="translate(50, 50) scale(0.18) translate(-75, -75)">
+            <path d="M108.977 32.8876C110.622 32.6554 112.565 33.4606 113.678 34.6777C113.961 34.9877 114.644 35.879 114.688 36.2862C115.055 39.7157 114.98 43.2141 114.982 46.6632L114.982 65.089L114.985 95.6876C114.987 101.181 115.05 106.689 114.902 112.179C114.832 114.799 112.582 116.633 110.173 117.173C107.608 117.253 105.591 116.195 104.329 113.893L104.265 113.775C103.5 112.38 103.744 103.7 103.743 101.59L103.741 80.412L103.738 52.7612C103.738 47.8483 103.649 42.8832 103.866 37.9788C103.992 35.1301 106.261 33.2173 108.977 32.8876Z" fill="#59ffc0"/>
+            <path d="M39.6544 32.8337C41.0415 32.7956 42.0067 32.8282 43.3119 33.4666C44.5334 34.0668 45.4652 35.1291 45.9009 36.4181C46.3606 37.8206 46.2501 48.6637 46.2527 50.7099L46.2429 82.1088L46.252 101.153C46.2525 104.677 46.3088 108.236 46.1804 111.756C46.0779 114.563 44.6077 116.233 41.9652 117.036C38.0235 117.616 35.3473 115.448 35.1556 111.473C34.9257 106.705 35.0189 101.911 35.0176 97.1337L35.0163 73.4767L35.02 51.7327C35.0195 47.7057 34.991 43.6732 35.0585 39.6501C35.0876 37.9038 35.1829 36.3743 36.3767 34.9973C37.3961 33.8214 38.236 33.3487 39.6544 32.8337Z" fill="#59ffc0"/>
+            <path d="M53.908 53.1914C56.1947 52.9411 57.7199 52.9893 59.3355 54.881C61.6469 57.5877 63.4503 60.7671 65.3689 63.7706L74.7116 78.3078C79.3265 73.8542 88.7255 54.9866 92.2672 53.4445C93.5736 52.8757 95.9568 53.0381 97.2547 53.5787C99.0957 54.3458 99.749 56.3804 100.457 58.0719C99.6333 60.0521 94.6252 67.7496 93.225 70.037C92.0068 71.7473 90.2927 74.6998 89.1204 76.5644L80.8099 89.7901C79.3497 92.1185 76.7562 96.4914 74.9086 98.3586C72.6824 95.4706 70.2787 91.4827 68.3104 88.3722C64.9581 83.1136 61.6458 77.8295 58.3734 72.5207C55.6439 68.1312 52.5669 63.6695 50.1416 59.1097C48.7635 56.5188 51.6975 54.1706 53.908 53.1914Z" fill="#59ffc0"/>
+          </g>
+        </g>
+        
+        <!-- Static HUD crosshairs -->
+        <path class="fui-spin-slow" d="M 50 2 L 50 12 M 50 88 L 50 98 M 2 50 L 12 50 M 88 50 L 98 50" stroke="#59ffc0" stroke-width="2" opacity="0.5"/>
+      </svg>
+
+      <!-- Progress Bar -->
+      <div class="fui-small-track">
+        <div class="fui-small-fill"></div>
+      </div>
+
+      <!-- Status Text -->
+      <div class="fui-status-text">portfolio loading</div>
+    </div>
+    <!-- bg pattern -->
+    <div class="al-pattern-grid-double al-pattern-white-2 position-fixed top-0 start-0 bottom-0 end-0 z-n1 pe-none"></div>
+  </div>
+  <!-- end loader -->
+
+
   <div class="container-xxl px-4 px-lg-5 position-relative z-3 ">
     <!-- start header -->
-    <header class="position-sticky top-0 z-3 py-3 pixel-glitch">
+    <header class="position-sticky top-0 z-3 py-3">
       <div class="row align-items-center">
         <div class="col">
           <h1 class="al-fs-18 al-ff-Jura mb-0">
@@ -87,7 +118,7 @@
     <!-- start main content -->
      <main>
       <div class="row g-5">
-        <div class="col-lg-5 d-flex flex-column justify-content-between gap-5 pb-4 pt-5 pixel-glitch">
+        <div class="col-lg-5 d-flex flex-column justify-content-between gap-5 pb-4 pt-5">
           <div class="position-relative pt-3">
             <img src="assets/img/mohammad-azad-logo-white.svg" alt="Mohammad Azad Logo" class="al-corner al-corner-all-7 al-size-50" />
             <div class="mt-4 pe-none">
@@ -183,19 +214,19 @@
                 <div class="col-auto">
                   <a href="https://dribbble.com/mohammad-azad" target="_blank" class="d-inline-flex align-items-center gap-2 text-light text-opacity-75 opacity-75 text-decoration-none al-hover-text-primary">
                     <img src="assets/img/icon-white-dribbble-outline.svg" alt="" width="16" class="opacity-50" />
-                    <span>Dribbble</span> [Dr]
+                    <span>Dribbble</span>
                   </a>
                 </div>
                 <div class="col-auto">
                   <a href="https://www.linkedin.com/in/mohammad-azad" target="_blank" class="d-inline-flex align-items-center gap-2 text-light text-opacity-75 opacity-75 text-decoration-none al-hover-text-primary">
                     <img src="assets/img/icon-white-linkedIn-outline.svg" alt="" width="16" class="opacity-50" />
-                    <span>LinkedIn</span> [In]
+                    <span>LinkedIn</span>
                   </a>
                 </div>
                 <div class="col-auto">
                   <a href="https://cssbattle.dev/player/mohammad_azad" target="_blank" class="d-inline-flex align-items-center gap-2 text-light text-opacity-75 opacity-75 text-decoration-none al-hover-text-primary">
                     <img src="assets/img/icon-white-cssBattle-outline.svg" alt="" width="16" class="opacity-50" />
-                    <span>CSSBattle.dev</span> [cb]
+                    <span>CSSBattle.dev</span>
                   </a>
                 </div>
               </div>
@@ -204,7 +235,7 @@
           </footer>
           <!-- end footer -->
         </div>
-        <div class="col-lg-7 pixel-glitch">
+        <div class="col-lg-7">
           <div class="position-relative pt-2">
             <div class="al-fui-tabs position-relative">
               <!-- start tab navs -->
@@ -961,20 +992,6 @@
     </div>
   </div>
 
-  <!-- SVG FILTER: This creates the blocky, pixelated glitch textures -->
-    <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true" focusable="false">
-        <defs>
-            <filter id="pixelate-filter">
-                <!-- 1. Generate coarse, blocky digital noise -->
-                <feTurbulence type="fractalNoise" baseFrequency="0.15 0.02" numOctaves="2" result="noise" />
-                <!-- 2. Posterize the noise to force sharp, pixel-like square edges -->
-                <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -15" result="blockyNoise" />
-                <!-- 3. Displace our HTML elements using the blocky noise maps -->
-                <feDisplacementMap in="SourceGraphic" in2="blockyNoise" scale="0" xChannelSelector="R" yChannelSelector="G" id="glitch-map" />
-            </filter>
-        </defs>
-    </svg>
-    
 
   <!-- bg pattern -->
   <div class="al-pattern-grid-double al-pattern-white-2 position-fixed top-0 start-0 bottom-0 end-0 z-n1 pe-none"></div>
@@ -994,39 +1011,31 @@
   <script src="assets/dist/js/structure.js"></script>
   <script src="assets/dist/js/my-product.js"></script>
 
-  <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const elements = document.querySelectorAll('.pixel-glitch');
-            const glitchMap = document.getElementById('glitch-map');
 
-            // 1. Set elements visible but heavily pixelated/displaced initially
-            gsap.set(elements, { opacity: 0 });
-            gsap.set(glitchMap, { attr: { scale: 10 } }); // Large scale = massive blocky pixels
 
-            const tl = gsap.timeline();
+<script>
+  // Controlled 1.8-second minimum display duration
+  const FUI_MIN_LOAD_TIME = 1800; 
+  const fuiStartTime = Date.now();
 
-            // 2. Animate the pixel-scale down to 0 (which makes it sharp and crisp)
-            tl.to(glitchMap, {
-                attr: { scale: 0 },
-                duration: 1.8,
-                ease: "power4.inOut"
-            });
+  window.addEventListener('load', () => {
+    const elapsedTime = Date.now() - fuiStartTime;
+    const delay = Math.max(0, FUI_MIN_LOAD_TIME - elapsedTime);
 
-            // 3. Simultaneously trigger the rapid opacity flickering on the elements
-            elements.forEach((el, index) => {
-                const flicker = gsap.timeline();
-                
-                flicker
-                    .to(el, { opacity: 1, x: -10, duration: 0.05 })
-                    .to(el, { opacity: 0.3, x: 5, duration: 0.03 })
-                    .to(el, { opacity: 1, x: -2, duration: 0.08 })
-                    .to(el, { opacity: 0.1, duration: 0.04 })
-                    .to(el, { opacity: 1, x: 0, duration: 0.05 });
-
-                // Offset each element's load slightly for a waterfall effect
-                tl.add(flicker, index * 0.15);
-            });
+    setTimeout(() => {
+      const loader = document.getElementById('fui-global-loader');
+      if (loader) {
+        loader.setAttribute('aria-busy', 'false');
+        loader.classList.add('fui-loaded');
+        
+        loader.addEventListener('transitionend', (e) => {
+          if (e.propertyName === 'visibility') {
+            loader.remove();
+          }
         });
-    </script>
+      }
+    }, delay);
+  });
+</script>
 </body>
 </html>

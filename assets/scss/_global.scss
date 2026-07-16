@@ -553,3 +553,164 @@
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(var(--bs-primary-rgb), 0.3);
   }
 }
+
+
+// ==========================================================================
+// FUI BOOTSTRAP-COMPATIBLE SCSS LOADER
+// ==========================================================================
+
+// Prefixed Keyframes
+@keyframes fui-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fui-spin-reverse {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+@keyframes fui-pulse {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(1.05); opacity: 1; }
+}
+
+@keyframes fui-load-progress {
+  0% { width: 0%; }
+  25% { width: 30%; }
+  100% { width: 100%; }
+}
+
+@keyframes fui-blink {
+  0%, 100% { opacity: 0.9; text-shadow: 0 0 5px rgba(var(--bs-success-rgb, 0, 255, 65), 0.5); }
+  50% { opacity: 0.3; text-shadow: none; }
+}
+
+// Global fixed overlay container
+#fui-global-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bs-body-bg); 
+  color: var(--bs-success, #59ffc0);        
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1), 
+              visibility 0.6s step-end;
+
+  &.fui-loaded {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    // Smooth exit scale down transition
+    .fui-hud-loader {
+      transform: scale(1.1);
+    }
+  }
+}
+
+// Inner components scoped to .fui-hud-loader
+.fui-hud-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: var(--bs-font-monospace, 'Courier New', Courier, monospace);
+  
+  // Custom Scale 1.2x
+  transform: scale(1.2);
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+
+  /* SVG Icon Styles and Animations */
+  .fui-sci-fi-svg {
+    width: 64px;
+    height: 64px;
+    filter: drop-shadow(0 0 8px rgba(var(--bs-success-rgb, 0, 255, 65), 0.6));
+
+    // Colors mapping to Bootstrap tokens
+    [stroke="#59ffc0"] {
+      stroke: var(--bs-success, #59ffc0);
+    }
+    [fill="#59ffc0"] {
+      fill: var(--bs-success, #59ffc0);
+    }
+    [fill="rgba(0, 255, 65, 0.15)"] {
+      fill: rgba(var(--bs-success-rgb, 0, 255, 65), 0.15);
+    }
+
+    .fui-center-icon {
+      transform-origin: 50px 50px;
+    }
+  }
+
+  .fui-spin-slow {
+    transform-origin: 50px 50px;
+    animation: fui-spin 6s linear infinite;
+  }
+
+  .fui-spin-reverse-fast {
+    transform-origin: 50px 50px;
+    animation: fui-spin-reverse 3s linear infinite;
+  }
+
+  .fui-pulse-core {
+    transform-origin: 50px 50px;
+    animation: fui-pulse 1.5s ease-in-out infinite alternate;
+  }
+
+  /* Progress bar styles */
+  .fui-small-track {
+    width: 140px;
+    height: 2px;
+    background: rgba(var(--bs-success-rgb, 0, 255, 65), 0.15);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .fui-small-fill {
+    height: 100%;
+    width: 0%;
+    background: var(--bs-success, #59ffc0);
+    box-shadow: 0 0 8px var(--bs-success, #59ffc0);
+    animation: fui-load-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  /* Status text */
+  .fui-status-text {
+    font-size: 8px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.8;
+    animation: fui-blink 2.5s infinite;
+  }
+}
+
+// Accessibility Preferences (Reduced Motion fallback)
+@media (prefers-reduced-motion: reduce) {
+  .fui-hud-loader {
+    transform: scale(1.2) !important;
+    
+    .fui-spin-slow, 
+    .fui-spin-reverse-fast, 
+    .fui-pulse-core, 
+    .fui-small-fill, 
+    .fui-status-text {
+      animation: none !important;
+    }
+    .fui-small-fill {
+      width: 100% !important;
+    }
+    .fui-status-text {
+      opacity: 1;
+    }
+  }
+}

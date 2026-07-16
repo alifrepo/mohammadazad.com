@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Futuristic Green SVG Loader</title>
+<style>
+  body {
+    /* Deep dark background with a very subtle green tint */
+    background-color: #050a05; 
+    color: #00ff41; /* Neon tech green */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .hud-loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* SVG Icon Styles and Animations */
+  .sci-fi-svg {
+    width: 64px;
+    height: 64px;
+    filter: drop-shadow(0 0 8px rgba(0, 255, 65, 0.6));
+  }
+
+  .spin-slow {
+    transform-origin: 50px 50px;
+    animation: spin 6s linear infinite;
+  }
+
+  .spin-reverse-fast {
+    transform-origin: 50px 50px;
+    animation: spin-reverse 3s linear infinite;
+  }
+
+  .pulse-core {
+    transform-origin: 50px 50px;
+    animation: pulse 1.5s ease-in-out infinite alternate;
+  }
+
+  /* The small, thin progress bar */
+  .small-track {
+    width: 140px;
+    height: 2px;
+    background: rgba(0, 255, 65, 0.15);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .small-fill {
+    height: 100%;
+    width: 0%;
+    background: #00ff41;
+    box-shadow: 0 0 8px #00ff41;
+    animation: load-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  /* Status text */
+  .status-text {
+    font-size: 8px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.8;
+    animation: blink 2.5s infinite;
+  }
+
+  /* Keyframes */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes spin-reverse {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(-360deg); }
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(0.8); opacity: 0.5; }
+    100% { transform: scale(1.05); opacity: 1; }
+  }
+
+  @keyframes load-progress {
+    0% { width: 0%; }
+    25% { width: 30%; }
+    /* 45% { width: 30%; }  */
+    /* Processing pause */
+    /* 75% { width: 85%; } */
+    /* 90% { width: 85%; }  */
+    /* Secondary pause */
+    100% { width: 100%; }
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 0.9; text-shadow: 0 0 5px rgba(0, 255, 65, 0.5); }
+    50% { opacity: 0.3; text-shadow: none; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="hud-loader">
+    <!-- Futuristic SVG Icon -->
+    <svg class="sci-fi-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <!-- Outer Dashed Orbit -->
+      <!-- <circle class="spin-slow" cx="50" cy="50" r="44" fill="none" stroke="#00ff41" stroke-width="2" stroke-dasharray="12 6 4 6" /> -->
+      
+      <!-- Inner Tech Ring -->
+      <circle class="spin-reverse-fast" cx="50" cy="50" r="32" fill="none" stroke="#00ff41" stroke-width="1.5" stroke-dasharray="2 8" />
+      
+      <!-- Central Hexagon Core -->
+      <polygon class="pulse-core" points="50,28 69,39 69,61 50,72 31,61 31,39" fill="rgba(0, 255, 65, 0.15)" stroke="#00ff41" stroke-width="2" />
+      
+      <!-- Center Energy Node -->
+      <circle class="pulse-core" cx="50" cy="50" r="6" fill="#00ff41" />
+      
+      <!-- Static HUD crosshairs -->
+      <path class="spin-slow" d="M 50 2 L 50 12 M 50 88 L 50 98 M 2 50 L 12 50 M 88 50 L 98 50" stroke="#00ff41" stroke-width="2" opacity="0.5"/>
+    </svg>
+
+    <!-- Progress Bar -->
+    <div class="small-track">
+      <div class="small-fill"></div>
+    </div>
+
+    <!-- Status Text -->
+    <div class="status-text">portfolio loading</div>
+  </div>
+
+</body>
+</html>
