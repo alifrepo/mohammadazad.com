@@ -3,10 +3,11 @@
    Toggle hasModal true/false and pass targeted template IDs
 ============================================================ */
 const COMPONENT_IMAGES = [
-  {src:'assets/img/portfolio/1.jpg', w:130, h:90,  hasModal: true,  id: 'fuiModal-1'},
+  // {src:'assets/img/portfolio/1.jpg', w:130, h:90,  hasModal: true,  id: 'fuiModal-1'},
+  {src:'assets/img/portfolio/1.jpg', w:130, h:90,  hasModal: false,  link: 'https://alfuix.com'},
   {src:'assets/img/portfolio/2.jpg', w:96,  h:96,  hasModal: false, link: 'https://alfuix.com'}, 
-  {src:'assets/img/portfolio/3.jpg', w:150, h:80,  hasModal: true,  id: 'fuiModal-3'},
-  {src:'assets/img/portfolio/4.jpg', w:110, h:110, hasModal: true,  id: 'fuiModal-4'}
+  {src:'assets/img/portfolio/3.jpg', w:150, h:80,  hasModal: false,  link: 'https://alfuix.com'},
+  {src:'assets/img/portfolio/4.jpg', w:110, h:110, hasModal: false,  link: 'https://alfuix.com'}
 ];
 
 function fuiGetTier(){

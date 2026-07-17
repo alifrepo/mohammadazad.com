@@ -115,7 +115,7 @@
     <!-- end header -->
 
     <!-- start main content -->
-     <main>
+     <main class="pb-5 pb-lg-0">
       <div class="row g-5">
         <div class="col-lg-5 d-flex flex-column justify-content-between gap-5 pb-4 pt-5">
           <div class="position-relative pt-3">
@@ -265,7 +265,7 @@
               <!-- start tabs content -->
               <div class="tab-content al-fui-tabs-body al-corner al-border al-corner-all-12 al-border-1 al-border-primary-50 bg-body al-backdrop-blur-8" id="pills-tabContent" style="height: calc(100vh - 180px);">
                   <!-- my work -->
-                  <div class="tab-pane h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover fade pt-2 pt-lg-4" id="pills-my-work" role="tabpanel" aria-labelledby="pills-my-work-tab" tabindex="0">
+                  <div class="tab-pane h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover fade pt-2 pt-lg-4 show active" id="pills-my-work" role="tabpanel" aria-labelledby="pills-my-work-tab" tabindex="0">
                     <div class="px-4 py-3 d-lg-none">
                       <h2 class="">
                         Hey,<br/>
@@ -404,7 +404,7 @@
                   <hr class="text-primary mb-5 d-lg-none"/>
 
                   <!-- my products -->
-                  <div class="tab-pane fade h-100 overflow-hidden al-scroll-smooth position-relative show active" id="pills-my-products" role="tabpanel" aria-labelledby="pills-my-products-tab" tabindex="0">
+                  <div class="tab-pane fade h-100 overflow-hidden al-scroll-smooth position-relative" id="pills-my-products" role="tabpanel" aria-labelledby="pills-my-products-tab" tabindex="0">
                     <!-- switch toggle -->
                     <div class="fui-view-toggle position-absolute top-0 end-0 m-3 z-3 d-inline-flex gap-2">
                       <span type="button" class="fui-view-btn al-w-35 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-primary-25 al-hexa-alt-border al-border-2 al-border-primary-25 al-cursor-pointer d-inline-flex al-flex-center" data-fui-view="cards" title="Card View" data-bs-toggle="tooltip" data-bs-placement="bottom">
@@ -452,44 +452,194 @@
                       <div class="row row-cols-1 row-cols-xl-1 g-4 mb-4">
                         <!-- product -->
                         <div class="col animate__animated animate__zoomIn">
-                          <div class="bg-white bg-opacity-10 al-corner al-corner-all-12 al-cursor-pointer al-hover-bg-white-25" data-bs-toggle="modal" data-bs-target="#fuiModal-1">
-                            <img src="assets/img/portfolio/1.jpg" alt="Product 1" class="w-100">
-                            <div class="p-4">
-                              <h3 class="al-fs-18">Product One</h3>
-                              <p class="mb-0">Replace with a one-line description of this product.</p>
+                          <a href="https://www.alfuix.com/" target="_blank" class="d-block text-decoration-none text-white al-hover-text-primary bg-white bg-opacity-10 al-corner al-corner-all-12 al-cursor-pointer">
+                            <div class="position-relative">
+                              <img src="assets/img/portfolio/1.jpg" alt="Product 1" class="w-100">
+
+                              <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
+                                <h3 class="mb-0 bg-black bg-opacity-75 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-14 fw-semibold lh-lg">
+                                  Project Name
+                                </h3>
+                                
+                                <div class="d-inline-flex align-items-center gap-2">
+                                  <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                    Figma
+                                  </span>
+                                  
+                                  <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                    HTML
+                                  </span>
+                                  
+                                  <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                    SCSS
+                                  </span>
+                                  
+                                  <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                    JS
+                                  </span>
+                                </div>
+                              </div>
                             </div>
-                          </div>
+                            <div class="p-4">
+                              <!-- <h3 class="al-fs-18">Product One</h3> -->
+                              <p class="mb-0 al-fs-14">Replace with a one-line description of this product.</p>
+                            </div>
+                          </a>
                         </div>
 
                         <!-- product -->
                         <div class="col animate__animated animate__zoomIn">
-                          <div class="bg-white bg-opacity-10 al-corner al-corner-all-12 al-cursor-pointer al-hover-bg-white-25" data-bs-toggle="modal" data-bs-target="#fuiModal-1">
-                            <img src="assets/img/portfolio/1.jpg" alt="Product 1" class="w-100">
-                            <div class="p-4">
-                              <h3 class="al-fs-18">Product Two</h3>
-                              <p class="mb-0">Replace with a one-line description of this product.</p>
+                          <a href="https://www.alfuix.com/" target="_blank" class="d-block text-decoration-none text-white al-hover-text-primary bg-white bg-opacity-10 al-corner al-corner-all-12 al-cursor-pointer" data-bs-toggle="modal" data-bs-target="#fuiModal-1">
+                            <div class="position-relative">
+                              <img src="assets/img/portfolio/2.jpg" alt="Product 1" class="w-100">
+
+                              <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
+                                <h3 class="mb-0 bg-black bg-opacity-75 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-14 fw-semibold lh-lg">
+                                  Project Name
+                                </h3>
+                                
+                                <div class="d-inline-flex align-items-center gap-2">
+                                  <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                    Figma
+                                  </span>
+                                  
+                                  <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                    HTML
+                                  </span>
+                                  
+                                  <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                    SCSS
+                                  </span>
+                                  
+                                  <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                    JS
+                                  </span>
+                                </div>
+                              </div>
                             </div>
-                          </div>
+                            <div class="p-4">
+                              <!-- <h3 class="al-fs-18">Product One</h3> -->
+                              <p class="mb-0 al-fs-14">Replace with a one-line description of this product.</p>
+                            </div>
+                          </a>
                         </div>
 
                         <!-- product -->
                         <div class="col animate__animated animate__zoomIn">
-                          <div class="bg-white bg-opacity-10 al-corner al-corner-all-12 al-cursor-pointer al-hover-bg-white-25" data-bs-toggle="modal" data-bs-target="#fuiModal-3">
-                            <img src="assets/img/portfolio/1.jpg" alt="Product 1" class="w-100">
-                            <div class="p-4">
-                              <h3 class="al-fs-18">Product Four</h3>
-                              <p class="mb-0">Replace with a one-line description of this product.</p>
+                          <a href="https://www.alfuix.com/" target="_blank" class="d-block text-decoration-none text-white al-hover-text-primary bg-white bg-opacity-10 al-corner al-corner-all-12 al-cursor-pointer" data-bs-toggle="modal" data-bs-target="#fuiModal-1">
+                            <div class="position-relative">
+                              <img src="assets/img/portfolio/1.jpg" alt="Product 1" class="w-100">
+
+                              <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
+                                <h3 class="mb-0 bg-black bg-opacity-75 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-14 fw-semibold lh-lg">
+                                  Project Name
+                                </h3>
+                                
+                                <div class="d-inline-flex align-items-center gap-2">
+                                  <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                    Figma
+                                  </span>
+                                  
+                                  <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                    HTML
+                                  </span>
+                                  
+                                  <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                    SCSS
+                                  </span>
+                                  
+                                  <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                    JS
+                                  </span>
+                                </div>
+                              </div>
                             </div>
-                          </div>
+                            <div class="p-4">
+                              <!-- <h3 class="al-fs-18">Product One</h3> -->
+                              <p class="mb-0 al-fs-14">Replace with a one-line description of this product.</p>
+                            </div>
+                          </a>
                         </div>
 
                         <!-- product -->
                         <div class="col animate__animated animate__zoomIn">
-                          <div class="bg-white bg-opacity-10 al-corner al-corner-all-12 al-cursor-pointer al-hover-bg-white-25" data-bs-toggle="modal" data-bs-target="#fuiModal-4">
-                            <img src="assets/img/portfolio/1.jpg" alt="Product 1" class="w-100">
+                          <a href="https://www.alfuix.com/" target="_blank" class="d-block text-decoration-none text-white al-hover-text-primary bg-white bg-opacity-10 al-corner al-corner-all-12 al-cursor-pointer" data-bs-toggle="modal" data-bs-target="#fuiModal-1">
+                            <div class="position-relative">
+                              <img src="assets/img/portfolio/1.jpg" alt="Product 1" class="w-100">
+
+                              <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
+                                <h3 class="mb-0 bg-black bg-opacity-75 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-14 fw-semibold lh-lg">
+                                  Project Name
+                                </h3>
+                                
+                                <div class="d-inline-flex align-items-center gap-2">
+                                  <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                    Figma
+                                  </span>
+                                  
+                                  <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                    HTML
+                                  </span>
+                                  
+                                  <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                    SCSS
+                                  </span>
+                                  
+                                  <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                    JS
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
                             <div class="p-4">
-                              <h3 class="al-fs-18">Product Four</h3>
-                              <p class="mb-0">Replace with a one-line description of this product.</p>
+                              <!-- <h3 class="al-fs-18">Product One</h3> -->
+                              <p class="mb-0 al-fs-14">Replace with a one-line description of this product.</p>
+                            </div>
+                          </a>
+                        </div>
+
+                        <!-- explore more -->
+                        <div class="col animate__animated animate__zoomIn">
+                          <div class="row g-4">
+                            <!-- figma -->
+                            <div class="col-md-6">
+                              <a href="https://www.alfuix.com/" target="_blank" class="d-block text-decoration-none text-white al-hover-text-primary bg-white bg-opacity-10 al-corner al-corner-all-12 al-cursor-pointer" data-bs-toggle="modal" data-bs-target="#fuiModal-1">
+                                <div class="position-relative">
+                                  <img src="assets/img/portfolio/1.jpg" alt="Product 1" class="w-100">
+
+                                  <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
+                                    <span class="mb-0 bg-black bg-opacity-75 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                      Explore Figma Products
+                                    </span>
+                                    
+                                    <div class="d-inline-flex align-items-center gap-2">
+                                      <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                        Figma
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- html -->
+                            <div class="col-md-6">
+                              <a href="https://www.alfuix.com/" target="_blank" class="d-block text-decoration-none text-white al-hover-text-primary bg-white bg-opacity-10 al-corner al-corner-all-12 al-cursor-pointer" data-bs-toggle="modal" data-bs-target="#fuiModal-1">
+                                <div class="position-relative">
+                                  <img src="assets/img/portfolio/1.jpg" alt="Product 1" class="w-100">
+
+                                  <div class="position-absolute bottom-0 start-0 end-0 m-2 d-flex align-items-center justify-content-between gap-2">
+                                    <span class="mb-0 bg-black bg-opacity-75 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                      Explore HTML Products
+                                    </span>
+                                    
+                                    <div class="d-inline-flex align-items-center gap-2">
+                                      <span class="bg-black bg-opacity-25 al-backdrop-blur-32 px-3 py-2 al-corner al-corner-all-6 text-white al-fs-12">
+                                        HTML
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
                             </div>
                           </div>
                         </div>
@@ -504,7 +654,7 @@
                   <div class="tab-pane fade h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover pt-lg-4" id="pills-about-me" role="tabpanel" aria-labelledby="pills-about-me-tab" tabindex="0">
                     <div class="px-4 pt-4 pb-3 d-lg-none">
                       <h2 class="">
-                        Who<br/> I am
+                        Who i am
                       </h2>
                       <span>
                         Explore about me
@@ -530,7 +680,7 @@
                             <div class="flex-grow-1 position-relative d-flex flex-column flex-lg-row align-items-center align-items-lg-center justify-content-lg-between gap-4">
                         
                                 <!-- Root node -->
-                                <div class="d-flex flex-column justify-content-center fui-col-root">
+                                <div class="d-none d-lg-flex flex-column justify-content-center fui-col-root">
                                     <div class="fui-node d-flex flex-column align-items-center gap-2 text-center fui-node-root">
                                         <div class="fui-root-orb-wrapper rounded-circle d-flex align-items-center justify-content-center position-relative mx-auto">
                                             <div class="fui-root-pulse position-absolute rounded-circle"></div>
@@ -727,7 +877,7 @@
           </div>
 
           <!-- start tools & platforms -->
-          <div class="marquee d-flex align-items-center gap-4 py-3" data-hero="marquee">
+          <div class="marquee d-flex align-items-center gap-4 py-3 mb-5 mb-lg-0 mt-3 mt-lg-0" data-hero="marquee">
             <span class="marquee-title text-nowrap text-uppercase al-fs-12 fw-semibold">Tools & Platforms</span>
             <div class="marquee-mask flex-fill">
               <div class="marquee-track d-flex align-items-center">
@@ -773,7 +923,7 @@
             </a>
             <a class="nav-link text-center al-corner al-corner-all-24 py-1 col" href="mailto:iazad@outlook.com">
                 <i class="bi bi-envelope al-fs-16 mb-0"></i>
-                <div class="al-fs-10">Let's Connect</div>
+                <div class="al-fs-10">Contact</div>
             </a>
         </div>
       </nav>
@@ -794,12 +944,12 @@
                 <i class="bi bi-x fs-5 text-white lh-1"></i>
             </span>
             <div class="al-clip-border al-be-12 al-bs-12 al-ts-12 al-t-clip-x al-t-25 al-center-t-100 al-extend-t-45 al-border-2 al-border-white-25 bg-body">
-                <div class="modal-header p-0 border-bottom-0 d-flex al-flex-center mb-4 al-pt-1">
+                <div class="modal-header p-0 border-bottom-0 d-flex al-flex-center mb-md-4 al-pt-1">
                     <h2 class="fs-5 text-white bg-white bg-opacity-10 px-5 py-2 al-corner al-be-50 al-bs-50">
                         <span class="d-inline-flex al-flex-center px-4 py-1">Who i am</span>
                     </h2>
                 </div>
-                <div class="modal-body p-5 pt-0">
+                <div class="modal-body p-4 p-md-5 pt-0">
                     <section class="p-2">
                       <div class="row g-3 align-items-center">
                         <div class="col-lg-4">
@@ -824,7 +974,7 @@
                             <!-- end social media link -->
                           </div>
                         </div>
-                        <div class="col-lg-8 ps-md-0 ps-lg-3">
+                        <div class="col-lg-8 ps-md-0 ps-lg-3 py-2 py-md-0">
                           <h2 class="fs-4 animate__animated animate__pulse">
                             Hello, I'm <span class="text-primary">Mohammad Azad</span>
                           </h2>
@@ -939,62 +1089,8 @@
 
 
 
-  <!-- Modal 1 Structure -->
+  <!-- product -->
   <div class="modal fade animate__animated animate__zoomIn" id="fuiModal-1" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-transparent">
-            <span class="al-trapezoid-b-4 text-white text-opacity-50 position-absolute top-0 start-50 translate-middle-x" style="width:192px"></span>
-            <div class="bg-secondary al-clip-border al-corner-all-10 al-t-clip-x al-b-clip-x al-t-7 al-b-7 al-extend-t-100 al-extend-b-100 al-border-2 al-border-white-25">
-                <div class="modal-body al-p-32 text-center">
-                    <i class="bi bi-toggle-on fs-1 text-primary text-opacity-50"></i>
-                    <h5 class="mb-0">Enable this setting?</h5>
-                    <p class="mb-0">You can always change your mind in your account settings.</p>
-                </div>
-                <div class="modal-footer flex-nowrap p-0 border-top border-white border-opacity-25">
-                    <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 border-0 border-end border-white border-opacity-25">
-                        <strong>Yes, enable</strong>
-                    </button>
-                    <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0" data-bs-dismiss="modal">
-                        No thanks
-                    </button>
-                </div>
-
-                <div class="al-pattern-grid-dark-blue al-pattern-grid-double al-pattern-white-2 position-fixed top-0 start-0 bottom-0 end-0 z-n1 pe-none"></div>
-            </div>
-            <span class="al-trapezoid-t-4 text-white text-opacity-50 position-absolute bottom-0 start-50 translate-middle-x" style="width:192px"></span>
-        </div>
-    </div>
-  </div>
-
-  <!-- Modal 3 Structure -->
-  <div class="modal fade animate__animated animate__zoomIn" id="fuiModal-3" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-transparent">
-            <span class="al-trapezoid-b-4 text-white text-opacity-50 position-absolute top-0 start-50 translate-middle-x" style="width:192px"></span>
-            <div class="bg-secondary al-clip-border al-corner-all-10 al-t-clip-x al-b-clip-x al-t-7 al-b-7 al-extend-t-100 al-extend-b-100 al-border-2 al-border-white-25">
-                <div class="modal-body al-p-32 text-center">
-                    <i class="bi bi-toggle-on fs-1 text-primary text-opacity-50"></i>
-                    <h5 class="mb-0">Enable this setting?</h5>
-                    <p class="mb-0">You can always change your mind in your account settings.</p>
-                </div>
-                <div class="modal-footer flex-nowrap p-0 border-top border-white border-opacity-25">
-                    <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 border-0 border-end border-white border-opacity-25">
-                        <strong>Yes, enable</strong>
-                    </button>
-                    <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0" data-bs-dismiss="modal">
-                        No thanks
-                    </button>
-                </div>
-
-                <div class="al-pattern-grid-dark-blue al-pattern-grid-double al-pattern-white-2 position-fixed top-0 start-0 bottom-0 end-0 z-n1 pe-none"></div>
-            </div>
-            <span class="al-trapezoid-t-4 text-white text-opacity-50 position-absolute bottom-0 start-50 translate-middle-x" style="width:192px"></span>
-        </div>
-    </div>
-  </div>
-
-  <!-- Modal 4 Structure -->
-  <div class="modal fade animate__animated animate__zoomIn" id="fuiModal-4" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content border-0 bg-transparent">
             <span class="al-trapezoid-b-4 text-white text-opacity-50 position-absolute top-0 start-50 translate-middle-x" style="width:192px"></span>
