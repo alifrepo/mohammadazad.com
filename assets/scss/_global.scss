@@ -312,9 +312,8 @@
 
 
 
-// Globe scss
 // ============================================================
-// FUI SCSS — Fully Integrated Bootstrap Variable Map
+// Globe (my products)
 // ============================================================
 
 .fui-bg-layers {
@@ -374,8 +373,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  // Height assignments configured raw
   height: calc(100vh - 180px);
   min-height: clamp(380px, 65vmin, 700px);
 
@@ -450,7 +447,6 @@
   }
 }
 
-// ---- Dynamic node images ----
 .fui-node-img {
   position: absolute;
   top: 0;
@@ -480,45 +476,11 @@
   }
 }
 
-// ============================================================
-// VIEW TOGGLE & COMPONENT SWITCH
-// ============================================================
-
-.fui-view-toggle {
-  position: relative;
-  z-index: 10;
-  display: inline-flex;
-  gap: 0.25rem;
-  padding: 0.25rem;
-  margin: 0 0 1rem;
-  border-radius: 999px;
-  background: rgba(var(--bs-black-rgb), 0.35);
-  border: 1px solid rgba(var(--bs-primary-rgb), 0.25);
-  backdrop-filter: blur(6px);
-}
-
 .fui-view-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  border: none;
-  background: transparent;
-  color: rgba(255, 255, 255, 0.65);
-  font-size: 0.85rem;
-  font-weight: 500;
-  line-height: 1;
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  cursor: pointer;
-  transition: background .25s, color .25s;
-
-  &:hover {
-    color: #fff;
-  }
-
   &.active {
-    background: var(--bs-primary);
-    color: #04140f; // Solid dark inline fallback
+    --al-inlay-bg: rgba(var(--bs-primary-rgb), 0.75) !important;
+    --al-border-bg: rgba(var(--bs-primary-rgb), 0.75) !important;
+    color: var(--bs-dark);
   }
 }
 
@@ -526,37 +488,11 @@
   display: none !important;
 }
 
-// ============================================================
-// BOOTSTRAP CARD COMPONENT INLINE CONFIGURATIONS
-// ============================================================
 
-.card.fui-bootstrap-card {
-  border-radius: 14px;
-  overflow: hidden;
-  background-color: rgba(var(--bs-black-rgb), 0.35) !important;
-  border: 1px solid rgba(var(--bs-primary-rgb), 0.18) !important;
-  cursor: pointer;
-  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-
-  .fui-bootstrap-card-img {
-    height: 170px;
-    object-fit: cover;
-  }
-
-  .card-body {
-    padding: 1.1rem 1.25rem;
-  }
-
-  &:hover {
-    transform: translateY(-4px);
-    border-color: rgba(var(--bs-primary-rgb), 0.55) !important;
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(var(--bs-primary-rgb), 0.3);
-  }
-}
 
 
 // ==========================================================================
-// FUI BOOTSTRAP-COMPATIBLE SCSS LOADER
+// Loader
 // ==========================================================================
 
 // Prefixed Keyframes

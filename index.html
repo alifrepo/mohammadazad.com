@@ -70,7 +70,6 @@
   </div>
   <!-- end loader -->
 
-
   <div class="container-xxl px-4 px-lg-5 position-relative z-3 ">
     <!-- start header -->
     <header class="position-sticky top-0 z-3 py-3">
@@ -266,8 +265,18 @@
               <!-- start tabs content -->
               <div class="tab-content al-fui-tabs-body al-corner al-border al-corner-all-12 al-border-1 al-border-primary-50 bg-body al-backdrop-blur-8" id="pills-tabContent" style="height: calc(100vh - 180px);">
                   <!-- my work -->
-                  <div class="tab-pane h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover fade pt-2 pt-lg-4 show active" id="pills-my-work" role="tabpanel" aria-labelledby="pills-my-work-tab" tabindex="0">
-                    <div class="px-4 pb-4 pt-3">
+                  <div class="tab-pane h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover fade pt-2 pt-lg-4" id="pills-my-work" role="tabpanel" aria-labelledby="pills-my-work-tab" tabindex="0">
+                    <div class="px-4 py-3 d-lg-none">
+                      <h2 class="">
+                        Hey,<br/>
+                        Look at my work.
+                      </h2>
+                      <span>
+                        I Love What I Do
+                      </span>
+                    </div>
+
+                    <div class="px-4 pb-5 pb-lg-4 pt-3">
                       <div class="row g-4">
                         <div class="col-12">
                           <a href="#!" target="_blank" class="position-relative d-block overflow-hidden al-corner al-corner-all-12 animate__animated animate__zoomIn">
@@ -392,20 +401,31 @@
                     </div>
                    </div>
 
-                  <!-- my products -->
-                  <div class="tab-pane fade h-100 overflow-hidden al-scroll-smooth position-relative" id="pills-my-products" role="tabpanel" aria-labelledby="pills-my-products-tab" tabindex="0">
+                  <hr class="text-primary mb-5 d-lg-none"/>
 
-                    <!-- Unified View Switch Toggle -->
-                    <div class="fui-view-toggle position-absolute top-0 end-0 m-3">
-                      <button type="button" class="fui-view-btn" data-fui-view="globe" aria-pressed="false">
-                        <i class="bi bi-globe2"></i> Globe View
-                      </button>
-                      <button type="button" class="fui-view-btn" data-fui-view="cards" aria-pressed="false">
-                        <i class="bi bi-grid-3x3-gap"></i> Card View
-                      </button>
+                  <!-- my products -->
+                  <div class="tab-pane fade h-100 overflow-hidden al-scroll-smooth position-relative show active" id="pills-my-products" role="tabpanel" aria-labelledby="pills-my-products-tab" tabindex="0">
+                    <!-- switch toggle -->
+                    <div class="fui-view-toggle position-absolute top-0 end-0 m-3 z-3 d-inline-flex gap-2">
+                      <span type="button" class="fui-view-btn al-w-35 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-primary-25 al-hexa-alt-border al-border-2 al-border-primary-25 al-cursor-pointer d-inline-flex al-flex-center" data-fui-view="cards" title="Card View" data-bs-toggle="tooltip" data-bs-placement="bottom">
+                        <i class="bi bi-view-list"></i>
+                      </span>
+                      <span type="button" class="fui-view-btn al-w-35 al-hexa-alt al-hexa-alt-inlay al-inlay-5 al-inlay-bg-primary-25 al-hexa-alt-border al-border-2 al-border-primary-25 al-cursor-pointer d-inline-flex al-flex-center" data-fui-view="globe" aria-pressed="false" title="Globe View" data-bs-toggle="tooltip" data-bs-placement="bottom">
+                        <i class="bi bi-globe2"></i>
+                      </span>
                     </div>
 
-                    <!-- GLOBE VIEW PANEL -->
+                    <div class="px-4 pb-2 d-lg-none">
+                      <h2 class="">
+                        Hey,<br/>
+                        Look at my products.
+                      </h2>
+                      <span>
+                        Website and Mobile App
+                      </span>
+                    </div>
+
+                    <!-- globe view -->
                     <div data-fui-panel="globe" class="fui-view-panel-hidden animate__animated animate__pulse">
                       <div class="fui-bg-layers">
                         <div class="fui-grid-bg"></div>
@@ -427,61 +447,69 @@
                       </div>
                     </div>
 
-                    <!-- CARD VIEW PANEL (Using native Bootstrap row, cols, and cards) -->
-                    <div data-fui-panel="cards" class="fui-view-panel-hidden h-100 overflow-y-auto py-3 px-3">
-                      <div class="row row-cols-1 row-cols-xl-2 g-4">
-                        
-                        <!-- Card 1 -->
+                    <!-- card view -->
+                    <div data-fui-panel="cards" class="fui-view-panel-hidden h-100 overflow-y-auto p-4 mt-lg-4">
+                      <div class="row row-cols-1 row-cols-xl-1 g-4 mb-4">
+                        <!-- product -->
                         <div class="col animate__animated animate__zoomIn">
-                          <div class="card fui-bootstrap-card h-100" data-bs-toggle="modal" data-bs-target="#fuiModal-1">
-                            <img src="assets/img/portfolio/1.jpg" alt="Product 1" class="card-img-top fui-bootstrap-card-img">
-                            <div class="card-body">
-                              <h5 class="card-title text-white mb-2">Product One</h5>
-                              <p class="card-text text-white-50 small mb-0">Replace with a one-line description of this product.</p>
+                          <div class="bg-white bg-opacity-10 al-corner al-corner-all-12 al-cursor-pointer al-hover-bg-white-25" data-bs-toggle="modal" data-bs-target="#fuiModal-1">
+                            <img src="assets/img/portfolio/1.jpg" alt="Product 1" class="w-100">
+                            <div class="p-4">
+                              <h3 class="al-fs-18">Product One</h3>
+                              <p class="mb-0">Replace with a one-line description of this product.</p>
                             </div>
                           </div>
                         </div>
 
-                        <!-- Card 2 (External Anchor Link) -->
+                        <!-- product -->
                         <div class="col animate__animated animate__zoomIn">
-                          <a class="card fui-bootstrap-card h-100 text-decoration-none" href="https://alfuix.com" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/img/portfolio/2.jpg" alt="Product 2" class="card-img-top fui-bootstrap-card-img">
-                            <div class="card-body">
-                              <h5 class="card-title text-white mb-2">Product Two</h5>
-                              <p class="card-text text-white-50 small mb-0">Replace with a one-line description of this product.</p>
-                            </div>
-                          </a>
-                        </div>
-
-                        <!-- Card 3 -->
-                        <div class="col animate__animated animate__zoomIn">
-                          <div class="card fui-bootstrap-card h-100" data-bs-toggle="modal" data-bs-target="#fuiModal-3">
-                            <img src="assets/img/portfolio/3.jpg" alt="Product 3" class="card-img-top fui-bootstrap-card-img">
-                            <div class="card-body">
-                              <h5 class="card-title text-white mb-2">Product Three</h5>
-                              <p class="card-text text-white-50 small mb-0">Replace with a one-line description of this product.</p>
+                          <div class="bg-white bg-opacity-10 al-corner al-corner-all-12 al-cursor-pointer al-hover-bg-white-25" data-bs-toggle="modal" data-bs-target="#fuiModal-1">
+                            <img src="assets/img/portfolio/1.jpg" alt="Product 1" class="w-100">
+                            <div class="p-4">
+                              <h3 class="al-fs-18">Product Two</h3>
+                              <p class="mb-0">Replace with a one-line description of this product.</p>
                             </div>
                           </div>
                         </div>
 
-                        <!-- Card 4 -->
+                        <!-- product -->
                         <div class="col animate__animated animate__zoomIn">
-                          <div class="card fui-bootstrap-card h-100" data-bs-toggle="modal" data-bs-target="#fuiModal-4">
-                            <img src="assets/img/portfolio/4.jpg" alt="Product 4" class="card-img-top fui-bootstrap-card-img">
-                            <div class="card-body">
-                              <h5 class="card-title text-white mb-2">Product Four</h5>
-                              <p class="card-text text-white-50 small mb-0">Replace with a one-line description of this product.</p>
+                          <div class="bg-white bg-opacity-10 al-corner al-corner-all-12 al-cursor-pointer al-hover-bg-white-25" data-bs-toggle="modal" data-bs-target="#fuiModal-3">
+                            <img src="assets/img/portfolio/1.jpg" alt="Product 1" class="w-100">
+                            <div class="p-4">
+                              <h3 class="al-fs-18">Product Four</h3>
+                              <p class="mb-0">Replace with a one-line description of this product.</p>
                             </div>
                           </div>
                         </div>
-                        
+
+                        <!-- product -->
+                        <div class="col animate__animated animate__zoomIn">
+                          <div class="bg-white bg-opacity-10 al-corner al-corner-all-12 al-cursor-pointer al-hover-bg-white-25" data-bs-toggle="modal" data-bs-target="#fuiModal-4">
+                            <img src="assets/img/portfolio/1.jpg" alt="Product 1" class="w-100">
+                            <div class="p-4">
+                              <h3 class="al-fs-18">Product Four</h3>
+                              <p class="mb-0">Replace with a one-line description of this product.</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
                   </div>
 
+                  <hr class="text-primary d-lg-none"/>
+
                   <!-- about me -->
                   <div class="tab-pane fade h-100 overflow-y-auto overflow-x-hidden al-scroll-smooth al-scroll-on-hover pt-lg-4" id="pills-about-me" role="tabpanel" aria-labelledby="pills-about-me-tab" tabindex="0">
+                    <div class="px-4 pt-4 pb-3 d-lg-none">
+                      <h2 class="">
+                        Who<br/> I am
+                      </h2>
+                      <span>
+                        Explore about me
+                      </span>
+                    </div>
                     <div class="pb-4 px-4 h-100 animate__animated animate__fadeInLeft">
                       <section class="fui-graph-widget h-100" data-graph-widget>
                         <div class="d-flex flex-column flex-lg-row w-100 h-100 gap-4 position-relative fui-graph-row">
@@ -1010,32 +1038,5 @@
   <script src="assets/dist/js/gsap.js"></script>
   <script src="assets/dist/js/structure.js"></script>
   <script src="assets/dist/js/my-product.js"></script>
-
-
-
-<script>
-  // Controlled 1.8-second minimum display duration
-  const FUI_MIN_LOAD_TIME = 1800; 
-  const fuiStartTime = Date.now();
-
-  window.addEventListener('load', () => {
-    const elapsedTime = Date.now() - fuiStartTime;
-    const delay = Math.max(0, FUI_MIN_LOAD_TIME - elapsedTime);
-
-    setTimeout(() => {
-      const loader = document.getElementById('fui-global-loader');
-      if (loader) {
-        loader.setAttribute('aria-busy', 'false');
-        loader.classList.add('fui-loaded');
-        
-        loader.addEventListener('transitionend', (e) => {
-          if (e.propertyName === 'visibility') {
-            loader.remove();
-          }
-        });
-      }
-    }, delay);
-  });
-</script>
 </body>
 </html>
