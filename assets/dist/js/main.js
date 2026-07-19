@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // loader
-  const FUI_MIN_LOAD_TIME = 100; 
+  const FUI_MIN_LOAD_TIME = 1500; 
   const fuiStartTime = Date.now();
 
   window.addEventListener('load', () => {
